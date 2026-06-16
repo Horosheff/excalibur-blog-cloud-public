@@ -1,0 +1,123 @@
+{
+  "registry_version": "1",
+  "total_families": 33,
+  "description": "Allowed cover_family slugs for AURA_BLOG_COVER_CONCEPT.json. AURA picks exactly one primary; optional secondary only via secondary_cover_families[] in concept.",
+  "categories": [
+    {
+      "id": "collage_stickers",
+      "label_ru": "Коллаж и стикеры",
+      "families": [
+        { "slug": "brand_collage", "label_ru": "Фирменный коллаж", "best_for": ["edtech", "playful_brand", "mascot"] },
+        { "slug": "sticker_scrapbook", "label_ru": "Стикер-скрапбук", "best_for": ["youth", "diy", "creative"] },
+        { "slug": "geometric_blocks", "label_ru": "Геометрические блоки", "best_for": ["tech", "structured"] },
+        { "slug": "paper_cutout", "label_ru": "Бумажный cutout", "best_for": ["kids", "craft", "soft"] },
+        { "slug": "polaroid_grid", "label_ru": "Polaroid-сетка", "best_for": ["case_stories", "portfolio"] }
+      ]
+    },
+    {
+      "id": "photo_editorial",
+      "label_ru": "Фото и editorial",
+      "families": [
+        { "slug": "editorial_photo", "label_ru": "Editorial-фото", "best_for": ["b2b", "expertise", "trust"] },
+        { "slug": "lifestyle_candid", "label_ru": "Lifestyle candid", "best_for": ["wellbeing", "service", "warm"] },
+        { "slug": "product_still_life", "label_ru": "Предметная съёмка", "best_for": ["ecommerce", "physical_product"] },
+        { "slug": "documentary_reportage", "label_ru": "Документальный репортаж", "best_for": ["cases", "authentic"] },
+        { "slug": "portrait_environment", "label_ru": "Портрет в среде", "best_for": ["personal_brand", "expert"] },
+        { "slug": "macro_detail", "label_ru": "Макро-деталь", "best_for": ["craft", "quality", "materials"] }
+      ]
+    },
+    {
+      "id": "illustration",
+      "label_ru": "Иллюстрация",
+      "families": [
+        { "slug": "illustrated_flat", "label_ru": "Flat-иллюстрация", "best_for": ["saas", "tech", "minimal"] },
+        { "slug": "isometric_3d", "label_ru": "Изометрия 3D", "best_for": ["product", "systems"] },
+        { "slug": "hand_drawn_sketch", "label_ru": "Hand-drawn sketch", "best_for": ["education", "brainstorm"] },
+        { "slug": "gradient_abstract", "label_ru": "Градиентный abstract", "best_for": ["ai", "future", "abstract_topics"] },
+        { "slug": "line_art_minimal", "label_ru": "Line art minimal", "best_for": ["premium", "legal", "finance"] },
+        { "slug": "clay_3d", "label_ru": "Clay 3D", "best_for": ["friendly_tech", "mobile_apps"] }
+      ]
+    },
+    {
+      "id": "mixed_media",
+      "label_ru": "Mixed media",
+      "families": [
+        { "slug": "mixed_media", "label_ru": "Mixed media", "best_for": ["premium", "magazine"] },
+        { "slug": "photo_plus_illustration", "label_ru": "Фото + иллюстрация", "best_for": ["explainer", "guides"] },
+        { "slug": "duotone_overlay", "label_ru": "Duotone overlay", "best_for": ["strong_brand_color"] },
+        { "slug": "glassmorphism_card", "label_ru": "Glassmorphism card", "best_for": ["modern_ui_brand"] }
+      ]
+    },
+    {
+      "id": "ui_mockup",
+      "label_ru": "UI и mockup",
+      "families": [
+        { "slug": "ui_mockup", "label_ru": "UI mockup", "best_for": ["software", "automation", "tutorials"] },
+        { "slug": "device_frame", "label_ru": "Device frame", "best_for": ["mobile_app", "tools"] },
+        { "slug": "dashboard_screenshot", "label_ru": "Dashboard screenshot", "best_for": ["analytics", "b2b_saas"] }
+      ]
+    },
+    {
+      "id": "character_mascot",
+      "label_ru": "Персонаж и маскот",
+      "families": [
+        { "slug": "mascot_series", "label_ru": "Серия маскота", "best_for": ["site_mascot"] },
+        { "slug": "character_spotlight", "label_ru": "Character spotlight", "best_for": ["brand_hero"] },
+        { "slug": "icon_story", "label_ru": "Icon story", "best_for": ["checklists", "listicles"] }
+      ]
+    },
+    {
+      "id": "infographic",
+      "label_ru": "Инфографика",
+      "families": [
+        { "slug": "infographic_visual", "label_ru": "Infographic visual", "best_for": ["guides", "comparisons"] },
+        { "slug": "timeline_roadmap", "label_ru": "Timeline / roadmap", "best_for": ["program", "journey"] },
+        { "slug": "stat_blocks", "label_ru": "Stat blocks", "best_for": ["research", "trends"] }
+      ]
+    },
+    {
+      "id": "texture_frames",
+      "label_ru": "Текстура и рамки",
+      "families": [
+        { "slug": "texture_brand", "label_ru": "Brand texture", "best_for": ["premium_calm"] },
+        { "slug": "frame_border", "label_ru": "Frame border", "best_for": ["classic_editorial"] },
+        { "slug": "split_panel", "label_ru": "Split panel", "best_for": ["before_after", "versus"] }
+      ]
+    }
+  ],
+  "all_slugs": [
+    "brand_collage",
+    "sticker_scrapbook",
+    "geometric_blocks",
+    "paper_cutout",
+    "polaroid_grid",
+    "editorial_photo",
+    "lifestyle_candid",
+    "product_still_life",
+    "documentary_reportage",
+    "portrait_environment",
+    "macro_detail",
+    "illustrated_flat",
+    "isometric_3d",
+    "hand_drawn_sketch",
+    "gradient_abstract",
+    "line_art_minimal",
+    "clay_3d",
+    "mixed_media",
+    "photo_plus_illustration",
+    "duotone_overlay",
+    "glassmorphism_card",
+    "ui_mockup",
+    "device_frame",
+    "dashboard_screenshot",
+    "mascot_series",
+    "character_spotlight",
+    "icon_story",
+    "infographic_visual",
+    "timeline_roadmap",
+    "stat_blocks",
+    "texture_brand",
+    "frame_border",
+    "split_panel"
+  ]
+}

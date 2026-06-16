@@ -1,0 +1,42 @@
+{
+  "design_code_id": "human_hook_collage_16x9",
+  "label_ru": "Человеческий hook-коллаж 16:9",
+  "reference_notes": "Адаптация carousel/trash-design референсов: рваная бумага, скотч, стикеры, розовый маркер, «скрины», мем-реакции — но формат 16:9 для блога.",
+  "openability_rules": [
+    "Первый кадр (cover panel) = pattern interrupt: провокация + узнаваемая боль",
+    "Крупный hook-текст с розовым/жёлтым highlight на ключевом слове",
+    "Минимум 1 fake UI screenshot (Wordstat, отзыв, Telegram, analytics) — «сделал человек»",
+    "1–2 мем-реакции (разные форматы, не повторять Drake везде)",
+    "Handwritten arrows, marker circles and visual meme reaction cutouts for intrigue",
+    "Не выглядеть как корпоративный баннер или stock photo"
+  ],
+  "visual_motifs": [
+    "torn paper strips with pink/black edges",
+    "clear scotch tape holding scraps",
+    "pink sticky notes with marker handwriting",
+    "highlighter pink brush stroke behind 1-2 Cyrillic words",
+    "hand-drawn arrows and stars",
+    "phone screenshot UI frames (Telegram chat, Yandex Wordstat, review stars)",
+    "meme reaction cutouts with rough white outline",
+    "grunge paper texture background #F5F5F0",
+    "black bold condensed Cyrillic headlines"
+  ],
+  "color_palette": {
+    "background": "#F5F5F0",
+    "paper_white": "#FAFAF7",
+    "ink_black": "#1A1A2E",
+    "highlight_pink": "#FF1493",
+    "accent_coral": "#E85D4C",
+    "marker_yellow": "#FFD93D"
+  },
+  "cover_panel_prompt_block": "16:9 hook collage panel: blog host cutout (reference face, agent-chosen outfit), layered fake screenshots (Wordstat keys, zero reads analytics, 5-star review snippet or Telegram «где трафик?»), torn paper + tape + pink sticky note, 1-2 different meme reaction faces, huge Cyrillic hook headline with pink highlight on key word, handwritten arrow, DIY human-made zine aesthetic NOT corporate ad",
+  "inline_human_touch": "Add subtle human-made layer: small sticky note, tape corner, or mini screenshot inset — still readable utility UI/diagram underneath",
+  "meme_rotation": [
+    "shocked face reaction",
+    "facepalm / понятно",
+    "drake approve/reject (max once per canvas)",
+    "cat/dog meme reaction",
+    "before/after split sticker"
+  ],
+  "global_negative": "vertical carousel 9:16, instagram story layout, corporate stock banner, clean minimal SaaS only, English text, watermark, same meme repeated 4 times, polished ad look"
+}

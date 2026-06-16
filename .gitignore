@@ -1,0 +1,14 @@
+memory/site.env.local
+memory/site.env.local.example
+.cursor/excalibur-blog-handoff.md
+shared/excalibur-blog-handoff.md
+.cursor/excalibur-blog-fragments/
+*.local
+__pycache__/
+*.pyc
+.env
+.DS_Store
+canvases/
+node_modules/
+.cursor/canvases/
+tmp/

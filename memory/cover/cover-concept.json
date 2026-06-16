@@ -1,0 +1,24 @@
+{
+  "concept_version": "1",
+  "cover_family": "brand_collage",
+  "cover_family_label_ru": "Фирменный коллаж",
+  "allowed_cover_families_considered": ["brand_collage", "illustrated_flat", "gradient_abstract"],
+  "cover_family_selection_rationale": "Quad canvas: RU meme collage + blog-host hero; см. memory/cover/quad-style-digital-meme-collage-ru.json",
+  "quad_style_preset": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "secondary_cover_families": [],
+  "prompt_assembly_mode": "prefix_scene_suffix",
+  "global_prompt_prefix": "Russian meme collage, blog host hero, Cyrillic Impact captions, ironic SEO humor, no watermark,",
+  "global_prompt_suffix": "16:9 panels, consistent hero likeness, readable Russian meme text on each panel, high detail",
+  "global_negative_prompt": "English text, Latin letters, watermark, logo, blurry, generic stock photo, no humor, panels without captions, extra fingers",
+  "composition_lock": {
+    "aspect_ratio": "16:9",
+    "target_size": "1200x675",
+    "layout_description": "main subject right 55%, brand color band left",
+    "thumbnail_safe_zone": "center-right"
+  },
+  "color_lock": {
+    "background": "#FAFAF7",
+    "accent_primary": "#E85D4C",
+    "accent_secondary": "#1A1A2E"
+  }
+}

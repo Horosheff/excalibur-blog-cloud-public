@@ -1,0 +1,35 @@
+{
+  "style_id": "digital_meme_collage_ru",
+  "label_ru": "Human hook collage · RU мемы · fake скрины · 16:9 quad",
+  "cover_family": "brand_collage",
+  "design_code": "memory/cover/cover-design-code.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "global_prompt_prefix": "Russian human-made hook collage, zine/trash-design DIY aesthetic adapted to 16:9 widescreen, torn paper strips, scotch tape, pink sticky notes, marker handwriting, highlighter pink brush on key Cyrillic words, fake phone screenshots (Wordstat, reviews, Telegram chat, analytics), meme reaction cutouts with rough edges, grunge paper texture background #F5F5F0, bold condensed Cyrillic headlines, layered scraps NOT corporate banner,",
+  "global_prompt_suffix": "single canvas 2048x1152 pixels, exact 2x2 grid, four equal 16:9 panels (1024x576 each), thin white gutters, high detail collage illustration, each panel feels like a human editor pasted screenshots and memes",
+  "global_negative_prompt": "English text, Latin UI, watermark, logo, generic stock photo, boring corporate infographic, vertical carousel 9:16, instagram story, polished ad, same meme 4 times, unreadable gibberish text, extra fingers",
+  "meme_formats_ru": [
+    "реакция шок / facepalm",
+    "Drake отвергает/одобряет (макс 1 на холст)",
+    "visual meme reaction cutout with rough white outline",
+    "fake скрин отзыва ★★★★★ или ★☆☆☆☆",
+    "fake Telegram «где трафик?»",
+    "до/после: ключи vs прочтения"
+  ],
+  "color_lock": {
+    "background": "#F5F5F0",
+    "accent_primary": "#E85D4C",
+    "accent_secondary": "#1A1A2E",
+    "highlight_pink": "#FF1493",
+    "meme_accent": "#FFD93D"
+  },
+  "composition_lock": {
+    "layout": "2x2_quad",
+    "recommended_canvas_px": "2048x1152",
+    "panel_aspect": "16:9",
+    "panel_size_px": "1024x576",
+    "gutter_px_hint": 8,
+    "text_on_cover_panel": "required_russian_hook",
+    "inline_panels": "utility_with_human_layer"
+  },
+  "tone_ru": "цепляющий hook, самоирония SEOшника, «контент делал человек», без политики и токсичности"
+}

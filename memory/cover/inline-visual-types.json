@@ -1,0 +1,53 @@
+{
+  "version": "1",
+  "description": "Типы inline-иллюстраций для Excalibur BLOG. Обложка — отдельно (мем + герой). Inline — полезность по H2.",
+  "selection_rules": [
+    "Один visual_type на inline; без повторов в одной статье, если есть альтернатива с score > 0",
+    "При равном score — приоритет: comparison_table_ui > workflow_diagram > checklist_board > schema_faq_ui > tool_screenshot > infographic_card",
+    "scene_hint дополняет шаблон типа конкретикой из H2 и lead статьи"
+  ],
+  "types": {
+    "comparison_table_ui": {
+      "label_ru": "Сравнительная таблица / UI-мокап",
+      "keywords": ["seo и geo", "сравнен", " vs ", "разниц", "критери", "таблиц"],
+      "prompt_prefix": "Professional Russian blog editorial UI mockup, clean SaaS dashboard aesthetic, light background #FAFAF7, accent #E85D4C, readable Cyrillic labels, 16:9 widescreen screenshot style,",
+      "prompt_suffix": "looks like a helpful pasted screenshot with pink sticky note corner and scotch tape, human-made Notion/Google Sheets vibe, subtle shadow, high detail Cyrillic UI, no host face",
+      "negative": "meme impact font, cartoon mascot, watermark, English UI labels, blurry text"
+    },
+    "workflow_diagram": {
+      "label_ru": "Схема workflow / шаги",
+      "keywords": ["структур", "longread", "семантик", "outline", "шаг", "как писать", "workflow", "процесс"],
+      "prompt_prefix": "Clean Russian infographic workflow diagram, numbered steps connected by arrows, editorial blog style, colors #FAFAF7 #1A1A2E #E85D4C #FFD93D, 16:9,",
+      "prompt_suffix": "readable Cyrillic step titles on torn-paper workflow strip, marker arrows, taped checklist scrap, practical how-to, no meme faces",
+      "negative": "meme, face closeup, watermark, chaotic collage, English text"
+    },
+    "checklist_board": {
+      "label_ru": "Чеклист / printable board",
+      "keywords": ["чеклист", "публикац", "перед выклад", "провер", "список"],
+      "prompt_prefix": "Russian blog printable checklist board illustration, clipboard or kanban card layout, checkboxes and short Cyrillic items, editorial clean design, 16:9,",
+      "prompt_suffix": "feels like real pre-publish checklist photo/screenshot on clipboard with red pen marks and tape, no meme character",
+      "negative": "meme, impact font joke, watermark, English text, cartoon host"
+    },
+    "schema_faq_ui": {
+      "label_ru": "FAQ + schema / JSON-LD UI",
+      "keywords": ["faq", "schema", "json-ld", "разметк", "нейро", "сниппет"],
+      "prompt_prefix": "Russian SEO article UI mockup showing FAQ accordion block and JSON-LD schema panel side by side, developer-blog aesthetic, light theme, 16:9,",
+      "prompt_suffix": "Cyrillic FAQ + schema JSON panel as fake browser/devtools screenshot with sticky note «проверь FAQ», helpful not meme, no host face",
+      "negative": "meme, cartoon face, watermark, English-only UI"
+    },
+    "tool_screenshot": {
+      "label_ru": "Скриншот инструмента",
+      "keywords": ["вордстат", "яндекс", "google", "webmaster", "инструмент", "serp", "метрик"],
+      "prompt_prefix": "Realistic stylized screenshot of a Russian SEO tool interface (Wordstat/Yandex Webmaster style), editorial blog illustration, 16:9,",
+      "prompt_suffix": "Cyrillic UI, blurred fake personal data, educational screenshot for blog article, no meme",
+      "negative": "meme, cartoon host, watermark, real brand logos if unclear"
+    },
+    "infographic_card": {
+      "label_ru": "Карточка-инфографика",
+      "keywords": ["сколько", "символ", "объём", "статистик", "цифр", "e-e-a-t", "факт"],
+      "prompt_prefix": "Minimal Russian infographic card for blog article, 3-4 bullet facts with icons, editorial palette #FAFAF7 #E85D4C, 16:9,",
+      "prompt_suffix": "readable Cyrillic facts, professional not meme, useful takeaway visual",
+      "negative": "meme, joke caption, watermark, English text"
+    }
+  }
+}

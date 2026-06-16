@@ -1,0 +1,24 @@
+{
+  "registry_version": "public-template",
+  "comment": "Public template authors registry. Replace with your own public author profile before publishing.",
+  "authors": [
+    {
+      "id": "example-author",
+      "name_ru": "Example Author",
+      "name_en": "Example Author",
+      "job_title_ru": "Project author",
+      "job_title_en": "Project author",
+      "bio_short_ru": "Replace with a public author bio.",
+      "bio_long_ru": "Replace with a public author bio.",
+      "expertise_tags": [
+        "seo",
+        "geo",
+        "automation"
+      ],
+      "avatar_url": "https://example.com/author",
+      "sameAs": [
+        "https://example.com/author"
+      ]
+    }
+  ]
+}

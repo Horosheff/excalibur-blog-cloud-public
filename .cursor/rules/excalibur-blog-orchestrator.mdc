@@ -1,0 +1,39 @@
+---
+description: Excalibur BLOG — оркестратор, Task(subagents), Cloud handoff в .cursor/
+alwaysApply: false
+---
+
+# Excalibur BLOG (плагин + Cloud)
+
+## Cloud
+
+- Handoff: `.cursor/excalibur-blog-handoff.md` (не коммитить)
+- Fragments: `.cursor/excalibur-blog-fragments/` для cover||schema
+- Task agents: `.cursor/agents/excalibur-blog-*`
+- Preflight: `scripts/excalibur_blog_today.py`, `excalibur_blog_research_start.py`
+- См. `AGENTS.md`, `CLOUD-AUTOMATION.md`
+
+## Главный и субагенты
+
+- **Директор** — чат (не Task): `agents/excalibur-blog-director.md`, skill `director-excalibur-blog`.
+- **Субагенты** — `Task(<name>)`, см. [agents/FOR-AGENTS.md](agents/FOR-AGENTS.md).
+
+## Пайплайн
+
+0. shell `excalibur_blog_research_start.py`
+1. `excalibur-blog-research`
+2. `excalibur-blog-writer`
+3. `excalibur-blog-geo-qa`
+4. **ПАРАЛЛЕЛЬНО** `excalibur-blog-cover` + `excalibur-blog-schema`
+5. `excalibur-blog-indexer`
+6. `excalibur-blog-publish` (auto; skip только при явном `publish: no`)
+
+Handoff runtime: `.cursor/excalibur-blog-handoff.md`
+
+Команда: `commands/excalibur-blog-run.md`
+
+## Запреты
+
+- `Task(excalibur-blog-director)`
+- субагенты не запускают вложенные Task
+- шаг 4 без QA PASS

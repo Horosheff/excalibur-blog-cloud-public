@@ -1,0 +1,5 @@
+{
+  "install": "python3 -m pip install --user -r requirements.txt && python3 scripts/excalibur_blog_doctor.py",
+  "start": "",
+  "terminals": []
+}

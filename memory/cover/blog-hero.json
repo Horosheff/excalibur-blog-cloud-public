@@ -1,0 +1,24 @@
+{
+  "hero_id": "blog-host",
+  "name_ru": "Example Author",
+  "reference_image": "memory/cover/assets/blog-hero-reference.png",
+  "reference_notes": "Public template: provide your own private reference image or hosted URL through BLOG_HERO_REFERENCE_URL.",
+  "visual_lock": {
+    "face": "replace with your brand character description",
+    "glasses": "",
+    "hair": "",
+    "beard": "",
+    "energy": "expert blog host"
+  },
+  "outfit_rule": "Agent may choose outfit, pose, and props according to cover_hook and scene_hint.",
+  "reference_outfit_hint": "Template placeholder.",
+  "prompt_fragment": "Blog host on COVER ONLY: preserve the provided reference face. Outfit, pose, and props are creative choices for the hook.",
+  "cover_hook_rules": [
+    "Cover is a click hook: conflict, reader pain, and reason to open.",
+    "Use readable local-language caption on the cover.",
+    "Keep inline panels useful and in the same visual series."
+  ],
+  "reference_url_hosted": "",
+  "reference_url_source": "public-template",
+  "reference_url_updated_at": ""
+}
