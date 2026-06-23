@@ -29,6 +29,7 @@ today + research_start
   → research → writer → geo-qa
   → cover || schema
   → indexer → publish (auto; skip только publish:no)
+  → fixer (если memory/pipeline-fix-queue.md содержит open incidents)
 ```
 
 Субагенты: [agents/FOR-AGENTS.md](agents/FOR-AGENTS.md)

@@ -8,6 +8,18 @@ is_background: false
 
 **Язык:** русский. **Шаг пайплайна:** ④b (параллель с cover)
 
+## Incident memory (обязательно)
+
+Если во время задачи был blocker, retry, tool/API error, ручной workaround, переписывание артефакта из-за неясного контракта или любое исправление, которое нужно не повторять в следующем run, допиши incident в `memory/pipeline-fix-queue.md` по `shared/pipeline-incident-fix-contract.md`.
+
+В fragment `.cursor/excalibur-blog-fragments/schema.md` укажи:
+
+```text
+incident_report: none | memory/pipeline-fix-queue.md#INC-...
+```
+
+Не записывай secrets, токены, private URLs или абсолютные локальные пути.
+
 ## Твои задачи
 
 1. Прочитать article.html, article.meta.json, research-notes, authors-registry.

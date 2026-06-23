@@ -1,0 +1,198 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mayai.ru/#organization",
+      "name": "Maya AI — блог «Ковчег»",
+      "url": "https://mayai.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://mayai.ru/#logo",
+        "url": "https://mayai.ru/wp-content/uploads/logo.png",
+        "caption": "Maya AI — блог «Ковчег»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mayai.ru/#author-artur-horoshev",
+      "name": "Артур Хорошев",
+      "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+      "image": "https://kv-ai.ru/artur-horosheff",
+      "worksFor": {
+        "@id": "https://mayai.ru/#organization"
+      },
+      "sameAs": [
+        "https://kv-ai.ru/artur-horosheff",
+        "https://mayai.ru/obo-mne/",
+        "https://t.me/maya_pro",
+        "https://t.me/horosheff"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/blog/podklyuchenie-mcp-cursor/#article",
+      "headline": "Как подключить MCP-серверы в Cursor: пошаговая инструкция для автоматизации",
+      "description": "Пошаговое подключение MCP в Cursor: Tools & MCP, mcp.json, stdio и url, безопасность allowlist и troubleshooting. Для маркетологов и автоматизаторов без кода.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru",
+      "url": "https://mayai.ru/blog/podklyuchenie-mcp-cursor/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://mayai.ru/blog/podklyuchenie-mcp-cursor/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://mayai.ru/wp-content/uploads/blog/podklyuchenie-mcp-cursor-cover.png",
+        "width": 1200,
+        "height": 675
+      },
+      "author": {
+        "@id": "https://mayai.ru/#author-artur-horoshev"
+      },
+      "publisher": {
+        "@id": "https://mayai.ru/#organization"
+      },
+      "keywords": "cursor mcp, mcp сервер для cursor, как подключить mcp к cursor, настройка mcp сервера, cursor ai mcp",
+      "wordCount": 9018,
+      "articleSection": "AI-агенты",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "Maya AI — блог «Ковчег»",
+        "url": "https://mayai.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/blog/podklyuchenie-mcp-cursor/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как подключить MCP к Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Откройте Settings (Ctrl+Shift+J) → Tools & MCP → \"Add to Cursor\" у нужного сервера. Либо создайте ~/.cursor/mcp.json или .cursor/mcp.json, добавьте блок mcpServers, сохраните валидный JSON и перезапустите Cursor. Проверьте активный статус сервера и вызовите tool тестовым prompt в Agent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где файл mcp.json на Windows?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Глобально: C:\\Users\\<ваш_логин>\\.cursor\\mcp.json. Для одного проекта: папка .cursor в корне репозитория. При совпадении имён сервера приоритет у проектного файла."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему MCP сервер красный и не подключается?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Откройте Output → MCP Logs. Частые причины: битый JSON, нет Node/npx (ENOENT), неверный API key в env или headers. Исправьте конфиг, перезапустите Cursor и снова проверьте логи."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли каждый раз подтверждать вызов tool?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "По умолчанию да – это защита. После тестов добавьте доверенные tools в allowlist или permissions.json; в Cursor 3.6+ настройте Auto-review в Settings → Agents → Run Mode."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько MCP-серверов можно включить?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Формально много; в 2026 dynamic context снижает нагрузку от большого числа tools. На практике держите 3–5 серверов под реальные задачи, а не весь каталог cursor.directory."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем MCP отличается от Skills в Cursor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MCP подключает внешние программы и API (браузер, GitHub, CMS). Skills – готовые инструкции и сценарии внутри редактора. Используйте оба: Skills для стиля работы агента, MCP для доступа к сервисам."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "MCP в Cursor или Make/n8n – что выбрать?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MCP усиливает Agent в IDE при разработке и контенте. Make и n8n запускают сценарии по расписанию и webhook без вашего участия. Связка: Cursor готовит → Make публикует; подробнее в статье про n8n и ИИ-агентов."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://mayai.ru/blog/podklyuchenie-mcp-cursor/#howto",
+      "name": "Как подключить MCP-серверы в Cursor: пошаговая инструкция для автоматизации",
+      "description": "Пошаговое подключение MCP в Cursor: Tools & MCP, mcp.json, stdio и url, безопасность allowlist и troubleshooting. Для маркетологов и автоматизаторов без кода.",
+      "inLanguage": "ru",
+      "totalTime": "PT30M",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Cursor (актуальная версия)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Node.js LTS (для stdio-серверов через npx)"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Откройте Tools & MCP",
+          "text": "Обновите Cursor до актуальной версии. Откройте Settings (Ctrl+Shift+J на Windows) → раздел Tools & MCP.",
+          "url": "https://mayai.ru/blog/podklyuchenie-mcp-cursor/#one-click"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Выберите способ подключения",
+          "text": "Способ A: нажмите \"Add to Cursor\" у нужного сервера в Marketplace или на cursor.directory. Способ B: создайте ~/.cursor/mcp.json или .cursor/mcp.json в проекте.",
+          "url": "https://mayai.ru/blog/podklyuchenie-mcp-cursor/#config-location"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Завершите авторизацию",
+          "text": "Пройдите OAuth или введите API key, если сервер запрашивает. Для ручного способа добавьте блок mcpServers с command/args (stdio) или url/headers (облако).",
+          "url": "https://mayai.ru/blog/podklyuchenie-mcp-cursor/#manual-json"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Сохраните валидный JSON",
+          "text": "Проверьте mcp.json валидатором: без висячих запятых, секреты в env или ${env:VAR_NAME}, не в Git.",
+          "url": "https://mayai.ru/blog/podklyuchenie-mcp-cursor/#manual-json"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Перезапустите Cursor",
+          "text": "После правки конфига выполните полный перезапуск Cursor или Command Palette → Reload Window.",
+          "url": "https://mayai.ru/blog/podklyuchenie-mcp-cursor/#one-click"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Проверьте статус сервера",
+          "text": "В Tools & MCP убедитесь, что индикатор сервера активный (не красный). При ошибке откройте Output → MCP Logs.",
+          "url": "https://mayai.ru/blog/podklyuchenie-mcp-cursor/#troubleshooting"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Протестируйте tool и настройте безопасность",
+          "text": "В Agent включите нужные MCP-tools, отправьте тестовый prompt. Оставьте подтверждение вызовов или добавьте доверенные tools в allowlist / permissions.json.",
+          "url": "https://mayai.ru/blog/podklyuchenie-mcp-cursor/#security"
+        }
+      ]
+    }
+  ]
+}

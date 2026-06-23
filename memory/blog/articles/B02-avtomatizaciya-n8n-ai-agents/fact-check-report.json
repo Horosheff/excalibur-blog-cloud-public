@@ -1,0 +1,87 @@
+{
+  "article": "memory/blog/articles/B02-avtomatizaciya-n8n-ai-agents/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 11,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 9,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "ужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) - ст",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "ордстат верифицированы по первоисточникам на июнь 2026 года. Частые вопросы Как устроен AI Agent node в n8n?",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "14 дней",
+      "kind": "metric_or_duration",
+      "context": "прогон workflow = один run, не каждый шаг). Trial 14 дней без карты. CE на GitHub - бесплатно, без лимита r",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "539",
+      "kind": "large_number",
+      "context": "Docker. Запрос \"автоматизация n8n\" в Вордстате - 539 показов в месяц, head-запрос \"n8n\" - 37 115. Выбер",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "37 115",
+      "kind": "large_number",
+      "context": "дстате - 539 показов в месяц, head-запрос \"n8n\" - 37 115. Выберите способ запуска n8n Создайте первого ИИ-",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "720",
+      "kind": "large_number",
+      "context": "шним сервисам как к \"розеткам\". Запросы \"n8n ai\" (720 показов/мес) и \"n8n агенты\" (699) растут вместе с",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2 500",
+      "kind": "large_number",
+      "context": ". Cloud Starter - от 20 €/мес при годовой оплате, 2 500 executions (один полный прогон workflow = один run",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "800",
+      "kind": "large_number",
+      "context": "ьшой. Делайте: разбейте документы на куски по 500-800 слов. Не делайте: скармливать один гигантский PDF",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3 000",
+      "kind": "large_number",
+      "context": "ols, memory, MCP Make AI Agents, Reasoning panel, 3 000+ apps Self-host / данные Да (Community Edition) Н",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1 000",
+      "kind": "large_number",
+      "context": "хода CE бесплатно + infra; Cloud от 20 €/мес Free 1 000 credits/мес; Core от ~$9-12/мес Billing Executions",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 800",
+      "kind": "large_number",
+      "context": "без DevOps. Я веду курс по Make.com (159+ уроков, 5 800 ₽/мес) именно для тех, кто хочет агентов без серв",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

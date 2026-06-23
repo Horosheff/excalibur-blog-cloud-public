@@ -1,0 +1,30 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 4,
+  "over_long_sentences": [
+    {
+      "sentence": "Автоматизация Make часто ломается не из-за плохого инструмента, а из-за хаоса: агенту дают доступ ко всему, сценарий сразу трогает CRM, а ошибки видны только после жалобы клиента",
+      "word_count": 27
+    },
+    {
+      "sentence": "Выберите процесс для Make AI Agent, а не \"автоматизацию всего отдела\" Делайте первый пилот на одном повторяемом процессе: входящая заявка, тикет поддержки, разбор брифа, классификация лида, подготовка черновика ответа",
+      "word_count": 29
+    },
+    {
+      "sentence": "Рабочий скелет выглядит так: Схема безопасного workflow: Trigger → Normalize data → Router → AI Agent → Tool/MCP call → Human approval → Action → Log + metric Trigger – это старт: webhook, таблица, письмо или расписание",
+      "word_count": 29
+    },
+    {
+      "sentence": "Настройте Make MCP Server, если внешний ИИ должен вызывать Make Make MCP Server нужен, когда внешний AI-клиент, например Cursor, Claude или ChatGPT, должен запускать Make-сценарии как инструменты",
+      "word_count": 27
+    }
+  ],
+  "readability": {
+    "score": 77.5,
+    "level": "Easy (Standard modern readable web content)",
+    "avg_sentence_len": 11.3,
+    "avg_syllables_per_word": 1.9
+  }
+}

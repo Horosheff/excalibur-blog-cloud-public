@@ -1,0 +1,53 @@
+{
+  "pipeline_version": "split_v2",
+  "article_dir": "memory/blog/articles/B01-primer-seo-stati",
+  "reference_url_hosted": "https://files.catbox.moe/yjlmip.png",
+  "jobs": [
+    {
+      "slot": "cover",
+      "output_file": "cover/cover.png",
+      "tool": "gpt-image-2",
+      "mcp_args": {
+        "prompt": "Russian internet meme collage illustration on pure white #FFFFFF background, ironic humor, cutout stickers, reaction faces, drake-format panels, pepe-adjacent absurdity but original characters, cover typography like DESIGN.md reference: bold condensed uppercase Cyrillic, rotating hot headline accents (hot pink, hot purple, hot blue, hot orange, etc.), sticker labels, brush bubbles, handwritten speech notes, layered scraps,\nCOVER ONLY — single 16:9 image, not a grid.\nSame recurring blog host character in every panel: man with round black glasses, voluminous ash-blonde quiff hair, salt-and-pepper short beard, charismatic presenter energy. Keep face recognizable; vary clothing, prefer thick heavyweight white hoodie when it fits; change pose, props, meme costume per panel.\nCRITICAL: preserve EXACT face likeness from reference photo — same glasses, quiff hair, salt-and-pepper beard.\nClickbait hook scene: герой с reference-лицом, шок/ирония SEOшника, Wordstat + ноутбук, крючок на клик.\nLarge readable Cyrillic meme caption: \"15k ключей — 0 прочтений?\".\nHook idea: SEO-текст, который люди дочитают — миф или workflow?.\nRussian internet meme collage, ironic SEO humor, host points at caption or reacts dramatically.\nsingle canvas 2048x1152 pixels, exact\nNegative: price badges, beige background, gray background, gradient, English text, Latin letters, watermark, logo, blurry, generic western stock photo, extra fingers, boring corporate infographic, no humor, no text at all, unreadable gibberish text",
+        "input_urls": [
+          "https://files.catbox.moe/yjlmip.png"
+        ],
+        "aspect_ratio": "16:9",
+        "resolution": "2K"
+      }
+    },
+    {
+      "slot": "inline_1",
+      "output_file": "cover/inline-01.png",
+      "visual_type": "comparison_table_ui",
+      "tool": "gpt-image-2",
+      "mcp_args": {
+        "prompt": "Professional Russian blog editorial UI mockup pasted on pure white #FFFFFF background, clean useful dashboard card aesthetic, accent #E85D4C, readable Cyrillic labels, 16:9 widescreen screenshot style,\nArticle section H2: «Зачем SEO и GEO в одной статье».\nТаблица «SEO vs GEO» к секции «Зачем SEO и GEO в одной статье»: критерии, цели, что видит человек vs AI\nlooks like a helpful pasted screenshot with subtle shadow, pink sticky note corner and scotch tape, high detail UI elements, no human face required\nNegative: beige background, gray background, gradient, meme impact font, cartoon mascot, watermark, English UI labels, blurry text",
+        "aspect_ratio": "16:9",
+        "resolution": "2K"
+      }
+    },
+    {
+      "slot": "inline_2",
+      "output_file": "cover/inline-02.png",
+      "visual_type": "workflow_diagram",
+      "tool": "gpt-image-2",
+      "mcp_args": {
+        "prompt": "Clean Russian infographic workflow diagram on pure white #FFFFFF background, numbered steps connected by arrows, editorial blog style, colors #FFFFFF #1A1A2E #E85D4C #FFD93D, 16:9,\nArticle section H2: «Структура longread: от семантики до читабельности».\n6 шагов workflow longread к «Структура longread: от семантики до читабельности»: интент → семантика → outline → lead → факты → FAQ\nreadable Cyrillic step titles, Notion/Figma-like clarity, practical how-to feel, no meme faces\nNegative: beige background, gray background, gradient, meme, face closeup, watermark, chaotic collage, English text",
+        "aspect_ratio": "16:9",
+        "resolution": "2K"
+      }
+    },
+    {
+      "slot": "inline_3",
+      "output_file": "cover/inline-03.png",
+      "visual_type": "schema_faq_ui",
+      "tool": "gpt-image-2",
+      "mcp_args": {
+        "prompt": "Russian SEO article UI mockup on pure white #FFFFFF background showing FAQ accordion block and JSON-LD schema panel side by side, developer-blog aesthetic, light theme, 16:9,\nArticle section H2: «FAQ и schema: зачем и как».\nUI mockup FAQ + JSON-LD schema для «FAQ и schema: зачем и как»\nCyrillic FAQ questions visible, structured data hint, helpful not humorous, no meme\nNegative: beige background, gray background, gradient, meme, cartoon face, watermark, English-only UI",
+        "aspect_ratio": "16:9",
+        "resolution": "2K"
+      }
+    }
+  ]
+}

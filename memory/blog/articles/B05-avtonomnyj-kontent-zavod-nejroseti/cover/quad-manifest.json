@@ -1,0 +1,42 @@
+{
+  "topic_id": "B05",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "ИИ-контент-завод: уволить весь отдел копирайтеров?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Обложка: Автономный контент-завод на нейросетях",
+      "scene_hint": "Blog host cutout (reference face: round black glasses, ash-blonde quiff, salt-and-pepper beard) wearing a yellow safety helmet over a thick white hoodie, standing in front of a futuristic conveyor belt factory. On the conveyor belt, instead of mechanical parts, glowing 3D post icons, Telegram logos, and WordPress logos are being assembled. A robotic manipulator arm with a paint brush is painting a neon sign \"AI Content\" on a glowing billboard. The style is a vibrant DIY digital meme collage with torn paper edges, pink sticky notes, clear scotch tape, and a shocked cat meme reaction cutout in the corner. High-contrast colors on pure white #FFFFFF background.",
+      "meme_caption_ru": "Завод работает — админ спит!"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "1. Что такое контент-завод на нейросетях и почему ручной промптинг умер в 2026 году",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "A comparison table UI comparing 'Manual Prompting' vs 'Autonomous AI Factory'. Left side (Manual): red cross, slow, expensive, copy-paste. Right side (Factory): green checkmark, fast, $150/mo, 100% automated. Subtle human touch: pink sticky note with 'Ручной промптинг умер!' handwritten, clear tape on the corner. Style matches digital collage.",
+      "alt": "Сравнение: Ручной промптинг против Автономного ИИ-контент-завода"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "2. Архитектура автономного конвейера: связка Make.com, n8n и ИИ-агентов",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "A workflow diagram UI showing the architecture of the autonomous conveyor belt. Nodes: Web Scraping / Wordstat -> n8n / Make.com -> AI Agents (Researcher, Writer, Editor) -> Auto-posting (Telegram, WordPress). Connected with glowing marker arrows. Subtle human touch: torn paper strip, yellow sticky note with 'Связка n8n + Make' handwritten. Digital collage style.",
+      "alt": "Схема архитектуры автономного конвейера на n8n и Make.com"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "3. Настройка ИИ-сотрудников: роли исследователя, копирайтера и редактора (Newsroom)",
+      "visual_type": "checklist_board",
+      "scene_hint": "An infographic card or dashboard showing three AI employee roles: 1. Researcher (deep web search), 2. Writer (SEO copywriter), 3. Editor (linter & QA). Each role has a small avatar icon and a checklist of tasks. Subtle human touch: pink highlighter brush stroke, scotch tape on the edges. Digital collage style.",
+      "alt": "Карточки ролей ИИ-сотрудников: Исследователь, Копирайтер, Редактор"
+    }
+  }
+}

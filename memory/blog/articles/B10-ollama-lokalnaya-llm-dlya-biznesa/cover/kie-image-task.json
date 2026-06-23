@@ -1,0 +1,8 @@
+{
+  "task_id": "b4c0123c188f65dc56fb2f22b079aa5f",
+  "source": "kie-api",
+  "model": "gpt-image-2-image-to-image",
+  "state": "success",
+  "result_path": "memory/blog/articles/B10-ollama-lokalnaya-llm-dlya-biznesa/cover/quad-mcp-result.json",
+  "updated_at_epoch": 1781649908
+}

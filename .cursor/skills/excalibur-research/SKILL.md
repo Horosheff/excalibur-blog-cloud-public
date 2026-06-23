@@ -48,7 +48,7 @@ python scripts/excalibur_blog_research_start.py --topic-id B01
      * Выдели сопутствующие LSI-запросы из топа выдачи Вордстата для использования копирайтером.
 
 2. **Deep research вместо простого SERP-обзора:**
-   - Сначала разложи тему на **5–8 research_questions**: спрос, свежие изменения, инструменты, риски, ошибки внедрения, что спорят конкуренты, что реально можно сделать.
+   - Сначала разложи тему на **5–8 research_questions**: спрос, свежие изменения, инструменты, риски, ошибки внедрения, что спорят конкуренты, что реально может сделать новичок без технического бэкграунда.
    - По каждой группе вопросов собери источники через `WebSearch`/`WebFetch`, а не только из `research-serp.json`.
    - Для технических тем обязательно ищи GitHub: repos, issues, discussions, README, changelog. Минимум 3 GitHub URL в `github_evidence`.
    - Всегда ищи официальные docs/changelog/developer pages и community experience (форумы, Reddit, Habr/VC/Dev.to, если релевантно).
@@ -67,9 +67,9 @@ python scripts/excalibur_blog_research_start.py --topic-id B01
 research_date: YYYY-MM-DD
 accessed_at: YYYY-MM-DD
 utility_verdict: PASS
-reader_outcome: одно предложение — что читатель сможет сделать после статьи
-reader_pain: конкретная боль, риск, страх или затык читателя
-success_criteria: как читатель поймёт, что проблема решена
+reader_outcome: одно предложение — какой первый понятный результат новичок сможет сделать после статьи
+reader_pain: конкретная боль, риск, страх или затык новичка
+success_criteria: как новичок поймёт, что проблема решена
 voice_angle: человеческий угол, сцена или напряжение темы
 reader_story: мини-сценарий/ошибка читателя, которую Writer обязан вплести
 surprising_fact: неожиданный факт, конфликт мнений или свежая деталь
@@ -109,12 +109,12 @@ python scripts/excalibur_blog_research_notes_gate.py \
 ## Правила
 
 0. **Сначала** `excalibur_blog_research_start.py` (шаг 0) — для валидации даты/года и utility-gate темы.
-1. Web research 15–25 мин: используй инструмент **`WebSearch`** Курсора для глубинного анализа ТОП-5 конкурентов, официальных docs, GitHub evidence и community pain points в реальном времени. Приоритетный источник фактов — `fact-bank.md`.
+1. Web research 15–25 мин: используй инструмент **`WebSearch`** Курсора для глубинного анализа ТОП-5 конкурентов, официальных docs, GitHub evidence и community pain points в реальном времени. GitHub/docs нужны для фактов, но итоговый угол обязан быть beginner-first: что новичку нажать, подключить, проверить и как не сломать процесс. Приоритетный источник фактов — `fact-bank.md`.
 2. Микро-исследование Wordstat через `user-mcp-kv` -> `wordstat_get_top_requests` (см. выше).
 3. Извлеки минимум 10–15 проверенных фактов (цифр/утверждений) с точными URL источников из твоего интернет-поиска.
 4. Каждая цифра → таблица фактов в `research-notes.md` или не использовать.
 5. Не копировать структуру конкурента 1:1.
-6. Каждая статья должна решать боль: без `reader_pain`, `pain_solution_map` и `success_criteria` research не готов.
+6. Каждая статья должна решать боль новичка: без `reader_pain`, `pain_solution_map`, `success_criteria` и beginner-friendly `reader_outcome` research не готов.
 7. Не писать “экспертную оценку” вместо источников, кроме явного `⚠️ WORDSTAT AUTH WARNING`. Без источников для ключевых утверждений — blocker.
 
 ## Blockers
@@ -122,4 +122,5 @@ python scripts/excalibur_blog_research_notes_gate.py \
 - `❌ RESEARCH BLOCKER` — тема не найдена и не создана из запроса пользователя
 - `❌ RESEARCH BLOCKER` — нет источников для ключевых утверждений
 - `❌ RESEARCH BLOCKER` — нет явной боли читателя, карты решения и критерия результата
+- `❌ RESEARCH BLOCKER` — research angle ушёл в материал для профи/архитекторов и не даёт новичку первого понятного результата
 - `❌ RESEARCH BLOCKER` — `research-notes-gate.json` status BLOCK

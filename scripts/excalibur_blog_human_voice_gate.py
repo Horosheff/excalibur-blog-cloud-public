@@ -13,6 +13,81 @@ from typing import Any
 from excalibur_repo_paths import repo_relative
 
 
+LEGACY_BANNED_FACT_CHECK_NAMES = (
+    "елена ковалева",
+)
+
+GENERIC_FACT_CHECK_PHRASE = (
+    "все статистические показатели и ключевые фразы верифицированы по данным яндекс вордстат"
+)
+
+
+def load_authors_registry(root: Path) -> dict[str, dict[str, Any]]:
+    path = root / "shared" / "authors-registry.json"
+    if not path.is_file():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return {author["id"]: author for author in data.get("authors", []) if author.get("id")}
+
+
+def load_article_author_id(article_dir: Path) -> str:
+    meta_path = article_dir / "article.meta.json"
+    if not meta_path.is_file():
+        return ""
+    meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    return str(meta.get("author_id") or "").strip()
+
+
+def extract_fact_check_block(html: str) -> str:
+    for quote in re.findall(r"<blockquote[\s\S]*?</blockquote>", html, flags=re.I):
+        if "материал проверен" in quote.lower():
+            return quote
+    return ""
+
+
+def validate_fact_check_author(
+    html: str,
+    article_dir: Path,
+    root: Path,
+    errors: list[str],
+    warnings: list[str],
+) -> None:
+    fact_check = extract_fact_check_block(html)
+    if not fact_check:
+        errors.append("Fact Check Box missing: need <blockquote> with «Материал проверен» before FAQ")
+        return
+
+    fact_lower = strip_html(fact_check).lower()
+    for banned in LEGACY_BANNED_FACT_CHECK_NAMES:
+        if banned in fact_lower:
+            errors.append(
+                f"Fact Check Box uses banned legacy author name: {banned!r}; "
+                "use author from shared/authors-registry.json only"
+            )
+
+    if GENERIC_FACT_CHECK_PHRASE in fact_lower:
+        errors.append(
+            "Fact Check Box uses generic Wordstat template; "
+            "name concrete sources from research for this topic"
+        )
+
+    author_id = load_article_author_id(article_dir)
+    registry = load_authors_registry(root)
+    if not author_id:
+        warnings.append("article.meta.json missing author_id; cannot verify Fact Check author")
+        return
+    if author_id not in registry:
+        errors.append(f"author_id {author_id!r} not found in shared/authors-registry.json")
+        return
+
+    author = registry[author_id]
+    name_ru = str(author.get("name_ru") or "").strip()
+    if name_ru and name_ru.lower() not in fact_lower:
+        errors.append(
+            f"Fact Check Box must name registry author {name_ru!r} (author_id={author_id})"
+        )
+
+
 CONCRETE_MARKERS = (
     "например",
     "на практике",
@@ -191,6 +266,7 @@ def analyze_human_voice(article_dir: Path) -> dict[str, Any]:
         warnings.append(f"paragraph rhythm too uniform: variance/avg={uniform_ratio}")
     if fact_check_templates:
         warnings.append("Fact Check block uses a repeated template; vary wording while preserving facts")
+    validate_fact_check_author(html, article_dir, root, errors, warnings)
     if exactly_five_lists >= 2:
         warnings.append("multiple exactly-5-step lists detected; vary list size when editorially possible")
     if reader_story and not story_overlap:

@@ -1,0 +1,14 @@
+{
+  "slug": "avtonomnyj-kontent-zavod-nejroseti",
+  "topic_id": "B05",
+  "permalink": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/",
+  "cover_evidence": {
+    "path": "memory\\blog\\articles\\B05-avtonomnyj-kontent-zavod-nejroseti\\cover\\cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 1665702,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=13369 slug=avtonomnyj-kontent-zavod-nejroseti\nOK featured_image=13377\nOK schema_meta=1\nOK skip_theme_faq_meta=1\nOK inline_image_upload=13378 src=cover/inline-01.png url=https://mayai.ru/wp-content/uploads/2026/06/avtonomnyj-kontent-zavod-nejroseti-inline-01-1.jpg\nOK inline_image_upload=13379 src=cover/inline-02.png url=https://mayai.ru/wp-content/uploads/2026/06/avtonomnyj-kontent-zavod-nejroseti-inline-02-1.jpg\nOK inline_image_upload=13380 src=cover/inline-03.png url=https://mayai.ru/wp-content/uploads/2026/06/avtonomnyj-kontent-zavod-nejroseti-inline-03-1.jpg\npermalink=https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/\n",
+  "verdict": "pass"
+}

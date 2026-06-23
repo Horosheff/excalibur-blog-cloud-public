@@ -1,0 +1,52 @@
+{
+  "article": "memory/blog/articles/B05-avtonomnyj-kontent-zavod-nejroseti/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 6,
+  "verified_facts_count": 5,
+  "unverified_facts_count": 1,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "од на нейросетях и почему ручной промптинг умер в 2026 году Классический подход, когда человек пишет запр",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "верифицированы по данным Яндекс Вордстат на июнь 2026 года. Частые вопросы Как создать контент завод на нейр",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "5000",
+      "kind": "large_number",
+      "context": "0.50 и позволяет одному сотруднику производить до 5000 постов в месяц. Владельцы бизнеса часто думают, чт",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2500",
+      "kind": "large_number",
+      "context": "ами без написания кода. Make.com предлагает более 2500 нативных интеграций, а ее визуальный отладчик позв",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "150",
+      "kind": "large_number",
+      "context": "ированной системы ИИ-завода обходится примерно в $150 ежемесячных затрат. Аренда сервера для self-hosted",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "159",
+      "kind": "large_number",
+      "context": "риходите на наш курс по Make.com . Вас ждут более 159 детальных практических видеоуроков, регулярные еже",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

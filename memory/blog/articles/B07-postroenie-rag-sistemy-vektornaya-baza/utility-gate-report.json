@@ -1,0 +1,25 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory/blog/articles/B07-postroenie-rag-sistemy-vektornaya-baza",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 14,
+        "h2_sections": 8,
+        "faq_h3": 6,
+        "tables": 2,
+        "blockquotes": 4,
+        "ul_lists": 0,
+        "action_markers": 14,
+        "pain_markers": 8,
+        "outcome_markers": 7,
+        "water_hits": []
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

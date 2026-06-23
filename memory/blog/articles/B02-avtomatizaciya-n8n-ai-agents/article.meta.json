@@ -1,0 +1,38 @@
+{
+  "topic_id": "B02",
+  "slug": "avtomatizaciya-n8n-ai-agents",
+  "h1": "Как настроить ИИ-агентов в n8n: пошаговое руководство по автоматизации бизнеса",
+  "title": "Автоматизация n8n: пошаговый гайд по ИИ-агентам для бизнеса",
+  "description": "Пошаговая настройка ИИ-агента в n8n: Chat Trigger, AI Agent, RAG и сравнение с Make.com. Для предпринимателей без DevOps - с тестом в Chat UI и чеклистом перед продакшеном.",
+  "keywords": [
+    "автоматизация n8n",
+    "n8n ai агент",
+    "создание ии агента n8n",
+    "n8n vs make",
+    "примеры автоматизации n8n"
+  ],
+  "primary_query": "автоматизация n8n",
+  "secondary_queries": [
+    "автоматизация ии n8n",
+    "примеры автоматизации n8n",
+    "ии агенты и автоматизация с n8n",
+    "автоматизация бизнеса n8n"
+  ],
+  "char_count": 9244,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "anchor_variants": [
+    "как настроить ии агентов в n8n пошагово",
+    "автоматизация бизнеса на n8n с ai agent node",
+    "сравнение n8n и make для ии-агентов"
+  ],
+  "meta_ab": {
+    "title_seo": "Автоматизация n8n: пошаговый гайд по ИИ-агентам для бизнеса",
+    "title_ctr": "🚀 Автоматизация n8n с ИИ-агентами: соберите бота за вечер или уйдите на Make?",
+    "title_aeo": "Как настроить ИИ-агентов в n8n для автоматизации бизнеса?",
+    "description_seo": "Пошаговая настройка ИИ-агента в n8n: Chat Trigger, AI Agent, RAG и сравнение с Make.com. Для предпринимателей без DevOps - с тестом в Chat UI.",
+    "description_ctr": "⚡ Соберите первого ИИ-агента в n8n за вечер: 7 шагов, RAG без кода, таблица n8n vs Make и чеклист из 12 пунктов. Честный гайд от практика Make.com.",
+    "description_aeo": "Автоматизация n8n с ИИ-агентами: Chat Trigger, AI Agent node, System Message, tools и Simple Memory. Когда выбрать Make.com вместо self-host n8n."
+  },
+  "cover_family": "brand_collage"
+}

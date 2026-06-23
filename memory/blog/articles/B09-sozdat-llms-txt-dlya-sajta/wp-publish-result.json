@@ -1,0 +1,15 @@
+{
+  "slug": "sozdat-llms-txt-dlya-sajta",
+  "topic_id": "B09",
+  "permalink": "[REDACTED]/sozdat-llms-txt-dlya-sajta/",
+  "publish_method": "sftp",
+  "cover_evidence": {
+    "path": "memory/blog/articles/B09-sozdat-llms-txt-dlya-sajta/cover/cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 942381,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=13533 slug=sozdat-llms-txt-dlya-sajta\nOK featured_image=13534\nOK schema_meta=1\nOK skip_theme_faq_meta=1\nOK inline_image_upload=13535 src=cover/inline-01.png url=[REDACTED]/wp-content/uploads/2026/06/sozdat-llms-txt-dlya-sajta-inline-01.jpg\nOK inline_image_upload=13536 src=cover/inline-02.png url=[REDACTED]/wp-content/uploads/2026/06/sozdat-llms-txt-dlya-sajta-inline-02.jpg\nOK inline_image_upload=13537 src=cover/inline-03.png url=[REDACTED]/wp-content/uploads/2026/06/sozdat-llms-txt-dlya-sajta-inline-03.jpg\npermalink=[REDACTED]/sozdat-llms-txt-dlya-sajta/\n",
+  "verdict": "pass"
+}

@@ -114,7 +114,7 @@ def build_manifest(article_dir: Path, root: Path, preserve: dict | None) -> dict
         "role": "cover_meme_hero",
         "alt": old_cover.get("alt") or f"Обложка: {article_topic}",
         "scene_hint": old_cover.get("scene_hint")
-        or "reference-лицо, одежда на выбор агента под крючок, шок/ирония SEOшника, Wordstat + ноутбук",
+        or "reference-лицо, белое плотное худи из толстой ткани, новая поза/жест/ракурс под крючок, без наушников/headset/earbuds, шок/ирония SEOшника, Wordstat + ноутбук",
         "meme_caption_ru": old_cover.get("meme_caption_ru") or "15k ключей — 0 прочтений?",
     }
 

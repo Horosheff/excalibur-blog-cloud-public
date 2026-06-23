@@ -1,0 +1,201 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "[REDACTED]/#organization",
+      "name": "Maya AI — блог «Ковчег»",
+      "url": "[REDACTED]/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "[REDACTED]/#logo",
+        "url": "[REDACTED]/wp-content/uploads/logo.png",
+        "caption": "Maya AI — блог «Ковчег»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "[REDACTED]/#author-artur-horoshev",
+      "name": "Артур Хорошев",
+      "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+      "image": "https://kv-ai.ru/artur-horosheff",
+      "worksFor": {
+        "@id": "[REDACTED]/#organization"
+      },
+      "sameAs": [
+        "https://kv-ai.ru/artur-horosheff",
+        "[REDACTED]/obo-mne/",
+        "https://t.me/maya_pro",
+        "https://t.me/horosheff"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "[REDACTED]/blog/postroenie-rag-sistemy-vektornaya-baza/#article",
+      "headline": "Как построить RAG-систему с векторной базой знаний: пошаговый workflow от документов до ответов",
+      "description": "Как построить RAG-систему: чанкинг 300-512 токенов, pgvector или Qdrant, hybrid поиск, rerank и eval на golden set. Python (LangChain) и n8n без галлюцинаций в проде.",
+      "datePublished": "2026-06-16",
+      "dateModified": "2026-06-16",
+      "inLanguage": "ru",
+      "url": "[REDACTED]/blog/postroenie-rag-sistemy-vektornaya-baza/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "[REDACTED]/blog/postroenie-rag-sistemy-vektornaya-baza/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "[REDACTED]/wp-content/uploads/blog/postroenie-rag-sistemy-vektornaya-baza-cover.png",
+        "width": 1200,
+        "height": 675
+      },
+      "author": {
+        "@id": "[REDACTED]/#author-artur-horoshev"
+      },
+      "publisher": {
+        "@id": "[REDACTED]/#organization"
+      },
+      "keywords": "rag система, создание rag системы, локальная rag система, архитектура rag системы, как сделать rag систему, rag система python, векторная база знаний, pgvector, чанкинг rag",
+      "wordCount": 8568,
+      "articleSection": "AI-агенты",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "Maya AI — блог «Ковчег»",
+        "url": "[REDACTED]/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "[REDACTED]/blog/postroenie-rag-sistemy-vektornaya-baza/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как сделать rag систему с нуля без разработчиков?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "n8n: два workflow, Chroma или PGVector, splitter 300-400 токенов, golden set 10 вопросов. В прод - только после 8/10 ответов с цитатой."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем RAG отличается от fine-tuning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fine-tuning вшивает знания в модель и дорого обновляется. RAG подставляет актуальные чанки - переиндексация за минуты."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какой размер чанка для русских PDF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "300-512 токенов, overlap 10-20%. Теряются исключения - overlap 15% или заголовок раздела в чанке, затем eval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "pgvector или Pinecone в 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Self-host: pgvector или Qdrant на VPS. Pinecone - если нужен managed и нет on-premise требований."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли rerank при HNSW?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да. HNSW ищет кандидатов, rerank сортирует top-20 по вопросу. Без rerank - \"похожие, но мимо\" чанки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли заменить RAG длинным контекстом?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На малом корпусе - да. На сотнях документов с ACL и аудитом - нет; смотрите таблицу в начале статьи."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "[REDACTED]/blog/postroenie-rag-sistemy-vektornaya-baza/#howto",
+      "name": "Как построить RAG-систему с векторной базой знаний: пошаговый workflow от документов до ответов",
+      "description": "Как построить RAG-систему: чанкинг 300-512 токенов, pgvector или Qdrant, hybrid поиск, rerank и eval на golden set. Python (LangChain) и n8n без галлюцинаций в проде.",
+      "inLanguage": "ru",
+      "totalTime": "PT6H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Python (LangChain) или n8n"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "pgvector, Qdrant или Chroma"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "API эмбеддингов (OpenAI или аналог)"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Соберите golden set",
+          "text": "10-15 вопросов с эталоном и разделом-источником. Критерий: ответ только из базы, с цитатой файла и раздела.",
+          "url": "[REDACTED]/blog/postroenie-rag-sistemy-vektornaya-baza/#chunking"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Решите RAG vs long context",
+          "text": "Если нужны ACL, свежесть регламентов, аудит источника или корпус из сотен PDF - векторная БД обязательна. На 2-3 файлах можно пилот с длинным контекстом.",
+          "url": "[REDACTED]/blog/postroenie-rag-sistemy-vektornaya-baza/#rag-vs-context"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Разбейте документы на чанки",
+          "text": "Парсинг PDF/DOCX, RecursiveCharacterTextSplitter 300-512 токенов, overlap 10-20%, metadata source/section, префикс с названием документа в каждом чанке.",
+          "url": "[REDACTED]/blog/postroenie-rag-sistemy-vektornaya-baza/#chunking"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Выберите векторное хранилище",
+          "text": "PoC: Qdrant в Docker или Chroma. При готовом Postgres - pgvector; проверьте лимит HNSW 2000 dim для vector и halfvec для больших embedding.",
+          "url": "[REDACTED]/blog/postroenie-rag-sistemy-vektornaya-baza/#vector-store"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Настройте hybrid поиск и rerank",
+          "text": "BM25 + vector, top-k 15-20, metadata filters, rerank до 4-6 чанков в промпт. Логируйте similarity и chunk IDs.",
+          "url": "[REDACTED]/blog/postroenie-rag-sistemy-vektornaya-baza/#embeddings-hybrid"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Соберите retrieval-цепочку",
+          "text": "System prompt: только по контексту, цитата источника, отказ при пустом retrieval. Порог отказа при низкой similarity.",
+          "url": "[REDACTED]/blog/postroenie-rag-sistemy-vektornaya-baza/#retrieval-chain"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Запустите pipeline в Python или n8n",
+          "text": "Ingestion: Document Loader → Splitter → Embeddings → Vector Insert. Query: Webhook/Chat → Vector Tool → Agent с prompt только по контексту.",
+          "url": "[REDACTED]/blog/postroenie-rag-sistemy-vektornaya-baza/#python-n8n-eval"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 8,
+          "name": "Проверьте golden set и мониторинг",
+          "text": "10-15 вопросов, цель 8/10 с подтверждённым чанком в логах. Алерт при просадке после смены embedding или регламентов.",
+          "url": "[REDACTED]/blog/postroenie-rag-sistemy-vektornaya-baza/#success-check"
+        }
+      ]
+    }
+  ]
+}

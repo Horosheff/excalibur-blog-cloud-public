@@ -1,0 +1,40 @@
+{
+  "pipeline_version": "split_v2",
+  "topic_id": "B01",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "cover_style": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover": {
+    "file": "cover/cover.png",
+    "hook": "SEO-текст, который люди дочитают — миф или workflow?",
+    "meme_caption_ru": "15k ключей — 0 прочтений?",
+    "scene_hint": "герой с reference-лицом, шок/ирония SEOшника, Wordstat + ноутбук, крючок на клик",
+    "alt": "Обложка: Как писать SEO-статьи, которые читают люди"
+  },
+  "inline_slots": [
+    {
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "h2_anchor": "Зачем SEO и GEO в одной статье",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица «SEO vs GEO» к секции «Зачем SEO и GEO в одной статье»: критерии, цели, что видит человек vs AI",
+      "alt": "Сравнительная таблица / UI-мокап: Зачем SEO и GEO в одной статье"
+    },
+    {
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "h2_anchor": "Структура longread: от семантики до читабельности",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "6 шагов workflow longread к «Структура longread: от семантики до читабельности»: интент → семантика → outline → lead → факты → FAQ",
+      "alt": "Схема workflow / шаги: Структура longread: от семантики до читабельности"
+    },
+    {
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "h2_anchor": "FAQ и schema: зачем и как",
+      "visual_type": "schema_faq_ui",
+      "scene_hint": "UI mockup FAQ + JSON-LD schema для «FAQ и schema: зачем и как»",
+      "alt": "FAQ + schema / JSON-LD UI: FAQ и schema: зачем и как"
+    }
+  ]
+}

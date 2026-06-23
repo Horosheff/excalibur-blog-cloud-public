@@ -20,7 +20,8 @@
   ├─ ④b Task(excalibur-blog-schema) ─┘
   │
   ├─ ⑤ Task(excalibur-blog-indexer)
-  └─ ⑥ Task(excalibur-blog-publish)   ← автоматически после Indexer (skip только publish:no)
+  ├─ ⑥ Task(excalibur-blog-publish)   ← автоматически после Indexer (skip только publish:no)
+  └─ ⑦ Task(excalibur-blog-fixer)     ← только если memory/pipeline-fix-queue.md содержит open incidents
 ```
 
 ## Таблица распределения
@@ -33,10 +34,11 @@
 | ①   | **Research** | `excalibur-blog-research` | deep research на текущую дату, pain_solution_map, Wordstat, GitHub/docs/community evidence | research-notes.md, research-notes-gate.json                                                               | handoff `=== RESEARCH ===`                        |
 | ②   | **Writer**   | `excalibur-blog-writer`   | human longread 8.5–9.5k: боль → решение → результат, FAQ HTML, meta_ab                     | article.html, article.meta.json                                                                           | handoff `=== WRITER ===`                          |
 | ③   | **GEO QA**   | `excalibur-blog-geo-qa`   | QA-скрипты + research gate + utility gate + human voice gate, score ≥80                    | *-report.json, research-notes-gate.json, utility-gate-report.json, human-voice-report.json, article-qa.md | handoff `=== GEO QA ===`                          |
-| ④a  | **Cover**    | `excalibur-blog-cover`    | ONE MCP quad 2×2 i2i + design code + split → cover + 3 inline                              | canvas-quad.png, cover.png, inline-01..03, registry                                                       | fragment cover.md                                 |
+| ④a  | **Cover**    | `excalibur-blog-cover`    | ONE Kie API quad 2×2 i2i + design code + split → cover + 3 inline                          | canvas-quad.png, cover.png, inline-01..03, registry                                                       | fragment cover.md                                 |
 | ④b  | **Schema**   | `excalibur-blog-schema`   | BlogPosting + FAQPage JSON-LD                                                              | schema.jsonld                                                                                             | fragment schema.md                                |
 | ⑤   | **Indexer**  | `excalibur-blog-indexer`  | interlink --apply, llms.txt                                                                | article.html (links), llms*.txt, promotion-checklist                                                      | handoff `=== INDEXER ===`                         |
 | ⑥   | **Publish**  | `excalibur-blog-publish`  | SFTP WP post, featured, schema meta                                                        | wp-publish-result.json                                                                                    | handoff `=== PUBLISH ===` + published-articles.md |
+| ⑦   | **Fixer**    | `excalibur-blog-fixer`    | open incidents → durable repo fixes                                                        | memory/pipeline-fix-queue.md, agents/skills/shared/scripts changes                                        | handoff/summary `=== FIXER ===`                   |
 
 
 ## Кто чем НЕ занимается
@@ -51,6 +53,7 @@
 | Schema   | cover, HTML статьи                              |
 | Indexer  | publish, переписывать body с нуля               |
 | Publish  | писать/редактировать longread                   |
+| Fixer    | publish, генерация статьи/картинок без incident |
 
 
 ## Параллель (только одна пара)
@@ -60,6 +63,12 @@
 Нельзя параллелить: ①→②→③, ⑤ после ④, ⑥ после ⑤.
 
 ## Промпты для Директора (копировать в Task)
+
+Добавляй к каждому Task-промпту:
+
+```text
+Если встретишь blocker/retry/tool error/workaround/переписывание артефакта из-за неясного контракта, допиши incident в memory/pipeline-fix-queue.md по shared/pipeline-incident-fix-contract.md. В итоговом handoff/fragment укажи incident_report: none | memory/pipeline-fix-queue.md#INC-...
+```
 
 ### 🔍 Scout (Генератор свежих тем)
 
@@ -150,6 +159,17 @@ Preflight link-verify → dry-run → publish → обнови shared/published-
 При HTTP timeout bootstrap — WebFetch fallback (см. skill).
 ```
 
+### ⑦ Fixer (post-run, только если есть open incidents)
+
+```text
+Ты excalibur-blog-fixer.
+Прочитай agents/excalibur-blog-fixer.md + skills/fixer-excalibur-blog/SKILL.md + shared/pipeline-incident-fix-contract.md.
+Открой memory/pipeline-fix-queue.md, найди status: open по текущему run.
+Сделай durable repo changes, чтобы следующая попытка не повторила ошибку: agents/.cursor/agents, skills/.cursor/skills, shared, scripts, templates, stable memory configs.
+Запусти проверки, обнови incident statuses fixed|needs-human.
+Блок === EXCALIBUR BLOG FIXER ===.
+```
+
 ## Файлы субагентов
 
 
@@ -162,6 +182,7 @@ Preflight link-verify → dry-run → publish → обнови shared/published-
 | excalibur-blog-schema   | [agents/excalibur-blog-schema.md](../agents/excalibur-blog-schema.md)     |
 | excalibur-blog-indexer  | [agents/excalibur-blog-indexer.md](../agents/excalibur-blog-indexer.md)   |
 | excalibur-blog-publish  | [agents/excalibur-blog-publish.md](../agents/excalibur-blog-publish.md)   |
+| excalibur-blog-fixer    | [agents/excalibur-blog-fixer.md](../agents/excalibur-blog-fixer.md)       |
 
 
 Cloud: те же имена в `.cursor/agents/`.

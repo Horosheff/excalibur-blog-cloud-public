@@ -1,0 +1,15 @@
+# Maya AI — Excalibur BLOG
+> Практический блог по автоматизации бизнеса на Make.com, вайбкодингу и ИИ-агентам.
+
+## Blog Articles
+
+- [Как писать SEO-статьи и что такое GEO в одном материале?]([REDACTED]/primer-seo-stati/): SEO-статья закрывает запрос человека и упакована для AI-ответов: lead 350–500 знаков, атомарные H2, BlogPosting + FAQPage, llms.txt. Объём — по SERP, не по мифической норме.
+- [Как настроить ИИ-агентов в n8n для автоматизации бизнеса?]([REDACTED]/avtomatizaciya-n8n-ai-agents/): Автоматизация n8n с ИИ-агентами: Chat Trigger, AI Agent node, System Message, tools и Simple Memory. Когда выбрать Make.com вместо self-host n8n.
+- [Как подключить MCP-серверы в Cursor для автоматизации?]([REDACTED]/podklyuchenie-mcp-cursor/): Cursor MCP – подключение серверов через Tools & MCP или mcp.json (stdio/url), проверка статуса, allowlist и исправление красного индикатора через MCP Logs.
+- [Как настроить geo оптимизацию сайта для попадания в ответы нейросетей?]([REDACTED]/geo-optimizaciya-sajta-2026/): Geo оптимизация сайта – настройка robots.txt, answer-first блоков, FAQPage Schema и мониторинга промптов, чтобы нейросети цитировали ваш бренд как источник.
+- [Как создать автономный контент-завод на нейросетях без навыков программирования?]([REDACTED]/avtonomnyj-kontent-zavod-nejroseti/): ИИ-контент-завод — это система автономных ИИ-агентов (исследователь, копирайтер, критик) на no-code движках (n8n/Make) для генерации, проверки и автодистрибуции контента.
+- [Как настроить автоматизацию Make с AI Agents и MCP?]([REDACTED]/make-ai-agents-mcp-avtomatizaciya/): Автоматизация Make с AI Agents и MCP строится как управляемый workflow: обычные модули делают правила, агент решает сложные случаи, человек подтверждает риск.
+- [Как построить RAG-систему с векторной базой знаний в 2026?]([REDACTED]/postroenie-rag-sistemy-vektornaya-baza/): RAG система - это поиск фрагментов документов в векторной базе и ответ LLM только по найденному контексту. Чанкинг 300-512 токенов, pgvector или Qdrant, eval на 10-15 вопросах.
+- [Как создать ИИ чат-бот для бизнеса в Telegram за 7-14 дней?]([REDACTED]/ii-chat-bot-dlya-biznesa-workflow/): Чат боты для бизнеса в 2026: выбор задачи, RAG на FAQ, AI Agent в n8n или Make, передача оператору и целевые метрики 60-80% без человека.
+- [Как создать llms.txt для сайта и проверить файл?]([REDACTED]/sozdat-llms-txt-dlya-sajta/): Чтобы создать llms.txt, соберите важные URL, оформите Markdown-файл, выложите его в корень сайта и проверьте HTTP 200, ссылки и Lighthouse.
+- [Как развернуть локальную LLM через Ollama для бизнеса?]([REDACTED]/ollama-lokalnaya-llm-dlya-biznesa/): Ollama для бизнеса – установка, выбор модели под железо, OpenAI-совместимый API и подключение к n8n. Когда оставить облачный fallback для критичных ответов.

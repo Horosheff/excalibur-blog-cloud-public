@@ -1,0 +1,42 @@
+{
+  "topic_id": "B03",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Cursor без MCP — Agent слепой?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Обложка: блогер у ноутбука с IDE Cursor, вокруг MCP-плагины и стикеры Browser/WordPress/Wordstat",
+      "scene_hint": "ноутбук с IDE Cursor, вокруг экрана кубики-плагины MCP-серверов, стикеры Browser/WordPress/Wordstat, неоновый diy-коллаж; reference-лицо героя в casual худи, жест указывает на красный статус MCP; fake скрин Tools & MCP с красной точкой, розовый маркер на слове MCP, скотч и рваная бумага, мем facepalm",
+      "meme_caption_ru": "MCP не подключён?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "1. Разберите, зачем вам MCP в Cursor",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица «Без MCP vs С MCP»: только файлы проекта / Browser+Context7+Figma+CMS; Cyrillic UI, розовый стикер с маркерной стрелкой",
+      "alt": "Сравнение: Agent без MCP видит только файлы, с MCP — браузер, docs, CMS"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "2. Выберите, где хранить mcp.json",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Схема 2 ветки: ~/.cursor/mcp.json (global) и .cursor/mcp.json (project); стрелки, иконки папок, маркер «выбери один»",
+      "alt": "Workflow: глобальный vs проектный mcp.json — куда класть конфиг MCP"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "3. Подключите сервер через Tools &amp; MCP (способ A)",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист one-click: Add to Cursor → перезапуск → зелёный статус → тест tool в Agent; clipboard с галочками, без лица героя",
+      "alt": "Чеклист подключения MCP через Tools & MCP: Add to Cursor, перезапуск, зелёный статус"
+    }
+  }
+}

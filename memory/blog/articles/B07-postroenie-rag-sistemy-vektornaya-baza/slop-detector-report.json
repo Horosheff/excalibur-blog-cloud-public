@@ -1,0 +1,34 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 5,
+  "over_long_sentences": [
+    {
+      "sentence": "RAG - конвейер: текст режется на чанки, превращается в эмбеддинги (числовые \"отпечатки смысла\") и кладётся в векторную базу - хранилище, где поиск идёт по смыслу, а не по точному слову",
+      "word_count": 28
+    },
+    {
+      "sentence": "Ситуация Длинный контекст RAG + векторная БД До 100 страниц, один отдел Быстрый пилот Избыточен на старте Сотни PDF, разные права Нет фильтра по пользователю Metadata filters + tenant Регламенты обновляются часто Риск устаревшего промпта Переиндексация новых чанков Нужна цитата файла/раздела Модель не доказывает источник Chunk ID в логах Делайте: golden set из 10-15 вопросов до выбора архитектуры",
+      "word_count": 56
+    },
+    {
+      "sentence": "Критерий pgvector Qdrant Chroma Старт PoC Postgres + расширение Docker, batch upsert Минимум кода n8n PGVector node Qdrant node Community nodes HNSW dim 2000 (halfvec 4000) По коллекции По backend Когда Есть Postgres, ACL в SQL Отдельный vector-сервис Быстрый тест на 200 PDF Для pgvector: CREATE INDEX",
+      "word_count": 42
+    },
+    {
+      "sentence": "Workflow запроса: Вопрос → hybrid (BM25 + vector, top-k 15-20) → rerank до 4-6 → LLM с цитатами → лог chunk IDs Шесть точек отказа enterprise RAG: chunk boundary, version drift, embedding mismatch",
+      "word_count": 27
+    },
+    {
+      "sentence": "n8n: отдельные workflow для загрузки и для запросов (так в документации n8n по RAG); QA Chain для строгого режима \"только база\" или AI Agent с vector store как tool",
+      "word_count": 27
+    }
+  ],
+  "readability": {
+    "score": 88.3,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 12.0,
+    "avg_syllables_per_word": 1.7
+  }
+}

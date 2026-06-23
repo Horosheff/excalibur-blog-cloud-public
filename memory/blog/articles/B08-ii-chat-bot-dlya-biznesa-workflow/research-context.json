@@ -1,0 +1,101 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-16",
+    "today_ru": "16.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-18",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-16 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B08",
+    "priority": "P0",
+    "slug": "ii-chat-bot-dlya-biznesa-workflow",
+    "h1": "Как создать ИИ чат-бот для бизнеса: пошаговый workflow от сценария до запуска",
+    "primary_query": "чат боты для бизнеса",
+    "secondary_queries": [
+      "ии чат бот для бизнеса",
+      "чат бот создать для бизнеса",
+      "чат боты для бизнеса в телеграмм",
+      "чат боты для бизнеса и автоматизации"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B08",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "чат боты для бизнеса 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "чат боты для бизнеса июнь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "чат боты для бизнеса новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "github_evidence",
+      "query": "site:github.com чат боты для бизнеса 2026",
+      "purpose": "GitHub repos/issues/README для технических сигналов и реального опыта"
+    },
+    {
+      "id": "official_docs",
+      "query": "чат боты для бизнеса official docs documentation 2026",
+      "purpose": "официальная документация, changelog, developer docs"
+    },
+    {
+      "id": "community_experience",
+      "query": "чат боты для бизнеса forum reddit discussion проблемы опыт 2026",
+      "purpose": "форумы, обсуждения, ошибки пользователей и живые сценарии"
+    },
+    {
+      "id": "secondary_1",
+      "query": "ии чат бот для бизнеса 2026",
+      "purpose": "вторичный запрос: ии чат бот для бизнеса"
+    },
+    {
+      "id": "secondary_2",
+      "query": "чат бот создать для бизнеса 2026",
+      "purpose": "вторичный запрос: чат бот создать для бизнеса"
+    },
+    {
+      "id": "secondary_3",
+      "query": "чат боты для бизнеса в телеграмм 2026",
+      "purpose": "вторичный запрос: чат боты для бизнеса в телеграмм"
+    },
+    {
+      "id": "secondary_4",
+      "query": "чат боты для бизнеса и автоматизации 2026",
+      "purpose": "вторичный запрос: чат боты для бизнеса и автоматизации"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как создать ИИ чат-бот для бизнеса: пошаговый workflow от сценария до запуска 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B08-ii-chat-bot-dlya-biznesa-workflow",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

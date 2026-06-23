@@ -1,0 +1,10 @@
+{
+  "file": "article.html",
+  "verdict": "fail",
+  "total_errors": 3,
+  "errors": [
+    "Line 8, Col 0: Forbidden HTML tag <figure> used.",
+    "Line 16, Col 0: Forbidden HTML tag <figure> used.",
+    "Line 55, Col 0: Forbidden HTML tag <figure> used."
+  ]
+}

@@ -92,6 +92,27 @@ def validate_publish_env(env: dict[str, str]) -> list[str]:
     return missing
 
 
+def publish_env_check_report(env: dict[str, str]) -> dict[str, object]:
+    root_label = sftp_root_label(env)
+    return {
+        "allow_publish": env.get("EXCALIBUR_BLOG_ALLOW_PUBLISH", "").strip().lower() == "yes",
+        "public_site_url_configured": bool(env.get("PUBLIC_SITE_URL") or env.get("WP_HOME") or env.get("WP_SITE_URL")),
+        "sftp": {
+            "host_configured": bool(env.get("SSH_HOST") or env.get("FTP_HOST")),
+            "user_configured": bool(env.get("SSH_USER") or env.get("FTP_USER")),
+            "password_configured": bool(
+                env.get("SSH_PASS")
+                or env.get("FTP_PASS")
+                or env.get("SSH_PASSWORD")
+                or env.get("FTP_PASSWORD")
+            ),
+            "root": root_label,
+            "dot_fallback_enabled": root_label == "configured-non-dot",
+        },
+        "missing": validate_publish_env(env),
+    }
+
+
 def normalize_post_title(title: str) -> str:
     """Keep SEO lower-case queries out of the visible WordPress title."""
     title = " ".join(str(title or "").split())
@@ -384,35 +405,82 @@ def _ssh_creds(env: dict[str, str]) -> tuple[str, int, str, str]:
     return host, port, user, password
 
 
-def sftp_remote_path(env: dict[str, str], remote: str) -> str:
-    root = (env.get("SSH_ROOT") or env.get("FTP_ROOT") or env.get("FTP_PATH") or "").strip()
+def configured_sftp_root(env: dict[str, str]) -> str:
+    return (env.get("SSH_ROOT") or env.get("FTP_ROOT") or env.get("FTP_PATH") or "").strip()
+
+
+def sftp_remote_path(env: dict[str, str], remote: str, root_override: str | None = None) -> str:
+    root = configured_sftp_root(env) if root_override is None else root_override.strip()
     if not root:
         return remote
     return root.rstrip("/") + "/" + remote
 
 
-def upload_bootstrap_sftp(env: dict[str, str], remote: str, data: bytes) -> None:
+def sftp_root_label(env: dict[str, str]) -> str:
+    root = configured_sftp_root(env)
+    if not root:
+        return "unset"
+    if root in {".", "./"}:
+        return "dot"
+    return "configured-non-dot"
+
+
+def sftp_root_candidates(env: dict[str, str]) -> list[str]:
+    root = configured_sftp_root(env)
+    if root and root not in {".", "./"}:
+        return [root, "."]
+    return [root]
+
+
+def is_missing_remote_path_error(exc: OSError) -> bool:
+    errno_value = getattr(exc, "errno", None)
+    if errno_value == 2:
+        return True
+    text = str(exc).lower()
+    return "no such file" in text or "enoent" in text
+
+
+def upload_bootstrap_sftp(env: dict[str, str], remote: str, data: bytes) -> str:
     import paramiko
 
     host, port, user, password = _ssh_creds(env)
-    remote_path = sftp_remote_path(env, remote)
     transport = paramiko.Transport((host, port))
     transport.connect(username=user, password=password)
     sftp = paramiko.SFTPClient.from_transport(transport)
     try:
-        with sftp.open(remote_path, "w") as handle:
-            handle.write(data.decode("utf-8"))
+        candidates = sftp_root_candidates(env)
+        for index, root_candidate in enumerate(candidates):
+            remote_path = sftp_remote_path(env, remote, root_candidate)
+            try:
+                with sftp.open(remote_path, "w") as handle:
+                    handle.write(data.decode("utf-8"))
+                if index > 0:
+                    print(
+                        "WARN SFTP root fallback: configured remote root was not found; "
+                        "used '.' for bootstrap. Update SSH_ROOT/FTP_ROOT to '.' in Cloud Secrets "
+                        "if this is the intended SFTP login cwd."
+                    )
+                print(f"SFTP upload OK: {remote_path} ({len(data)} bytes)")
+                return remote_path
+            except OSError as exc:
+                if index < len(candidates) - 1 and is_missing_remote_path_error(exc):
+                    print(
+                        "WARN SFTP upload: configured remote root returned ENOENT; retrying bootstrap at '.'.",
+                        file=sys.stderr,
+                    )
+                    continue
+                raise
     finally:
         sftp.close()
         transport.close()
-    print(f"SFTP upload OK: {remote_path} ({len(data)} bytes)")
+    raise RuntimeError("SFTP upload did not complete")
 
 
-def delete_bootstrap_sftp(env: dict[str, str], remote: str) -> None:
+def delete_bootstrap_sftp(env: dict[str, str], remote: str, remote_path: str | None = None) -> None:
     import paramiko
 
     host, port, user, password = _ssh_creds(env)
-    remote_path = sftp_remote_path(env, remote)
+    remote_path = remote_path or sftp_remote_path(env, remote)
     transport = paramiko.Transport((host, port))
     transport.connect(username=user, password=password)
     sftp = paramiko.SFTPClient.from_transport(transport)
@@ -457,13 +525,13 @@ def publish_via_sftp(env: dict[str, str], php: str, public_base: str) -> str:
     url = public_base.rstrip("/") + "/" + remote
     root = project_root()
 
-    upload_bootstrap_sftp(env, remote, data)
+    uploaded_remote_path = upload_bootstrap_sftp(env, remote, data)
 
     try:
         out = trigger_bootstrap_http(url, root)
     finally:
         try:
-            delete_bootstrap_sftp(env, remote)
+            delete_bootstrap_sftp(env, remote, uploaded_remote_path)
         except Exception as cleanup_error:  # noqa: BLE001
             print(f"WARN cleanup: could not delete bootstrap {remote}: {cleanup_error}", file=sys.stderr)
     return out
@@ -504,11 +572,27 @@ def upsert_publish_ledger(root: Path, payload: dict[str, Any], permalink: str) -
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--article-dir", type=Path, required=True)
+    ap.add_argument("--article-dir", type=Path, default=None)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument(
+        "--env-check",
+        action="store_true",
+        help="Validate publish env/secrets without loading article payload or printing secret values",
+    )
     ap.add_argument("--public-base", type=str, default=None, help="Override PUBLIC_SITE_URL")
     args = ap.parse_args()
     root = project_root()
+
+    if args.env_check:
+        env = load_env(root)
+        report = publish_env_check_report(env)
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 0 if report["allow_publish"] and not report["missing"] else 1
+
+    if args.article_dir is None:
+        print("--article-dir is required unless --env-check is used", file=sys.stderr)
+        return 2
+
     article_dir = args.article_dir if args.article_dir.is_absolute() else root / args.article_dir
     payload = load_article(article_dir)
     php = build_php(payload)

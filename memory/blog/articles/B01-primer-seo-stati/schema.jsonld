@@ -1,0 +1,162 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://example.com/blog/primer-seo-stati/#article",
+      "headline": "Как писать SEO-статьи, которые читают люди",
+      "description": "Пошаговый workflow SEO + GEO: семантика, структура longread, FAQ, schema и чеклист перед публикацией. Без переспама и воды — для людей и нейропоиска.",
+      "datePublished": "2026-06-10",
+      "dateModified": "2026-06-10",
+      "inLanguage": "ru",
+      "url": "https://example.com/blog/primer-seo-stati/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://example.com/blog/primer-seo-stati/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://example.com/wp-content/uploads/blog/primer-seo-stati-cover.png",
+        "width": 1200,
+        "height": 675
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://example.com/#author-elena-kovaleva",
+        "name": "Елена Ковалева",
+        "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+        "image": "https://kv-ai.ru/assets/team/elena-kovaleva.jpg",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Пример Блога",
+          "url": "https://example.com/"
+        },
+        "sameAs": [
+          "https://habr.com/ru/users/elena_kovaleva_seo/",
+          "https://github.com/elena-kov-seo",
+          "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Пример Блога",
+        "url": "https://example.com/"
+      },
+      "keywords": "как писать seo статьи, seo текст для блога, geo оптимизация статьи, сколько символов в seo статье, что такое geo в seo",
+      "wordCount": 8894,
+      "articleSection": "SEO",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "Пример Блога",
+        "url": "https://example.com/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://example.com/blog/primer-seo-stati/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Сколько символов должно быть в SEO-статье?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Универсальной нормы нет — объём зависит от сложности темы и конкурентов в выдаче. Ориентир для how-to longread: 8 500–9 500 знаков текста, если SERP требует глубины. Короткий ответ важнее раздутого полотна без новых фактов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что такое GEO в SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GEO (Generative Engine Optimization) дополняет SEO: цель — цитирование в AI-ответах (Яндекс Нейро, Google AI Overviews). База та же — индексируемый, структурированный и честный контент. GEO без SEO не работает."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли переспамить ключевые слова в 2026 году?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Поисковики оценивают смысл и полезность; переспам вреден. Используйте primary query в заголовках и lead, secondary и LSI — естественно в подзаголовках и абзацах."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем Title отличается от H1?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Title — для сниппета в выдаче (около 65 знаков, ключ и триггер). H1 — заголовок на странице. Их не дублируйте: разные роли, один интент."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие schema нужны для SEO-статьи блога?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Минимум BlogPosting (или Article) и FAQPage, если есть блок вопросов. JSON-LD в отдельном файле или meta; текст FAQ должен совпадать с видимым HTML."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Что такое llms.txt и нужен ли он блогу?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "llms.txt — файл подсказок для AI-краулеров (стандарт с сентября 2024). Полезный дополнительный сигнал рядом с sitemap, не замена индексации. Для блога с нейропоиском — разумная инвестиция."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как проверить статью перед публикацией?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Пройдите чеклист: семантика, мета, структура H2, FAQ, schema, ссылки, читабельность, island test по блокам. После — технический QA: linter HTML, проверка ссылок, slop и каннибализация ключей."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://example.com/blog/primer-seo-stati/#howto",
+      "name": "Как писать SEO-статьи, которые читают люди",
+      "description": "Пошаговый workflow SEO + GEO: от семантики и структуры longread до FAQ, schema и чеклиста перед публикацией.",
+      "inLanguage": "ru",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Определите интент",
+          "text": "Информационный, how-to, сравнение — от этого зависит структура и объём."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Соберите семантику",
+          "text": "Primary query в H1 и lead, secondary — в подзаголовки и абзацы естественно."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Нарисуйте outline",
+          "text": "Каждый H2 = один подвопрос; первое предложение секции = тезис."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Напишите lead",
+          "text": "350–500 знаков: боль, суть ответа, что получит читатель — без «в этой статье вы узнаете»."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Разложите факты",
+          "text": "Абзацы 3–5 строк; списки для перечислений; таблица, если сравнение."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Добавьте FAQ и мета",
+          "text": "Пять–семь вопросов с короткими ответами; Title/Description до публикации."
+        }
+      ]
+    }
+  ]
+}

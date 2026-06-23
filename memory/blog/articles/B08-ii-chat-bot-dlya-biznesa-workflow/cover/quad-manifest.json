@@ -1,0 +1,42 @@
+{
+  "topic_id": "B08",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Бот обещал скидку 30% — её не было. Рейтинги SaaS не спасают?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Обложка: ИИ чат-бот для бизнеса — workflow без выдуманных скидок",
+      "scene_hint": "reference-лицо, белое плотное худи из толстой ткани, без наушников/headset/earbuds, шок/ирония: fake Telegram-чат «скидка 30%» + CRM пустая, Wordstat «чат боты для бизнеса» 886 показов, рваная бумага, скотч, розовый маркер на слове «скидка», facepalm meme cutout, shocked cat sticker",
+      "meme_caption_ru": "Скидка 30% — выдумка?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Выберите одну задачу и канал: Telegram, виджет или MAX",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица: Поддержка L1 vs Квалификация лидов vs Запись — каналы Telegram/виджет/MAX, розовый стикер «один канал на MVP», скотч на углу, mini Telegram UI inset",
+      "alt": "Сравнение задач и каналов чат-бота: Telegram, виджет, MAX"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Соберите базу ответов и список \"что бот не делает\"",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист на clipboard: FAQ, скрипты операторов, «бот НЕ даёт скидки», «бот НЕ диагностирует», красные галочки, розовый стикер «RAG обязателен», tape corner",
+      "alt": "Чеклист базы знаний и ограничений чат-бота для бизнеса"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Спроектируйте диалог: интенты, уточнения и эскалация к человеку",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Workflow: интент → уточнение → RAG-ответ → эскалация оператору → CRM, стрелки маркером, torn-paper strip, mini facepalm sticker «бот не понял»",
+      "alt": "Схема диалога чат-бота: интенты, уточнения и эскалация к оператору"
+    }
+  }
+}

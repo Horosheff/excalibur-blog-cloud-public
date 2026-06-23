@@ -11,8 +11,9 @@ from pathlib import Path
 
 
 MAX_MCP_PROMPT_CHARS = 3500
-REQUIRED_REFERENCE_HOST = "example.com"
+REQUIRED_REFERENCE_HOST = "mayai.ru"
 MCP_RESOLUTION = "2K"
+KIE_IMAGE_MODEL = "gpt-image-2-image-to-image"
 
 
 def project_root() -> Path:
@@ -78,10 +79,14 @@ def build_prompt(manifest: dict, style: dict, hero: dict, types_catalog: dict, d
     i1, i2, i3 = slot("inline_1"), slot("inline_2"), slot("inline_3")
 
     lines = [
-        "Russian human-made Excalibur BLOG hook collage. Zine/trash-design, torn paper, scotch tape, pink sticky notes, marker arrows, fake Russian UI screenshots, visual meme reaction cutouts. Beige grunge paper #F5F5F0, coral #E85D4C, ink #1A1A2E, pink highlight #FF1493. Not corporate, not stock.",
+        "Russian human-made Excalibur BLOG hook collage on PURE WHITE #FFFFFF. Zine/trash-design: torn paper, scotch tape, pink notes, marker arrows, fake RU UI screenshots, meme cutouts. DESIGN.md-inspired bold readable Cyrillic; rotate hot accents (hot pink/purple/blue/orange); keep stickers/memes/collage; no price badges. Not corporate, not stock.",
         "Single 2048x1152 canvas, exact 2x2 grid, four equal 16:9 panels (1024x576 each). Thin center gutters only; no bleed across quadrants.",
         "",
-        "REFERENCE FACE only on top-left cover: preserve round black glasses, ash-blonde quiff, salt-and-pepper beard. Outfit/pose/props are free for the hook; do not copy reference clothing.",
+        "ALL panels keep a clean pure white #FFFFFF base; scraps/cards may cast light shadows but no beige, gray, gradient, grunge, paper-tint, or colored full-panel background.",
+        "",
+        "Sticker and meme text must be sharp but non-toxic: no insults, no humiliating labels, no Russian words like лох, лохов, для лохов.",
+        "",
+        "REFERENCE FACE only on top-left cover: preserve glasses, quiff, beard and old meme-person vibe. Outfit lock: thick heavyweight white hoodie. Vary pose, gesture, angle, expression, props and composition every cover. No headphones/headset/earbuds. Do not copy reference clothing.",
         "",
         f'Top-left COVER: hook "{compact(manifest.get("cover_hook", ""), 120)}"; caption "{compact(cover.get("meme_caption_ru", ""), 45)}"; scene: {compact(cover.get("scene_hint", ""), 320)}; host with reference face; huge readable Cyrillic hook; 1-2 meme reaction cutouts.',
         "",
@@ -89,7 +94,7 @@ def build_prompt(manifest: dict, style: dict, hero: dict, types_catalog: dict, d
         f"Bottom-left inline: {inline_panel_prompt(i2, types_catalog)} Same Excalibur collage layer, useful UI/diagram, small meme cutout.",
         f"Bottom-right inline: {inline_panel_prompt(i3, types_catalog)} Same Excalibur collage layer, useful UI/diagram, small meme cutout.",
         "",
-        "Inline panels must NOT be plain whiteboards or clean SaaS slides. Negative: English/Latin UI, watermark, logo, vertical 9:16, corporate stock banner, unreadable text, extra faces on inline panels.",
+        "Inline panels must NOT be plain whiteboards or clean SaaS slides. Negative: beige/cream/off-white paper background, gray background, gradients, grunge background, headphones, headset, earbuds, English/Latin UI, watermark, logo, vertical 9:16, corporate stock banner, unreadable text, extra faces on inline panels.",
     ]
     return "\n".join(line for line in lines if line)
 
@@ -139,11 +144,26 @@ def main() -> int:
     print(f"OK prompt={prompt_path} chars={len(prompt)} max={MAX_MCP_PROMPT_CHARS}")
 
     if args.write_batch:
+        api_input = {
+            "prompt": prompt,
+            "input_urls": [ref_url],
+            "aspect_ratio": "16:9",
+            "resolution": MCP_RESOLUTION,
+        }
         batch = {
-            "pipeline": "quad_canvas_1x_mcp",
+            "pipeline": "quad_canvas_1x_image_api",
             "reference_url_hosted": ref_url,
             "output_canvas": "cover/canvas-quad.png",
             "expected_runtime_seconds": 900,
+            "preferred_image_flow": {
+                "provider": "kie.ai",
+                "model": KIE_IMAGE_MODEL,
+                "script": "python scripts/excalibur_blog_kie_gpt_image2_api.py --article-dir <article_dir>",
+                "api_key_env": "KIE_API_KEY",
+                "result_path": "cover/quad-mcp-result.json",
+                "apply_script": "python scripts/excalibur_blog_quad_apply.py --article-dir <article_dir> --inject-html",
+                "note": "Cursor Cloud should use the direct Kie createTask -> recordInfo API flow. It returns task_id quickly and polls in shell, avoiding MCP client timeout.",
+            },
             "timeout_policy": {
                 "tool": "gpt-image-2",
                 "timeout_error": "HTTP MCP tool execution failed: MCP error -32001: Request timed out",
@@ -159,7 +179,7 @@ def main() -> int:
                     "idempotency": "Do not create a second image job unless status/result confirms the previous job was not created or failed.",
                 },
                 "blocker_only_if": "Sync gpt-image-2 times out with -32001 and no generated URL, task_id, or async status/result MCP tool is available.",
-                "mcp_invocation": "The Cover agent MUST invoke the Cursor MCP tool named gpt-image-2 from Available Tools (server: user-mcp-kv) with jobs[0].mcp_args as its JSON arguments. Do not call MCP through Python scripts or shell commands.",
+                "mcp_invocation": "Legacy fallback only. Cursor Cloud should prefer direct Kie API via scripts/excalibur_blog_kie_gpt_image2_api.py because sync MCP gpt-image-2 is client-timeout-prone for 2K i2i.",
                 "log_recovery": "If the MCP/Cloud log or expanded MCP tool response already contains a generated image URL after the HTTP timeout, treat it as success: save that URL to cover/quad-mcp-result.json yourself or pass it directly to quad_apply. Do not search cover/* for the URL; it will not exist there until you save it. Do not start another image job while a generated URL exists.",
                 "recovery_needed": "If there is no URL/task_id and no async status/result tool after a sync timeout, stop with COVER MCP ASYNC BLOCKER. Do not blindly retry and create a duplicate generation.",
                 "instruction": "Prefer async image tools if Available Tools exposes them. If only sync gpt-image-2 exists, call it once. If the HTTP MCP client times out with -32001, inspect the expanded MCP tool response / Cursor MCP Logs for a generated URL or task_id. If a URL exists, save it as cover/quad-mcp-result.json or pass it directly to quad_apply. If task_id exists, use the status/result MCP tool. If no URL/task_id/status tool exists, stop with COVER MCP ASYNC BLOCKER because the MCP backend must expose async retrieval for late image results. Do not continue to split/apply without a real image URL.",
@@ -169,11 +189,12 @@ def main() -> int:
                     "slot": "canvas_quad",
                     "tool": "gpt-image-2",
                     "note": "ONE successful image only — 4 panels inside, then excalibur_blog_cover_quad_split.py. Prefer async start/status tools when available. HTTP -32001 from sync gpt-image-2 means client timeout; do not blindly retry sync create.",
+                    "api_args": {
+                        "model": KIE_IMAGE_MODEL,
+                        "input": api_input,
+                    },
                     "mcp_args": {
-                        "prompt": prompt,
-                        "input_urls": [ref_url],
-                        "aspect_ratio": "16:9",
-                        "resolution": MCP_RESOLUTION,
+                        **api_input,
                     },
                 }
             ],

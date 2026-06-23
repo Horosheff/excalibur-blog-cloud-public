@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/B09-sozdat-llms-txt-dlya-sajta/cover/canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1024,
+      576
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 576,
+        "end": 598
+      },
+      "v_gutter_px": {
+        "start": 1024,
+        "end": 1061
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1024,
+          "bottom": 576
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1024,
+          "bottom": 576
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Обложка о том, что llms.txt помогает выбрать важные страницы сайта, но не гарантирует AI-трафик",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1061,
+          "top": 10,
+          "right": 2048,
+          "bottom": 565
+        },
+        "raw_box_px": {
+          "left": 1061,
+          "top": 0,
+          "right": 2048,
+          "bottom": 576
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Сравнение SEO-мифов и реальной задачи llms.txt как карты важных страниц",
+        "h2_anchor": "Разведите SEO-обещание и реальную задачу файла"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 19,
+          "top": 598,
+          "right": 1004,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 598,
+          "right": 1024,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Workflow отбора 10-30 важных URL для файла llms.txt вместо выгрузки всего сайта",
+        "h2_anchor": "Отберите 10-30 URL вместо выгрузки всего сайта"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1061,
+          "top": 598,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 1061,
+          "top": 598,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Чеклист Markdown-шаблона llms.txt с разделами, ссылками и проверкой публикации",
+        "h2_anchor": "Соберите llms.txt по Markdown-шаблону"
+      }
+    }
+  },
+  "html_inject": [
+    "skip inline_1: already injected",
+    "skip inline_2: already injected",
+    "skip inline_3: already injected"
+  ]
+}

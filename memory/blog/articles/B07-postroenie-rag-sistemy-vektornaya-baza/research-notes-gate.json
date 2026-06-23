@@ -1,0 +1,22 @@
+{
+  "gate": "research-notes",
+  "status": "PASS",
+  "article_dir": "memory/blog/articles/B07-postroenie-rag-sistemy-vektornaya-baza",
+  "notes": "memory/blog/articles/B07-postroenie-rag-sistemy-vektornaya-baza/research-notes.md",
+  "context": "memory/blog/articles/B07-postroenie-rag-sistemy-vektornaya-baza/research-context.json",
+  "errors": [],
+  "warnings": [],
+  "metrics": {
+    "today_iso": "2026-06-16",
+    "prefer_sources_after": "2026-03-18",
+    "source_urls": 36,
+    "source_domains": 14,
+    "source_table_rows": 34,
+    "accessed_at": 24,
+    "github_urls": 6,
+    "official_doc_urls": 6,
+    "action_outline_items": 9,
+    "pain_solution_rows": 7,
+    "technical_topic": true
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "article": "memory/blog/articles/B08-ii-chat-bot-dlya-biznesa-workflow/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 10,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 8,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "aS. TL;DR / Быстрый инсайт: Чат-бот для бизнеса в 2026 - не рейтинг SaaS, а цепочка: задача (поддержка и",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "X/Telegram сверены по открытым источникам на июнь 2026 года. Частые вопросы Как создать чат-бот для бизнеса б",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "14 дней",
+      "kind": "metric_or_duration",
+      "context": "ы в CRM. Ниже - один workflow в n8n или Make за 7-14 дней: база знаний, эскалация оператору, метрики запуск",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "7 дней",
+      "kind": "metric_or_duration",
+      "context": "gent, память, CRM Low-code ветка укладывается в 3-7 дней против 3-8 недель кастомной разработки (ориентир",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "8 недель",
+      "kind": "metric_or_duration",
+      "context": "M Low-code ветка укладывается в 3-7 дней против 3-8 недель кастомной разработки (ориентир из практик внедрен",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "886",
+      "kind": "large_number",
+      "context": "трики FCR и CSAT. Запрос \"чат боты для бизнеса\" - 886 показов/мес в Вордстате; спрос на MAX (116) уже об",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": "иалогов без оператора, ответ быстрее 5 секунд, 50-100 тест-кейсов без галлюцинаций по ценам. Интересный",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "200",
+      "kind": "large_number",
+      "context": "ить базу. Типичная ошибка - загрузить один PDF на 200 страниц. Режьте на короткие блоки с заголовком раз",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 800",
+      "kind": "large_number",
+      "context": "-агентов без кода - в курсе по Make.com (подписка 5 800 ₽/мес, 159+ уроков). Вопросы по стеку - в Telegra",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "116",
+      "kind": "large_number",
+      "context": "am? Не обязателен на старте. Спрос на MAX растет (116 показов/мес), но модерация до 48 рабочих часов. До",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

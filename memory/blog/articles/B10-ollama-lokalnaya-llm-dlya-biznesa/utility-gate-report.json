@@ -1,0 +1,25 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory/blog/articles/B10-ollama-lokalnaya-llm-dlya-biznesa",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 11,
+        "h2_sections": 6,
+        "faq_h3": 6,
+        "tables": 2,
+        "blockquotes": 4,
+        "ul_lists": 1,
+        "action_markers": 18,
+        "pain_markers": 17,
+        "outcome_markers": 5,
+        "water_hits": []
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

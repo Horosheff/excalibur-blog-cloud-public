@@ -1,0 +1,45 @@
+{
+  "article": "memory/blog/articles/B03-podklyuchenie-mcp-cursor/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 5,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 3,
+  "facts": [
+    {
+      "fact": "2024",
+      "kind": "date_or_year",
+      "context": "вопросы MCP – открытый стандарт Anthropic (ноябрь 2024): способ дать нейросети доступ к данным вне чата.",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "сятки серверов – лишние tools путают Agent даже в 2026. 2. Выберите, где хранить mcp.json Параметр Глоба",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "по документации Cursor и Яндекс Вордстат на июнь 2026 года. Частые вопросы Как подключить MCP к Cursor? Откр",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "30 минут",
+      "kind": "metric_or_duration",
+      "context": ", не тронет CMS. Настройка cursor mcp занимает 15–30 минут. Ниже – подключение через Tools &amp; MCP или фай",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 800",
+      "kind": "large_number",
+      "context": "→ CRM → Telegram\"; на курсе по Make (159+ уроков, 5 800 ₽/мес) разбираем связку MCP + публикация. 7. Испр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

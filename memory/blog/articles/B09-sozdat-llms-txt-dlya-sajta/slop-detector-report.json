@@ -1,0 +1,13 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 0,
+  "over_long_sentences": [],
+  "readability": {
+    "score": 79.0,
+    "level": "Easy (Standard modern readable web content)",
+    "avg_sentence_len": 7.9,
+    "avg_syllables_per_word": 2.0
+  }
+}

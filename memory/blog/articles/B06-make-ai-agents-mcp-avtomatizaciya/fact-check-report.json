@@ -1,0 +1,45 @@
+{
+  "article": "memory/blog/articles/B06-make-ai-agents-mcp-avtomatizaciya/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 5,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 2,
+  "facts": [
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "ючевые фразы проверены по Яндекс Вордстат на июнь 2026 года. Частые вопросы Чем Make AI Agents отличаются от",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "40 минут",
+      "kind": "metric_or_duration",
+      "context": "егда означает падение: сценарий может работать до 40 минут, а результат забрать по executionId при нужных sc",
+      "verified": true,
+      "reason": "Numerical value '40' matched in fact-bank context"
+    },
+    {
+      "fact": "2026",
+      "kind": "large_number",
+      "context": "ючевые фразы проверены по Яндекс Вордстат на июнь 2026 года. Частые вопросы Чем Make AI Agents отличаются",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "1 000",
+      "kind": "large_number",
+      "context": "ак не перерасходовать? На Free-плане Make дает до 1 000 credits в месяц, Core – от $9 за 10 000. Большинст",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "10 000",
+      "kind": "large_number",
+      "context": "ke дает до 1 000 credits в месяц, Core – от $9 за 10 000. Большинство module actions стоят 1 credit, но AI",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory\\blog\\articles\\B04-geo-optimizaciya-sajta-2026\\cover\\canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1024,
+      576
+    ],
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1024,
+          "bottom": 576
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Ведущий блога: DIY-коллаж GEO — нейросеть с лупой над сайтом, чек-лист стикеры GEO/AEO",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1024,
+          "top": 0,
+          "right": 2048,
+          "bottom": 576
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Сравнительная таблица SEO vs GEO vs AEO: чем отличаются в 2026",
+        "h2_anchor": "1. Разберите, чем GEO отличается от SEO в 2026"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 576,
+          "right": 1024,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Чек-лист аудита: цитирует ли вас нейровыдача сегодня",
+        "h2_anchor": "2. Проверьте, цитирует ли вас нейровыдача сегодня"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1024,
+          "top": 576,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема workflow: перестройка контента под извлечение ИИ",
+        "h2_anchor": "3. Перестройте контент под извлечение ИИ"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — 1. Разберите, чем GEO отличается от SEO в 2026",
+    "injected inline_2 after H2 — 2. Проверьте, цитирует ли вас нейровыдача сегодня",
+    "injected inline_3 after H2 — 3. Перестройте контент под извлечение ИИ"
+  ]
+}

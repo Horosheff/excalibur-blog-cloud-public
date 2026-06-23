@@ -1,0 +1,190 @@
+<p>Вы слышали про n8n и ИИ-агентов, но в интерфейсе с десятком нод теряетесь: где триггер, где модель, зачем память? Я прошёл этот путь как практик Make.com и собрал первого агента в n8n за вечер. Ниже – пошаговая автоматизация n8n: Chat Trigger, AI Agent, инструменты и честное сравнение с Make.com. После гайда вы запустите тестового бота в Chat UI и поймёте, какая платформа вам ближе – свой сервер или no-code из облака.</p>
+
+<blockquote><b>TL;DR / Быстрый инсайт:</b> ИИ-агент в n8n – это узел-дирижёр: он принимает вопрос, подключает языковую модель, память и инструменты (tools), а сам решает, что вызвать. Схема MVP: Chat Trigger → AI Agent → Chat Model + System Message + 1-2 tools. Для базы знаний (RAG) добавьте Vector Store. n8n силён в self-host и глубоком AI; Make.com – в скорости без Docker. Запрос "автоматизация n8n" в Вордстате – 539 показов в месяц, head-запрос "n8n" – 37 115.</blockquote>
+
+<ol>
+  <li><a href="#choose-platform">Выберите способ запуска n8n</a></li>
+  <li><a href="#setup-agent">Создайте первого ИИ-агента пошагово</a></li>
+  <li><a href="#memory-rag">Подключите память и RAG без кода</a></li>
+  <li><a href="#business-cases">Соберите примеры автоматизации для бизнеса</a></li>
+  <li><a href="#compare-make">Сравните n8n и Make.com</a></li>
+  <li><a href="#checklist">Пройдите чеклист перед продакшеном</a></li>
+  <li><a href="#next-steps">Что делать дальше</a></li>
+  <li><a href="#faq">Частые вопросы</a></li>
+</ol>
+
+<p>ИИ-агент в n8n – не просто чат с ChatGPT. Обычная LLM (языковая модель) только генерирует текст. Агент ещё выбирает действия: отправить письмо, найти строку в CRM, прочитать PDF из базы знаний. Под капотом – LangChain, но вам не нужно знать код: всё собирается мышкой в canvas. В 2026 году n8n добавил MCP (Model Context Protocol) – стандарт, как нейросеть подключается к внешним сервисам как к "розеткам".</p>
+
+<p>Запросы "n8n ai" (720 показов/мес) и "n8n агенты" (699) растут вместе с интересом к автоматизации бизнеса без программиста. Но честно: если вам не нужен свой сервер, Make AI Agents часто закрывают тот же кейс быстрее. Я покажу оба пути.</p>
+
+<h2 id="choose-platform">1. Выберите способ запуска n8n в 2026</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнение способов запуска n8n в 2026: Cloud, self-host, Docker" loading="lazy">
+</figure>
+
+
+<p>Три входа: n8n Cloud, self-hosted Community Edition (CE) и параллельная проверка Make Free. Cloud Starter – от 20 €/мес при годовой оплате, 2 500 executions (один полный прогон workflow = один run, не каждый шаг). Trial 14 дней без карты. CE на GitHub – бесплатно, без лимита runs в лицензии, но нужен VPS или Docker.</p>
+
+<p>Self-hosted (свой сервер) – когда данные должны оставаться у вас: Community Edition на VPS. VPS (Virtual Private Server) – это аренда виртуального компьютера в облаке, который работает круглосуточно и без вашего участия. Docker – упаковка программы в "контейнер", чтобы не возиться с библиотеками и зависимостями вручную. API (Application Programming Interface) – стандартизированная "розетка" для связи n8n с внешними сервисами: OpenAI, Telegram или CRM.</p>
+
+<p><b>Делайте:</b> для первого агента возьмите Cloud trial – меньше DevOps. <b>Не делайте:</b> сразу поднимать Docker, если цель – только проверить гипотезу бота.</p>
+
+<h2 id="setup-agent">2. Создайте первого ИИ-агента в n8n пошагово</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Схема пошагового создания ИИ-агента в n8n: Chat Trigger, AI Agent, Tools" loading="lazy">
+</figure>
+
+
+<blockquote>
+  <b>Схема workflow:</b>
+  <br>
+  Chat Trigger → AI Agent node → Chat Model (OpenAI/Anthropic) → System Message → Tool sub-nodes → Simple Memory (опционально)
+</blockquote>
+
+<ol>
+  <li><b>Шаг 1: Создайте workflow.</b> В n8n нажмите New Workflow, добавьте Chat Trigger - окно чата для тестов без Telegram.</li>
+  <li><b>Шаг 2: Добавьте AI Agent node.</b> Соедините с триггером. Тип Tools Agent подходит для GPT-4, Claude 3, Gemini 1.5 (function calling). Нужна версия n8n 1.19.0+.</li>
+  <li><b>Шаг 3: Подключите Chat Model.</b> OpenAI gpt-4o-mini или Anthropic - дешевле для MVP. В Credentials вставьте API-ключ провайдера.</li>
+  <li><b>Шаг 4: Напишите System Message.</b> Роль ("ты менеджер поддержки"), когда звать tools, формат ответа, запрет выдумывать цены. Это главный руль агента.</li>
+  <li><b>Шаг 5: Добавьте 1-3 Tool sub-nodes.</b> HTTP Request (вебхук в CRM) или Call n8n Workflow. Имя и description должны быть понятны модели: "create_lead" лучше, чем "tool1".</li>
+  <li><b>Шаг 6: Включите Simple Memory</b> для мультитёрнового чата (по умолчанию 5 interactions) или пропустите на первом тесте.</li>
+  <li><b>Шаг 7: Протестируйте в Chat UI.</b> Откройте Logs AI Agent, смотрите, какие tools вызываются. На tool-нодах включите Continue on Error, чтобы один сбой не ронял весь диалог.</li>
+</ol>
+
+<p>Типичная ошибка - повесить 10 tools "на будущее". Модель путается. Начните с одного: например, поиск по FAQ или создание лида. <b>Делайте:</b> короткий system prompt на 8-12 строк. <b>Не делайте:</b> давать агенту доступ к удалению данных без подтверждения человека (Human-in-the-Loop).</p>
+
+<h2 id="memory-rag">3. Подключите память и базу знаний (RAG) без кода</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Чеклист подключения RAG и памяти в n8n без кода" loading="lazy">
+</figure>
+
+
+<p>RAG (Retrieval-Augmented Generation) – это "подсказка из ваших документов". Представьте агента с шпаргалкой: вместо выдумок он ищет ответ в PDF, Notion или Google Docs. В n8n: Document Loader загружает файлы → Vector Store (векторная база данных – хранилище смысловых "отпечатков" текста) → tool "search_knowledge_base" в AI Agent.</p>
+
+<p>Simple Memory хранит последние реплики чата – хватает для "уточни заказ". RAG нужен, когда каталог, регламенты или прайс меняются редко, а объём большой. <b>Делайте:</b> разбейте документы на куски по 500–800 слов. <b>Не делайте:</b> скармливать один гигантский PDF – поиск станет неточным.</p>
+
+<p><img src="assets/n8n-workflow-ai-agent-schema.png" alt="Схема workflow ИИ-агента в интерфейсе n8n: триггеры, ноды и инструменты" /></p>
+<p><i>Интерфейс n8n с настроенной схемой ИИ-агента: Chat Trigger, AI Agent node, Chat Model и вспомогательные инструменты.</i></p>
+
+<h2 id="business-cases">4. Соберите примеры автоматизации n8n для бизнеса</h2>
+
+<p>Три рабочих шаблона под запрос "примеры автоматизации n8n":</p>
+
+<ul>
+  <li><b>Support-бот:</b> Chat Trigger + RAG по базе знаний + tool "эскалация в Telegram" менеджеру.</li>
+  <li><b>Лид из формы:</b> Webhook с сайта → AI Agent классифицирует заявку → HTTP в amoCRM/Bitrix24 → уведомление в Slack.</li>
+  <li><b>Контент-черновик:</b> Cron раз в день → AI Agent берёт тему из таблицы → генерирует пост → отправляет в Notion на ревью.</li>
+</ul>
+
+<p>Webhook – входящий "звонок" на URL n8n: сайт стучится, workflow стартует. Для Telegram-бота замените Chat Trigger на Telegram Trigger, логика агента та же.</p>
+
+<p>Если кейс – типовая CRM-воронка или контент-завод без сервера, посмотрите <a href="https://mayai.ru/#services" target="_blank">услуги автоматизации</a> на mayai.ru и оцените, не быстрее ли закрыть задачу на Make.</p>
+
+<h2 id="compare-make">5. Сравните n8n и Make.com и примите решение</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Критерий</th>
+      <th>n8n</th>
+      <th>Make.com</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Установка</b></td>
+      <td>Cloud trial или self-host (Docker/VPS)</td>
+      <td>SaaS, регистрация за минуты</td>
+    </tr>
+    <tr>
+      <td><b>AI Agent</b></td>
+      <td>Native AI Agent node, tools, memory, MCP</td>
+      <td>Make AI Agents, Reasoning panel, 3 000+ apps</td>
+    </tr>
+    <tr>
+      <td><b>Self-host / данные</b></td>
+      <td>Да (Community Edition)</td>
+      <td>Нет, облако Make</td>
+    </tr>
+    <tr>
+      <td><b>Цена входа</b></td>
+      <td>CE бесплатно + infra; Cloud от 20 €/мес</td>
+      <td>Free 1 000 credits/мес; Core от ~$9-12/мес</td>
+    </tr>
+    <tr>
+      <td><b>Billing</b></td>
+      <td>Executions (весь workflow = 1 run)</td>
+      <td>Credits (AI-модули дороже обычных)</td>
+    </tr>
+    <tr>
+      <td><b>Аудитория</b></td>
+      <td>Техкоманды, RAG/MCP, локальные модели</td>
+      <td>Маркетологи, ops, no-code без серверов</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><b>Выбирайте n8n, если:</b> нужен контроль данных на своём сервере, RAG на внутренних документах, MCP или кастомные LangChain-цепочки.</p>
+
+<p><b>Выбирайте Make, если:</b> нет желания админить Docker, команда no-code, типовые интеграции CRM/SMM/Telegram "из коробки". Make AI Agents доступны на всех тарифах.</p>
+
+<blockquote>
+  <b>Итоговый вердикт:</b> n8n – глубина AI и self-host. Make – скорость и визуальный builder без DevOps. Я веду <a href="https://kv-ai.ru/obuchenie-po-make" target="_blank">курс по Make.com</a> (159+ уроков, 5 800 ₽/мес) именно для тех, кто хочет агентов без серверов. n8n оставьте, когда инфраструктура уже есть.
+</blockquote>
+
+<h2 id="checklist">6. Пройдите чеклист перед продакшеном</h2>
+
+<ul>
+  <li>System Message описывает роль, лимиты и формат ответа</li>
+  <li>Не больше 3 tools на первой версии агента</li>
+  <li>API-ключи в Credentials, не в открытом тексте workflow</li>
+  <li>Continue on Error на tool-нодах с внешними API</li>
+  <li>Логи AI Agent проверены на "галлюцинации" цен и дат</li>
+  <li>RAG: документы нарезаны, Vector Store обновляется по регламенту</li>
+  <li>Лимит Max Iterations задан (агент не уходит в бесконечный цикл)</li>
+  <li>Для продакшена – не trial Cloud, а расчёт executions/credits</li>
+  <li>Human-in-the-Loop на опасных действиях (удаление, оплата)</li>
+  <li>Тестовые диалоги из FAQ реальных клиентов, не только "привет"</li>
+  <li>Сравнение n8n vs Make зафиксировано письменно для команды</li>
+  <li>План B: кто админит сервер, если self-host</li>
+</ul>
+
+<h2 id="next-steps">7. Что делать дальше</h2>
+
+<ol>
+  <li>Запустите Cloud trial n8n и соберите MVP по шагам выше.</li>
+  <li>Прогоните 10 реальных вопросов клиентов через Chat UI.</li>
+  <li>Если нужен RAG – загрузите 3–5 ключевых документов в Vector Store.</li>
+  <li>Сверьте таблицу n8n vs Make с вашим стеком (CRM, мессенджеры, бюджет).</li>
+  <li>При выборе Make – зайдите в <a href="https://kv-ai.ru/obuchenie-po-make" target="_blank">обучение по Make</a>: там разбор AI Agents и вайбкодинга на живых сценариях.</li>
+</ol>
+
+<p>Вопросы по нодам и ошибкам – в Telegram <a href="https://t.me/maya_pro" target="_blank">@maya_pro</a>, там же разборы сценариев учеников.</p>
+
+<blockquote>
+  <b>Материал проверен:</b> эксперт <a href="https://kv-ai.ru/artur-horosheff" target="_blank">Артур Хорошев</a> (CEO Maya AI, практик Make.com и AI-агентов).<br>
+  <b>Достоверность данных:</b> цены n8n и Make, параметры AI Agent node и показатели Вордстат верифицированы по первоисточникам на июнь 2026 года.
+</blockquote>
+
+<h2 id="faq">Частые вопросы</h2>
+
+<h3>Как устроен AI Agent node в n8n?</h3>
+<p>Это узел-оркестратор: принимает prompt, подключает Chat Model, Memory и Tools как sub-nodes. Агент сам решает, какой инструмент вызвать. Настройте Tools Agent, напишите System Message и протестируйте в Chat UI.</p>
+
+<h3>Чем n8n отличается от Make в 2026?</h3>
+<p>n8n даёт self-host, executions и глубокий AI (RAG, MCP). Make – managed SaaS, credits и 3 000+ готовых интеграций. Выберите n8n для контроля данных, Make – для скорости без сервера.</p>
+
+<h3>Как подключить базу знаний (RAG) к ИИ в n8n?</h3>
+<p>Document Loader → Vector Store → добавьте tool поиска в AI Agent. Проверьте ответы на 5 вопросах из реальной поддержки. Обновляйте документы при смене прайса или регламента.</p>
+
+<h3>Нужен ли Docker для n8n?</h3>
+<p>Нет, если хватает n8n Cloud trial или платного Cloud. Docker нужен для типичного self-host на VPS. Для проверки гипотезы начните с Cloud.</p>
+
+<h3>Сколько стоит n8n для малого бизнеса?</h3>
+<p>CE бесплатно плюс VPS и оплата LLM API отдельно. Cloud Starter – от 20 €/мес за 2 500 runs. Считайте полную стоимость: платформа + токены модели.</p>
+
+<h3>Когда выбрать Make вместо n8n?</h3>
+<p>Когда нет ресурса админить сервер, команда no-code и кейс – CRM, SMM, Telegram без кастомного RAG. Зарегистрируйтесь в Make Free и соберите параллельный прототип за один вечер.</p>
+
+<h3>Какие типичные ошибки при первом агенте?</h3>
+<p>Слишком много tools, пустой System Message, memory без нужды, нет fallback на ошибках API. Урежьте до одного tool, допишите правила в prompt, включите Continue on Error.</p>

@@ -1,0 +1,26 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 3,
+  "over_long_sentences": [
+    {
+      "sentence": "Создайте первого ИИ-агента в n8n пошагово Схема workflow: Chat Trigger → AI Agent node → Chat Model (OpenAI/Anthropic) → System Message → Tool sub-nodes → Simple Memory (опционально) Шаг 1: Создайте workflow",
+      "word_count": 26
+    },
+    {
+      "sentence": "com Установка Cloud trial или self-host (Docker/VPS) SaaS, регистрация за минуты AI Agent Native AI Agent node, tools, memory, MCP Make AI Agents, Reasoning panel, 3 000+ apps Self-host / данные Да (Community Edition) Нет, облако Make Цена входа CE бесплатно + infra; Cloud от 20 €/мес Free 1 000 credits/мес; Core от ~$9-12/мес Billing Executions (весь workflow = 1 run) Credits (AI-модули дороже обычных) Аудитория Техкоманды, RAG/MCP, локальные модели Маркетологи, ops, no-code без серверов Выбирайте n8n, если: нужен контроль данных на своём сервере, RAG на внутренних документах, MCP или кастомные LangChain-цепочки",
+      "word_count": 86
+    },
+    {
+      "sentence": "Пройдите чеклист перед продакшеном System Message описывает роль, лимиты и формат ответа Не больше 3 tools на первой версии агента API-ключи в Credentials, не в открытом тексте workflow Continue on Error на tool-нодах с внешними API Логи AI Agent проверены на \"галлюцинации\" цен и дат RAG: документы нарезаны, Vector Store обновляется по регламенту Лимит Max Iterations задан (агент не уходит в бесконечный цикл) Для продакшена - не trial Cloud, а расчёт executions/credits Human-in-the-Loop на опасных действиях (удаление, оплата) Тестовые диалоги из FAQ реальных клиентов, не только \"привет\" Сравнение n8n vs Make зафиксировано письменно для команды План B: кто админит сервер, если self-host Что дальше Запустите Cloud trial n8n и соберите MVP по шагам выше",
+      "word_count": 111
+    }
+  ],
+  "readability": {
+    "score": 96.9,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 10.7,
+    "avg_syllables_per_word": 1.6
+  }
+}

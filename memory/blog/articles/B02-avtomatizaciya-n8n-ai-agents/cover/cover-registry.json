@@ -1,0 +1,50 @@
+{
+  "topic_id": "B02",
+  "slug": "avtomatizaciya-n8n-ai-agents",
+  "cover_family": "brand_collage",
+  "style_preset": "digital_meme_collage_ru",
+  "pipeline": "quad_canvas_1x_mcp",
+  "file": "cover/cover.png",
+  "alt": "Артур Хорошев у конструктора n8n: робот собирает ИИ-агента из кубиков-интеграций, розовые стикеры LangChain и AI Agent",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-06-11T04:39:51+03:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Артур Хорошев у конструктора n8n: робот собирает ИИ-агента из кубиков-интеграций, розовые стикеры LangChain и AI Agent",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Сравнение способов запуска n8n в 2026: Cloud, self-host, Docker",
+      "h2_anchor": "1. Выберите способ запуска n8n в 2026",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Схема пошагового создания ИИ-агента в n8n: Chat Trigger, AI Agent, Tools",
+      "h2_anchor": "2. Создайте первого ИИ-агента в n8n пошагово",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Чеклист подключения RAG и памяти в n8n без кода",
+      "h2_anchor": "3. Подключите память и базу знаний (RAG) без кода",
+      "visual_type": "checklist_board",
+      "aspect_ratio": "16:9"
+    }
+  ]
+}

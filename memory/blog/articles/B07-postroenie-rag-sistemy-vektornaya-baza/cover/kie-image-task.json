@@ -1,0 +1,8 @@
+{
+  "task_id": "d63ae3615ae6e85dfdfd3639c75f5b21",
+  "source": "kie-api",
+  "model": "gpt-image-2-image-to-image",
+  "state": "success",
+  "result_path": "memory/blog/articles/B07-postroenie-rag-sistemy-vektornaya-baza/cover/quad-mcp-result.json",
+  "updated_at_epoch": 1781584879
+}

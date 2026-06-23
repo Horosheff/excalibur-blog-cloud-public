@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/B10-ollama-lokalnaya-llm-dlya-biznesa/cover/canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1006,
+      581
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 581,
+        "end": 605
+      },
+      "v_gutter_px": {
+        "start": 1006,
+        "end": 1022
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 7,
+          "right": 1006,
+          "bottom": 573
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1006,
+          "bottom": 581
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Обложка: Ollama на офисном ПК — 32B на 8 ГБ VRAM и открытый порт 11434 ломают локальный ИИ-проект",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1022,
+          "top": 2,
+          "right": 2048,
+          "bottom": 579
+        },
+        "raw_box_px": {
+          "left": 1022,
+          "top": 0,
+          "right": 2048,
+          "bottom": 581
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Сравнение локальной Ollama и облачного API: приватность, стоимость, скорость, офлайн",
+        "h2_anchor": "Выберите один сценарий: когда Ollama выгоднее облака"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 17,
+          "top": 605,
+          "right": 989,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 605,
+          "right": 1006,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема выбора модели Ollama под VRAM: qwen3:8b, qwen3:14b, MLX на Apple Silicon",
+        "h2_anchor": "Сверьте железо с моделью до команды ollama pull"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1049,
+          "top": 605,
+          "right": 2021,
+          "bottom": 1152
+        },
+        "raw_box_px": {
+          "left": 1022,
+          "top": 605,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Чеклист установки Ollama: pull, run, ollama ps и сверка nvidia-smi",
+        "h2_anchor": "Установите Ollama и проверьте инференс в терминале"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — Выберите один сценарий: когда Ollama выгоднее облака",
+    "injected inline_2 after H2 — Сверьте железо с моделью до команды ollama pull",
+    "injected inline_3 after H2 — Установите Ollama и проверьте инференс в терминале"
+  ]
+}

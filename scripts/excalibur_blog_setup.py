@@ -66,11 +66,11 @@ def main() -> int:
     # -------------------------------------------------------------------------
     print("\n--- ШАГ 2: НАСТРОЙКА ИНТЕГРАЦИИ И ИМПОРТА В WORDPRESS (SFTP/SSH) ---")
     print("Для публикации статей напрямую в вашу WP-тему, укажите данные SFTP/SSH-сервера.")
-    ssh_host = get_input("SFTP Хост (например: example.com)", "example.com")
+    ftp_host = get_input("SFTP Хост (например: example.com)", "example.com")
     ssh_port = get_input("SFTP/SSH Порт", "22")
-    ssh_user = get_input("SFTP Пользователь", "")
-    ssh_pass = get_input("SFTP Пароль", "")
-    ssh_root = get_input(
+    ftp_user = get_input("SFTP Пользователь", "")
+    ftp_pass = get_input("SFTP Пароль", "")
+    ftp_root = get_input(
         "SFTP путь к корню WordPress (где wp-load.php)",
         "/public_html/",
     )
@@ -101,19 +101,16 @@ def main() -> int:
     # СОХРАНЕНИЕ ШАГА 2: Создание site.env.local
     # -------------------------------------------------------------------------
     print("🔒 Создаем защищенный файл доступов site.env.local...")
-    env_lines = [
-        "# Excalibur BLOG — credentials (автоматически сгенерировано setup.py)",
-        "",
-        f"PUBLIC_SITE_URL={site_url}",
-        f"SSH_HOST={ssh_host}",
-        f"SSH_PORT={ssh_port}",
-        f"SSH_USER={ssh_user}",
-        "SSH_" + "PASSWORD=" + (ssh_pass if ssh_pass else ""),
-        f"SSH_ROOT={ssh_root}",
-        f"EXCALIBUR_BLOG_ALLOW_PUBLISH={allow_publish}",
-        "",
-    ]
-    env_content = "\n".join(env_lines)
+    env_content = f"""# Excalibur BLOG — credentials (автоматически сгенерировано setup.py)
+
+PUBLIC_SITE_URL={site_url}
+FTP_HOST={ftp_host}
+FTP_USER={ftp_user}
+FTP_PASS={ftp_pass}
+FTP_ROOT={ftp_root}
+SSH_PORT={ssh_port}
+EXCALIBUR_BLOG_ALLOW_PUBLISH={allow_publish}
+"""
     env_path.write_text(env_content, encoding="utf-8")
     print(f"✅ Файл '{env_path.relative_to(root)}' успешно создан.")
 
@@ -122,11 +119,11 @@ def main() -> int:
         example_content = """# Excalibur BLOG — credentials (copy to site.env.local)
 
 PUBLIC_SITE_URL=https://example.com
-SSH_HOST=example.com
+FTP_HOST=example.com
+FTP_USER=
+FTP_PASS=
+FTP_ROOT=/public_html/
 SSH_PORT=22
-SSH_USER=
-SSH_PASSWORD=
-SSH_ROOT=/public_html/
 EXCALIBUR_BLOG_ALLOW_PUBLISH=no
 """
         env_example_path.write_text(example_content, encoding="utf-8")

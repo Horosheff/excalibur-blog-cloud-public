@@ -1,0 +1,198 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mayai.ru/#organization",
+      "name": "Maya AI — блог «Ковчег»",
+      "url": "https://mayai.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://mayai.ru/#logo",
+        "url": "https://mayai.ru/wp-content/uploads/logo.png",
+        "caption": "Maya AI — блог «Ковчег»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mayai.ru/#author-artur-horoshev",
+      "name": "Артур Хорошев",
+      "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+      "image": "https://kv-ai.ru/artur-horosheff",
+      "worksFor": {
+        "@id": "https://mayai.ru/#organization"
+      },
+      "sameAs": [
+        "https://kv-ai.ru/artur-horosheff",
+        "https://mayai.ru/obo-mne/",
+        "https://t.me/maya_pro",
+        "https://t.me/horosheff"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/blog/avtomatizaciya-n8n-ai-agents/#article",
+      "headline": "Как настроить ИИ-агентов в n8n: пошаговое руководство по автоматизации бизнеса",
+      "description": "Пошаговая настройка ИИ-агента в n8n: Chat Trigger, AI Agent, RAG и сравнение с Make.com. Для предпринимателей без DevOps - с тестом в Chat UI и чеклистом перед продакшеном.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru",
+      "url": "https://mayai.ru/blog/avtomatizaciya-n8n-ai-agents/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://mayai.ru/blog/avtomatizaciya-n8n-ai-agents/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://mayai.ru/wp-content/uploads/blog/avtomatizaciya-n8n-ai-agents-cover.png",
+        "width": 1200,
+        "height": 675
+      },
+      "author": {
+        "@id": "https://mayai.ru/#author-artur-horoshev"
+      },
+      "publisher": {
+        "@id": "https://mayai.ru/#organization"
+      },
+      "keywords": "автоматизация n8n, n8n ai агент, создание ии агента n8n, n8n vs make, примеры автоматизации n8n",
+      "wordCount": 9244,
+      "articleSection": "AI-агенты",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "Maya AI — блог «Ковчег»",
+        "url": "https://mayai.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/blog/avtomatizaciya-n8n-ai-agents/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как устроен AI Agent node в n8n?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Это узел-оркестратор: принимает prompt, подключает Chat Model, Memory и Tools как sub-nodes. Агент сам решает, какой инструмент вызвать. Настройте Tools Agent, напишите System Message и протестируйте в Chat UI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем n8n отличается от Make в 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "n8n даёт self-host, executions и глубокий AI (RAG, MCP). Make - managed SaaS, credits и 3 000+ готовых интеграций. Выберите n8n для контроля данных, Make - для скорости без сервера."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как подключить базу знаний (RAG) к ИИ в n8n?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Document Loader → Vector Store → добавьте tool поиска в AI Agent. Проверьте ответы на 5 вопросах из реальной поддержки. Обновляйте документы при смене прайса или регламента."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли Docker для n8n?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет, если хватает n8n Cloud trial или платного Cloud. Docker нужен для типичного self-host на VPS. Для проверки гипотезы начните с Cloud."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько стоит n8n для малого бизнеса?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CE бесплатно плюс VPS и оплата LLM API отдельно. Cloud Starter - от 20 €/мес за 2 500 runs. Считайте полную стоимость: платформа + токены модели."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Когда выбрать Make вместо n8n?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Когда нет ресурса админить сервер, команда no-code и кейс - CRM, SMM, Telegram без кастомного RAG. Зарегистрируйтесь в Make Free и соберите параллельный прототип за один вечер."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие типичные ошибки при первом агенте?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Слишком много tools, пустой System Message, memory без нужды, нет fallback на ошибках API. Урежьте до одного tool, допишите правила в prompt, включите Continue on Error."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://mayai.ru/blog/avtomatizaciya-n8n-ai-agents/#howto",
+      "name": "Как настроить ИИ-агентов в n8n: пошаговое руководство по автоматизации бизнеса",
+      "description": "Пошаговая настройка ИИ-агента в n8n: Chat Trigger, AI Agent, RAG и сравнение с Make.com. Для предпринимателей без DevOps - с тестом в Chat UI и чеклистом перед продакшеном.",
+      "inLanguage": "ru",
+      "totalTime": "PT2H",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "n8n Cloud trial или n8n self-hosted"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "API-ключ OpenAI или Anthropic"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Создайте workflow",
+          "text": "В n8n нажмите New Workflow, добавьте Chat Trigger - окно чата для тестов без Telegram.",
+          "url": "https://mayai.ru/blog/avtomatizaciya-n8n-ai-agents/#setup-agent"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Добавьте AI Agent node",
+          "text": "Соедините с триггером. Тип Tools Agent подходит для GPT-4, Claude 3, Gemini 1.5 (function calling). Нужна версия n8n 1.19.0+.",
+          "url": "https://mayai.ru/blog/avtomatizaciya-n8n-ai-agents/#setup-agent"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Подключите Chat Model",
+          "text": "OpenAI gpt-4o-mini или Anthropic - дешевле для MVP. В Credentials вставьте API-ключ провайдера.",
+          "url": "https://mayai.ru/blog/avtomatizaciya-n8n-ai-agents/#setup-agent"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Напишите System Message",
+          "text": "Роль (\"ты менеджер поддержки\"), когда звать tools, формат ответа, запрет выдумывать цены. Это главный руль агента.",
+          "url": "https://mayai.ru/blog/avtomatizaciya-n8n-ai-agents/#setup-agent"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Добавьте 1-3 Tool sub-nodes",
+          "text": "HTTP Request (вебхук в CRM) или Call n8n Workflow. Имя и description должны быть понятны модели: \"create_lead\" лучше, чем \"tool1\".",
+          "url": "https://mayai.ru/blog/avtomatizaciya-n8n-ai-agents/#setup-agent"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Включите Simple Memory",
+          "text": "Для мультитёрнового чата (по умолчанию 5 interactions) или пропустите на первом тесте.",
+          "url": "https://mayai.ru/blog/avtomatizaciya-n8n-ai-agents/#setup-agent"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Протестируйте в Chat UI",
+          "text": "Откройте Logs AI Agent, смотрите, какие tools вызываются. На tool-нодах включите Continue on Error, чтобы один сбой не ронял весь диалог.",
+          "url": "https://mayai.ru/blog/avtomatizaciya-n8n-ai-agents/#setup-agent"
+        }
+      ]
+    }
+  ]
+}

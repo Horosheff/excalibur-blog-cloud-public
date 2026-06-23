@@ -1,0 +1,113 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-17",
+    "today_ru": "17.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-19",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-17 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B10",
+    "priority": "P0",
+    "slug": "ollama-lokalnaya-llm-dlya-biznesa",
+    "h1": "Как развернуть локальную LLM через Ollama для бизнеса: пошаговый workflow от установки до API",
+    "primary_query": "ollama",
+    "secondary_queries": [
+      "ollama модели",
+      "ollama скачать",
+      "ollama api",
+      "как установить ollama",
+      "локальные нейросети",
+      "как локально развернуть нейросеть"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B10",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "ollama 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "ollama июнь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "ollama новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "github_evidence",
+      "query": "site:github.com ollama 2026",
+      "purpose": "GitHub repos/issues/README для технических сигналов и реального опыта"
+    },
+    {
+      "id": "official_docs",
+      "query": "ollama official docs documentation 2026",
+      "purpose": "официальная документация, changelog, developer docs"
+    },
+    {
+      "id": "community_experience",
+      "query": "ollama forum reddit discussion проблемы опыт 2026",
+      "purpose": "форумы, обсуждения, ошибки пользователей и живые сценарии"
+    },
+    {
+      "id": "secondary_1",
+      "query": "ollama модели 2026",
+      "purpose": "вторичный запрос: ollama модели"
+    },
+    {
+      "id": "secondary_2",
+      "query": "ollama скачать 2026",
+      "purpose": "вторичный запрос: ollama скачать"
+    },
+    {
+      "id": "secondary_3",
+      "query": "ollama api 2026",
+      "purpose": "вторичный запрос: ollama api"
+    },
+    {
+      "id": "secondary_4",
+      "query": "как установить ollama 2026",
+      "purpose": "вторичный запрос: как установить ollama"
+    },
+    {
+      "id": "secondary_5",
+      "query": "локальные нейросети 2026",
+      "purpose": "вторичный запрос: локальные нейросети"
+    },
+    {
+      "id": "secondary_6",
+      "query": "как локально развернуть нейросеть 2026",
+      "purpose": "вторичный запрос: как локально развернуть нейросеть"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как развернуть локальную LLM через Ollama для бизнеса: пошаговый workflow от установки до API 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B10-ollama-lokalnaya-llm-dlya-biznesa",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

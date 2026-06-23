@@ -1,0 +1,785 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-17",
+    "today_ru": "17.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-19",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-17 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B10",
+    "priority": "P0",
+    "slug": "ollama-lokalnaya-llm-dlya-biznesa",
+    "h1": "Как развернуть локальную LLM через Ollama для бизнеса: пошаговый workflow от установки до API",
+    "primary_query": "ollama",
+    "secondary_queries": [
+      "ollama модели",
+      "ollama скачать",
+      "ollama api",
+      "как установить ollama",
+      "локальные нейросети",
+      "как локально развернуть нейросеть"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "ollama 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Революция в терминале: Главные супермодели Ollama в 2026 году",
+          "url": "https://vc.ru/ai/2806221-supermodeli-ollama-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Ollama",
+          "url": "https://ollama.com/",
+          "snippet": "В марте 2026 года ситуация изменилась: благодаря Ollama и архитектурам нового поколения, модели уровня «Super» теперь живут на наших локальных дисках."
+        },
+        {
+          "title": "Best Ollama Models in 2026: A Practical Guide by Use Case",
+          "url": "https://mljourney.com/best-ollama-models-in-2026-a-practical-guide-by-use-case/",
+          "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+        },
+        {
+          "title": "Local AI in 2026: Ollama Benchmarks, $0 Inference, and the End of Per ...",
+          "url": "https://dev.to/pooyagolchian/local-ai-in-2026-running-production-llms-on-your-own-hardware-with-ollama-54d0",
+          "snippet": "Ollama's model library now contains hundreds of models, which makes getting started harder rather than easier. This guide cuts through the noise with specific recommendations by use case, based on what actually works well in 2026 across different hardware tiers."
+        },
+        {
+          "title": "Best Ollama Models: What to Pull for 8GB-24GB (2026)",
+          "url": "https://toolhalla.ai/blog/best-ollama-models-2026",
+          "snippet": "I ran systematic benchmarks across the most capable open-weight models available in Ollama's registry as of March 2026. Three evaluation axes: general knowledge (MMLU), code generation (HumanEval Pass@1), and conversational reasoning (MT-Bench)."
+        },
+        {
+          "title": "Best Ollama Models to Run in 2026: Benchmarks & Recommendations",
+          "url": "https://meshworld.in/blog/ai/ollama-models-benchmark/",
+          "snippet": "Best Ollama models by VRAM: what to pull first for 8GB, 16GB, and 24GB GPUs, plus coding, reasoning, Mac, and low-memory picks with commands."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "ollama июнь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Llama локально: какую модель запустить и на чём",
+          "url": "https://insidepc.tech/ai/ai-local/llama-local-llm",
+          "snippet": ""
+        },
+        {
+          "title": "Ollama: установка на Mac и Windows, модели Llama и Mistral — 2026",
+          "url": "https://www.aravana.ai/insights/kak-ustanovit-ollama-zapusk-ai-na-svoem-kompyutere",
+          "snippet": "Какую модель Llama запустить локально в 2026: таблицы VRAM и скорости по квантам, выбор под видеопамять, команды Ollama, подвохи лицензии и русский язык."
+        },
+        {
+          "title": "Как установить Ollama, как запустить Ollama и настроить в 2026 ...",
+          "url": "https://dtf.ru/howto/5097464-ustanovka-i-zapusk-ollama",
+          "snippet": "Как скачать и запустить Ollama на Mac, Windows и Linux. Устанавливаем Llama 3, Mistral, Qwen локально — без интернета, бесплатно."
+        },
+        {
+          "title": "Как установить Ollama, как запустить Ollama и настроить в 2026 году ...",
+          "url": "https://vc.ru/services/2959940-kak-ustanovit-i-zapustit-ollama",
+          "snippet": "Разбираем, как установить Ollama в 2026 году, скачать модели, настроить запуск и понять, когда может понадобиться платный облачный доступ."
+        },
+        {
+          "title": "Releases · ollama/ollama - GitHub",
+          "url": "https://github.com/ollama/ollama/releases",
+          "snippet": "Разбираем, как установить Ollama в 2026 году, скачать модели, запустить локальный AI и настроить его под свой компьютер."
+        },
+        {
+          "title": "Полное руководство по Ollama (2026) - LLM через CLI, облако и Python",
+          "url": "https://thenote.app/post/ru/polnoe-rukovodstvo-po-ollama-2026-llm-cherez-cli-oblako-i-python-jzrcldyyvi",
+          "snippet": "ollama create --experimental now respects REQUIRES in Modelfiles for MLX-based models. ollama launch codex now cleans up old conflicting Codex profile config before launching. ollama launch pi now migrates users from the legacy Pi package to the official package and preserves the correct npm install prefix."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "ollama новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Революция в терминале: Главные супермодели Ollama в 2026 году",
+          "url": "https://vc.ru/ai/2806221-supermodeli-ollama-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Blog · Ollama",
+          "url": "https://ollama.com/blog",
+          "snippet": "В марте 2026 года ситуация изменилась: благодаря Ollama и архитектурам нового поколения, модели уровня «Super» теперь живут на наших локальных дисках."
+        },
+        {
+          "title": "Ollama на 30% быстрее — новости NVIDIA с CES 2026",
+          "url": "https://matveev.tech/ollama-ces-2026-nvidia/",
+          "snippet": "Ollama's highest performance on Apple Silicon yet with MLX June 11, 2026 Ollama's MLX engine has been updated to deliver its highest performance on Apple Silicon yet. Models output higher quality responses, respond faster, and use less memory. Improved performance and model support with GGUF June 5, 2026 Ollama 0.30 is now available with improved performance and GGUF model compatibility ..."
+        },
+        {
+          "title": "Ollama в 2026: локальный запуск LLM без путаницы с облаком",
+          "url": "https://toolarium.ru/ollama-zapusk-llm-lokalno/",
+          "snippet": "TL;DR: NVIDIA на CES 2026 показала ускорение open source AI-инструментов. Ollama генерирует токены на 30% быстрее, llama.cpp — на 35%. ComfyUI с новым форматом NVFP4 работает в 3-4 раза шустрее. Всё это для RTX-карточек."
+        },
+        {
+          "title": "Новый релиз Ollama 0.15.5 - pubmag.ru",
+          "url": "https://pubmag.ru/ru/short-news/habr-2026-02-07-ollama-0155-novyi-reliz/",
+          "snippet": "Проверено 7 мая 2026 года: как запустить Ollama на macOS, Windows и Linux, включить локальный режим и использовать OpenAI-совместимый API."
+        },
+        {
+          "title": "Локальные LLM: запуск Ollama и LM Studio для защиты данных в 2026 году",
+          "url": "[REDACTED]/lokalnye-llm-zapusk-ollama-i-lm-studio-dlya-zashhity-dannyh-v-2026-godu/",
+          "snippet": "Новость от Хабр, опубликованная 07.02.2026. Ollama начала устанавливаться как версия 0.15.5; в тексте упоминаются новые модели, включая qwen3-coder-next, и ограничения по вариантам запуска."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "github_evidence",
+      "query": "site:github.com ollama 2026",
+      "purpose": "GitHub repos/issues/README для технических сигналов и реального опыта",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Releases · ollama/ollama - GitHub",
+          "url": "https://github.com/ollama/ollama/releases",
+          "snippet": ""
+        },
+        {
+          "title": "GitHub - ollama/ollama: Get up and running with Kimi-K2.6, GLM-5.1 ...",
+          "url": "https://github.com/ollama/ollama",
+          "snippet": "Ollama 0.30 is now available, with improved compatibility and performance using llama.cpp. This augments the MLX engine on Apple Silicon, bringing support to a wider range of hardware."
+        },
+        {
+          "title": "Ollama · GitHub",
+          "url": "https://github.com/ollama",
+          "snippet": "You'll be prompted to run a model or connect Ollama to your existing agents or applications such as Claude Code, OpenClaw, OpenCode , Codex, Copilot, and more. To launch a specific integration: Supported integrations include Claude Code, Codex, Copilot CLI, Droid, and OpenCode."
+        },
+        {
+          "title": "ollama/README.md at main · ollama/ollama · GitHub",
+          "url": "https://github.com/ollama/ollama/blob/main/README.md",
+          "snippet": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models. Ollama has 3 repositories available. Follow their code on GitHub."
+        },
+        {
+          "title": "WeaverPassage/ollama-local-2026 - GitHub",
+          "url": "https://github.com/WeaverPassage/ollama-local-2026",
+          "snippet": "You'll be prompted to run a model or connect Ollama to your existing agents or applications such as Claude Code, OpenClaw, OpenCode , Codex, Copilot, and more. To launch a specific integration: Supported integrations include Claude Code, Codex, Copilot CLI, Droid, and OpenCode."
+        },
+        {
+          "title": "Releases · WeaverPassage/ollama-setup-2026 · GitHub",
+          "url": "https://github.com/WeaverPassage/ollama-setup-2026/releases",
+          "snippet": "💻 Системные требования ... 📦 Что внутри ollama-local-2026.exe — установщик / лаунчер под репозиторий ollama-local-2026 START.bat / INSTALL.bat — запуск в один клик QUICK_START.md — краткая шпаргалка"
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "official_docs",
+      "query": "ollama official docs documentation 2026",
+      "purpose": "официальная документация, changelog, developer docs",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Ollama's documentation - Ollama",
+          "url": "https://docs.ollama.com/index",
+          "snippet": ""
+        },
+        {
+          "title": "ollama/docs at main · ollama/ollama · GitHub",
+          "url": "https://github.com/ollama/ollama/tree/main/docs",
+          "snippet": "The official library for using Ollama with JavaScript or TypeScript."
+        },
+        {
+          "title": "ollama/docs/README.md at main · ollama/ollama · GitHub",
+          "url": "https://github.com/ollama/ollama/blob/main/docs/README.md",
+          "snippet": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models. - ollama/docs at main · ollama/ollama"
+        },
+        {
+          "title": "Ollama",
+          "url": "https://ollama.com/",
+          "snippet": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models. - ollama/docs/README.md at main · ollama/ollama"
+        },
+        {
+          "title": "Ollama",
+          "url": "https://ollama.us.org/",
+          "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+        },
+        {
+          "title": "Ollama in 2026: Complete Hands-On Guide to All Latest Features ...",
+          "url": "https://classicdba.com/generative-ai/2026-04-01/ollama-in-2026-complete-hands-on-guide-to-all-latest-features-commands-models-integrations",
+          "snippet": "The ollama docs and ollama documentation pages on ollama.com cover every flag, ollama commands, and environment variable in detail — including how to change the default ollama server port and set a custom ollama cloud or remote endpoint."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "community_experience",
+      "query": "ollama forum reddit discussion проблемы опыт 2026",
+      "purpose": "форумы, обсуждения, ошибки пользователей и живые сценарии",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "ollama - Reddit",
+          "url": "https://www.reddit.com/r/ollama/",
+          "snippet": ""
+        },
+        {
+          "title": "ollama - Reddit",
+          "url": "https://www.reddit.com/r/ollama/rising/",
+          "snippet": "I want to run Stable Diffusion (already installed and working), Ollama with some 7B models, maybe a little heavier if possible, and Open WebUI. I don't want to have to rely on WSL because it's difficult to expose that to the rest of my network."
+        },
+        {
+          "title": "Local LLM Reddit: What the Privacy-First AI Community Thinks (2026)",
+          "url": "https://www.aitooldiscovery.com/guides/local-llm-reddit",
+          "snippet": "My question is, does Ollama have plans to support the Nouveau GPU drivers? Alternatively, does anyone have a solution for how to fix the Nvidia driver issue on Linux Ubuntu?"
+        },
+        {
+          "title": "Ollama Not Using GPU: Complete Fix Guide (2026) | InsiderLLM",
+          "url": "https://insiderllm.com/guides/ollama-not-using-gpu-fix/",
+          "snippet": "What does Reddit say about running local LLMs? Community verdict on Ollama vs LM Studio, best local models (Llama, Mistral, DeepSeek), hardware requirements, and privacy benefits."
+        },
+        {
+          "title": "tryAGI Ollama · Discussions · GitHub",
+          "url": "https://github.com/tryAGI/Ollama/discussions",
+          "snippet": "Quick Answer: Run `ollama ps` — if it shows 100% CPU, Ollama isn't detecting your GPU. For NVIDIA: check `nvidia-smi` works (if not, install drivers), then reinstall Ollama so it picks up CUDA."
+        },
+        {
+          "title": "Ollama: Решение проблем и тонкая настройка",
+          "url": "https://mosregdata.ru/article/ollama-problem-solving-and-fine-tuning",
+          "snippet": "Explore the GitHub Discussions forum for tryAGI Ollama. Discuss code, ask questions & collaborate with the developer community."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "ollama модели 2026",
+      "purpose": "вторичный запрос: ollama модели",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Революция в терминале: Главные супермодели Ollama в 2026 году",
+          "url": "https://vc.ru/ai/2806221-supermodeli-ollama-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Ollama модели 2026: как выбрать под железо, русский язык и код",
+          "url": "https://habab.ru/ollama-modeli",
+          "snippet": "В марте 2026 года ситуация изменилась: благодаря Ollama и архитектурам нового поколения, модели уровня «Super» теперь живут на наших локальных дисках."
+        },
+        {
+          "title": "library - Ollama",
+          "url": "https://ollama.com/library?sort=newest",
+          "snippet": "Практический разбор Ollama-моделей: Qwen, DeepSeek-R1, Llama, Phi-4 и Mistral. Чек-лист выбора, ограничения бенчмарков, память, квантизация и реальные caveats."
+        },
+        {
+          "title": "Ollama Models Cheat Sheet 2026 | ComputingForGeeks",
+          "url": "https://computingforgeeks.com/ollama-models-cheat-sheet/",
+          "snippet": "Olmo is a series of Open language models designed to enable the science of language models."
+        },
+        {
+          "title": "Ollama",
+          "url": "https://ollama.com/",
+          "snippet": "Ollama models cheat sheet 2026: Llama 3.3, Mistral, Gemma 3, DeepSeek R1, Qwen 2.5 compared. Pull commands, VRAM math, RTX 4090 benchmarks."
+        },
+        {
+          "title": "Best Ollama Models: 12 Models Ranked for Coding, RAG & Agents (June ...",
+          "url": "https://www.morphllm.com/best-ollama-models",
+          "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "ollama скачать 2026",
+      "purpose": "вторичный запрос: ollama скачать",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как установить Ollama, как запустить Ollama и настроить в 2026 ...",
+          "url": "https://dtf.ru/howto/5097464-ustanovka-i-zapusk-ollama",
+          "snippet": ""
+        },
+        {
+          "title": "Download Ollama on Windows",
+          "url": "https://ollama.com/download/windows",
+          "snippet": "Разбираем, как установить Ollama в 2026 году, скачать модели, настроить запуск и понять, когда может понадобиться платный облачный доступ."
+        },
+        {
+          "title": "Releases · ollama/ollama - GitHub",
+          "url": "https://github.com/ollama/ollama/releases",
+          "snippet": "Download Ollama macOS Linux Windows ... paste this in PowerShell or Download for Windows Requires Windows 10 or later"
+        },
+        {
+          "title": "Как установить Ollama, как запустить Ollama и настроить в 2026 году ...",
+          "url": "https://vc.ru/services/2959940-kak-ustanovit-i-zapustit-ollama",
+          "snippet": "Ollama Launch now supports Hermes Desktop, a native desktop interface for the Hermes agent. Run it alongside your Hermes agent to get a visual interface for managing conversations, integrations, and messaging apps."
+        },
+        {
+          "title": "Ollama: установка на Mac и Windows, модели Llama и Mistral — 2026",
+          "url": "https://www.aravana.ai/insights/kak-ustanovit-ollama-zapusk-ai-na-svoem-kompyutere",
+          "snippet": "Разбираем, как установить Ollama в 2026 году, скачать модели, запустить локальный AI и настроить его под свой компьютер."
+        },
+        {
+          "title": "Widthtrutally/ollama-runner-2026: Ollama - GitHub",
+          "url": "https://github.com/Widthtrutally/ollama-runner-2026",
+          "snippet": "Как скачать и запустить Ollama на Mac, Windows и Linux. Устанавливаем Llama 3, Mistral, Qwen локально — без интернета, бесплатно."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "ollama api 2026",
+      "purpose": "вторичный запрос: ollama api",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Blog · Ollama",
+          "url": "https://ollama.com/blog",
+          "snippet": ""
+        },
+        {
+          "title": "Ollama's documentation - Ollama",
+          "url": "https://docs.ollama.com/index",
+          "snippet": "February 15, 2024 Ollama is now available on Windows in preview, making it possible to pull, run and create large language models in a new native Windows experience. Ollama on Windows includes built-in GPU acceleration, access to the full model library, and serves the Ollama API including OpenAI compatibility. OpenAI compatibility ..."
+        },
+        {
+          "title": "Releases · ollama/ollama - GitHub",
+          "url": "https://github.com/ollama/ollama/releases",
+          "snippet": "The official library for using Ollama with JavaScript or TypeScript."
+        },
+        {
+          "title": "API Reference | ollama/ollama | DeepWiki",
+          "url": "https://deepwiki.com/ollama/ollama/3-api-reference",
+          "snippet": "ollama create --experimental now respects REQUIRES in Modelfiles for MLX-based models. ollama launch codex now cleans up old conflicting Codex profile config before launching. ollama launch pi now migrates users from the legacy Pi package to the official package and preserves the correct npm install prefix."
+        },
+        {
+          "title": "Ollama Setup 2026 | Local LLM Guide - SitePoint",
+          "url": "https://www.sitepoint.com/ollama-setup-guide-2026/",
+          "snippet": "This document provides a comprehensive reference for Ollama's HTTP REST API. It covers all endpoints for model inference (generation, chat, embeddings), model management (pull, push, create, delete), and system information."
+        },
+        {
+          "title": "api package - github.com/ollama/ollama/api - Go Packages",
+          "url": "https://pkg.go.dev/github.com/ollama/ollama/api",
+          "snippet": "Master Ollama in 2026 with this professional setup guide. Configure models, optimize performance, and integrate with your development workflow."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "secondary_4",
+      "query": "как установить ollama 2026",
+      "purpose": "вторичный запрос: как установить ollama",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как установить Ollama, как запустить Ollama и настроить в 2026 ...",
+          "url": "https://dtf.ru/howto/5097464-ustanovka-i-zapusk-ollama",
+          "snippet": ""
+        },
+        {
+          "title": "Как установить Ollama, как запустить Ollama и настроить в 2026 году ...",
+          "url": "https://vc.ru/services/2959940-kak-ustanovit-i-zapustit-ollama",
+          "snippet": "Разбираем, как установить Ollama в 2026 году, скачать модели, настроить запуск и понять, когда может понадобиться платный облачный доступ."
+        },
+        {
+          "title": "Ollama: установка на Mac и Windows, модели Llama и Mistral — 2026",
+          "url": "https://www.aravana.ai/insights/kak-ustanovit-ollama-zapusk-ai-na-svoem-kompyutere",
+          "snippet": "Разбираем, как установить Ollama в 2026 году, скачать модели, запустить локальный AI и настроить его под свой компьютер."
+        },
+        {
+          "title": "Ollama установка и настройка на ПК — как запустить Llama локально",
+          "url": "https://itcodik.com/article/ollama-ustanovka-nastroika-zapusk-llama-lokalno",
+          "snippet": "Как скачать и запустить Ollama на Mac, Windows и Linux. Устанавливаем Llama 3, Mistral, Qwen локально — без интернета, бесплатно."
+        },
+        {
+          "title": "Локальные ИИ-модели 2026: как установить Ollama и запустить мощный ИИ у ...",
+          "url": "https://dzen.ru/a/agDFkAqn7ESTMrml",
+          "snippet": "Пошаговая инструкция по установке Ollama на Windows, macOS и Linux. Разбираем, как скачать Llama, Mistral и другие модели и запустить их локально без интернета."
+        },
+        {
+          "title": "Ollama Tutorial: Запуск LLM Локально 2026 | Multi AI",
+          "url": "https://multi-ai.ai/ru/blog/ollama-tutorial-run-llms-locally-step-by-step-ru",
+          "snippet": "Локальные ИИ-модели 2026: как установить Ollama и запустить мощный ИИ у себя на компьютере. Пошаговый гайд."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "secondary_5",
+      "query": "локальные нейросети 2026",
+      "purpose": "вторичный запрос: локальные нейросети",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Топ локальных нейросетей ︎2026: подборка ИИ для запуска из дома",
+          "url": "https://habr.com/ru/companies/bothub/articles/1028906/",
+          "snippet": ""
+        },
+        {
+          "title": "ТОП-12 локальных нейросетей 2026: как установить ИИ на ПК бесплатно",
+          "url": "https://trashexpert.ru/software/lokalnye-nejroseti-na-pk",
+          "snippet": "Релиз 2 апреля 2026 года под Apache 2.0, четыре варианта — E2B, E4B, 26B MoE и 31B Dense. По бенчмаркам 31B‑версия пробила топ-3 Arena AI Leaderboard и побеждала модели в 20 раз большего размера — для опенсорса это ..."
+        },
+        {
+          "title": "Топ-13 лучших локальных нейросетей 2026 | статьи Universus",
+          "url": "https://universus.pro/blog/luchshie-lokalnye-nejroseti-2026/",
+          "snippet": "Гайд по запуску Llama 4, DeepSeek и Stable Diffusion на ПК в 2026 году. Системные требования, ссылки на софт и выбор нейросети под ваше железо без интернета и VPN."
+        },
+        {
+          "title": "Эра ИИ: Топ-7 нейросетей на 2026 год - vc.ru",
+          "url": "https://vc.ru/ai/2707563-top-7-neurosetey-2026-goda",
+          "snippet": "В статье собрали лучшие локальные нейросети сезона: проанализировали требования к железу, результаты тестов и новинки."
+        },
+        {
+          "title": "Локальные нейросети для программистов - ТОП-20 ИИ сервисов 2026 года",
+          "url": "https://dtf.ru/top-smm/3047489-lokalnye-neiroseti-dlya-programmistov-top-20-ii-servisov-2026-goda",
+          "snippet": "Сегодня, в начале 2026-го, мы спорим, чья нейросеть лучше справляется с управлением отделом маркетинга или поиском уязвимостей в смарт-контрактах."
+        },
+        {
+          "title": "Локальные нейросети - запустить ИИ на своём компьютере в 2026 году",
+          "url": "https://vc.ru/ai/2966523-lokalnye-neirosseti-zapusk-ii-na-svoem-kompyutere",
+          "snippet": "Что такое локальные нейросети и как они могут помочь программистам? Локальные нейросети - это модели искусственного интеллекта, которые разрабатываются и обучаются на конкретных ..."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "secondary_6",
+      "query": "как локально развернуть нейросеть 2026",
+      "purpose": "вторичный запрос: как локально развернуть нейросеть",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "ТОП-12 локальных нейросетей 2026: как установить ИИ на ПК бесплатно",
+          "url": "https://trashexpert.ru/software/lokalnye-nejroseti-na-pk",
+          "snippet": ""
+        },
+        {
+          "title": "Как запустить нейросеть локально на своём ПК [2026] | НейроСкоп",
+          "url": "https://neiroscop.ru/blog/zapusk-nejroseti-lokalno",
+          "snippet": "Гайд по запуску Llama 4, DeepSeek и Stable Diffusion на ПК в 2026 году. Системные требования, ссылки на софт и выбор нейросети под ваше железо без интернета и VPN."
+        },
+        {
+          "title": "Топ локальных нейросетей ︎2026: подборка ИИ для запуска из дома",
+          "url": "https://habr.com/ru/companies/bothub/articles/1028906/",
+          "snippet": "Локальный запуск решает все три проблемы. В этом гиде я покажу, как запустить мощную языковую модель прямо на вашем компьютере — бесплатно, приватно и без ограничений. Когда вы используете ChatGPT или Claude, ваши запросы проходят через серверы компании."
+        },
+        {
+          "title": "Топ-13 лучших локальных нейросетей 2026 | статьи Universus",
+          "url": "https://universus.pro/blog/luchshie-lokalnye-nejroseti-2026/",
+          "snippet": "Локальная нейросеть почти всегда слабее, медленнее и тупее, чем то, что вы получаете в платной онлайн‑подписке. На вашем десктопе крутится модель уровня «компактная и старательная», а не «всеведущая и моментальная»."
+        },
+        {
+          "title": "Как установить ИИ на компьютер: лучшие модели ИИ для развертывания на ...",
+          "url": "https://digital-razor.ru/media/articles/workstation/local-ai-models-pc-server-2026/",
+          "snippet": "В статье собрали лучшие локальные нейросети сезона: проанализировали требования к железу, результаты тестов и новинки. Чтобы разобраться, чем локальные нейросети отличаются от публичных чат-ботов, начнём с теории."
+        },
+        {
+          "title": "Топ-10 бесплатных локальных нейросетей: как скачать и установить ИИ на ...",
+          "url": "https://skillbox.ru/media/code/top-lokalnyh-nejrosetej/",
+          "snippet": "В этой статье разбираем, как запустить свою автономную нейросеть: какие процессоры и видеокарты выбрать и какие программы установить. Локальные нейросети — это программы, которые устанавливаются прямо на компьютер, рабочую станцию или корпоративный сервер."
+        }
+      ],
+      "searched_at": "2026-06-17"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как развернуть локальную LLM через Ollama для бизнеса: пошаговый workflow от установки до API 2026",
+      "purpose": "SERP по H1",
+      "result_count": 0,
+      "results": [],
+      "searched_at": "2026-06-17"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://vc.ru/ai/2806221-supermodeli-ollama-2026",
+      "title": "Революция в терминале: Главные супермодели Ollama в 2026 году",
+      "from_query": "ollama 2026"
+    },
+    {
+      "url": "https://ollama.com/",
+      "title": "Ollama",
+      "from_query": "ollama 2026"
+    },
+    {
+      "url": "https://mljourney.com/best-ollama-models-in-2026-a-practical-guide-by-use-case/",
+      "title": "Best Ollama Models in 2026: A Practical Guide by Use Case",
+      "from_query": "ollama 2026"
+    },
+    {
+      "url": "https://dev.to/pooyagolchian/local-ai-in-2026-running-production-llms-on-your-own-hardware-with-ollama-54d0",
+      "title": "Local AI in 2026: Ollama Benchmarks, $0 Inference, and the End of Per ...",
+      "from_query": "ollama 2026"
+    },
+    {
+      "url": "https://toolhalla.ai/blog/best-ollama-models-2026",
+      "title": "Best Ollama Models: What to Pull for 8GB-24GB (2026)",
+      "from_query": "ollama 2026"
+    },
+    {
+      "url": "https://meshworld.in/blog/ai/ollama-models-benchmark/",
+      "title": "Best Ollama Models to Run in 2026: Benchmarks & Recommendations",
+      "from_query": "ollama 2026"
+    },
+    {
+      "url": "https://insidepc.tech/ai/ai-local/llama-local-llm",
+      "title": "Llama локально: какую модель запустить и на чём",
+      "from_query": "ollama июнь 2026"
+    },
+    {
+      "url": "https://www.aravana.ai/insights/kak-ustanovit-ollama-zapusk-ai-na-svoem-kompyutere",
+      "title": "Ollama: установка на Mac и Windows, модели Llama и Mistral — 2026",
+      "from_query": "ollama июнь 2026"
+    },
+    {
+      "url": "https://dtf.ru/howto/5097464-ustanovka-i-zapusk-ollama",
+      "title": "Как установить Ollama, как запустить Ollama и настроить в 2026 ...",
+      "from_query": "ollama июнь 2026"
+    },
+    {
+      "url": "https://vc.ru/services/2959940-kak-ustanovit-i-zapustit-ollama",
+      "title": "Как установить Ollama, как запустить Ollama и настроить в 2026 году ...",
+      "from_query": "ollama июнь 2026"
+    },
+    {
+      "url": "https://github.com/ollama/ollama/releases",
+      "title": "Releases · ollama/ollama - GitHub",
+      "from_query": "ollama июнь 2026"
+    },
+    {
+      "url": "https://thenote.app/post/ru/polnoe-rukovodstvo-po-ollama-2026-llm-cherez-cli-oblako-i-python-jzrcldyyvi",
+      "title": "Полное руководство по Ollama (2026) - LLM через CLI, облако и Python",
+      "from_query": "ollama июнь 2026"
+    },
+    {
+      "url": "https://ollama.com/blog",
+      "title": "Blog · Ollama",
+      "from_query": "ollama новости 2026"
+    },
+    {
+      "url": "https://matveev.tech/ollama-ces-2026-nvidia/",
+      "title": "Ollama на 30% быстрее — новости NVIDIA с CES 2026",
+      "from_query": "ollama новости 2026"
+    },
+    {
+      "url": "https://toolarium.ru/ollama-zapusk-llm-lokalno/",
+      "title": "Ollama в 2026: локальный запуск LLM без путаницы с облаком",
+      "from_query": "ollama новости 2026"
+    },
+    {
+      "url": "https://pubmag.ru/ru/short-news/habr-2026-02-07-ollama-0155-novyi-reliz/",
+      "title": "Новый релиз Ollama 0.15.5 - pubmag.ru",
+      "from_query": "ollama новости 2026"
+    },
+    {
+      "url": "[REDACTED]/lokalnye-llm-zapusk-ollama-i-lm-studio-dlya-zashhity-dannyh-v-2026-godu/",
+      "title": "Локальные LLM: запуск Ollama и LM Studio для защиты данных в 2026 году",
+      "from_query": "ollama новости 2026"
+    },
+    {
+      "url": "https://github.com/ollama/ollama",
+      "title": "GitHub - ollama/ollama: Get up and running with Kimi-K2.6, GLM-5.1 ...",
+      "from_query": "site:github.com ollama 2026"
+    },
+    {
+      "url": "https://github.com/ollama",
+      "title": "Ollama · GitHub",
+      "from_query": "site:github.com ollama 2026"
+    },
+    {
+      "url": "https://github.com/ollama/ollama/blob/main/README.md",
+      "title": "ollama/README.md at main · ollama/ollama · GitHub",
+      "from_query": "site:github.com ollama 2026"
+    },
+    {
+      "url": "https://github.com/WeaverPassage/ollama-local-2026",
+      "title": "WeaverPassage/ollama-local-2026 - GitHub",
+      "from_query": "site:github.com ollama 2026"
+    },
+    {
+      "url": "https://github.com/WeaverPassage/ollama-setup-2026/releases",
+      "title": "Releases · WeaverPassage/ollama-setup-2026 · GitHub",
+      "from_query": "site:github.com ollama 2026"
+    },
+    {
+      "url": "https://docs.ollama.com/index",
+      "title": "Ollama's documentation - Ollama",
+      "from_query": "ollama official docs documentation 2026"
+    },
+    {
+      "url": "https://github.com/ollama/ollama/tree/main/docs",
+      "title": "ollama/docs at main · ollama/ollama · GitHub",
+      "from_query": "ollama official docs documentation 2026"
+    },
+    {
+      "url": "https://github.com/ollama/ollama/blob/main/docs/README.md",
+      "title": "ollama/docs/README.md at main · ollama/ollama · GitHub",
+      "from_query": "ollama official docs documentation 2026"
+    },
+    {
+      "url": "https://ollama.us.org/",
+      "title": "Ollama",
+      "from_query": "ollama official docs documentation 2026"
+    },
+    {
+      "url": "https://classicdba.com/generative-ai/2026-04-01/ollama-in-2026-complete-hands-on-guide-to-all-latest-features-commands-models-integrations",
+      "title": "Ollama in 2026: Complete Hands-On Guide to All Latest Features ...",
+      "from_query": "ollama official docs documentation 2026"
+    },
+    {
+      "url": "https://www.reddit.com/r/ollama/",
+      "title": "ollama - Reddit",
+      "from_query": "ollama forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://www.reddit.com/r/ollama/rising/",
+      "title": "ollama - Reddit",
+      "from_query": "ollama forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://www.aitooldiscovery.com/guides/local-llm-reddit",
+      "title": "Local LLM Reddit: What the Privacy-First AI Community Thinks (2026)",
+      "from_query": "ollama forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://insiderllm.com/guides/ollama-not-using-gpu-fix/",
+      "title": "Ollama Not Using GPU: Complete Fix Guide (2026) | InsiderLLM",
+      "from_query": "ollama forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://github.com/tryAGI/Ollama/discussions",
+      "title": "tryAGI Ollama · Discussions · GitHub",
+      "from_query": "ollama forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://mosregdata.ru/article/ollama-problem-solving-and-fine-tuning",
+      "title": "Ollama: Решение проблем и тонкая настройка",
+      "from_query": "ollama forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://habab.ru/ollama-modeli",
+      "title": "Ollama модели 2026: как выбрать под железо, русский язык и код",
+      "from_query": "ollama модели 2026"
+    },
+    {
+      "url": "https://ollama.com/library?sort=newest",
+      "title": "library - Ollama",
+      "from_query": "ollama модели 2026"
+    },
+    {
+      "url": "https://computingforgeeks.com/ollama-models-cheat-sheet/",
+      "title": "Ollama Models Cheat Sheet 2026 | ComputingForGeeks",
+      "from_query": "ollama модели 2026"
+    },
+    {
+      "url": "https://www.morphllm.com/best-ollama-models",
+      "title": "Best Ollama Models: 12 Models Ranked for Coding, RAG & Agents (June ...",
+      "from_query": "ollama модели 2026"
+    },
+    {
+      "url": "https://ollama.com/download/windows",
+      "title": "Download Ollama on Windows",
+      "from_query": "ollama скачать 2026"
+    },
+    {
+      "url": "https://github.com/Widthtrutally/ollama-runner-2026",
+      "title": "Widthtrutally/ollama-runner-2026: Ollama - GitHub",
+      "from_query": "ollama скачать 2026"
+    },
+    {
+      "url": "https://deepwiki.com/ollama/ollama/3-api-reference",
+      "title": "API Reference | ollama/ollama | DeepWiki",
+      "from_query": "ollama api 2026"
+    },
+    {
+      "url": "https://www.sitepoint.com/ollama-setup-guide-2026/",
+      "title": "Ollama Setup 2026 | Local LLM Guide - SitePoint",
+      "from_query": "ollama api 2026"
+    },
+    {
+      "url": "https://pkg.go.dev/github.com/ollama/ollama/api",
+      "title": "api package - github.com/ollama/ollama/api - Go Packages",
+      "from_query": "ollama api 2026"
+    },
+    {
+      "url": "https://itcodik.com/article/ollama-ustanovka-nastroika-zapusk-llama-lokalno",
+      "title": "Ollama установка и настройка на ПК — как запустить Llama локально",
+      "from_query": "как установить ollama 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/agDFkAqn7ESTMrml",
+      "title": "Локальные ИИ-модели 2026: как установить Ollama и запустить мощный ИИ у ...",
+      "from_query": "как установить ollama 2026"
+    },
+    {
+      "url": "https://multi-ai.ai/ru/blog/ollama-tutorial-run-llms-locally-step-by-step-ru",
+      "title": "Ollama Tutorial: Запуск LLM Локально 2026 | Multi AI",
+      "from_query": "как установить ollama 2026"
+    },
+    {
+      "url": "https://habr.com/ru/companies/bothub/articles/1028906/",
+      "title": "Топ локальных нейросетей ︎2026: подборка ИИ для запуска из дома",
+      "from_query": "локальные нейросети 2026"
+    },
+    {
+      "url": "https://trashexpert.ru/software/lokalnye-nejroseti-na-pk",
+      "title": "ТОП-12 локальных нейросетей 2026: как установить ИИ на ПК бесплатно",
+      "from_query": "локальные нейросети 2026"
+    },
+    {
+      "url": "https://universus.pro/blog/luchshie-lokalnye-nejroseti-2026/",
+      "title": "Топ-13 лучших локальных нейросетей 2026 | статьи Universus",
+      "from_query": "локальные нейросети 2026"
+    },
+    {
+      "url": "https://vc.ru/ai/2707563-top-7-neurosetey-2026-goda",
+      "title": "Эра ИИ: Топ-7 нейросетей на 2026 год - vc.ru",
+      "from_query": "локальные нейросети 2026"
+    },
+    {
+      "url": "https://dtf.ru/top-smm/3047489-lokalnye-neiroseti-dlya-programmistov-top-20-ii-servisov-2026-goda",
+      "title": "Локальные нейросети для программистов - ТОП-20 ИИ сервисов 2026 года",
+      "from_query": "локальные нейросети 2026"
+    },
+    {
+      "url": "https://vc.ru/ai/2966523-lokalnye-neirosseti-zapusk-ii-na-svoem-kompyutere",
+      "title": "Локальные нейросети - запустить ИИ на своём компьютере в 2026 году",
+      "from_query": "локальные нейросети 2026"
+    },
+    {
+      "url": "https://neiroscop.ru/blog/zapusk-nejroseti-lokalno",
+      "title": "Как запустить нейросеть локально на своём ПК [2026] | НейроСкоп",
+      "from_query": "как локально развернуть нейросеть 2026"
+    },
+    {
+      "url": "https://digital-razor.ru/media/articles/workstation/local-ai-models-pc-server-2026/",
+      "title": "Как установить ИИ на компьютер: лучшие модели ИИ для развертывания на ...",
+      "from_query": "как локально развернуть нейросеть 2026"
+    },
+    {
+      "url": "https://skillbox.ru/media/code/top-lokalnyh-nejrosetej/",
+      "title": "Топ-10 бесплатных локальных нейросетей: как скачать и установить ИИ на ...",
+      "from_query": "как локально развернуть нейросеть 2026"
+    }
+  ]
+}

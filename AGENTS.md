@@ -16,6 +16,7 @@ shell today + research_start
   → excalibur-blog-cover || excalibur-blog-schema
   → excalibur-blog-indexer
   → excalibur-blog-publish (автоматически после Indexer; skip только publish:no)
+ → excalibur-blog-fixer (если memory/pipeline-fix-queue.md содержит open incidents)
 ```
 
 ## Cloud Task fallback
@@ -58,6 +59,7 @@ shell today + research_start
 - `=== EXCALIBUR BLOG SCHEMA ===`
 - `=== EXCALIBUR BLOG INDEXER ===`
 - `=== EXCALIBUR BLOG PUBLISH ===`
+- `=== EXCALIBUR BLOG FIXER ===`
 - `=== EXCALIBUR BLOG (PIPELINE DONE) ===`
 
 ## Канонические пути
@@ -68,6 +70,7 @@ shell today + research_start
 |----------|------|
 | Плагин / контракты | `agents/`, `skills/`, `shared/`, `scripts/` |
 | Runtime memory | `memory/` |
+| Durable incident queue | `memory/pipeline-fix-queue.md` |
 | Журнал публикаций | `shared/published-articles.md` |
 | Cloud agents | `.cursor/agents/` |
 | Cloud skills | `.cursor/skills/` |
@@ -95,10 +98,9 @@ python3 scripts/excalibur_blog_research_start.py --topic-id B01
 
 ## Секреты
 
-Только Cloud Secrets / env vars. Не печатать SFTP/API ключи в handoff, PR, ответах.
+Только Cloud Secrets / env vars. Не печатать FTP/API ключи в handoff, PR, ответах.
 
-- Primary publish secrets: `SSH_HOST`, `SSH_PORT`, `SSH_USER`, `SSH_PASSWORD`, `SSH_ROOT`, `PUBLIC_SITE_URL`, `EXCALIBUR_BLOG_ALLOW_PUBLISH`
-- Legacy `FTP_*` aliases are supported by the script only for backward compatibility; publish transport is still SFTP/SSH.
+- `FTP_*`/`SSH_*`, `PUBLIC_SITE_URL`, `EXCALIBUR_BLOG_ALLOW_PUBLISH`
 - Publish transport: сразу SFTP/SSH; FTP upload из Cloud не использовать.
 - MCP через `${env:...}` в mcp.json
 
@@ -107,6 +109,14 @@ python3 scripts/excalibur_blog_research_start.py --topic-id B01
 **Не коммитить:** `.cursor/excalibur-blog-handoff.md`, `shared/excalibur-blog-handoff.md`, `.cursor/excalibur-blog-fragments/`, `memory/site.env.local`, абсолютные пути Windows/macOS в отчётах.
 
 **Коммитить после publish:** `shared/published-articles.md`, при необходимости артефакты статьи в `memory/blog/`.
+
+## Incident memory и fixer loop
+
+- Любой агент, который встретил blocker, retry, tool/API error, ручной workaround, переписывание артефакта из-за неясного контракта или user correction, обязан дописать incident в `memory/pipeline-fix-queue.md`.
+- Формат и запреты: `shared/pipeline-incident-fix-contract.md`.
+- В каждом handoff/fragment агент пишет `incident_report: none | memory/pipeline-fix-queue.md#INC-...`.
+- После `PIPELINE DONE` или терминального blocker Директор проверяет очередь и запускает `Task(excalibur-blog-fixer)`.
+- Fixer вносит durable repo changes в `agents/`, `.cursor/agents/`, `skills/`, `.cursor/skills/`, `shared/`, `scripts/`, templates или stable `memory/` configs, запускает проверки и закрывает incident как `fixed` или `needs-human`.
 
 ## Субагенты (.cursor/agents)
 
@@ -119,6 +129,7 @@ python3 scripts/excalibur_blog_research_start.py --topic-id B01
 | excalibur-blog-schema | schema-excalibur-blog |
 | excalibur-blog-indexer | indexer-excalibur-blog |
 | excalibur-blog-publish | excalibur-wp-publish |
+| excalibur-blog-fixer | fixer-excalibur-blog |
 
 Директор: `.cursor/agents/excalibur-blog-director.md` + `director-excalibur-blog` skill — **не Task**.
 

@@ -1,23 +1,22 @@
 {
-  "registry_version": "public-template",
-  "comment": "Public template authors registry. Replace with your own public author profile before publishing.",
+  "registry_version": "1.0",
+  "comment": "E-E-A-T Authors Registry for Maya AI / Ковчег blog. Provides authoritative profiles for article attribution and sameAs schema.org generation.",
   "authors": [
     {
-      "id": "example-author",
-      "name_ru": "Example Author",
-      "name_en": "Example Author",
-      "job_title_ru": "Project author",
-      "job_title_en": "Project author",
-      "bio_short_ru": "Replace with a public author bio.",
-      "bio_long_ru": "Replace with a public author bio.",
-      "expertise_tags": [
-        "seo",
-        "geo",
-        "automation"
-      ],
-      "avatar_url": "https://example.com/author",
+      "id": "artur-horoshev",
+      "name_ru": "Артур Хорошев",
+      "name_en": "Artur Horoshev",
+      "job_title_ru": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+      "job_title_en": "CEO at Maya AI, Make.com & Vibecoding Course Author",
+      "bio_short_ru": "Эксперт по автоматизации бизнес-процессов на Make.com, вайбкодингу и AI-агентам. Тестировщик нейросетей Microsoft и Google, основатель сообщества «Ковчег».",
+      "bio_long_ru": "Артур Хорошев — ведущий российский эксперт по Make.com, вайбкодингу и AI-контент-заводам. Автор флагманского курса на kv-ai.ru (159+ уроков), спикер Московского Политеха, neuro-дизайнер и digital-маркетолог. Обучает создавать сложные автоматизации, кастомные модули и AI-агентов без знания программирования — через Cursor AI, OpenClaw и MCP.",
+      "expertise_tags": ["make_integromat", "vibecoding", "cursor_ai", "openclaw", "mcp", "ai_agents", "content_factory", "prompt_engineering", "geo", "seo", "telegram_bots", "marketing_automation"],
+      "avatar_url": "https://kv-ai.ru/artur-horosheff",
       "sameAs": [
-        "https://example.com/author"
+        "https://kv-ai.ru/artur-horosheff",
+        "https://mayai.ru/obo-mne/",
+        "https://t.me/maya_pro",
+        "https://t.me/horosheff"
       ]
     }
   ]

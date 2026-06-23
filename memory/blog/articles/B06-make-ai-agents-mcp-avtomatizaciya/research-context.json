@@ -1,0 +1,98 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-16",
+    "today_ru": "16.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-18",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-16 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B06",
+    "priority": "P0",
+    "slug": "make-ai-agents-mcp-avtomatizaciya",
+    "h1": "Как настроить автоматизацию Make с AI Agents и MCP: пошаговый workflow для бизнеса",
+    "primary_query": "автоматизация make",
+    "secondary_queries": [
+      "автоматизация make com",
+      "автоматизация процессов make",
+      "make ai agent",
+      "make ии агенты",
+      "make сценарии",
+      "make com как пользоваться"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B06",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "автоматизация make 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "автоматизация make июнь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "автоматизация make новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "автоматизация make com 2026",
+      "purpose": "вторичный запрос: автоматизация make com"
+    },
+    {
+      "id": "secondary_2",
+      "query": "автоматизация процессов make 2026",
+      "purpose": "вторичный запрос: автоматизация процессов make"
+    },
+    {
+      "id": "secondary_3",
+      "query": "make ai agent 2026",
+      "purpose": "вторичный запрос: make ai agent"
+    },
+    {
+      "id": "secondary_4",
+      "query": "make ии агенты 2026",
+      "purpose": "вторичный запрос: make ии агенты"
+    },
+    {
+      "id": "secondary_5",
+      "query": "make сценарии 2026",
+      "purpose": "вторичный запрос: make сценарии"
+    },
+    {
+      "id": "secondary_6",
+      "query": "make com как пользоваться 2026",
+      "purpose": "вторичный запрос: make com как пользоваться"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как настроить автоматизацию Make с AI Agents и MCP: пошаговый workflow для бизнеса 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B06-make-ai-agents-mcp-avtomatizaciya",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

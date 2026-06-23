@@ -1,0 +1,474 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-11",
+    "today_ru": "11.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-13",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-11 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B04",
+    "priority": "P0",
+    "slug": "geo-optimizaciya-sajta-2026",
+    "h1": "Как настроить GEO-оптимизацию сайта: чек-лист для попадания в ответы нейросетей",
+    "primary_query": "geo оптимизация",
+    "secondary_queries": [
+      "geo оптимизация сайта",
+      "geo seo оптимизация",
+      "с чего начать geo оптимизацию",
+      "geo оптимизация контента"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "geo оптимизация 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "GEO-оптимизация в 2026: как попасть в ответы YandexGPT, Алисы AI и ...",
+          "url": "https://digitalimpuls.ru/blog/geo-optimization-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "Geo Оптимизация 2026: Полный Гайд По Поиску Клиентов",
+          "url": "https://blog.geouseo.ru/geo-optimizaciya-2026-polnyj-gajd-po-poisku-klientov/",
+          "snippet": "Разбираем, чем GEO отличается от SEO, что такое llms.txt и Share of Voice, и показываем, как российские компании готовят сайт к нейропоиску в YandexGPT, Алисе AI, GigaChat, ChatGPT, Claude и Perplexity."
+        },
+        {
+          "title": "Geo-оптимизация В 2026: Как Попасть В Ответ Ии",
+          "url": "https://lpmotor.ru/articles/geo-optimizatsiya-2026-kak-popast-v-otvet-yandeks-neyro-i-google-ai-overviews-2605",
+          "snippet": "Ищите клиентов в 2026? GEO оптимизация помогает попасть в ответы ИИ. Разбираем рабочие стратегии, цифры и шаги для роста заявок без бюджета на рекламу."
+        },
+        {
+          "title": "Geo Оптимизация Сайта 2026: Как Попасть В Ответы Нейросетей И Sge",
+          "url": "https://a3-agency.ru/blog/tpost/s6rvhfxru1-geo-generative-engine-optimization-kak-p",
+          "snippet": "GEO-оптимизация в 2026 году: как попасть в ответ Яндекс Нейро и Google AI Overviews. Пошаговое руководство, рабочие приёмы, чек-лист и ошибки."
+        },
+        {
+          "title": "GEO-оптимизация (Generative Engine Optimization): что это и как делать ...",
+          "url": "https://audit4seo.ru/blog/geo-optimizaciya-2026",
+          "snippet": "Узнайте, что такое GEO (Generative Engine Optimization) и как подготовить контент для поисковых нейросетей."
+        },
+        {
+          "title": "Geo-оптимизация В 2026: Полное Руководство По Продвижению В Ai ...",
+          "url": "https://spat.by/blog/geo-optimizaciya-2026-polnoe-rukovodstvo",
+          "snippet": "Полный гайд по GEO-оптимизации 2026: что такое Generative Engine Optimization, отличия от SEO, практические методы, роль llms.txt и Schema.org, чек-лист для Яндекса и Google."
+        }
+      ],
+      "searched_at": "2026-06-11"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "geo оптимизация июнь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Geo Оптимизация 2026: Полный Гайд По Поиску Клиентов",
+          "url": "https://blog.geouseo.ru/geo-optimizaciya-2026-polnyj-gajd-po-poisku-klientov/",
+          "snippet": ""
+        },
+        {
+          "title": "GEO-оптимизация в 2026: как попасть в ответы YandexGPT, Алисы AI и ...",
+          "url": "https://digitalimpuls.ru/blog/geo-optimization-2026/",
+          "snippet": "Ищите клиентов в 2026? GEO оптимизация помогает попасть в ответы ИИ. Разбираем рабочие стратегии, цифры и шаги для роста заявок без бюджета на рекламу."
+        },
+        {
+          "title": "GEO-оптимизация (Generative Engine Optimization): что это и как делать ...",
+          "url": "https://audit4seo.ru/blog/geo-optimizaciya-2026",
+          "snippet": "Разбираем, чем GEO отличается от SEO, что такое llms.txt и Share of Voice, и показываем, как российские компании готовят сайт к нейропоиску в YandexGPT, Алисе AI, GigaChat, ChatGPT, Claude и Perplexity."
+        },
+        {
+          "title": "Geo-оптимизация В 2026: Как Попасть В Ответ Ии",
+          "url": "https://lpmotor.ru/articles/geo-optimizatsiya-2026-kak-popast-v-otvet-yandeks-neyro-i-google-ai-overviews-2605",
+          "snippet": "Полный гайд по GEO-оптимизации 2026: что такое Generative Engine Optimization, отличия от SEO, практические методы, роль llms.txt и Schema.org, чек-лист для Яндекса и Google."
+        },
+        {
+          "title": "Geo Оптимизация Сайта 2026: Как Попасть В Ответы Нейросетей И Sge",
+          "url": "https://a3-agency.ru/blog/tpost/s6rvhfxru1-geo-generative-engine-optimization-kak-p",
+          "snippet": "GEO-оптимизация в 2026 году: как попасть в ответ Яндекс Нейро и Google AI Overviews. Пошаговое руководство, рабочие приёмы, чек-лист и ошибки."
+        },
+        {
+          "title": "Geo-оптимизация В 2026: Полное Руководство По Продвижению В Ai ...",
+          "url": "https://spat.by/blog/geo-optimizaciya-2026-polnoe-rukovodstvo",
+          "snippet": "Узнайте, что такое GEO (Generative Engine Optimization) и как подготовить контент для поисковых нейросетей."
+        }
+      ],
+      "searched_at": "2026-06-11"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "geo оптимизация новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Geo-оптимизация: Почему Она Вытесняет Seo В 2026 Году",
+          "url": "https://vc.ru/marketing/2885232-geo-optimizaciya-zamenyaet-seo",
+          "snippet": ""
+        },
+        {
+          "title": "Geo-оптимизация В 2026 Году: Главные Тренды И Инсайты",
+          "url": "https://vc.ru/id258137/2885777-geo-optimizatsiya-i-ii-klyuchevye-trendy-dlya-biznesa",
+          "snippet": "Конкретное распределение зависит от ниши. Если у вас есть офисы в разных городах или физические точки — GEO теперь более критичен. Если вы информационный блог — SEO остаётся важным."
+        },
+        {
+          "title": "Почему Geo Важнее, Чем Seo В 2026 Году | Шпиониро",
+          "url": "https://spioniro.ru/blog/pochemu-geo-vazhnee-seo-2026/",
+          "snippet": "Главный вывод 2026 — это не конец SEO, а его эволюция. GEO и ИИ становятся центром, SEO отходит на периферию, контент остается фундаментом. Компании, которые адаптируются к этим трендам ..."
+        },
+        {
+          "title": "Geo-оптимизация В 2026: Полное Руководство По Продвижению В Ai ...",
+          "url": "https://spat.by/blog/geo-optimizaciya-2026-polnoe-rukovodstvo",
+          "snippet": "В этой статье мы разберёмся, почему данные 2025-2026 годов свидетельствуют о смене парадигмы, и как организации должны адаптировать свои стратегии."
+        },
+        {
+          "title": "GEO-оптимизация в 2026: как попасть в ответы YandexGPT, Алисы AI и ...",
+          "url": "https://digitalimpuls.ru/blog/geo-optimization-2026/",
+          "snippet": "GEO - это не замена SEO, а его эволюция. Компании, которые инвестируют в GEO-оптимизацию сегодня, получат значительное конкурентное преимущество в ближайшие годы."
+        },
+        {
+          "title": "GEO-оптимизация (Generative Engine Optimization): что это и как делать ...",
+          "url": "https://audit4seo.ru/blog/geo-optimizaciya-2026",
+          "snippet": "Разбираем, чем GEO отличается от SEO, что такое llms.txt и Share of Voice, и показываем, как российские компании готовят сайт к нейропоиску в YandexGPT, Алисе AI, GigaChat, ChatGPT, Claude и Perplexity."
+        }
+      ],
+      "searched_at": "2026-06-11"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "geo оптимизация сайта 2026",
+      "purpose": "вторичный запрос: geo оптимизация сайта",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Geo-оптимизация: Почему Она Вытесняет Seo В 2026 Году",
+          "url": "https://vc.ru/marketing/2885232-geo-optimizaciya-zamenyaet-seo",
+          "snippet": ""
+        },
+        {
+          "title": "Geo-продвижение Сайта В 2026: Полный Гайд По Оптимизации Под Нейросети",
+          "url": "https://trigub.ru/blog/geo-prodvizhenie-sayta/",
+          "snippet": "Конкретное распределение зависит от ниши. Если у вас есть офисы в разных городах или физические точки — GEO теперь более критичен. Если вы информационный блог — SEO остаётся важным."
+        },
+        {
+          "title": "Зачем брендам нужна GEO-оптимизация в 2026 году — Teletype",
+          "url": "https://teletype.in/@adglobeclients.com/zachem_brendam_nujna_geo_optimizacya",
+          "snippet": "GEO-оптимизация сайта под Яндекс Нейро и нейропоиск. Пошаговая инструкция, кейс с результатами и FAQ. Практика от частного SEO-специалиста."
+        },
+        {
+          "title": "GEO оптимизация: полное руководство 2026 | LeadStream",
+          "url": "https://leadstream.marketing/blog/geo-optimization-guide-2026",
+          "snippet": "В 2026 году этого уже мало. Пользователь всё чаще получает готовый ответ от AI-системы: в Google AI Overviews, ChatGPT, Perplexity и других генеративных поисковых инструментах. GEO-оптимизация, Adglobeclients LLC"
+        },
+        {
+          "title": "GEO-оптимизация в 2026: как попасть в ответы YandexGPT, Алисы AI и ...",
+          "url": "https://digitalimpuls.ru/blog/geo-optimization-2026/",
+          "snippet": "GEO (Generative Engine Optimization) — это новая дисциплина, которая учит, как сделать ваш контент видимым и цитируемым в ответах генеративных AI-систем."
+        },
+        {
+          "title": "Geo Продвижение Сайта, Оптимизация: Как Продвигаться В Нейросетях В 2026",
+          "url": "https://imigo.ai/ru/media/geo-generative-engine-optimization-for-websites-in-2026",
+          "snippet": "Разбираем, чем GEO отличается от SEO, что такое llms.txt и Share of Voice, и показываем, как российские компании готовят сайт к нейропоиску в YandexGPT, Алисе AI, GigaChat, ChatGPT, Claude и Perplexity."
+        }
+      ],
+      "searched_at": "2026-06-11"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "geo seo оптимизация 2026",
+      "purpose": "вторичный запрос: geo seo оптимизация",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Geo Оптимизация 2026: Полный Гайд По Поиску Клиентов",
+          "url": "https://blog.geouseo.ru/geo-optimizaciya-2026-polnyj-gajd-po-poisku-klientov/",
+          "snippet": ""
+        },
+        {
+          "title": "Geo-оптимизация: Почему Она Вытесняет Seo В 2026 Году",
+          "url": "https://vc.ru/marketing/2885232-geo-optimizaciya-zamenyaet-seo",
+          "snippet": "Ищите клиентов в 2026? GEO оптимизация помогает попасть в ответы ИИ. Разбираем рабочие стратегии, цифры и шаги для роста заявок без бюджета на рекламу."
+        },
+        {
+          "title": "GEO-оптимизация vs классическое SEO: что реально работает в 2026 году ...",
+          "url": "https://vc.ru/ai/2847471-geo-optimizatsiya-i-seo-chto-vybrat-dlya-effektivnogo-prodvizheniya",
+          "snippet": "GEO-оптимизация вытесняет SEO, трафик из Google Карт растет, локальные запросы важнее, конверсия выше, компании адаптируются к новым условиям"
+        },
+        {
+          "title": "Почему Geo Важнее, Чем Seo В 2026 Году | Шпиониро",
+          "url": "https://spioniro.ru/blog/pochemu-geo-vazhnee-seo-2026/",
+          "snippet": "Будущее SEO — это не замена AI, а работа рядом с ним.Поисковые системы будут всё чаще комбинировать классическую выдачу, AI-обзоры и персонализированные ответы."
+        },
+        {
+          "title": "Geo (Seo Оптимизация Под Нейросети): Руководство По Внедрению 2026",
+          "url": "https://www.digitalrocket.ru/articles/geo-seo-optimizatsiya-neyroseti-2026/",
+          "snippet": "Анализ статистики 2025-2026: почему географическая оптимизация вытесняет традиционный SEO. Данные по AI-поиску, трафику из Google Карт, практическая дорожная карта для перехода на GEO+SEO."
+        },
+        {
+          "title": "Geo И Aeo Оптимизация 2026: Как Попасть В Ответы Ии | Чек-лист",
+          "url": "https://itseoteam.ru/blog/tpost/geo-kak-popast-v-otvety-nejrosetej-v-2026-godu",
+          "snippet": "Это порождает новое направление в SEO — GEO (Generative Engine Optimization) — оптимизацию контента специально для генеративных поисковых систем. В отличие от традиционного SEO, где цель — попасть на первую страницу выдачи, GEO нацелен на то, чтобы ваш контент использовался AI для формирования ответов пользователям прямо в интерфейсе поиска."
+        }
+      ],
+      "searched_at": "2026-06-11"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "с чего начать geo оптимизацию 2026",
+      "purpose": "вторичный запрос: с чего начать geo оптимизацию",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Geo Оптимизация 2026: Полный Гайд По Поиску Клиентов",
+          "url": "https://blog.geouseo.ru/geo-optimizaciya-2026-polnyj-gajd-po-poisku-klientov/",
+          "snippet": ""
+        },
+        {
+          "title": "Geo-оптимизация За 6 Шагов + 3 Кейса",
+          "url": "https://news.pressfeed.ru/dlya-kakogo-biznesa-kritichna-geo-optimizacziya-i-kak-ee-nachat-za-6-shagov/",
+          "snippet": "Ищите клиентов в 2026? GEO оптимизация помогает попасть в ответы ИИ. Разбираем рабочие стратегии, цифры и шаги для роста заявок без бюджета на рекламу."
+        },
+        {
+          "title": "GEO оптимизация: полное руководство 2026 | LeadStream",
+          "url": "https://leadstream.marketing/blog/geo-optimization-guide-2026",
+          "snippet": "GEO-оптимизация — это адаптация контента под нейросети. Она критична для бизнеса, где клиенты ищут решения через ИИ: услуги, образование, сложные товары."
+        },
+        {
+          "title": "Geo-оптимизация В 2026: Как Попасть В Ответ Ии",
+          "url": "https://lpmotor.ru/articles/geo-optimizatsiya-2026-kak-popast-v-otvet-yandeks-neyro-i-google-ai-overviews-2605",
+          "snippet": "GEO (Generative Engine Optimization) — это новая дисциплина, которая учит, как сделать ваш контент видимым и цитируемым в ответах генеративных AI-систем."
+        },
+        {
+          "title": "Geo-оптимизация Для Новичков: С Чего Начать Сегодня",
+          "url": "https://spioniro.ru/blog/geo-optimizaciya-novichkam/",
+          "snippet": "GEO-оптимизация в 2026 году: как попасть в ответ Яндекс Нейро и Google AI Overviews. Пошаговое руководство, рабочие приёмы, чек-лист и ошибки."
+        },
+        {
+          "title": "Geo-продвижение: Что Это, Как Устроено, С Чего Начать Оптимизацию Под ...",
+          "url": "https://sidorinlab.ru/blog/nejroseti-menyayut-pravila-igryi-%E2%80%94-kak-geo-poisk-vliyaet-na-biznes",
+          "snippet": "В этом полном гайде мы разберёмся, что такое GEO-оптимизация, почему она отличается от обычного SEO и как начать оптимизировать ваш сайт прямо сейчас."
+        }
+      ],
+      "searched_at": "2026-06-11"
+    },
+    {
+      "query_id": "secondary_4",
+      "query": "geo оптимизация контента 2026",
+      "purpose": "вторичный запрос: geo оптимизация контента",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Geo-оптимизация В 2026: Полное Руководство По Продвижению В Ai ...",
+          "url": "https://spat.by/blog/geo-optimizaciya-2026-polnoe-rukovodstvo",
+          "snippet": ""
+        },
+        {
+          "title": "Адаптация Контента Под Алгоритмы Нейросетей: Geo‑Оптимизация В 2026 Году",
+          "url": "https://finbazar.ru/post/425853-adaptaciya-kontenta-pod-algoritmy-nejrosetej-geo-optimizaciya-v-2026-godu",
+          "snippet": "GEO (Generative Engine Optimization) - это новое направление в цифровом маркетинге, которое фокусируется на оптимизации контента для AI-поисковиков: ChatGPT, Google AI Overview, Perplexity, Claude и других генеративных систем."
+        },
+        {
+          "title": "GEO-оптимизация (Generative Engine Optimization): что это и как делать ...",
+          "url": "https://audit4seo.ru/blog/geo-optimizaciya-2026",
+          "snippet": "GEO‑оптимизация — это адаптация контента под локальные запросы и алгоритмы нейросетей с учётом: геолокации пользователя; местных трендов и сезонности; языковых особенностей региона;"
+        },
+        {
+          "title": "GEO-оптимизация в 2026: как попасть в ответы YandexGPT, Алисы AI и ...",
+          "url": "https://digitalimpuls.ru/blog/geo-optimization-2026/",
+          "snippet": "Полный гайд по GEO-оптимизации 2026: что такое Generative Engine Optimization, отличия от SEO, практические методы, роль llms.txt и Schema.org, чек-лист для Яндекса и Google."
+        },
+        {
+          "title": "Geo Оптимизация Сайта 2026: Как Попасть В Ответы Нейросетей И Sge",
+          "url": "https://a3-agency.ru/blog/tpost/s6rvhfxru1-geo-generative-engine-optimization-kak-p",
+          "snippet": "Разбираем, чем GEO отличается от SEO, что такое llms.txt и Share of Voice, и показываем, как российские компании готовят сайт к нейропоиску в YandexGPT, Алисе AI, GigaChat, ChatGPT, Claude и Perplexity."
+        },
+        {
+          "title": "GEO оптимизация: полное руководство 2026 | LeadStream",
+          "url": "https://leadstream.marketing/blog/geo-optimization-guide-2026",
+          "snippet": "Узнайте, что такое GEO (Generative Engine Optimization) и как подготовить контент для поисковых нейросетей."
+        }
+      ],
+      "searched_at": "2026-06-11"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как настроить GEO-оптимизацию сайта: чек-лист для попадания в ответы нейросетей 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Руководство По Geo (Aeo) Оптимизации Сайта: Как Попасть В Нейро-ответы ...",
+          "url": "https://vc.ru/seo/2137826-optimizaciya-sajta-pod-geo-i-aeo",
+          "snippet": ""
+        },
+        {
+          "title": "Чек-лист Geo-оптимизации Сайта Для Нейросетей | Geo Оптимизация Фонии",
+          "url": "https://generative-optimization.ru/cheklist-geo-optimizaczii",
+          "snippet": "Эти шаги помогут сделать статью не только полезной для пользователей, но и привлекательной для нейросетей, повышая шансы попасть в нейро-ответы и на нулевую позицию в выдаче."
+        },
+        {
+          "title": "Продвижение в нейросетях (geo) и быстрых ответах (aeo) в 2026 году ...",
+          "url": "https://ics-media.ru/blog/marketing/check-list-geo-aeo/",
+          "snippet": "Наш чеклист содержит все необходимое для внедрения генеративной оптимизации: от технического аудита до мониторинга цитирования в ChatGPT, Google SGE и Perplexity."
+        },
+        {
+          "title": "7 шагов для попадания в ответы нейросетей за 30 минут",
+          "url": "https://blog.geouseo.ru/7-shagov-dlya-popadaniya-v-otvety-nejrosetej-za-30-minut/",
+          "snippet": "Узнайте, как оптимизировать сайт для ИИ-поисковиков и голосовых помощников. Полный чек-лист по продвижению в нейростях (geo) и быстрых ответах (aeo): от микроразметки до авторитетности контента."
+        },
+        {
+          "title": "Geo (Seo Оптимизация Под Нейросети): Руководство По Внедрению 2026",
+          "url": "https://www.digitalrocket.ru/articles/geo-seo-optimizatsiya-neyroseti-2026/",
+          "snippet": "Пошаговый чек-лист от Сергея Язовского: подготовьте сайт к парсингу нейросетями за полчаса. GEO-оптимизация, robots.txt, sitemap, микроразметка и FAQPage."
+        },
+        {
+          "title": "GEO-оптимизация сайта: как попасть в ответы ChatGPT, Алисы и DeepSeek",
+          "url": "https://geoscout.pro/ru/blog/instrument-geo-optimizacii-dlya-sajta",
+          "snippet": "Это порождает новое направление в SEO — GEO (Generative Engine Optimization) — оптимизацию контента специально для генеративных поисковых систем. В отличие от традиционного SEO, где цель — попасть на первую страницу выдачи, GEO нацелен на то, чтобы ваш контент использовался AI для формирования ответов пользователям прямо в интерфейсе поиска."
+        }
+      ],
+      "searched_at": "2026-06-11"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://digitalimpuls.ru/blog/geo-optimization-2026/",
+      "title": "GEO-оптимизация в 2026: как попасть в ответы YandexGPT, Алисы AI и ...",
+      "from_query": "geo оптимизация 2026"
+    },
+    {
+      "url": "https://blog.geouseo.ru/geo-optimizaciya-2026-polnyj-gajd-po-poisku-klientov/",
+      "title": "Geo Оптимизация 2026: Полный Гайд По Поиску Клиентов",
+      "from_query": "geo оптимизация 2026"
+    },
+    {
+      "url": "https://lpmotor.ru/articles/geo-optimizatsiya-2026-kak-popast-v-otvet-yandeks-neyro-i-google-ai-overviews-2605",
+      "title": "Geo-оптимизация В 2026: Как Попасть В Ответ Ии",
+      "from_query": "geo оптимизация 2026"
+    },
+    {
+      "url": "https://a3-agency.ru/blog/tpost/s6rvhfxru1-geo-generative-engine-optimization-kak-p",
+      "title": "Geo Оптимизация Сайта 2026: Как Попасть В Ответы Нейросетей И Sge",
+      "from_query": "geo оптимизация 2026"
+    },
+    {
+      "url": "https://audit4seo.ru/blog/geo-optimizaciya-2026",
+      "title": "GEO-оптимизация (Generative Engine Optimization): что это и как делать ...",
+      "from_query": "geo оптимизация 2026"
+    },
+    {
+      "url": "https://spat.by/blog/geo-optimizaciya-2026-polnoe-rukovodstvo",
+      "title": "Geo-оптимизация В 2026: Полное Руководство По Продвижению В Ai ...",
+      "from_query": "geo оптимизация 2026"
+    },
+    {
+      "url": "https://vc.ru/marketing/2885232-geo-optimizaciya-zamenyaet-seo",
+      "title": "Geo-оптимизация: Почему Она Вытесняет Seo В 2026 Году",
+      "from_query": "geo оптимизация новости 2026"
+    },
+    {
+      "url": "https://vc.ru/id258137/2885777-geo-optimizatsiya-i-ii-klyuchevye-trendy-dlya-biznesa",
+      "title": "Geo-оптимизация В 2026 Году: Главные Тренды И Инсайты",
+      "from_query": "geo оптимизация новости 2026"
+    },
+    {
+      "url": "https://spioniro.ru/blog/pochemu-geo-vazhnee-seo-2026/",
+      "title": "Почему Geo Важнее, Чем Seo В 2026 Году | Шпиониро",
+      "from_query": "geo оптимизация новости 2026"
+    },
+    {
+      "url": "https://trigub.ru/blog/geo-prodvizhenie-sayta/",
+      "title": "Geo-продвижение Сайта В 2026: Полный Гайд По Оптимизации Под Нейросети",
+      "from_query": "geo оптимизация сайта 2026"
+    },
+    {
+      "url": "https://teletype.in/@adglobeclients.com/zachem_brendam_nujna_geo_optimizacya",
+      "title": "Зачем брендам нужна GEO-оптимизация в 2026 году — Teletype",
+      "from_query": "geo оптимизация сайта 2026"
+    },
+    {
+      "url": "https://leadstream.marketing/blog/geo-optimization-guide-2026",
+      "title": "GEO оптимизация: полное руководство 2026 | LeadStream",
+      "from_query": "geo оптимизация сайта 2026"
+    },
+    {
+      "url": "https://imigo.ai/ru/media/geo-generative-engine-optimization-for-websites-in-2026",
+      "title": "Geo Продвижение Сайта, Оптимизация: Как Продвигаться В Нейросетях В 2026",
+      "from_query": "geo оптимизация сайта 2026"
+    },
+    {
+      "url": "https://vc.ru/ai/2847471-geo-optimizatsiya-i-seo-chto-vybrat-dlya-effektivnogo-prodvizheniya",
+      "title": "GEO-оптимизация vs классическое SEO: что реально работает в 2026 году ...",
+      "from_query": "geo seo оптимизация 2026"
+    },
+    {
+      "url": "https://www.digitalrocket.ru/articles/geo-seo-optimizatsiya-neyroseti-2026/",
+      "title": "Geo (Seo Оптимизация Под Нейросети): Руководство По Внедрению 2026",
+      "from_query": "geo seo оптимизация 2026"
+    },
+    {
+      "url": "https://itseoteam.ru/blog/tpost/geo-kak-popast-v-otvety-nejrosetej-v-2026-godu",
+      "title": "Geo И Aeo Оптимизация 2026: Как Попасть В Ответы Ии | Чек-лист",
+      "from_query": "geo seo оптимизация 2026"
+    },
+    {
+      "url": "https://news.pressfeed.ru/dlya-kakogo-biznesa-kritichna-geo-optimizacziya-i-kak-ee-nachat-za-6-shagov/",
+      "title": "Geo-оптимизация За 6 Шагов + 3 Кейса",
+      "from_query": "с чего начать geo оптимизацию 2026"
+    },
+    {
+      "url": "https://spioniro.ru/blog/geo-optimizaciya-novichkam/",
+      "title": "Geo-оптимизация Для Новичков: С Чего Начать Сегодня",
+      "from_query": "с чего начать geo оптимизацию 2026"
+    },
+    {
+      "url": "https://sidorinlab.ru/blog/nejroseti-menyayut-pravila-igryi-%E2%80%94-kak-geo-poisk-vliyaet-na-biznes",
+      "title": "Geo-продвижение: Что Это, Как Устроено, С Чего Начать Оптимизацию Под ...",
+      "from_query": "с чего начать geo оптимизацию 2026"
+    },
+    {
+      "url": "https://finbazar.ru/post/425853-adaptaciya-kontenta-pod-algoritmy-nejrosetej-geo-optimizaciya-v-2026-godu",
+      "title": "Адаптация Контента Под Алгоритмы Нейросетей: Geo‑Оптимизация В 2026 Году",
+      "from_query": "geo оптимизация контента 2026"
+    },
+    {
+      "url": "https://vc.ru/seo/2137826-optimizaciya-sajta-pod-geo-i-aeo",
+      "title": "Руководство По Geo (Aeo) Оптимизации Сайта: Как Попасть В Нейро-ответы ...",
+      "from_query": "Как настроить GEO-оптимизацию сайта: чек-лист для попадания в ответы нейросетей 2026"
+    },
+    {
+      "url": "https://generative-optimization.ru/cheklist-geo-optimizaczii",
+      "title": "Чек-лист Geo-оптимизации Сайта Для Нейросетей | Geo Оптимизация Фонии",
+      "from_query": "Как настроить GEO-оптимизацию сайта: чек-лист для попадания в ответы нейросетей 2026"
+    },
+    {
+      "url": "https://ics-media.ru/blog/marketing/check-list-geo-aeo/",
+      "title": "Продвижение в нейросетях (geo) и быстрых ответах (aeo) в 2026 году ...",
+      "from_query": "Как настроить GEO-оптимизацию сайта: чек-лист для попадания в ответы нейросетей 2026"
+    },
+    {
+      "url": "https://blog.geouseo.ru/7-shagov-dlya-popadaniya-v-otvety-nejrosetej-za-30-minut/",
+      "title": "7 шагов для попадания в ответы нейросетей за 30 минут",
+      "from_query": "Как настроить GEO-оптимизацию сайта: чек-лист для попадания в ответы нейросетей 2026"
+    },
+    {
+      "url": "https://geoscout.pro/ru/blog/instrument-geo-optimizacii-dlya-sajta",
+      "title": "GEO-оптимизация сайта: как попасть в ответы ChatGPT, Алисы и DeepSeek",
+      "from_query": "Как настроить GEO-оптимизацию сайта: чек-лист для попадания в ответы нейросетей 2026"
+    }
+  ]
+}

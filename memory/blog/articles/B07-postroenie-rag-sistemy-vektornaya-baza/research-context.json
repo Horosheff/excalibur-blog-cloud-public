@@ -1,0 +1,107 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-16",
+    "today_ru": "16.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-18",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-16 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B07",
+    "priority": "P0",
+    "slug": "postroenie-rag-sistemy-vektornaya-baza",
+    "h1": "Как построить RAG-систему с векторной базой знаний: пошаговый workflow от документов до ответов",
+    "primary_query": "rag система",
+    "secondary_queries": [
+      "создание rag системы",
+      "локальная rag система",
+      "архитектура rag системы",
+      "как сделать rag систему",
+      "rag система python"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B07",
+    "status": "PASS",
+    "search_intent": "workflow",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "rag система 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "rag система июнь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "rag система новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "github_evidence",
+      "query": "site:github.com rag система 2026",
+      "purpose": "GitHub repos/issues/README для технических сигналов и реального опыта"
+    },
+    {
+      "id": "official_docs",
+      "query": "rag система official docs documentation 2026",
+      "purpose": "официальная документация, changelog, developer docs"
+    },
+    {
+      "id": "community_experience",
+      "query": "rag система forum reddit discussion проблемы опыт 2026",
+      "purpose": "форумы, обсуждения, ошибки пользователей и живые сценарии"
+    },
+    {
+      "id": "secondary_1",
+      "query": "создание rag системы 2026",
+      "purpose": "вторичный запрос: создание rag системы"
+    },
+    {
+      "id": "secondary_2",
+      "query": "локальная rag система 2026",
+      "purpose": "вторичный запрос: локальная rag система"
+    },
+    {
+      "id": "secondary_3",
+      "query": "архитектура rag системы 2026",
+      "purpose": "вторичный запрос: архитектура rag системы"
+    },
+    {
+      "id": "secondary_4",
+      "query": "как сделать rag систему 2026",
+      "purpose": "вторичный запрос: как сделать rag систему"
+    },
+    {
+      "id": "secondary_5",
+      "query": "rag система python 2026",
+      "purpose": "вторичный запрос: rag система python"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как построить RAG-систему с векторной базой знаний: пошаговый workflow от документов до ответов 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B07-postroenie-rag-sistemy-vektornaya-baza",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

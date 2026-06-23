@@ -1,0 +1,120 @@
+{
+  "gate": "human-voice",
+  "status": "PASS",
+  "article_dir": "memory/blog/articles/B08-ii-chat-bot-dlya-biznesa-workflow",
+  "errors": [],
+  "warnings": [
+    "paragraph rhythm too uniform: variance/avg=0.31",
+    "Fact Check block uses a repeated template; vary wording while preserving facts",
+    "multiple exactly-5-step lists detected; vary list size when editorially possible"
+  ],
+  "metrics": {
+    "h2_count": 6,
+    "repeated_h2_openers": [],
+    "textbook_h2_count": 0,
+    "paragraph_count": 26,
+    "paragraph_avg_words": 33.5,
+    "paragraph_variance_ratio": 0.31,
+    "concrete_markers": [
+      "на практике",
+      "типичная ошибка"
+    ],
+    "pain_markers": [
+      "боль",
+      "ошиб",
+      "ломает",
+      "дорого"
+    ],
+    "outcome_markers": [
+      "проверьте",
+      "соберите",
+      "выберите"
+    ],
+    "ai_opening_hits": [],
+    "reader_story_overlap": [
+      "no-code",
+      "администратору",
+      "аллергию",
+      "каждом",
+      "клиента",
+      "когда",
+      "которой",
+      "купил",
+      "маркетолог",
+      "назвал",
+      "передал",
+      "правил",
+      "салона",
+      "скидку",
+      "сообщении",
+      "уверенно",
+      "эскалации"
+    ],
+    "reader_pain_overlap": [
+      "бизнеса",
+      "выдуманные",
+      "знаний",
+      "конструкторов",
+      "недели",
+      "оператору",
+      "сложные",
+      "сравнение",
+      "топ-15",
+      "умного"
+    ],
+    "reader_outcome_overlap": [
+      "telegram",
+      "workflow",
+      "бизнеса",
+      "задачи",
+      "метрик",
+      "оператора",
+      "сайте",
+      "чат-бота"
+    ],
+    "success_criteria_overlap": [
+      "время",
+      "галлюцинаций",
+      "диалогов",
+      "жалобах",
+      "закрывается",
+      "низкой",
+      "оператора",
+      "ответа",
+      "отвечает",
+      "падают",
+      "срабатывает",
+      "среднее",
+      "срокам",
+      "таблицу",
+      "тест-кейсов",
+      "уверенности",
+      "ценам",
+      "эскалация"
+    ],
+    "voice_angle_overlap": [
+      "human-in-the-loop",
+      "workflow",
+      "запуск",
+      "канал",
+      "платформ",
+      "поддержка",
+      "рейтинг",
+      "сценарий"
+    ],
+    "surprising_fact_overlap": [
+      "бизнеса",
+      "быстрее",
+      "ии-бот",
+      "канал",
+      "модерация",
+      "обгоняет",
+      "показов",
+      "спрос",
+      "формулировку",
+      "часов"
+    ],
+    "exactly_five_lists": 2,
+    "fact_check_template_blocks": 1
+  }
+}

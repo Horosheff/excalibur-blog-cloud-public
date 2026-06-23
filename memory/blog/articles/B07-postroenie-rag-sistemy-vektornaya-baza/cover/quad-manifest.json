@@ -1,0 +1,42 @@
+{
+  "topic_id": "B07",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "RAG уверенно врёт — или вы плохо порезали PDF?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Обложка: RAG-система — PDF режутся на чанки, pgvector и ответ LLM с цитатой",
+      "scene_hint": "reference-лицо, белое плотное худи из толстой ткани, без наушников/headset/earbuds, жест на светящиеся чанки; стопка PDF режется на glowing chunks, стрелки в цилиндр Postgres/pgvector, пузырь ответа LLM; стикеры «HNSW», «top-k», «rerank»; fake скрин Chroma с неверным ответом про возвраты; рваная бумага, скотч, розовый маркер на слове «врёт», facepalm meme cutout; тёплый неоновый diy-коллаж",
+      "meme_caption_ru": "Уверенный ответ — без цитаты"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Решите, когда RAG обязателен, а когда хватит длинного контекста",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица «длинный контекст vs RAG+векторная БД»: свежесть, ACL, цитата, стоимость; розовый стикер «golden set 10 вопросов», скотч на углу, маленький shocked meme cutout",
+      "alt": "Таблица сравнения: когда нужен RAG, а когда хватит длинного контекста"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Разбейте регламенты на чанки без потери исключений",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Схема ingestion: PDF/DOCX → splitter 300-512 токенов overlap 15% → metadata → embed → upsert; стрелка на правило+исключение в разных чанках; pink sticky «overlap 15%», tape corner, mini facepalm sticker",
+      "alt": "Workflow чанкинга: PDF в чанки без потери исключений"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Сравните pgvector, Qdrant и Chroma под ваш PoC",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист PoC: pgvector vs Qdrant vs Chroma — HNSW dim, n8n node, старт; стикер «halfvec 4000», маркер на «2000 dim limit», torn paper strip, scotch tape",
+      "alt": "Чеклист сравнения pgvector, Qdrant и Chroma для PoC"
+    }
+  }
+}

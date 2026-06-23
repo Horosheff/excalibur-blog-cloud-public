@@ -1,0 +1,130 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/B06-make-ai-agents-mcp-avtomatizaciya/cover/canvas-quad.png",
+    "source_size_px": [
+      2752,
+      1536
+    ],
+    "panel_size_px": [
+      1380,
+      773
+    ],
+    "split_meta": {
+      "split_mode": "gutter_detect",
+      "h_gutter_px": {
+        "start": 773,
+        "end": 803
+      },
+      "v_gutter_px": {
+        "start": 1380,
+        "end": 1421
+      }
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1380,
+          "bottom": 773
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1380,
+          "bottom": 773
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Обложка: Make canvas с AI Agent, MCP-кабель к Cursor и стикеры approval, scopes, reasoning — diy-коллаж",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1421,
+          "top": 12,
+          "right": 2752,
+          "bottom": 761
+        },
+        "raw_box_px": {
+          "left": 1421,
+          "top": 0,
+          "right": 2752,
+          "bottom": 773
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема: какой процесс отдать Make AI Agent, а не автоматизировать весь отдел",
+        "h2_anchor": "Выберите процесс для Make AI Agent, а не \"автоматизацию всего отдела\""
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 38,
+          "top": 803,
+          "right": 1341,
+          "bottom": 1536
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 803,
+          "right": 1380,
+          "bottom": 1536
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Таблица: разделение workflow на правила, агента, MCP и approval",
+        "h2_anchor": "Разделите workflow на правила, агента, MCP и approval"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1435,
+          "top": 803,
+          "right": 2738,
+          "bottom": 1536
+        },
+        "raw_box_px": {
+          "left": 1421,
+          "top": 803,
+          "right": 2752,
+          "bottom": 1536
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Чеклист: базовый сценарий Make.com до подключения AI Agent",
+        "h2_anchor": "Соберите базовый сценарий Make.com до подключения агента"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — Выберите процесс для Make AI Agent, а не \"автоматизацию всего отдела\"",
+    "injected inline_2 after H2 — Разделите workflow на правила, агента, MCP и approval",
+    "injected inline_3 after H2 — Соберите базовый сценарий Make.com до подключения агента"
+  ]
+}

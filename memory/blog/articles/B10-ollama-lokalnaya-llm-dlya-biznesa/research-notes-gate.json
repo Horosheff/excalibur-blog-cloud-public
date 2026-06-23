@@ -1,0 +1,22 @@
+{
+  "gate": "research-notes",
+  "status": "PASS",
+  "article_dir": "memory/blog/articles/B10-ollama-lokalnaya-llm-dlya-biznesa",
+  "notes": "memory/blog/articles/B10-ollama-lokalnaya-llm-dlya-biznesa/research-notes.md",
+  "context": "memory/blog/articles/B10-ollama-lokalnaya-llm-dlya-biznesa/research-context.json",
+  "errors": [],
+  "warnings": [],
+  "metrics": {
+    "today_iso": "2026-06-17",
+    "prefer_sources_after": "2026-03-19",
+    "source_urls": 47,
+    "source_domains": 12,
+    "source_table_rows": 34,
+    "accessed_at": 10,
+    "github_urls": 10,
+    "official_doc_urls": 6,
+    "action_outline_items": 8,
+    "pain_solution_rows": 7,
+    "technical_topic": true
+  }
+}

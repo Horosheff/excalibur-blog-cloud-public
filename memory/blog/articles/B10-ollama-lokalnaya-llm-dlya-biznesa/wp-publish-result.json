@@ -1,0 +1,15 @@
+{
+  "slug": "ollama-lokalnaya-llm-dlya-biznesa",
+  "topic_id": "B10",
+  "permalink": "[REDACTED]/ollama-lokalnaya-llm-dlya-biznesa/",
+  "publish_method": "sftp",
+  "cover_evidence": {
+    "path": "memory/blog/articles/B10-ollama-lokalnaya-llm-dlya-biznesa/cover/cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 1010522,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=13539 slug=ollama-lokalnaya-llm-dlya-biznesa\nOK featured_image=13540\nOK schema_meta=1\nOK skip_theme_faq_meta=1\nOK inline_image_upload=13541 src=cover/inline-01.png url=[REDACTED]/wp-content/uploads/2026/06/ollama-lokalnaya-llm-dlya-biznesa-inline-01.jpg\nOK inline_image_upload=13542 src=cover/inline-02.png url=[REDACTED]/wp-content/uploads/2026/06/ollama-lokalnaya-llm-dlya-biznesa-inline-02.jpg\nOK inline_image_upload=13543 src=cover/inline-03.png url=[REDACTED]/wp-content/uploads/2026/06/ollama-lokalnaya-llm-dlya-biznesa-inline-03.jpg\npermalink=[REDACTED]/ollama-lokalnaya-llm-dlya-biznesa/\n",
+  "verdict": "pass"
+}

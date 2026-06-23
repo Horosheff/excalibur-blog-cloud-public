@@ -1,0 +1,37 @@
+{
+  "source": "memory/blog/articles/B06-make-ai-agents-mcp-avtomatizaciya/article.html",
+  "total_links": 3,
+  "failed_count": 0,
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "https://mayai.ru/podklyuchenie-mcp-cursor/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/podklyuchenie-mcp-cursor/"
+    },
+    {
+      "url": "https://mayai.ru/avtomatizaciya-n8n-ai-agents/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "https://mayai.ru/avtomatizaciya-n8n-ai-agents/"
+    },
+    {
+      "url": "https://kv-ai.ru/obuchenie-po-make",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}

@@ -27,6 +27,18 @@ Do not commit runtime handoff files. At the start of a run, the Director creates
 | 4 | excalibur-blog-cover || excalibur-blog-schema | pending | |
 | 5 | excalibur-blog-indexer | pending | |
 | 6 | excalibur-blog-publish | pending | |
+| 7 | excalibur-blog-fixer (if incidents open) | pending | |
+
+## Incident memory
+
+`incident_queue`: memory/pipeline-fix-queue.md
+`incident_contract`: shared/pipeline-incident-fix-contract.md
+
+Each agent block must include:
+
+```text
+incident_report: none | memory/pipeline-fix-queue.md#INC-...
+```
 
 === EXCALIBUR BLOG (PIPELINE DONE) ===
 topic_id:
@@ -34,4 +46,5 @@ article_dir:
 qa:
 publish:
 permalink:
+incident_queue:
 ```

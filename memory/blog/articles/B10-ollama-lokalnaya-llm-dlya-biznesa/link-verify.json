@@ -1,0 +1,56 @@
+{
+  "source": "memory/blog/articles/B10-ollama-lokalnaya-llm-dlya-biznesa/article.html",
+  "total_links": 5,
+  "failed_count": 0,
+  "verdict": "pass",
+  "links": [
+    {
+      "url": "[REDACTED]/avtomatizaciya-n8n-ai-agents/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "[REDACTED]/avtomatizaciya-n8n-ai-agents/"
+    },
+    {
+      "url": "[REDACTED]/podklyuchenie-mcp-cursor/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "[REDACTED]/podklyuchenie-mcp-cursor/"
+    },
+    {
+      "url": "[REDACTED]/postroenie-rag-sistemy-vektornaya-baza/",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "internal_relative",
+      "skipped": false,
+      "checked_url": "[REDACTED]/postroenie-rag-sistemy-vektornaya-baza/"
+    },
+    {
+      "url": "https://kv-ai.ru/obuchenie-po-make",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    },
+    {
+      "url": "https://kv-ai.ru/artur-horosheff",
+      "status": 200,
+      "ok": true,
+      "method": "HEAD",
+      "error": null,
+      "kind": "external",
+      "skipped": false
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-11",
+    "today_ru": "11.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-13",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-11 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B03",
+    "priority": "P0",
+    "slug": "podklyuchenie-mcp-cursor",
+    "h1": "Как подключить MCP-серверы в Cursor: пошаговая инструкция для автоматизации",
+    "primary_query": "cursor mcp",
+    "secondary_queries": [
+      "mcp сервер для cursor",
+      "как подключить mcp к cursor",
+      "cursor ai mcp",
+      "настройка mcp сервера"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B03",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "cursor mcp 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "cursor mcp июнь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "cursor mcp новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "mcp сервер для cursor 2026",
+      "purpose": "вторичный запрос: mcp сервер для cursor"
+    },
+    {
+      "id": "secondary_2",
+      "query": "как подключить mcp к cursor 2026",
+      "purpose": "вторичный запрос: как подключить mcp к cursor"
+    },
+    {
+      "id": "secondary_3",
+      "query": "cursor ai mcp 2026",
+      "purpose": "вторичный запрос: cursor ai mcp"
+    },
+    {
+      "id": "secondary_4",
+      "query": "настройка mcp сервера 2026",
+      "purpose": "вторичный запрос: настройка mcp сервера"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как подключить MCP-серверы в Cursor: пошаговая инструкция для автоматизации 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B03-podklyuchenie-mcp-cursor",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

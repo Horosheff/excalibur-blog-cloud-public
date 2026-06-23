@@ -1,0 +1,122 @@
+{
+  "policy_id": "utility_only_v1",
+  "label_ru": "Только полезные статьи — без воды",
+  "mission": "Публикуем только материалы, после которых читатель может сделать конкретное действие: how-to, чеклист, сравнение с выбором, troubleshooting, workflow.",
+  "allowed_search_intent": [
+    "how_to",
+    "checklist",
+    "parent_guide",
+    "comparison",
+    "troubleshooting",
+    "workflow"
+  ],
+  "rejected_search_intent": [
+    "news",
+    "news_case",
+    "trend",
+    "opinion",
+    "informational",
+    "entertainment",
+    "general"
+  ],
+  "allowed_article_mode": ["B"],
+  "conditional_article_mode": {
+    "comparison": "B",
+    "note": "Режим A (новости/кейсы) — не публикуем в utility-only блоге"
+  },
+  "topic_gate_blockers": [
+    "search_intent не из allowed_search_intent",
+    "нет primary_query с глаголом действия (как/чек-лист/настроить/исправить/сравнить)",
+    "h2_outline без практического результата",
+    "тема «что такое X» без шагов и без comparison"
+  ],
+  "article_required_signals": {
+    "min_numbered_steps": 5,
+    "min_actionable_h2": 3,
+    "min_faq_pairs": 5,
+    "min_recommendation_markers": 8,
+    "min_pain_markers": 2,
+    "min_outcome_markers": 3,
+    "requires_workflow_or_table_or_checklist": true
+  },
+  "meta_ab_rules": {
+    "title_seo_min_len": 35,
+    "title_seo_max_len": 75,
+    "description_seo_min_len": 100,
+    "description_seo_max_len": 180,
+    "title_ctr_min_len": 40,
+    "title_ctr_max_len": 100,
+    "title_aeo_min_len": 35,
+    "title_aeo_max_len": 90,
+    "title_aeo_must_be_question": true,
+    "title_ctr_must_have_emoji_or_hook": true
+  },
+  "recommendation_markers_ru": [
+    "сделайте",
+    "не делайте",
+    "шаг ",
+    "проверьте",
+    "используйте",
+    "добавьте",
+    "уберите",
+    "избегайте",
+    "ориентир",
+    "чеклист",
+    "workflow"
+  ],
+  "pain_markers_ru": [
+    "боль",
+    "проблем",
+    "ошиб",
+    "не работает",
+    "ломает",
+    "дорого",
+    "долго",
+    "рутин",
+    "хаос",
+    "сложно",
+    "теряет"
+  ],
+  "outcome_markers_ru": [
+    "результат",
+    "получите",
+    "сможете",
+    "сэконом",
+    "запустите",
+    "настройте",
+    "исправьте",
+    "проверьте",
+    "выберите",
+    "соберите"
+  ],
+  "water_phrases_ru": [
+    "в современном мире",
+    "давайте разбер",
+    "подводя итог",
+    "в заключение",
+    "стоит отметить",
+    "не секрет что",
+    "на сегодняшний день",
+    "в этой статье вы узнаете",
+    "важно понимать",
+    "играет важную роль",
+    "комплексный подход",
+    "уникальная возможность",
+    "безусловно",
+    "несомненно"
+  ],
+  "topic_title_must_match": [
+    "как ",
+    "чек-лист",
+    "чеклист",
+    "инструкция",
+    "гайд",
+    "пошаг",
+    "настро",
+    "исправ",
+    "сравнен",
+    " vs ",
+    "выбор ",
+    "workflow"
+  ]
+}

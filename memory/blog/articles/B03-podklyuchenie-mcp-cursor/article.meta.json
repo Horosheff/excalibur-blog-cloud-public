@@ -1,0 +1,38 @@
+{
+  "topic_id": "B03",
+  "slug": "podklyuchenie-mcp-cursor",
+  "h1": "Как подключить MCP-серверы в Cursor: пошаговая инструкция для автоматизации",
+  "title": "Cursor MCP: пошаговая инструкция по подключению серверов",
+  "description": "Пошаговое подключение MCP в Cursor: Tools & MCP, mcp.json, stdio и url, безопасность allowlist и troubleshooting. Для маркетологов и автоматизаторов без кода.",
+  "keywords": [
+    "cursor mcp",
+    "mcp сервер для cursor",
+    "как подключить mcp к cursor",
+    "настройка mcp сервера",
+    "cursor ai mcp"
+  ],
+  "primary_query": "cursor mcp",
+  "secondary_queries": [
+    "mcp сервер для cursor",
+    "как подключить mcp к cursor",
+    "cursor ai mcp",
+    "настройка mcp сервера"
+  ],
+  "char_count": 9018,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "anchor_variants": [
+    "как подключить mcp серверы в cursor пошагово",
+    "настройка mcp.json для cursor на windows",
+    "cursor mcp для автоматизации контента без кода"
+  ],
+  "meta_ab": {
+    "title_seo": "Cursor MCP: пошаговая инструкция по подключению серверов",
+    "title_ctr": "💻 Cursor MCP за 20 минут: подключите серверы и автоматизируйте Agent!",
+    "title_aeo": "Как подключить MCP-серверы в Cursor для автоматизации?",
+    "description_seo": "Пошаговое подключение MCP в Cursor: Tools & MCP, mcp.json, stdio и url, безопасность allowlist и troubleshooting. Для маркетологов без кода.",
+    "description_ctr": "⚡ Подключите первый MCP в Cursor за вечер: one-click, mcp.json, 10 шагов, таблица серверов и чеклист. Гайд для автоматизации без программирования.",
+    "description_aeo": "Cursor MCP – подключение серверов через Tools & MCP или mcp.json (stdio/url), проверка статуса, allowlist и исправление красного индикатора через MCP Logs."
+  },
+  "cover_family": "brand_collage"
+}

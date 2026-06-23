@@ -1,0 +1,30 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 4,
+  "over_long_sentences": [
+    {
+      "sentence": "Ставит Ollama на ПК с 8 ГБ видеопамяти, тянет 32B-модель, открывает порт 11434 в LAN \"для коллег\" – и через неделю ловит утечку данных в логах при ответах медленнее облака",
+      "word_count": 27
+    },
+    {
+      "sentence": "Критерий Локальная Ollama Облачный API Приватность Промпты на своём железе Данные у провайдера по его правилам Стоимость рутины Нулевые токены после покупки GPU Плата за каждый запрос Скорость на 70B Часто проигрывает без дорогого GPU Стабильно на стороне дата-центра Офлайн Работает без интернета Нужен доступ к API Итоговый вердикт: гибрид – рабочая схема",
+      "word_count": 51
+    },
+    {
+      "sentence": "VRAM / RAM Рекомендуемая модель Задача 8 ГБ VRAM, RAM 16+ ГБ qwen3:8b или gemma4 Q4 Суммаризация, русский текст, лёгкий код 16 ГБ VRAM qwen3:14b Q4 Более длинный контекст, сложнее инструкции Apple Silicon 32+ ГБ unified MLX-модели Ollama Офис на Mac без дискретной NVIDIA Qwen3 8B в квантовании Q4_K_M занимает около 5,8 ГБ VRAM при контексте 8k – комфортно на карте 8 ГБ",
+      "word_count": 46
+    },
+    {
+      "sentence": "Схема интеграции: Ollama (localhost:11434) → OpenAI-совместимый REST → n8n Ollama credential / Cursor custom endpoint / Python OpenAI SDK Проверка curl: POST на http://localhost:11434/v1/chat/completions с JSON-телом model и messages – должен вернуться JSON с ответом",
+      "word_count": 32
+    }
+  ],
+  "readability": {
+    "score": 89.5,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 9.8,
+    "avg_syllables_per_word": 1.7
+  }
+}

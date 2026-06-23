@@ -1,0 +1,50 @@
+{
+  "topic_id": "B06",
+  "slug": "make-ai-agents-mcp-avtomatizaciya",
+  "cover_family": "brand_collage",
+  "style_preset": "digital_meme_collage_ru",
+  "pipeline": "quad_canvas_1x_mcp",
+  "file": "cover/cover.png",
+  "alt": "Обложка: Make canvas с AI Agent, MCP-кабель к Cursor и стикеры approval, scopes, reasoning — diy-коллаж",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-06-15T23:00:17+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Обложка: Make canvas с AI Agent, MCP-кабель к Cursor и стикеры approval, scopes, reasoning — diy-коллаж",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Схема: какой процесс отдать Make AI Agent, а не автоматизировать весь отдел",
+      "h2_anchor": "Выберите процесс для Make AI Agent, а не \"автоматизацию всего отдела\"",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Таблица: разделение workflow на правила, агента, MCP и approval",
+      "h2_anchor": "Разделите workflow на правила, агента, MCP и approval",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Чеклист: базовый сценарий Make.com до подключения AI Agent",
+      "h2_anchor": "Соберите базовый сценарий Make.com до подключения агента",
+      "visual_type": "checklist_board",
+      "aspect_ratio": "16:9"
+    }
+  ]
+}

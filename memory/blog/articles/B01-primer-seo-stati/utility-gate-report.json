@@ -1,0 +1,27 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory\\blog\\articles\\B01-primer-seo-stati",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 6,
+        "h2_sections": 5,
+        "faq_h3": 10,
+        "tables": 1,
+        "blockquotes": 1,
+        "ul_lists": 1,
+        "action_markers": 20,
+        "water_hits": [
+          "в этой статье вы узнаете"
+        ]
+      },
+      "errors": [],
+      "warnings": [
+        "1 water phrase: в этой статье вы узнаете"
+      ]
+    }
+  ]
+}

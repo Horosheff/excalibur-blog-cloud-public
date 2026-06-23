@@ -118,9 +118,9 @@ def build_llms_full_txt(site_name: str, articles: list[dict[str, Any]], site_bas
 def main() -> int:
     ap = argparse.ArgumentParser(description="Generate AI-friendly llms.txt and llms-full.txt")
     ap.add_argument("--blog-dir", type=Path, default=None)
-    ap.add_argument("--site-name", type=str, default="Example Project — Excalibur BLOG")
+    ap.add_argument("--site-name", type=str, default="Maya AI — Excalibur BLOG")
     ap.add_argument("--site-desc", type=str, default="Практический блог по автоматизации бизнеса на Make.com, вайбкодингу и ИИ-агентам.")
-    ap.add_argument("--site-base", type=str, default="https://example.com")
+    ap.add_argument("--site-base", type=str, default="https://mayai.ru")
     ap.add_argument("--blog-path", type=str, default="/", help="URL prefix for posts, e.g. /blog/ or /")
     ap.add_argument("--out-dir", type=Path, default=None, help="Output directory for llms.txt/llms-full.txt")
     args = ap.parse_args()

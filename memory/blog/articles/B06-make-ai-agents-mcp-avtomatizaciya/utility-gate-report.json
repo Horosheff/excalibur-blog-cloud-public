@@ -1,0 +1,23 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory/blog/articles/B06-make-ai-agents-mcp-avtomatizaciya",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 12,
+        "h2_sections": 9,
+        "faq_h3": 7,
+        "tables": 0,
+        "blockquotes": 3,
+        "ul_lists": 1,
+        "action_markers": 19,
+        "water_hits": []
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

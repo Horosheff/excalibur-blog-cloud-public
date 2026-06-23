@@ -1,0 +1,101 @@
+{
+  "article": "memory/blog/articles/B07-postroenie-rag-sistemy-vektornaya-baza/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 13,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 10,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "нная ерунда без ссылки на источник. Ниже workflow 2026: документы → векторная база → ответы с цитатами и",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2000",
+      "kind": "date_or_year",
+      "context": "ми. Подводный камень: HNSW в pgvector лимитирован 2000 dim для vector; text-embedding-3-large (3072) без",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "верифицированы по данным Яндекс Вордстат на июнь 2026 года. Частые вопросы Как сделать rag систему с нуля бе",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "200",
+      "kind": "large_number",
+      "context": "Команда загрузила 200 регламентов в Chroma и спросила про исключение из",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "512",
+      "kind": "large_number",
+      "context": "ов, а не \"из головы\". Схема: PDF/DOCX → чанки 300-512 токенов, overlap 10-20% → эмбеддинги в pgvector ил",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2125",
+      "kind": "large_number",
+      "context": "в проде откатывается. \"rag система\" в Вордстате - 2125 показов/мес (июнь 2026). RAG - конвейер: текст реж",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "100",
+      "kind": "large_number",
+      "context": ". Ситуация Длинный контекст RAG + векторная БД До 100 страниц, один отдел Быстрый пилот Избыточен на ста",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "400",
+      "kind": "large_number",
+      "context": "trieval находит неполный фрагмент. После чанкинга 400 токенов + overlap 15% точность выросла с 4/10 до 9",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "500",
+      "kind": "large_number",
+      "context": "- 300-512 токенов, overlap 10-20% (n8n Docs: 200-500 tokens). Добавьте префикс с названием документа и",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "3072",
+      "kind": "large_number",
+      "context": "ован 2000 dim для vector; text-embedding-3-large (3072) без halfvec не проиндексируется. Критерий pgvect",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "4000",
+      "kind": "large_number",
+      "context": "drant node Community nodes HNSW dim 2000 (halfvec 4000) По коллекции По backend Когда Есть Postgres, ACL",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "1047",
+      "kind": "large_number",
+      "context": "(tenant, doc_type) ловит запросы вроде \"ошибка E-1047\" или \"п. 3.2.1 регламента\". Production-практика 2",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "900",
+      "kind": "large_number",
+      "context": "до 4-6 чанков в промпт; recall@5 часто пик на 600-900 токенах суммарного контекста. Эмбеддинги превращаю",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

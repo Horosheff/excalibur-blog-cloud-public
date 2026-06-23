@@ -1,0 +1,42 @@
+{
+  "topic_id": "B10",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Локальная LLM бесплатна? А GPU молчит, порт 11434 открыт",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Обложка: Ollama на офисном ПК — 32B на 8 ГБ VRAM и открытый порт 11434 ломают локальный ИИ-проект",
+      "scene_hint": "reference-лицо, белое плотное худи, рядом мини-сервер/ПК с логотипом Ollama; стрелки к стикерам qwen3:8b и llama; кабель API к n8n и Cursor; замок «данные локально»; fake Wordstat «ollama 32669»; скрин nvidia-smi 0% GPU; рваная бумага, скотч, розовый маркер на «бесплатна»; facepalm meme cutout; чистый белый фон #FFFFFF",
+      "meme_caption_ru": "32B на 8 ГБ VRAM?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Выберите один сценарий: когда Ollama выгоднее облака",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица Ollama vs облачный API: приватность, стоимость рутины, скорость 70B, офлайн — «Выберите один сценарий: когда Ollama выгоднее облака»; розовый стикер «гибрид»; torn paper + tape; маленький cat meme cutout; чистый белый фон #FFFFFF",
+      "alt": "Сравнение локальной Ollama и облачного API: приватность, стоимость, скорость, офлайн"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Сверьте железо с моделью до команды ollama pull",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Схема VRAM→модель: 8 ГБ→qwen3:8b, 16 ГБ→qwen3:14b, Apple Silicon→MLX; стрелки ollama pull; стикер «не тянуть 70B на 3060»; pink sticky note RAM/GPU; marker arrow; facepalm cutout; чистый белый фон #FFFFFF",
+      "alt": "Схема выбора модели Ollama под VRAM: qwen3:8b, qwen3:14b, MLX на Apple Silicon"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Установите Ollama и проверьте инференс в терминале",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист: install → ollama pull qwen3:8b → ollama run → ollama ps 100% GPU → nvidia-smi сверка → 20+ tok/s; fake terminal screenshot; scotch tape corners; pink marker на «GPU»; shocked meme cutout; чистый белый фон #FFFFFF",
+      "alt": "Чеклист установки Ollama: pull, run, ollama ps и сверка nvidia-smi"
+    }
+  }
+}

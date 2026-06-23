@@ -1,0 +1,42 @@
+{
+  "topic_id": "B02",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "n8n разносит Make.com: собери ИИ-агента за вечер без переплат!",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Артур Хорошев сидит за столом с ноутбуком, вокруг витают розовые стикеры n8n, стрелки и скотч",
+      "scene_hint": "Артур Хорошев (лицо с reference — кудрявый quiff, борода, круглые очки) с воодушевленным выражением лица сидит за столом. Вокруг него витают розовые стикеры, неоновые стрелки, логотип n8n, рваная бумага и скотч. На столе лежит ноутбук с открытым интерфейсом n8n. В стиле цифрового коллажа с мем-элементами, яркие акценты, 16:9.",
+      "meme_caption_ru": "Собрал ИИ-агента за вечер!"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "1. Выберите способ запуска n8n в 2026",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Сравнительный интерфейс (UI) способов запуска n8n в 2026 году: Cloud vs Self-hosted vs Desktop. Колонки с галочками и крестиками, цены, сложность настройки. Розовый стикер 'Выбор профи: Self-hosted' со стрелкой. Без людей.",
+      "alt": "Сравнительная таблица способов запуска n8n в 2026 году: Cloud, Self-hosted и Desktop"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "2. Создайте первого ИИ-агента в n8n пошагово",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Инфографика-схема (workflow diagram) пошагового создания ИИ-агента в n8n. Блоки соединены стрелками: Webhook -> AI Agent node -> OpenAI Chat Model -> Vector Store. Розовые стикеры с пометками 'Шаг 1', 'Шаг 2', 'Шаг 3'. Элементы рваной бумаги и скотча. Без людей.",
+      "alt": "Схема пошагового создания ИИ-агента в n8n: от Webhook до Vector Store"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "3. Подключите память и базу знаний (RAG) без кода",
+      "visual_type": "checklist_board",
+      "scene_hint": "Интерфейс чеклиста по настройке RAG (Retrieval-Augmented Generation) памяти для ИИ-агента в n8n. Пункты чеклиста: загрузка документов, выбор векторной БД, настройка чанк-размера, тестирование ответов. Розовый стикер 'Память работает!' с галочкой. Без людей.",
+      "alt": "Чеклист по настройке RAG памяти для ИИ-агента в n8n"
+    }
+  }
+}

@@ -1,14 +1,16 @@
 {
   "design_code_id": "human_hook_collage_16x9",
   "label_ru": "Человеческий hook-коллаж 16:9",
-  "reference_notes": "Адаптация carousel/trash-design референсов: рваная бумага, скотч, стикеры, розовый маркер, «скрины», мем-реакции — но формат 16:9 для блога.",
+  "reference_notes": "Адаптация carousel/trash-design референсов: чисто белый фон, рваная бумага, скотч, стикеры, розовый маркер, «скрины», мем-реакции — но формат 16:9 для блога.",
   "openability_rules": [
     "Первый кадр (cover panel) = pattern interrupt: провокация + узнаваемая боль",
     "Крупный hook-текст с розовым/жёлтым highlight на ключевом слове",
+    "Типографика обложки вдохновлена DESIGN.md-референсом: очень жирный condensed uppercase Cyrillic; hot-акценты чередуются от обложки к обложке (hot pink, hot purple, hot blue, hot orange и другие) и выбираются дизайнером под hook. Sticker labels, brush bubbles и handwritten speech notes оставить в дизайн-языке; price badges не использовать",
     "Минимум 1 fake UI screenshot (Wordstat, отзыв, Telegram, analytics) — «сделал человек»",
     "1–2 мем-реакции (разные форматы, не повторять Drake везде)",
     "Handwritten arrows, marker circles and visual meme reaction cutouts for intrigue",
-    "Не выглядеть как корпоративный баннер или stock photo"
+    "Не выглядеть как корпоративный баннер или stock photo",
+    "Текст на стикерах и мем-подписях — дерзкий, но не токсичный: без оскорблений, унижающих ярлыков и слов «лох», «лохов», «для лохов»"
   ],
   "visual_motifs": [
     "torn paper strips with pink/black edges",
@@ -18,19 +20,20 @@
     "hand-drawn arrows and stars",
     "phone screenshot UI frames (Telegram chat, Yandex Wordstat, review stars)",
     "meme reaction cutouts with rough white outline",
-    "grunge paper texture background #F5F5F0",
+    "pure white #FFFFFF background, no beige paper tint",
     "black bold condensed Cyrillic headlines"
   ],
   "color_palette": {
-    "background": "#F5F5F0",
-    "paper_white": "#FAFAF7",
+    "background": "#FFFFFF",
+    "paper_white": "#FFFFFF",
     "ink_black": "#1A1A2E",
     "highlight_pink": "#FF1493",
     "accent_coral": "#E85D4C",
     "marker_yellow": "#FFD93D"
   },
-  "cover_panel_prompt_block": "16:9 hook collage panel: blog host cutout (reference face, agent-chosen outfit), layered fake screenshots (Wordstat keys, zero reads analytics, 5-star review snippet or Telegram «где трафик?»), torn paper + tape + pink sticky note, 1-2 different meme reaction faces, huge Cyrillic hook headline with pink highlight on key word, handwritten arrow, DIY human-made zine aesthetic NOT corporate ad",
-  "inline_human_touch": "Add subtle human-made layer: small sticky note, tape corner, or mini screenshot inset — still readable utility UI/diagram underneath",
+  "typography_reference": "Like the provided DESIGN.md cover reference in energy, scale and readable Cyrillic hierarchy, but rotate hot accent colors from cover to cover: hot pink, hot purple, hot blue, hot orange and other hot accents chosen by the designer for the hook. Keep the core sticker/meme/collage language; use sticker label blocks, brush bubbles, marker underlines, or handwritten speech notes. Do not use price badges. Keep text readable and Russian-only.",
+  "cover_panel_prompt_block": "16:9 hook collage panel on pure white #FFFFFF background: blog host cutout (reference face, thick heavyweight white hoodie outfit lock, varied pose/gesture/angle/expression/props/composition), layered fake screenshots (Wordstat keys, zero reads analytics, 5-star review snippet or Telegram «где трафик?»), torn paper + tape + pink sticky note, 1-2 different meme reaction faces, huge Cyrillic hook headline in DESIGN.md-inspired bold condensed type with designer-chosen accent palette and varied editorial devices, handwritten arrow, neutral/non-insulting sticker text, DIY human-made zine aesthetic NOT corporate ad",
+  "inline_human_touch": "Add subtle human-made layer on pure white #FFFFFF base: small sticky note, tape corner, or mini screenshot inset — still readable utility UI/diagram underneath",
   "meme_rotation": [
     "shocked face reaction",
     "facepalm / понятно",
@@ -38,5 +41,5 @@
     "cat/dog meme reaction",
     "before/after split sticker"
   ],
-  "global_negative": "vertical carousel 9:16, instagram story layout, corporate stock banner, clean minimal SaaS only, English text, watermark, same meme repeated 4 times, polished ad look"
+  "global_negative": "beige/cream/off-white full background, gray background, gradient background, grunge paper background, vertical carousel 9:16, instagram story layout, corporate stock banner, clean minimal SaaS only, English text, watermark, same meme repeated 4 times, polished ad look, headphones, headset, earbuds, toxic sticker text, insults, humiliating labels, words «лох», «лохов», «для лохов»"
 }

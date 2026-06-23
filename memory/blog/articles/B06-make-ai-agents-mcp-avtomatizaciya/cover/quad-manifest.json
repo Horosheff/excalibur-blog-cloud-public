@@ -1,0 +1,42 @@
+{
+  "topic_id": "B06",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_mcp",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "Автоматизация Make: агенту дали всё CRM — и что дальше?",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Обложка: Make canvas с AI Agent, MCP-кабель к Cursor и стикеры approval, scopes, reasoning — diy-коллаж",
+      "scene_hint": "Make.com canvas с цветными блоками сценария (trigger, router, filter), прозрачный ИИ-агент в центре canvas, толстый MCP-кабель к иконкам Cursor и Claude, розовые стикеры «approval», «scopes», «reasoning», fake скрин Reasoning Panel Make, blog host (reference face) в casual худи указывает на canvas, torn paper + scotch tape, facepalm meme cutout, яркий diy-коллаж 16:9",
+      "meme_caption_ru": "Агенту — всё CRM?"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Выберите процесс для Make AI Agent, а не \"автоматизацию всего отдела\"",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Схема выбора процесса: входящая заявка / тикет / бриф → router (простые правила) vs AI Agent (сложный смысл) → НЕ «весь отдел». Блоки Make-модулей, стрелки, розовый стикер «один пилот», без лица героя",
+      "alt": "Схема: какой процесс отдать Make AI Agent, а не автоматизировать весь отдел"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Разделите workflow на правила, агента, MCP и approval",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Таблица 4 колонки: Правила (router/filter) | AI Agent | MCP tools | Human approval — что делает каждый слой, примеры действий. Fake UI Make builder, мини-скотч в углу, без героя",
+      "alt": "Таблица: разделение workflow на правила, агента, MCP и approval"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Соберите базовый сценарий Make.com до подключения агента",
+      "visual_type": "checklist_board",
+      "scene_hint": "Чеклист на розовых стикерах: webhook → normalize → router → тест 10-20 заявок → потом AI Agent. Printable board стиль, галочки, порядок шагов Make canvas, без лица героя",
+      "alt": "Чеклист: базовый сценарий Make.com до подключения AI Agent"
+    }
+  }
+}

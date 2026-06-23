@@ -1,0 +1,119 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory/blog/articles/B08-ii-chat-bot-dlya-biznesa-workflow/cover/canvas-quad.png",
+    "source_size_px": [
+      1672,
+      941
+    ],
+    "panel_size_px": [
+      836,
+      470
+    ],
+    "split_meta": {
+      "split_mode": "mechanical_center",
+      "h_gutter_px": null,
+      "v_gutter_px": null
+    },
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 836,
+          "bottom": 470
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 836,
+          "bottom": 470
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Обложка: ИИ чат-бот для бизнеса — workflow без выдуманных скидок",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 836,
+          "top": 0,
+          "right": 1672,
+          "bottom": 470
+        },
+        "raw_box_px": {
+          "left": 836,
+          "top": 0,
+          "right": 1672,
+          "bottom": 470
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Сравнение задач и каналов чат-бота: Telegram, виджет, MAX",
+        "h2_anchor": "Выберите одну задачу и канал: Telegram, виджет или MAX"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 470,
+          "right": 836,
+          "bottom": 941
+        },
+        "raw_box_px": {
+          "left": 0,
+          "top": 470,
+          "right": 836,
+          "bottom": 941
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Чеклист базы знаний и ограничений чат-бота для бизнеса",
+        "h2_anchor": "Соберите базу ответов и список \"что бот не делает\""
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 836,
+          "top": 470,
+          "right": 1672,
+          "bottom": 941
+        },
+        "raw_box_px": {
+          "left": 836,
+          "top": 470,
+          "right": 1672,
+          "bottom": 941
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема диалога чат-бота: интенты, уточнения и эскалация к оператору",
+        "h2_anchor": "Спроектируйте диалог: интенты, уточнения и эскалация к человеку"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "topic_id": "B06",
+  "slug": "make-ai-agents-mcp-avtomatizaciya",
+  "h1": "Как настроить автоматизацию Make с AI Agents и MCP: пошаговый workflow для бизнеса",
+  "primary_query": "автоматизация make",
+  "secondary_queries": [
+    "автоматизация make com",
+    "автоматизация процессов make",
+    "make ai agent",
+    "make ии агенты",
+    "make сценарии",
+    "make com как пользоваться"
+  ],
+  "char_count": 9348,
+  "article_mode": "B",
+  "search_intent": "workflow",
+  "author_id": "artur-horoshev",
+  "anchor_variants": [
+    "автоматизация Make с AI Agents и MCP",
+    "workflow Make для бизнес-процессов",
+    "настройка Make MCP Server и Client"
+  ],
+  "meta_ab": {
+    "title_seo": "автоматизация make с AI Agents и MCP: workflow для бизнеса",
+    "title_ctr": "🚀 Автоматизация Make без хаоса: AI Agents, MCP и безопасный запуск",
+    "title_aeo": "Как настроить автоматизацию Make с AI Agents и MCP?",
+    "description_seo": "Пошаговый workflow: как выбрать процесс, собрать Make-сценарий, подключить AI Agent и MCP, настроить scopes, approval, логи и лимиты credits.",
+    "description_ctr": "Настройте Make-сценарий с AI Agent и MCP без риска для CRM, бюджета и клиентов. Чек-лист запуска, scopes, approval и Reasoning Panel.",
+    "description_aeo": "Автоматизация Make с AI Agents и MCP строится как управляемый workflow: обычные модули делают правила, агент решает сложные случаи, человек подтверждает риск."
+  },
+  "internal_links": [
+    "/avtomatizaciya-n8n-ai-agents/",
+    "/podklyuchenie-mcp-cursor/"
+  ],
+  "cover_family": "brand_collage"
+}

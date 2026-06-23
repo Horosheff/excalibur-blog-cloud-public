@@ -1,0 +1,225 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mayai.ru/#organization",
+      "name": "Maya AI — блог «Ковчег»",
+      "url": "https://mayai.ru/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://mayai.ru/#logo",
+        "url": "https://mayai.ru/wp-content/uploads/logo.png",
+        "caption": "Maya AI — блог «Ковчег»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mayai.ru/#author-elena-kovaleva",
+      "name": "Елена Ковалева",
+      "jobTitle": "Главный эксперт по поисковой оптимизации и GEO/AEO-стратегиям",
+      "image": "https://kv-ai.ru/assets/team/elena-kovaleva.jpg",
+      "worksFor": {
+        "@id": "https://mayai.ru/#organization"
+      },
+      "sameAs": [
+        "https://habr.com/ru/users/elena_kovaleva_seo/",
+        "https://github.com/elena-kov-seo",
+        "https://www.linkedin.com/in/elena-kovaleva-dummy-seo"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/geo-optimizaciya-sajta-2026/#article",
+      "headline": "Как настроить GEO-оптимизацию сайта: чек-лист для попадания в ответы нейросетей",
+      "description": "Чек-лист geo оптимизации сайта: robots.txt для AI-ботов, answer-first, FAQ, Schema.org и мониторинг Share of Voice. 32 пункта с приоритетами за 60–90 минут.",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "inLanguage": "ru",
+      "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://mayai.ru/geo-optimizaciya-sajta-2026/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://mayai.ru/wp-content/uploads/blog/geo-optimizaciya-sajta-2026-cover.png",
+        "width": 1200,
+        "height": 675
+      },
+      "author": {
+        "@id": "https://mayai.ru/#author-elena-kovaleva"
+      },
+      "publisher": {
+        "@id": "https://mayai.ru/#organization"
+      },
+      "keywords": "geo оптимизация, geo оптимизация сайта, geo seo оптимизация, с чего начать geo оптимизацию, geo оптимизация контента",
+      "wordCount": 8921,
+      "articleSection": "SEO / GEO",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "Maya AI — блог «Ковчег»",
+        "url": "https://mayai.ru/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/geo-optimizaciya-sajta-2026/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "С чего начать geo оптимизацию?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Откройте robots.txt и убедитесь, что AI-боты не заблокированы. Составьте 10 тестовых промптов и прогоните в ChatGPT, Perplexity и Алисе. Добавьте FAQ 5–7 на money-page с ответами до 80 слов и разметкой FAQPage. Это минимум за одну рабочую сессию 60–90 минут."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем GEO отличается от SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO гонится за позицией и кликом в классической выдаче. GEO – за цитированием в синтезированном ответе нейросети. SEO остаётся фундаментом: без топ-30 органики сложнее попасть в 5 источников Яндекс Нейро. GEO добавляет answer-first, FAQ и Schema."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужна ли Schema для GEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да: FAQPage, Article, Organization – минимум 2026. Проверяйте JSON-LD в Rich Results Test."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как попасть в ответы Яндекс Нейро и Алисы?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Топ-30 органики, answer-first в начале, FAQ, HTML без JS. Яндекс берёт 5 источников; YandexGPT цитирует текст страницы."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Обязателен ли llms.txt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Сначала robots.txt, HTML и Schema. llms.txt – опциональная подсказка для LLM-краулеров."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько ждать результат geo оптимизации?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3–6 недель на первые сдвиги после robots/Schema/FAQ; устойчивый SoV – 2–3 месяца замеров."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "GEO заменяет SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Позиции в Google коррелируют с упоминаниями в ChatGPT. Оптимизируйте оба канала."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://mayai.ru/geo-optimizaciya-sajta-2026/#howto",
+      "name": "Как настроить GEO-оптимизацию сайта: чек-лист для попадания в ответы нейросетей",
+      "description": "Пошаговая geo оптимизация сайта за 60–90 минут: baseline промптов, robots.txt для AI-ботов, answer-first контент, Schema.org и мониторинг Share of Voice.",
+      "inLanguage": "ru",
+      "totalTime": "PT90M",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Доступ к robots.txt и CMS сайта"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Google Rich Results Test"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "ChatGPT, Perplexity и Алиса для аудита промптов"
+        }
+      ],
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Таблица 20–30 промптов (Google Sheets или аналог)"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Актуальный sitemap.xml"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Зафиксируйте baseline",
+          "text": "Составьте 20–30 промптов (брендовые, коммерческие, информационные) и прогоните в ChatGPT, Яндекс (Алиса/нейроответ), Perplexity. Запишите, есть ли цитата сайта или бренда.",
+          "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/#audit-presence"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Проведите техаудит доступа",
+          "text": "Откройте /robots.txt; уберите блокировки GPTBot, PerplexityBot, OAI-SearchBot, ClaudeBot, Google-Extended, Yandex-ботов. Сохраните запрет только для чувствительных разделов.",
+          "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/#audit-presence"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Проверьте HTML-доступность",
+          "text": "View-source ключевых URL — основной текст виден без JavaScript. При SPA — SSR, пререндер или статические fallback-блоки.",
+          "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/#audit-presence"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Перестройте priority-страницы",
+          "text": "После каждого H2 — 1–2 абзаца прямого ответа; добавьте TL;DR в начало; блок FAQ 5–7 вопросов с ответами до 80 слов.",
+          "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/#content-structure"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Внедрите Schema.org JSON-LD",
+          "text": "FAQPage на FAQ-блоках, Article на статьях, Organization и WebSite на главной. Прогоните Rich Results Test.",
+          "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/#schema-robots"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Обновите sitemap и даты",
+          "text": "Актуализируйте sitemap.xml с блогом, FAQ и услугами; обновите dateModified на изменённых страницах; перелинкуйте hub-страницу с FAQ и кейсами.",
+          "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/#schema-robots"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Пройдите чек-лист 32 пункта",
+          "text": "Отметьте критичные пункты, затем важные и бонусные. Зафиксируйте дедлайны на 2 недели для блока «Критично».",
+          "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/#checklist-geo"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 8,
+          "name": "Настройте мониторинг Share of Voice",
+          "text": "Таблица промптов × платформы × дата; повторяйте каждые 2–4 недели. При росте SoV масштабируйте шаблон answer-first + FAQ на остальные URL.",
+          "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/#monitor-sov"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 9,
+          "name": "Опционально: llms.txt и внешние упоминания",
+          "text": "После закрытия критичных пунктов добавьте llms.txt в корень и одну экспертную публикацию для entity signals.",
+          "url": "https://mayai.ru/geo-optimizaciya-sajta-2026/#checklist-geo"
+        }
+      ]
+    }
+  ]
+}

@@ -48,8 +48,8 @@
 
 ## E-E-A-T & Author Attribution (Авторитетность и Авторы)
 
-- Автор статьи выбран из единого реестра `shared/authors-registry.json` (например, `alexander-smirnov` или `elena-kovaleva`)
-- Имя автора и его ссылки `sameAs` в `schema.jsonld` соответствуют реестру
+- Автор статьи выбран из единого реестра `shared/authors-registry.json` (сейчас: `artur-horoshev`; другие id — только после добавления в реестр)
+- Имя автора в Fact Check Box, `article.meta.json` и `schema.jsonld` совпадают с одним `author_id` из реестра
 - В статью встроен блок «Мнение эксперта» (`<blockquote>` или отдельный блок) с цитатой выбранного автора
 
 ## Anchor Text Diversification (Анкоры перелинковки)

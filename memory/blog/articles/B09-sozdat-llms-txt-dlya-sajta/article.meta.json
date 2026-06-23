@@ -1,0 +1,29 @@
+{
+  "topic_id": "B09",
+  "slug": "sozdat-llms-txt-dlya-sajta",
+  "h1": "Как создать llms.txt для сайта: чек-лист для попадания в ответы нейросетей",
+  "primary_query": "llms txt",
+  "secondary_queries": [
+    "файл llms txt",
+    "llms txt пример",
+    "генератор llms txt",
+    "создать llms txt",
+    "llms txt в robots txt"
+  ],
+  "char_count": 9492,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "anchor_variants": [
+    "как создать llms.txt для сайта",
+    "чек-лист файла llms.txt",
+    "пример llms.txt для сайта"
+  ],
+  "meta_ab": {
+    "title_seo": "llms txt: как создать файл для сайта без SEO-мифов",
+    "title_ctr": "llms.txt без мифов: что положить в файл, чтобы не собрать мусор?",
+    "title_aeo": "Как создать llms.txt для сайта и проверить файл?",
+    "description_seo": "Пошаговый чек-лист llms.txt: какие страницы выбрать, как оформить Markdown, где выложить файл и как проверить без обещаний AI-трафика.",
+    "description_ctr": "Разберите llms.txt спокойно: готовый шаблон, 10-30 URL, проверка в корне сайта и честные ограничения для Google и AI-ответов.",
+    "description_aeo": "Чтобы создать llms.txt, соберите важные URL, оформите Markdown-файл, выложите его в корень сайта и проверьте HTTP 200, ссылки и Lighthouse."
+  }
+}

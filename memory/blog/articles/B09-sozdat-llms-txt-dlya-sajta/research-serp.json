@@ -1,0 +1,741 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-16",
+    "today_ru": "16.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-18",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-16 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B09",
+    "priority": "P0",
+    "slug": "sozdat-llms-txt-dlya-sajta",
+    "h1": "Как создать llms.txt для сайта: чек-лист для попадания в ответы нейросетей",
+    "primary_query": "llms txt",
+    "secondary_queries": [
+      "файл llms txt",
+      "llms txt пример",
+      "генератор llms txt",
+      "создать llms txt",
+      "llms txt в robots txt"
+    ],
+    "search_intent": "checklist",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "llms txt 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "llms.txt в 2026: что это, как написать, и почему вашему сайту это нужно",
+          "url": "https://habr.com/ru/articles/1037442/",
+          "snippet": ""
+        },
+        {
+          "title": "Robots.txt & LLMs.txt in 2026: The Complete Guide to Search",
+          "url": "https://www.linkedin.com/pulse/robotstxt-llmstxt-2026-complete-guide-search-engines-ai-hasan-z73bc",
+          "snippet": "В статье разбираю: что такое llms.txt, чем отличается от robots.txt, какие 5 блоков должны быть внутри, как написать свой за час, и показываю живой пример с production-сайта."
+        },
+        {
+          "title": "State of llms.txt 2026 - Presenc AI",
+          "url": "https://presenc.ai/research/state-of-llms-txt-2026",
+          "snippet": "That's where robots.txt and the emerging llms.txt come in. This guide explains what they are, how they differ, and how to use both correctly in 2026 for SEO, AI visibility, and content..."
+        },
+        {
+          "title": "Руководство по llms.txt: Настройка, Примеры и Почему это Важно для ИИ ...",
+          "url": "https://alejandrorioja.com/ru/llms-txt-playbook/",
+          "snippet": "llms.txt evolved from niche proposal to near-mainstream convention over the 24 months since its 2024 introduction. By April 2026, partial support exists across every major Western AI platform and the file is a routine piece of the AI access stack for technically sophisticated brands."
+        },
+        {
+          "title": "LLMs.txt in 2026: The Full Guide - limy.ai",
+          "url": "https://limy.ai/blog/llms.txt-in-2026-the-full-guide",
+          "snippet": "Обновлено для 2026 года. llms.txt — это текстовый файл в корне сайта, который сообщает LLM-краулерам, что найти на вашем сайте. На его написание уходит 20 минут, он не требует плагинов и помогает генеративным поисковикам ..."
+        },
+        {
+          "title": "llms.txt — what it is, what AI models use it, how to write one, and the ...",
+          "url": "https://dev.to/lab451/complete-llmstxt-guide-for-2026-57d",
+          "snippet": "llms.txt is a proposed standard, introduced by Jeremy Howard of Answer.AI in September 2024, for a Markdown file at the root of your domain - https://example.com/llms.txt - that gives AI systems a curated index of your most important content with one-line descriptions."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "llms txt июнь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "llms.txt в 2026: что это, как написать, и почему вашему сайту это нужно",
+          "url": "https://habr.com/ru/articles/1037442/",
+          "snippet": ""
+        },
+        {
+          "title": "97% файлов Llms.txt не получили запросов, показывают данные Ahrefs",
+          "url": "https://www.appercase.ru/news/133633/",
+          "snippet": "В статье разбираю: что такое llms.txt, чем отличается от robots.txt, какие 5 блоков должны быть внутри, как написать свой за час, и показываю живой пример с production-сайта."
+        },
+        {
+          "title": "Что такое llms.txt, зачем он нужен и нужен ли вообще в 2026 году",
+          "url": "https://razrabweb.ru/optimizatciia/llms-txt-dlia-saita/",
+          "snippet": "Анализ Ahrefs показал, что 97% файлов llms.txt не получили запросов в мае 2026 года. Боты для извлечения данных AI составили лишь 1% от общего числа запросов."
+        },
+        {
+          "title": "Мюллер из Google: llms.txt не поможет LLM в различении сайтов",
+          "url": "https://www.appercase.ru/news/133559/",
+          "snippet": "LLMS.txt для сайта: полный разбор 2026. Узнайте, что такое llms.txt, как создать файл, и стоит ли это делать. Сравнение с robots.txt, плюсы и минусы, влияние на ИИ-краулеры. Практические рекомендации."
+        },
+        {
+          "title": "Creating llms.txt and llms-full.txt: Step-by-Step Guide for 2026",
+          "url": "https://inetventures.com/blog/creating-llms-txt-and-llms-full-txt",
+          "snippet": "Мюллер объяснил, что даже если файл llms.txt написан идеально, он все равно не предоставляет LLM возможности оценить, какой сайт лучше подходит для конкретного запроса. Он указал на то, что для поиска информации LLM по ..."
+        },
+        {
+          "title": "State of llms.txt Adoption 2026 - by CiterLabs",
+          "url": "https://citerlabs.com/state-of/llms-txt-adoption-2026/",
+          "snippet": "Many sites also create llms-full.txt, a companion file that provides the full, flattened Markdown content of key pages or the entire site. This gives AI systems comprehensive context in one easily ingestible file, reducing the need for extensive crawling. For a foundational explanation, read our in-depth article: What is llms.txt?."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "llms txt новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "llms.txt в 2026: что это, как написать, и почему вашему сайту это нужно",
+          "url": "https://habr.com/ru/articles/1037442/",
+          "snippet": ""
+        },
+        {
+          "title": "SEO 2026: смерть ключевых слов? Почему GEO и LLMs.txt изменят вашу ...",
+          "url": "https://seodiplom.ru/seo-2026-smert-klyuchevyh-slov-pochemu-geo-i-llms-txt-izmenyat-vashu-strategiyu/",
+          "snippet": "В статье разбираю: что такое llms.txt, чем отличается от robots.txt, какие 5 блоков должны быть внутри, как написать свой за час, и показываю живой пример с production-сайта."
+        },
+        {
+          "title": "Что такое llms.txt, зачем он нужен и нужен ли вообще в 2026 году",
+          "url": "https://razrabweb.ru/optimizatciia/llms-txt-dlia-saita/",
+          "snippet": "В этом видео мы подробно рассмотрим три самые влиятельные **SEO-тенденции 2026 года**, которые фундаментально меняют наш подход к поисковой доступности и стратегии контента."
+        },
+        {
+          "title": "97% файлов Llms.txt не получили запросов, показывают данные Ahrefs",
+          "url": "https://www.appercase.ru/news/133633/",
+          "snippet": "LLMS.txt для сайта: полный разбор 2026. Узнайте, что такое llms.txt, как создать файл, и стоит ли это делать. Сравнение с robots.txt, плюсы и минусы, влияние на ИИ-краулеры. Практические рекомендации."
+        },
+        {
+          "title": "State of llms.txt 2026 - Presenc AI",
+          "url": "https://presenc.ai/research/state-of-llms-txt-2026",
+          "snippet": "Анализ Ahrefs показал, что 97% файлов llms.txt не получили запросов в мае 2026 года. Боты для извлечения данных AI составили лишь 1% от общего числа запросов."
+        },
+        {
+          "title": "97% файлов llms.txt не получили ни одного запроса — данные Ahrefs ...",
+          "url": "https://pressaff.com/articles/97-of-files-llms-txt-we-havent-received-any-requests/",
+          "snippet": "llms.txt evolved from niche proposal to near-mainstream convention over the 24 months since its 2024 introduction. By April 2026, partial support exists across every major Western AI platform and the file is a routine piece of the AI access stack for technically sophisticated brands."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "github_evidence",
+      "query": "site:github.com llms txt 2026",
+      "purpose": "GitHub repos/issues/README для технических сигналов и реального опыта",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "GitHub - thedaviddias/llms-txt-hub: The largest directory for AI ...",
+          "url": "https://github.com/thedaviddias/llms-txt-hub",
+          "snippet": ""
+        },
+        {
+          "title": "llms.txt Examples — Real-World Implementations - GitHub",
+          "url": "https://github.com/henu-wang/llms-txt-examples",
+          "snippet": "A comprehensive collection of llms.txt implementations and resources for LLM-powered tools and services. The llms.txt file is a standardized way to provide information about how LLM-powered tools and services should interact with your documentation and codebase."
+        },
+        {
+          "title": "fun-workshop-2026-summer/generate_llms_txt.py at master - GitHub",
+          "url": "https://github.com/Fun-Research-Workshop/fun-workshop-2026-summer/blob/master/generate_llms_txt.py",
+          "snippet": "Think of it as robots.txt for the AI age: while robots.txt tells crawlers what they can access, llms.txt tells AI models what they should know."
+        },
+        {
+          "title": "GitHub - ihuzaifashoukat/llmoptimizer: Generate clean, AI-ready llms ...",
+          "url": "https://github.com/ihuzaifashoukat/llmoptimizer",
+          "snippet": "SUBTITLE = \"Repository manifest optimized for LLMs and AI agents.\" \"This repository contains the source code and content for the Fun Workshop 2026 Summer website. \" \"The website is structured as a single-page app that dynamically renders markdown files. \" \"All core information is located in the ..."
+        },
+        {
+          "title": "GitHub - AnswerDotAI/llms-txt: The /llms.txt file, helping language ...",
+          "url": "https://github.com/AnswerDotAI/llms-txt",
+          "snippet": "Generate an llms.txt that gives AI models a clean, structured summary of your website or docs. It works with any site and has first-class helpers for popular frameworks (Vite, Next.js, Nuxt, Astro, Remix), plus a docs generator for Markdown/MDX. Node.js 18+ is required."
+        },
+        {
+          "title": "GitHub - ngmisl/llmstxt: A Python tool for compressing and organizing ...",
+          "url": "https://github.com/ngmisl/llmstxt",
+          "snippet": "We propose adding a /llms.txt markdown file to websites to provide LLM-friendly content. This file offers brief background information, guidance, and links to detailed markdown files."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "official_docs",
+      "query": "llms txt official docs documentation 2026",
+      "purpose": "официальная документация, changelog, developer docs",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "LLMs.txt Documentation",
+          "url": "https://txt-llms.com/documentation",
+          "snippet": ""
+        },
+        {
+          "title": "The /llms.txt file - llms-txt",
+          "url": "https://llmstxt.org/",
+          "snippet": "Comprehensive guidance on the llms.txt proposal, including background, format details, examples, and tooling."
+        },
+        {
+          "title": "cdn.openai.com",
+          "url": "https://cdn.openai.com/API/docs/txt/llms.txt",
+          "snippet": "We propose adding a /llms.txt markdown file to websites to provide LLM-friendly content. This file offers brief background information, guidance, and links to detailed markdown files."
+        },
+        {
+          "title": "llms.txt | Lighthouse | Chrome for Developers",
+          "url": "https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt",
+          "snippet": "# OpenAI LLMs.txt OpenAI provides LLM-friendly documentation in a variety of formats, including the subsets described below: - [llms-models-pricing.txt](llms-models-pricing.txt) - model data and pricing from https://platform.openai.com/pricing and https://platform.openai.com/docs/models - [llms-guides.txt](llms-guides.txt) - guide documentation ..."
+        },
+        {
+          "title": "Creating llms.txt and llms-full.txt: Step-by-Step Guide for 2026",
+          "url": "https://inetventures.com/blog/creating-llms-txt-and-llms-full-txt",
+          "snippet": "The llms.txt file is an emerging convention used to provide a machine-readable summary of a website's content, specifically designed for LLMs and AI agents. Without this file, agents may spend more time crawling the site to understand its high-level structure and primary content."
+        },
+        {
+          "title": "Documentation for AI agents and LLMs - Expo Documentation",
+          "url": "https://docs.expo.dev/llms/",
+          "snippet": "In 2026, as AI agents and generative tools like ChatGPT, Perplexity, Claude, and Google's AI features increasingly shape how users discover and interact with web content, website owners and marketers are looking for ways to guide these systems. Enter llms.txt — an emerging convention designed to provide large language models (LLMs) with a clear, machine-readable overview of your site's ..."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "community_experience",
+      "query": "llms txt forum reddit discussion проблемы опыт 2026",
+      "purpose": "форумы, обсуждения, ошибки пользователей и живые сценарии",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "llms.txt в 2026: что это, как написать, и почему вашему сайту это нужно",
+          "url": "https://habr.com/ru/articles/1037442/",
+          "snippet": ""
+        },
+        {
+          "title": "Reddit",
+          "url": "https://www.reddit.com/r/LLMDevs/comments/1gufa05/llmstxt_directory_a_growing_list_of_sites/",
+          "snippet": "В статье разбираю: что такое llms.txt, чем отличается от robots.txt, какие 5 блоков должны быть внутри, как написать свой за час, и показываю живой пример с production-сайта."
+        },
+        {
+          "title": "What Is llms.txt, and Should You Care About It? - Ahrefs",
+          "url": "https://ahrefs.com/blog/what-is-llms-txt/",
+          "snippet": "Мы хотели бы показать здесь описание, но сайт, который вы просматриваете, этого не позволяет."
+        },
+        {
+          "title": "What Is LLMs.txt & Should You Use It? - Semrush",
+          "url": "https://www.semrush.com/blog/llms-txt/",
+          "snippet": "Developers and marketers are being told to add llms.txt files to their sites to help large language models (LLMs) \"understand\" their content. But what exactly is llms.txt, who's using it, and—more importantly—should you care?"
+        },
+        {
+          "title": "llms.txt in 2026: What It Does (and Doesn't) Do",
+          "url": "https://searchsignal.online/blog/llms-txt-2026",
+          "snippet": "Using llms.txt is probably not worth your time right now, unless you're just curious and want to experiment. llms.txt is currently just a proposed standard rather than something that's actually being used by the major AI companies."
+        },
+        {
+          "title": "Что такое llms.txt, зачем он нужен и нужен ли вообще в 2026 году",
+          "url": "https://razrabweb.ru/optimizatciia/llms-txt-dlia-saita/",
+          "snippet": "Does llms.txt Help Rankings or AI Citations in 2026? Here's the uncomfortable truth: there's no clear evidence that llms.txt improves AI search visibility in any reliably measurable way."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "файл llms txt 2026",
+      "purpose": "вторичный запрос: файл llms txt",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "llms.txt в 2026: что это, как написать, и почему вашему сайту это нужно",
+          "url": "https://habr.com/ru/articles/1037442/",
+          "snippet": ""
+        },
+        {
+          "title": "llms.txt: новый стандарт видимости в AI-поиске (2026)",
+          "url": "https://sitetest.ai/ru/blog/llms-txt-ai-citability-guide",
+          "snippet": "В статье разбираю: что такое llms.txt, чем отличается от robots.txt, какие 5 блоков должны быть внутри, как написать свой за час, и показываю живой пример с production-сайта."
+        },
+        {
+          "title": "Файл llms.txt: что это, зачем нужен и как создать",
+          "url": "https://oplace.ru/stati/internet/2026/04/fajl-llms-txt-chto-eto-zachem-nuzhen-i-kak-sozdat/",
+          "snippet": "llms.txt — это предложение 2024 года, которое быстро набирает обороты. Джереми Ховард из Answer.AI представил его в сентябре 2024 года. К маю 2026 года, по оценкам, более 1200 сайтов публикуют такой файл, включая Anthropic, Cloudflare, Vercel, Linear, Astro и NuxtLabs."
+        },
+        {
+          "title": "llms.txt — гайд для российских сайтов — audit4seo",
+          "url": "https://audit4seo.ru/blog/llms-txt-rukovodstvo",
+          "snippet": "Узнайте, что такое файл llms.txt, зачем он нужен сайтам, как его создать и правильно разместить. Пошаговая инструкция, шаблон, требования"
+        },
+        {
+          "title": "llms.txt и llms-full.txt: Полный гайд по GEO | PMD",
+          "url": "https://pmd-agency.ru/blog/arhitektura-i-status-podderzhki-standartov-llms-txt-i-llms-full-txt-v-ii/",
+          "snippet": "llms.txt — это markdown-файл в корне сайта, который сообщает большим языковым моделям (LLM), какой контент на сайте самый ценный, как он структурирован и что цитировать в первую очередь."
+        },
+        {
+          "title": "Как настроить llms.txt для лучшей видимости в AI?",
+          "url": "https://getmentio.io/ru/blog/llms-txt-setup-ai-visibility-guide",
+          "snippet": "Нейросети забирают ваш органический трафик. Узнайте, зачем нужен файл llms.txt, как он работает и почему это абсолютный маст-хэв для B2B и SaaS."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "llms txt пример 2026",
+      "purpose": "вторичный запрос: llms txt пример",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "llms.txt в 2026: что это, как написать, и почему вашему сайту это нужно",
+          "url": "https://habr.com/ru/articles/1037442/",
+          "snippet": ""
+        },
+        {
+          "title": "Руководство по llms.txt: Настройка, Примеры и Почему это Важно для ИИ ...",
+          "url": "https://alejandrorioja.com/ru/llms-txt-playbook/",
+          "snippet": "В статье разбираю: что такое llms.txt, чем отличается от robots.txt, какие 5 блоков должны быть внутри, как написать свой за час, и показываю живой пример с production-сайта."
+        },
+        {
+          "title": "Файл llms.txt: что это, зачем нужен и как создать",
+          "url": "https://oplace.ru/stati/internet/2026/04/fajl-llms-txt-chto-eto-zachem-nuzhen-i-kak-sozdat/",
+          "snippet": "Обновлено для 2026 года. llms.txt — это текстовый файл в корне сайта, который сообщает LLM-краулерам, что найти на вашем сайте. На его написание уходит 20 минут, он не требует плагинов и помогает генеративным поисковикам ..."
+        },
+        {
+          "title": "Что такое llms.txt, зачем он нужен и нужен ли вообще в 2026 году",
+          "url": "https://razrabweb.ru/optimizatciia/llms-txt-dlia-saita/",
+          "snippet": "Узнайте, что такое файл llms.txt, зачем он нужен сайтам, как его создать и правильно разместить. Пошаговая инструкция, шаблон, требования"
+        },
+        {
+          "title": "Что такое LLMs.txt и LLMs-full.txt и как заставить AI знать ...",
+          "url": "https://habr.com/ru/articles/974882/",
+          "snippet": "LLMS.txt для сайта: полный разбор 2026. Узнайте, что такое llms.txt, как создать файл, и стоит ли это делать. Сравнение с robots.txt, плюсы и минусы, влияние на ИИ-краулеры. Практические рекомендации."
+        },
+        {
+          "title": "llms.txt: The Complete Implementation Guide for 2026",
+          "url": "https://medium.com/@besourceable/llms-txt-the-complete-implementation-guide-for-2026-34c8abac6576",
+          "snippet": "llms.txt — это стандарт чистых данных для нейросетей. Он превращает ваш сайт или документацию в AI-friendly ресурс, гарантируя точные ответы без галлюцинаций по актуальным данным."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "генератор llms txt 2026",
+      "purpose": "вторичный запрос: генератор llms txt",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Генератор llms.txt онлайн: создать ai.txt для ИИ (2026)",
+          "url": "https://toolradarlab.com/ru/ai-geo-optimization/llms-txt-generator/",
+          "snippet": ""
+        },
+        {
+          "title": "Free LLMs.txt Generator Online - AI SEO Tool - LLMrefs",
+          "url": "https://llmrefs.com/tools/llms-txt-generator",
+          "snippet": "Бесплатный онлайн генератор файлов llms.txt и ai.txt для вашего сайта. Создайте правильный Markdown-промпт для нейросетей (ChatGPT, Claude) в 1 клик!"
+        },
+        {
+          "title": "Лучшие генераторы /llms.txt в 2026: какой для Shopify, WordPress или ...",
+          "url": "https://www.clickfrom.ai/ru/vs/best-llms-txt-generators",
+          "snippet": "Paste your domain into the input field above and click \"Generate\". The tool will automatically crawl your website and create a standardized llms.txt file following the official specification. Check the generated output for accuracy and make any necessary changes."
+        },
+        {
+          "title": "Best llms.txt Generator Tools in 2026 - Sona",
+          "url": "https://www.sona.com/blog/best-llms-txt-generator-tools-in-2026",
+          "snippet": "/llms.txt — emerging стандарт, говорящий LLM, как читать ваш сайт. Сравниваем семь самых используемых генераторов — что они эмитят, чего не хватает и какой подходит вашему стеку."
+        },
+        {
+          "title": "Генератор llms.txt онлайн бесплатно | ToolsPivot",
+          "url": "https://toolspivot.com/ru/llms-txt-generator",
+          "snippet": "Generate your llms.txt file in under 60 seconds with the right tool. Compare the best free llms.txt generator options for 2026 and boost your AI citation rate."
+        },
+        {
+          "title": "Генератор AI llms.txt | RapidToolSet",
+          "url": "https://rapidtoolset.com/ru/tool/ai-llms-txt-generator",
+          "snippet": "Создайте файлы llms.txt и llms-full.txt для вашего сайта бесплатно. Встроенный редактор, группировка по разделам, три режима ввода. Без регистрации, без ограничений по URL"
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_4",
+      "query": "создать llms txt 2026",
+      "purpose": "вторичный запрос: создать llms txt",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "llms.txt в 2026: что это, как написать, и почему вашему сайту это нужно",
+          "url": "https://habr.com/ru/articles/1037442/",
+          "snippet": ""
+        },
+        {
+          "title": "Файл llms.txt: что это, зачем нужен и как создать",
+          "url": "https://oplace.ru/stati/internet/2026/04/fajl-llms-txt-chto-eto-zachem-nuzhen-i-kak-sozdat/",
+          "snippet": "В статье разбираю: что такое llms.txt, чем отличается от robots.txt, какие 5 блоков должны быть внутри, как написать свой за час, и показываю живой пример с production-сайта."
+        },
+        {
+          "title": "Генератор llms.txt онлайн: создать ai.txt для ИИ (2026)",
+          "url": "https://toolradarlab.com/ru/ai-geo-optimization/llms-txt-generator/",
+          "snippet": "Узнайте, что такое файл llms.txt, зачем он нужен сайтам, как его создать и правильно разместить. Пошаговая инструкция, шаблон, требования"
+        },
+        {
+          "title": "llms.txt — гайд для российских сайтов — audit4seo",
+          "url": "https://audit4seo.ru/blog/llms-txt-rukovodstvo",
+          "snippet": "Бесплатный онлайн генератор файлов llms.txt и ai.txt для вашего сайта. Создайте правильный Markdown-промпт для нейросетей (ChatGPT, Claude) в 1 клик!"
+        },
+        {
+          "title": "Что такое llms.txt, зачем он нужен и нужен ли вообще в 2026 году",
+          "url": "https://razrabweb.ru/optimizatciia/llms-txt-dlia-saita/",
+          "snippet": "llms.txt — новый стандарт для AI-ответов: что это, как настроить на русском сайте, готовый шаблон. Гайд от audit4seo."
+        },
+        {
+          "title": "llms.txt: новый стандарт видимости в AI-поиске (2026)",
+          "url": "https://sitetest.ai/ru/blog/llms-txt-ai-citability-guide",
+          "snippet": "LLMS.txt для сайта: полный разбор 2026. Узнайте, что такое llms.txt, как создать файл, и стоит ли это делать. Сравнение с robots.txt, плюсы и минусы, влияние на ИИ-краулеры. Практические рекомендации."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_5",
+      "query": "llms txt в robots txt 2026",
+      "purpose": "вторичный запрос: llms txt в robots txt",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "llms.txt в 2026: что это, как написать, и почему вашему сайту это нужно",
+          "url": "https://habr.com/ru/articles/1037442/",
+          "snippet": ""
+        },
+        {
+          "title": "Индексация сайта 2026: robots.txt, sitemap.xml, llms.txt — полный гайд",
+          "url": "https://audit4seo.ru/guides/indexation-2026",
+          "snippet": "В статье разбираю: что такое llms.txt, чем отличается от robots.txt, какие 5 блоков должны быть внутри, как написать свой за час, и показываю живой пример с production-сайта."
+        },
+        {
+          "title": "Robots.txt & LLMs.txt in 2026: The Complete Guide to Search",
+          "url": "https://www.linkedin.com/pulse/robotstxt-llmstxt-2026-complete-guide-search-engines-ai-hasan-z73bc",
+          "snippet": "Полный гайд по индексации сайта 2026: robots.txt синтаксис, типы sitemap.xml, новый стандарт llms.txt, 10 причин почему страница не индексируется, как ускорить индексацию."
+        },
+        {
+          "title": "Что такое llms.txt, зачем он нужен и нужен ли вообще в 2026 году",
+          "url": "https://razrabweb.ru/optimizatciia/llms-txt-dlia-saita/",
+          "snippet": "That's where robots.txt and the emerging llms.txt come in. This guide explains what they are, how they differ, and how to use both correctly in 2026 for SEO, AI visibility, and content..."
+        },
+        {
+          "title": "robots.txt vs llms.txt 2026 AI Crawler Guide | TryFormatter",
+          "url": "https://www.tryformatter.com/blog/robots-txt-vs-llms-txt-ai-crawlers-2026",
+          "snippet": "LLMS.txt для сайта: полный разбор 2026. Узнайте, что такое llms.txt, как создать файл, и стоит ли это делать. Сравнение с robots.txt, плюсы и минусы, влияние на ИИ-краулеры. Практические рекомендации."
+        },
+        {
+          "title": "Robots.txt vs. llms.txt — Controlling AI Crawlers in 2026",
+          "url": "https://wildandfreetools.com/blog/robots-txt-vs-llms-txt-ai-crawlers-2026/",
+          "snippet": "Learn robots.txt vs llms.txt for AI crawlers in 2026. See what Google uses, what AI bots support, and how to protect content safely."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как создать llms.txt для сайта: чек-лист для попадания в ответы нейросетей 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "llms.txt в 2026: что это, как написать, и почему вашему сайту это нужно",
+          "url": "https://habr.com/ru/articles/1037442/",
+          "snippet": ""
+        },
+        {
+          "title": "Шаблон llms.txt: 5 готовых примеров для SaaS, агентства, e-commerce и ...",
+          "url": "https://geoscout.pro/ru/blog/shablon-llms-txt-5-gotovyh-primerov-dlya-sajta",
+          "snippet": "В статье разбираю: что такое llms.txt, чем отличается от robots.txt, какие 5 блоков должны быть внутри, как написать свой за час, и показываю живой пример с production-сайта."
+        },
+        {
+          "title": "Как сделать llms.txt для сайта: пошаговая инструкция | ROI SEO",
+          "url": "https://roiseo.ru/blog/kak-sdelat-llms-txt-dlya-sayta/",
+          "snippet": "Готовые шаблоны llms.txt для разных типов сайтов: SaaS, digital-агентства, интернет-магазина, локального бизнеса и личного бренда. Что включать, как структурировать и каких ошибок избегать."
+        },
+        {
+          "title": "llms.txt: новый стандарт видимости в AI-поиске (2026)",
+          "url": "https://sitetest.ai/ru/blog/llms-txt-ai-citability-guide",
+          "snippet": "Как сделать llms.txt для сайта: что включить, какие URL выбрать, как связать файл с sitemap, knowledge, research, AI-ready страницами и что проверить перед публикацией."
+        },
+        {
+          "title": "Как настроить llms.txt для лучшей видимости в AI?",
+          "url": "https://getmentio.io/ru/blog/llms-txt-setup-ai-visibility-guide",
+          "snippet": "Всё о llms.txt — новом стандарте для AI-поиска. Как создать, проверить и оптимизировать. Бесплатный генератор + 50+ примеров."
+        },
+        {
+          "title": "Файл llms.txt: что это, как создать для сайта, +примеры",
+          "url": "https://digital-digest.ru/fail-llms-txt-chto-eto-kak-sozdat-dlia-saita-primery/",
+          "snippet": "Настройте llms.txt для топ видимости в ChatGPT и Google AI. Пошаговая инструкция, кейсы успеха и оптимизация для локального бизнеса."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://habr.com/ru/articles/1037442/",
+      "title": "llms.txt в 2026: что это, как написать, и почему вашему сайту это нужно",
+      "from_query": "llms txt 2026"
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/robotstxt-llmstxt-2026-complete-guide-search-engines-ai-hasan-z73bc",
+      "title": "Robots.txt & LLMs.txt in 2026: The Complete Guide to Search",
+      "from_query": "llms txt 2026"
+    },
+    {
+      "url": "https://presenc.ai/research/state-of-llms-txt-2026",
+      "title": "State of llms.txt 2026 - Presenc AI",
+      "from_query": "llms txt 2026"
+    },
+    {
+      "url": "https://alejandrorioja.com/ru/llms-txt-playbook/",
+      "title": "Руководство по llms.txt: Настройка, Примеры и Почему это Важно для ИИ ...",
+      "from_query": "llms txt 2026"
+    },
+    {
+      "url": "https://limy.ai/blog/llms.txt-in-2026-the-full-guide",
+      "title": "LLMs.txt in 2026: The Full Guide - limy.ai",
+      "from_query": "llms txt 2026"
+    },
+    {
+      "url": "https://dev.to/lab451/complete-llmstxt-guide-for-2026-57d",
+      "title": "llms.txt — what it is, what AI models use it, how to write one, and the ...",
+      "from_query": "llms txt 2026"
+    },
+    {
+      "url": "https://www.appercase.ru/news/133633/",
+      "title": "97% файлов Llms.txt не получили запросов, показывают данные Ahrefs",
+      "from_query": "llms txt июнь 2026"
+    },
+    {
+      "url": "https://razrabweb.ru/optimizatciia/llms-txt-dlia-saita/",
+      "title": "Что такое llms.txt, зачем он нужен и нужен ли вообще в 2026 году",
+      "from_query": "llms txt июнь 2026"
+    },
+    {
+      "url": "https://www.appercase.ru/news/133559/",
+      "title": "Мюллер из Google: llms.txt не поможет LLM в различении сайтов",
+      "from_query": "llms txt июнь 2026"
+    },
+    {
+      "url": "https://inetventures.com/blog/creating-llms-txt-and-llms-full-txt",
+      "title": "Creating llms.txt and llms-full.txt: Step-by-Step Guide for 2026",
+      "from_query": "llms txt июнь 2026"
+    },
+    {
+      "url": "https://citerlabs.com/state-of/llms-txt-adoption-2026/",
+      "title": "State of llms.txt Adoption 2026 - by CiterLabs",
+      "from_query": "llms txt июнь 2026"
+    },
+    {
+      "url": "https://seodiplom.ru/seo-2026-smert-klyuchevyh-slov-pochemu-geo-i-llms-txt-izmenyat-vashu-strategiyu/",
+      "title": "SEO 2026: смерть ключевых слов? Почему GEO и LLMs.txt изменят вашу ...",
+      "from_query": "llms txt новости 2026"
+    },
+    {
+      "url": "https://pressaff.com/articles/97-of-files-llms-txt-we-havent-received-any-requests/",
+      "title": "97% файлов llms.txt не получили ни одного запроса — данные Ahrefs ...",
+      "from_query": "llms txt новости 2026"
+    },
+    {
+      "url": "https://github.com/thedaviddias/llms-txt-hub",
+      "title": "GitHub - thedaviddias/llms-txt-hub: The largest directory for AI ...",
+      "from_query": "site:github.com llms txt 2026"
+    },
+    {
+      "url": "https://github.com/henu-wang/llms-txt-examples",
+      "title": "llms.txt Examples — Real-World Implementations - GitHub",
+      "from_query": "site:github.com llms txt 2026"
+    },
+    {
+      "url": "https://github.com/Fun-Research-Workshop/fun-workshop-2026-summer/blob/master/generate_llms_txt.py",
+      "title": "fun-workshop-2026-summer/generate_llms_txt.py at master - GitHub",
+      "from_query": "site:github.com llms txt 2026"
+    },
+    {
+      "url": "https://github.com/ihuzaifashoukat/llmoptimizer",
+      "title": "GitHub - ihuzaifashoukat/llmoptimizer: Generate clean, AI-ready llms ...",
+      "from_query": "site:github.com llms txt 2026"
+    },
+    {
+      "url": "https://github.com/AnswerDotAI/llms-txt",
+      "title": "GitHub - AnswerDotAI/llms-txt: The /llms.txt file, helping language ...",
+      "from_query": "site:github.com llms txt 2026"
+    },
+    {
+      "url": "https://github.com/ngmisl/llmstxt",
+      "title": "GitHub - ngmisl/llmstxt: A Python tool for compressing and organizing ...",
+      "from_query": "site:github.com llms txt 2026"
+    },
+    {
+      "url": "https://txt-llms.com/documentation",
+      "title": "LLMs.txt Documentation",
+      "from_query": "llms txt official docs documentation 2026"
+    },
+    {
+      "url": "https://llmstxt.org/",
+      "title": "The /llms.txt file - llms-txt",
+      "from_query": "llms txt official docs documentation 2026"
+    },
+    {
+      "url": "https://cdn.openai.com/API/docs/txt/llms.txt",
+      "title": "cdn.openai.com",
+      "from_query": "llms txt official docs documentation 2026"
+    },
+    {
+      "url": "https://developer.chrome.com/docs/lighthouse/agentic-browsing/llms-txt",
+      "title": "llms.txt | Lighthouse | Chrome for Developers",
+      "from_query": "llms txt official docs documentation 2026"
+    },
+    {
+      "url": "https://docs.expo.dev/llms/",
+      "title": "Documentation for AI agents and LLMs - Expo Documentation",
+      "from_query": "llms txt official docs documentation 2026"
+    },
+    {
+      "url": "https://www.reddit.com/r/LLMDevs/comments/1gufa05/llmstxt_directory_a_growing_list_of_sites/",
+      "title": "Reddit",
+      "from_query": "llms txt forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://ahrefs.com/blog/what-is-llms-txt/",
+      "title": "What Is llms.txt, and Should You Care About It? - Ahrefs",
+      "from_query": "llms txt forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://www.semrush.com/blog/llms-txt/",
+      "title": "What Is LLMs.txt & Should You Use It? - Semrush",
+      "from_query": "llms txt forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://searchsignal.online/blog/llms-txt-2026",
+      "title": "llms.txt in 2026: What It Does (and Doesn't) Do",
+      "from_query": "llms txt forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://sitetest.ai/ru/blog/llms-txt-ai-citability-guide",
+      "title": "llms.txt: новый стандарт видимости в AI-поиске (2026)",
+      "from_query": "файл llms txt 2026"
+    },
+    {
+      "url": "https://oplace.ru/stati/internet/2026/04/fajl-llms-txt-chto-eto-zachem-nuzhen-i-kak-sozdat/",
+      "title": "Файл llms.txt: что это, зачем нужен и как создать",
+      "from_query": "файл llms txt 2026"
+    },
+    {
+      "url": "https://audit4seo.ru/blog/llms-txt-rukovodstvo",
+      "title": "llms.txt — гайд для российских сайтов — audit4seo",
+      "from_query": "файл llms txt 2026"
+    },
+    {
+      "url": "https://pmd-agency.ru/blog/arhitektura-i-status-podderzhki-standartov-llms-txt-i-llms-full-txt-v-ii/",
+      "title": "llms.txt и llms-full.txt: Полный гайд по GEO | PMD",
+      "from_query": "файл llms txt 2026"
+    },
+    {
+      "url": "https://getmentio.io/ru/blog/llms-txt-setup-ai-visibility-guide",
+      "title": "Как настроить llms.txt для лучшей видимости в AI?",
+      "from_query": "файл llms txt 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/974882/",
+      "title": "Что такое LLMs.txt и LLMs-full.txt и как заставить AI знать ...",
+      "from_query": "llms txt пример 2026"
+    },
+    {
+      "url": "https://medium.com/@besourceable/llms-txt-the-complete-implementation-guide-for-2026-34c8abac6576",
+      "title": "llms.txt: The Complete Implementation Guide for 2026",
+      "from_query": "llms txt пример 2026"
+    },
+    {
+      "url": "https://toolradarlab.com/ru/ai-geo-optimization/llms-txt-generator/",
+      "title": "Генератор llms.txt онлайн: создать ai.txt для ИИ (2026)",
+      "from_query": "генератор llms txt 2026"
+    },
+    {
+      "url": "https://llmrefs.com/tools/llms-txt-generator",
+      "title": "Free LLMs.txt Generator Online - AI SEO Tool - LLMrefs",
+      "from_query": "генератор llms txt 2026"
+    },
+    {
+      "url": "https://www.clickfrom.ai/ru/vs/best-llms-txt-generators",
+      "title": "Лучшие генераторы /llms.txt в 2026: какой для Shopify, WordPress или ...",
+      "from_query": "генератор llms txt 2026"
+    },
+    {
+      "url": "https://www.sona.com/blog/best-llms-txt-generator-tools-in-2026",
+      "title": "Best llms.txt Generator Tools in 2026 - Sona",
+      "from_query": "генератор llms txt 2026"
+    },
+    {
+      "url": "https://toolspivot.com/ru/llms-txt-generator",
+      "title": "Генератор llms.txt онлайн бесплатно | ToolsPivot",
+      "from_query": "генератор llms txt 2026"
+    },
+    {
+      "url": "https://rapidtoolset.com/ru/tool/ai-llms-txt-generator",
+      "title": "Генератор AI llms.txt | RapidToolSet",
+      "from_query": "генератор llms txt 2026"
+    },
+    {
+      "url": "https://audit4seo.ru/guides/indexation-2026",
+      "title": "Индексация сайта 2026: robots.txt, sitemap.xml, llms.txt — полный гайд",
+      "from_query": "llms txt в robots txt 2026"
+    },
+    {
+      "url": "https://www.tryformatter.com/blog/robots-txt-vs-llms-txt-ai-crawlers-2026",
+      "title": "robots.txt vs llms.txt 2026 AI Crawler Guide | TryFormatter",
+      "from_query": "llms txt в robots txt 2026"
+    },
+    {
+      "url": "https://wildandfreetools.com/blog/robots-txt-vs-llms-txt-ai-crawlers-2026/",
+      "title": "Robots.txt vs. llms.txt — Controlling AI Crawlers in 2026",
+      "from_query": "llms txt в robots txt 2026"
+    },
+    {
+      "url": "https://geoscout.pro/ru/blog/shablon-llms-txt-5-gotovyh-primerov-dlya-sajta",
+      "title": "Шаблон llms.txt: 5 готовых примеров для SaaS, агентства, e-commerce и ...",
+      "from_query": "Как создать llms.txt для сайта: чек-лист для попадания в ответы нейросетей 2026"
+    },
+    {
+      "url": "https://roiseo.ru/blog/kak-sdelat-llms-txt-dlya-sayta/",
+      "title": "Как сделать llms.txt для сайта: пошаговая инструкция | ROI SEO",
+      "from_query": "Как создать llms.txt для сайта: чек-лист для попадания в ответы нейросетей 2026"
+    },
+    {
+      "url": "https://digital-digest.ru/fail-llms-txt-chto-eto-kak-sozdat-dlia-saita-primery/",
+      "title": "Файл llms.txt: что это, как создать для сайта, +примеры",
+      "from_query": "Как создать llms.txt для сайта: чек-лист для попадания в ответы нейросетей 2026"
+    }
+  ]
+}

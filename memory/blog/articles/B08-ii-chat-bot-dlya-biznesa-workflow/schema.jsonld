@@ -1,0 +1,187 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "[REDACTED]/#organization",
+      "name": "Maya AI — блог «Ковчег»",
+      "url": "[REDACTED]/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "[REDACTED]/#logo",
+        "url": "[REDACTED]/wp-content/uploads/logo.png",
+        "caption": "Maya AI — блог «Ковчег»"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "[REDACTED]/#author-artur-horoshev",
+      "name": "Артур Хорошев",
+      "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+      "image": "https://kv-ai.ru/artur-horosheff",
+      "worksFor": {
+        "@id": "[REDACTED]/#organization"
+      },
+      "sameAs": [
+        "https://kv-ai.ru/artur-horosheff",
+        "[REDACTED]/obo-mne/",
+        "https://t.me/maya_pro",
+        "https://t.me/horosheff"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "[REDACTED]/blog/ii-chat-bot-dlya-biznesa-workflow/#article",
+      "headline": "Как создать ИИ чат-бот для бизнеса: пошаговый workflow от сценария до запуска",
+      "description": "Как создать ИИ чат-бот для бизнеса без рейтингов SaaS: задача, Telegram/MAX, n8n или Make, RAG по FAQ, CRM и метрики FCR/CSAT за 7-14 дней.",
+      "datePublished": "2026-06-16",
+      "dateModified": "2026-06-16",
+      "inLanguage": "ru",
+      "url": "[REDACTED]/blog/ii-chat-bot-dlya-biznesa-workflow/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "[REDACTED]/blog/ii-chat-bot-dlya-biznesa-workflow/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "[REDACTED]/wp-content/uploads/blog/ii-chat-bot-dlya-biznesa-workflow-cover.png",
+        "width": 1200,
+        "height": 675
+      },
+      "author": {
+        "@id": "[REDACTED]/#author-artur-horoshev"
+      },
+      "publisher": {
+        "@id": "[REDACTED]/#organization"
+      },
+      "keywords": "чат боты для бизнеса, ии чат бот для бизнеса, чат бот создать для бизнеса, чат боты для бизнеса в телеграмм, чат боты для бизнеса и автоматизации",
+      "wordCount": 8898,
+      "articleSection": "AI-агенты",
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "Maya AI — блог «Ковчег»",
+        "url": "[REDACTED]/blog/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "[REDACTED]/blog/ii-chat-bot-dlya-biznesa-workflow/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как создать чат-бот для бизнеса без программиста?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Зафиксируйте одну задачу (FAQ или лиды), выберите Telegram или виджет, соберите workflow в n8n или Make: триггер → AI Agent → RAG по FAQ → запись в CRM. На MVP хватает 3-7 дней при готовой базе ответов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ИИ чат-бот для бизнеса бесплатно - реально?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Self-hosted n8n Community Edition бесплатен, но нужен сервер и оплата API модели. Make дает free-tier с лимитом credits. \"Бесплатно\" без тестов и RAG обычно означает бота, который врет клиентам - это дороже любой подписки."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие чат-боты для бизнеса выбрать под малый бизнес?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для салона, клиники или услуг с Telegram-аудиторией - гибрид: сценарий записи + ИИ для FAQ. Для лидгена с сайта - виджет + CRM. Рейтинги из десяти SaaS не заменят чек-лист: база знаний, эскалация, метрики."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как подключить чат-бота для бизнеса в Telegram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Создайте бота через BotFather, включите Business-режим, в n8n поставьте Telegram Trigger на Business Message, память привяжите к chat_id, для ответов в личке используйте business_connection_id. Прогоните тесты до включения на рекламу."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Чем отличается сценарный бот от ИИ-агента?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Сценарный ведет по кнопкам и не понимает свободный текст. ИИ-агент отвечает на формулировки, но требует RAG и правил. Гибрид оставляет кнопки на оплате и записи, а FAQ отдает модели с поиском по документам."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужен ли MAX, если уже есть Telegram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не обязателен на старте. Спрос на MAX растет (116 показов/мес), но модерация до 48 рабочих часов. Добавляйте второй канал после стабильных метрик в Telegram, а не параллельно с отладкой."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "[REDACTED]/blog/ii-chat-bot-dlya-biznesa-workflow/#howto",
+      "name": "Как создать ИИ чат-бот для бизнеса: пошаговый workflow от сценария до запуска",
+      "description": "Как создать ИИ чат-бот для бизнеса без рейтингов SaaS: задача, Telegram/MAX, n8n или Make, RAG по FAQ, CRM и метрики FCR/CSAT за 7-14 дней.",
+      "inLanguage": "ru",
+      "totalTime": "P14D",
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "n8n или Make"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Telegram Bot API (Business-режим)"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Векторное хранилище (pgvector, Qdrant или Supabase)"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Выберите одну задачу и канал",
+          "text": "Зафиксируйте primary use case (поддержка L1, квалификация лидов или запись) и один канал на MVP: Telegram Business, виджет на сайте или MAX после модерации.",
+          "url": "[REDACTED]/blog/ii-chat-bot-dlya-biznesa-workflow/#choose-task-channel"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Соберите базу ответов",
+          "text": "Выгрузите FAQ, скрипты операторов и запреты; режьте документы на короткие блоки с заголовком раздела для RAG-поиска.",
+          "url": "[REDACTED]/blog/ii-chat-bot-dlya-biznesa-workflow/#knowledge-base"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Спроектируйте диалог и эскалацию",
+          "text": "Определите интенты, уточняющие вопросы и порог уверенности; при жалобах и низкой уверенности передавайте диалог оператору с сохранением истории.",
+          "url": "[REDACTED]/blog/ii-chat-bot-dlya-biznesa-workflow/#dialog-design"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Соберите бота в n8n или Make",
+          "text": "Триггер Telegram → AI Agent с Chat Model → Postgres Chat Memory (session_id = chat_id) → tools: vector store для RAG и CRM/таблица для лидов.",
+          "url": "[REDACTED]/blog/ii-chat-bot-dlya-biznesa-workflow/#build-n8n-make"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Подключите RAG и прогоните тесты",
+          "text": "Индексируйте FAQ, задайте system prompt «только из контекста», прогоните 50-100 тест-кейсов из реальных переписок и edge cases без галлюцинаций по ценам.",
+          "url": "[REDACTED]/blog/ii-chat-bot-dlya-biznesa-workflow/#rag-tests"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Проверьте запуск по метрикам",
+          "text": "Цели MVP: 60-80% диалогов без оператора (FCR), CSAT 80%+, fallback не выше 20% без причины, среднее время ответа меньше 5 секунд, лиды в CRM.",
+          "url": "[REDACTED]/blog/ii-chat-bot-dlya-biznesa-workflow/#launch-metrics"
+        }
+      ]
+    }
+  ]
+}

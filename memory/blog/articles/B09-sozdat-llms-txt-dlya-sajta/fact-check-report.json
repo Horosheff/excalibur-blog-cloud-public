@@ -1,0 +1,38 @@
+{
+  "article": "memory/blog/articles/B09-sozdat-llms-txt-dlya-sajta/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 4,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 1,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "роблема. Факт от Ahrefs охлаждает ожидания: в мае 2026 они изучили 137 210 доменов и увидели, что 97% вал",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "ы и спрос проверены по Яндекс Вордстат на 16 июня 2026 года. Частые вопросы Как создать llms.txt для сайта бе",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "60 минут",
+      "kind": "metric_or_duration",
+      "context": "о порядку в данных, которую можно выполнить за 30-60 минут. Решение для старта: перед созданием файла запиши",
+      "verified": true,
+      "reason": "Numerical value '60' matched in fact-bank context"
+    },
+    {
+      "fact": "137 210",
+      "kind": "large_number",
+      "context": "Ahrefs охлаждает ожидания: в мае 2026 они изучили 137 210 доменов и увидели, что 97% валидных llms.txt не по",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

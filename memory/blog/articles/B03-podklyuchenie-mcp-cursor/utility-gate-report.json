@@ -1,0 +1,23 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory\\blog\\articles\\B03-podklyuchenie-mcp-cursor",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 25,
+        "h2_sections": 9,
+        "faq_h3": 7,
+        "tables": 2,
+        "blockquotes": 4,
+        "ul_lists": 1,
+        "action_markers": 33,
+        "water_hits": []
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

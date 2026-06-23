@@ -1,0 +1,208 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mayai.ru/#website",
+      "url": "https://mayai.ru/",
+      "name": "Maya AI",
+      "description": "Автоматизация, ИИ-агенты и вайбкодинг"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#primaryimage",
+      "url": "https://mayai.ru/wp-content/uploads/2026/06/avtonomnyj-kontent-zavod-nejroseti.png",
+      "width": 1200,
+      "height": 630,
+      "caption": "Как запустить контент-завод на нейросетях"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#webpage",
+      "url": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/",
+      "name": "Как запустить контент-завод на нейросетях: пошаговое руководство по автоматизации без программирования",
+      "isPartOf": {
+        "@id": "https://mayai.ru/#website"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#primaryimage"
+      },
+      "description": "Пошаговое руководство по созданию автономного контент-завода на базе ИИ-агентов, Make.com и n8n. Узнайте, как автоматизировать дистрибуцию контента без спама."
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#blogposting",
+      "isPartOf": {
+        "@id": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#webpage"
+      },
+      "headline": "Как запустить контент-завод на нейросетях: пошаговое руководство по автоматизации без программирования",
+      "description": "Пошаговое руководство по созданию автономного контент-завода на базе ИИ-агентов, Make.com и n8n. Узнайте, как автоматизировать дистрибуцию контента без спама.",
+      "datePublished": "2026-06-11T20:57:00+03:00",
+      "dateModified": "2026-06-11T20:57:00+03:00",
+      "mainEntityOfPage": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/",
+      "image": {
+        "@id": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#primaryimage"
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://mayai.ru/obo-mne/#person",
+        "name": "Артур Хорошев",
+        "jobTitle": "CEO Maya AI, автор курса по Make.com и вайбкодингу",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Maya AI",
+          "url": "https://mayai.ru/"
+        },
+        "image": "https://kv-ai.ru/artur-horosheff",
+        "sameAs": [
+          "https://kv-ai.ru/artur-horosheff",
+          "https://mayai.ru/obo-mne/",
+          "https://t.me/maya_pro",
+          "https://t.me/horosheff"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://mayai.ru/#organization",
+        "name": "Maya AI",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mayai.ru/wp-content/uploads/2026/06/logo.png"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#faq",
+      "isPartOf": {
+        "@id": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как создать контент завод на нейросетях самостоятельно?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Свяжите n8n или Make.com с API языковых моделей через визуальный интерфейс сценариев. Начните со схемы ресайклинга готовых текстов, настройте отправку черновиков в Telegram-бот для проверки и усложняйте архитектуру, добавляя агента-критика, векторную память RAG и автопостинг."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие нейросети использовать для контент завода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для написания текстов используйте Claude 4.6 Sonnet или GPT-4o. Для генерации озвучки подходит ElevenLabs, а для создания видеоиллюстраций – передовые нейросети Sora 2 и Veo 3.1. Для рутинной фильтрации данных подключайте дешевые локальные модели."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Сколько стоит запуск контент завода для бизнеса?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Запуск профессиональной системы автоматизации контента обойдется в ~$150 ежемесячных затрат на оплату API языковых моделей, аренду сервера для n8n, векторную память и генерацию медиафайлов. При этом средняя себестоимость одного мультимедийного пакета составит около $0.50."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли уметь программировать для сборки ИИ-завода?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет, умение программировать не требуется. Современный ИИ-контент-завод собирается на no-code платформах с помощью визуальных блоков и стрелочек. Сложные скрипты или кастомные HTML-блоки для сайта вы можете писать внутри визуального редактора через инструменты вайбкодинга, общаясь с ИИ на русском языке."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Забанят ли соцсети или поисковики за использование ИИ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Вас забанят, если вы будете использовать полностью автономный генератор спама. Если же вы используете схему Human-in-the-loop, где ИИ готовит качественный черновик, а финальное редактирование, добавление пользы (Information Gain) и публикацию контролирует человек, блокировки вам не грозят."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#howto",
+      "isPartOf": {
+        "@id": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#webpage"
+      },
+      "name": "Пошаговый чек-лист запуска вашего первого конвейера",
+      "description": "Пошаговый инженерный чек-лист запуска первого конвейера автоматизации контента на нейросетях.",
+      "totalTime": "PT2H",
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "API-ключи языковых моделей (Claude 4.6 Sonnet, GPT-4o, DeepSeek V4)"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Сервер для self-hosted n8n"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Векторная база данных Pinecone"
+        }
+      ],
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "n8n"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Make.com"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Docker"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "ElevenLabs"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Sora 2 / Veo 3.1"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Шаг 1: Выберите рутинную задачу",
+          "text": "Начните со сценария ресайклинга: пусть система берет одну готовую длинную статью и автоматически нарезает ее на 5 коротких постов для Telegram.",
+          "url": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#step1"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Шаг 2: Распишите процесс в виде схемы",
+          "text": "Опишите пошагую логику: Источник текста → Очистка от HTML → Передача копирайтеру → Оценка критиком → Генерация иллюстрации → Отправка на согласование в Telegram.",
+          "url": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#step2"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Шаг 3: Разверните n8n в Docker на сервере",
+          "text": "Это снизит расходы на обработку контента на 35% по сравнению с использованием облачных тарифов.",
+          "url": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#step3"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Шаг 4: Подключите API-ключи ведущих моделей",
+          "text": "Настройте ноды ИИ-агентов в n8n, прописав для них черные системные роли (копирайтер, исследователь, критик).",
+          "url": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#step4"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Шаг 5: Настройте отправку готовых черновиков в Telegram-бот",
+          "text": "Настройте отправку сообщений с кнопками \"Опубликовать\" и \"На доработку\" для реализации концепции Human-in-the-loop.",
+          "url": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#step5"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Шаг 6: Протестируйте систему на 10 материалах",
+          "text": "Изучите логи сценариев in n8n, исправьте ошибки в промптах и Tone-of-Voice, после чего постепенно подключайте автоматическую дистрибуцию.",
+          "url": "https://mayai.ru/avtonomnyj-kontent-zavod-nejroseti/#step6"
+        }
+      ]
+    }
+  ]
+}

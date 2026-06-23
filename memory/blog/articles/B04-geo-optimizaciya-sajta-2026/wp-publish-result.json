@@ -1,0 +1,14 @@
+{
+  "slug": "geo-optimizaciya-sajta-2026",
+  "topic_id": "B04",
+  "permalink": "https://mayai.ru/geo-optimizaciya-sajta-2026/",
+  "cover_evidence": {
+    "path": "memory\\blog\\articles\\B04-geo-optimizaciya-sajta-2026\\cover\\cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 1640387,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=13361 slug=geo-optimizaciya-sajta-2026\nOK featured_image=13362\nOK schema_meta=1\nOK skip_theme_faq_meta=1\nOK inline_image_upload=13363 src=cover/inline-01.png url=https://mayai.ru/wp-content/uploads/2026/06/geo-optimizaciya-sajta-2026-inline-01.jpg\nOK inline_image_upload=13364 src=cover/inline-02.png url=https://mayai.ru/wp-content/uploads/2026/06/geo-optimizaciya-sajta-2026-inline-02.jpg\nOK inline_image_upload=13365 src=cover/inline-03.png url=https://mayai.ru/wp-content/uploads/2026/06/geo-optimizaciya-sajta-2026-inline-03.jpg\npermalink=https://mayai.ru/geo-optimizaciya-sajta-2026/\n",
+  "verdict": "pass"
+}

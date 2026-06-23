@@ -1,0 +1,87 @@
+{
+  "article": "memory/blog/articles/B10-ollama-lokalnaya-llm-dlya-biznesa/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 11,
+  "verified_facts_count": 2,
+  "unverified_facts_count": 9,
+  "facts": [
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "Python просят модель ответить. Ollama 0.30 (июнь 2026) перешла на llama.cpp, но ollama ps может показат",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "рифицированы по официальным docs и GitHub на июнь 2026 года. Частые вопросы Как установить Ollama на Windows",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "11434",
+      "kind": "large_number",
+      "context": "ГБ видеопамяти, тянет 32B-модель, открывает порт 11434 в LAN \"для коллег\" – и через неделю ловит утечку д",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "32 669",
+      "kind": "large_number",
+      "context": "ссификация тикетов. Запрос \"ollama\" в Вордстате – 32 669 показов/мес, \"локальные нейросети\" – 5 854. Старт:",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "5 854",
+      "kind": "large_number",
+      "context": "ате – 32 669 показов/мес, \"локальные нейросети\" – 5 854. Старт: qwen3:8b на 8 ГБ VRAM, проверка ollama ps",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "13814",
+      "kind": "large_number",
+      "context": "азать \"100% GPU\", пока nvidia-smi на нуле (issue #13814). Диагностика – сверка двух команд, не переустано",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "3060 12",
+      "kind": "large_number",
+      "context": "ll Типичная боль: ollama pull llama3.1:70b на RTX 3060 12 ГБ. Модель \"загрузилась\", но ollama ps показал 80%",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "911",
+      "kind": "large_number",
+      "context": "– комфортно на карте 8 ГБ. Запрос \"qwen ollama\" – 911 показов/мес в Вордстате; для русского и кода это р",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "14261",
+      "kind": "large_number",
+      "context": "Пока Ollama не предупреждает о CPU fallback (PR #14261), сверяйте ollama ps с nvidia-smi сами. Подключит",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "782",
+      "kind": "large_number",
+      "context": "н вернуться JSON с ответом. Запрос \"ollama api\" – 782 показа/мес; \"ollama openai api\" – узкий, но прямой",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "419",
+      "kind": "large_number",
+      "context": "ля теста на русском. Запрос \"установить ollama\" – 419 показов/мес, \"ollama windows\" – 880. Какие ollama",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

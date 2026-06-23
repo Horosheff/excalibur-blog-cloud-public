@@ -1,0 +1,50 @@
+{
+  "topic_id": "B10",
+  "slug": "ollama-lokalnaya-llm-dlya-biznesa",
+  "cover_family": "brand_collage",
+  "style_preset": "digital_meme_collage_ru",
+  "pipeline": "quad_canvas_1x_mcp",
+  "file": "cover/cover.png",
+  "alt": "Обложка: Ollama на офисном ПК — 32B на 8 ГБ VRAM и открытый порт 11434 ломают локальный ИИ-проект",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-06-16T22:45:30+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Обложка: Ollama на офисном ПК — 32B на 8 ГБ VRAM и открытый порт 11434 ломают локальный ИИ-проект",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Сравнение локальной Ollama и облачного API: приватность, стоимость, скорость, офлайн",
+      "h2_anchor": "Выберите один сценарий: когда Ollama выгоднее облака",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Схема выбора модели Ollama под VRAM: qwen3:8b, qwen3:14b, MLX на Apple Silicon",
+      "h2_anchor": "Сверьте железо с моделью до команды ollama pull",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Чеклист установки Ollama: pull, run, ollama ps и сверка nvidia-smi",
+      "h2_anchor": "Установите Ollama и проверьте инференс в терминале",
+      "visual_type": "checklist_board",
+      "aspect_ratio": "16:9"
+    }
+  ]
+}

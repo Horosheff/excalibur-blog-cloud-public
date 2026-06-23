@@ -1,0 +1,73 @@
+{
+  "article": "memory/blog/articles/B04-geo-optimizaciya-sajta-2026/article.html",
+  "fact_bank_source": "memory/brief/fact-bank.md",
+  "verdict": "pass",
+  "total_extracted_facts": 9,
+  "verified_facts_count": 3,
+  "unverified_facts_count": 6,
+  "facts": [
+    {
+      "fact": "2025",
+      "kind": "date_or_year",
+      "context": "на текст страницы, а не на \"память\" модели. С мая 2025 в поиске Яндекса Алиса заменила вертикаль \"Нейро\"",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2026",
+      "kind": "date_or_year",
+      "context": "цитату. 1. Разберите, чем GEO отличается от SEO в 2026 SEO – позиция и клик в Google/Яндексе. GEO – цитир",
+      "verified": true,
+      "reason": "Exact match found in fact-bank"
+    },
+    {
+      "fact": "2023",
+      "kind": "date_or_year",
+      "context": "нес для B2C локального. Обновлены статьи с датами 2023–2024. Убран keyword stuffing. Ссылки на источники",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2024",
+      "kind": "date_or_year",
+      "context": "ля B2C локального. Обновлены статьи с датами 2023–2024. Убран keyword stuffing. Ссылки на источники цифр",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "2026 года",
+      "kind": "date_or_year",
+      "context": "верифицированы по данным Яндекс Wordstat на июнь 2026 года. Частые вопросы С чего начать geo оптимизацию? От",
+      "verified": true,
+      "reason": "Numerical value '2026' matched in fact-bank context"
+    },
+    {
+      "fact": "90 минут",
+      "kind": "metric_or_duration",
+      "context": "тобы нейросети цитировали вас как источник. За 60–90 минут вы проверите robots.txt, добавите блоки \"ответ ср",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "6 недель",
+      "kind": "metric_or_duration",
+      "context": "ots.txt, HTML FAQPage Schema Срок Недели–месяцы 3–6 недель Быстрее на FAQ Итоговый вердикт: GEO не заменяет",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "981",
+      "kind": "large_number",
+      "context": "есть в ChatGPT. Запрос \"geo оптимизация\" – около 981 показа/мес в Wordstat, \"geo оптимизация сайта\" – 2",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    },
+    {
+      "fact": "160",
+      "kind": "large_number",
+      "context": "и услугами. Title до 60 символов, description до 160 с вопросом пользователя. Даты на видимом месте. TT",
+      "verified": false,
+      "reason": "No matching fact or number found in fact-bank"
+    }
+  ]
+}

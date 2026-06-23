@@ -1,0 +1,801 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-16",
+    "today_ru": "16.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-18",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-16 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B07",
+    "priority": "P0",
+    "slug": "postroenie-rag-sistemy-vektornaya-baza",
+    "h1": "Как построить RAG-систему с векторной базой знаний: пошаговый workflow от документов до ответов",
+    "primary_query": "rag система",
+    "secondary_queries": [
+      "создание rag системы",
+      "локальная rag система",
+      "архитектура rag системы",
+      "как сделать rag систему",
+      "rag система python"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "rag система 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Rag-системы 2026: Архитектура, Цены, Кейсы",
+          "url": "https://chimitdorzhi.tech/blog/rag-sistemy-dlya-biznesa-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "RAG 2026: как работает Retrieval-Augmented Generation — от чанкинга до ...",
+          "url": "https://blog.annelo.ru/ml-research/rag-2026-retrieval-augmented-generation/",
+          "snippet": "RAG (Retrieval-Augmented Generation) — это связка «векторный поиск + LLM», которая позволяет AI отвечать строго по вашей базе знаний, а не выдумывать факты из общих знаний интернета."
+        },
+        {
+          "title": "Возвращение Rag В 2026: Актуальность И Реализация — Magma",
+          "url": "https://magmadev.ru/blog/vozvrashchenie-retrieval-augmented-generation-v-2026-godu-pochemu-i-kak-realizovyvat-aktualnye-i-proveryaemye-znaniya/",
+          "snippet": "RAG — зрелая технология в 2026 году, но это не «plug and play». Ключевые инженерные решения — стратегия чанкинга, выбор эмбеддинг-модели, фреймворк и векторная БД — определяют качество системы на 80%."
+        },
+        {
+          "title": "Rag Для Бизнеса: Зачем Он Нужен И Чем Отличается От Большого Контекста ...",
+          "url": "https://aiplatforms.ru/articles/rag-architecture-guide",
+          "snippet": "Попытка заменить Retrieval‑Augmented Generation (RAG) в продуктах на один‑единственный «большой контекст» выглядела привлекательно. Уменьшение количества компонентов пайплайна, сокращение количества вызовов к внешним сервисам и ускорение разработки новых функций действительно создали ощущение простоты."
+        },
+        {
+          "title": "Rag-системы Для Бизнеса 2026: Интеграция Ии С Вашими Данными И Roi +150%",
+          "url": "https://aironlab.ru/blog/rag-sistemy-dlya-biznesa-2026-integraciya-ii-s-vashimi-dannymi-i-roi-150",
+          "snippet": "По данным на 2026 год, 71% организаций регулярно используют генеративный ИИ в как минимум одной бизнес-функции. RAG - стандартный инструмент для тех, кому нужны ответы по внутренним документам: регламентам, техдокументации, договорам, базам знаний и support-процессам."
+        },
+        {
+          "title": "RAG Production Guide 2026: Retrieval-Augmented Generation | Lushbinary",
+          "url": "https://lushbinary.com/blog/rag-retrieval-augmented-generation-production-guide/",
+          "snippet": "Интеграция ИИ с корпоративными данными — главный тренд 2026 года для малого и среднего бизнеса России. RAG-системы (Retrieval-Augmented Generation) позволяют искусственному интеллекту работать не с общими знаниями ChatGPT, а с вашими документами, регламентами, CRM и клиентскими историями."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "rag система июнь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "RAG-система: что это такое в программировании, как работает Retrieval ...",
+          "url": "https://whitetigersoft.ru/blog/ai-nejroseti/rag-retrieval-augmented-generation-chto-eto",
+          "snippet": ""
+        },
+        {
+          "title": "RAG 2026: как работает Retrieval-Augmented Generation — от чанкинга до ...",
+          "url": "https://blog.annelo.ru/ml-research/rag-2026-retrieval-augmented-generation/",
+          "snippet": "В статье специалисты ИТ-агентства White Tiger Soft простым языком объяснят, что такое RAG (Retrieval Augmented Generation) в программировании, какие преимущества дает эта система в ИИ и как ей правильно ..."
+        },
+        {
+          "title": "Rag-системы 2026: Архитектура, Цены, Кейсы",
+          "url": "https://chimitdorzhi.tech/blog/rag-sistemy-dlya-biznesa-2026/",
+          "snippet": "RAG — зрелая технология в 2026 году, но это не «plug and play». Ключевые инженерные решения — стратегия чанкинга, выбор эмбеддинг-модели, фреймворк и векторная БД — определяют качество ..."
+        },
+        {
+          "title": "Что такое RAG простыми словами 2026 - AiBotManager.ru",
+          "url": "https://aibotmanager.ru/rag-retrieval-augmented-generation/",
+          "snippet": "RAG (Retrieval-Augmented Generation) — это связка «векторный поиск + LLM», которая позволяет AI отвечать строго по вашей базе знаний, а не выдумывать факты из общих знаний интернета."
+        },
+        {
+          "title": "Rag Что Это 2026: Гайд + Примеры Применения",
+          "url": "https://aibotmanager.ru/rag-chto-eto/",
+          "snippet": "Что такое RAG простыми словами? RAG (Retrieval-Augmented Generation) — технология которая даёт ChatGPT доступ к вашим документам. Бот отвечает не из общих знаний, а вашим прайсом, FAQ, инструкциями."
+        },
+        {
+          "title": "Возвращение RAG в 2026 году / Хабр - Habr",
+          "url": "https://habr.com/ru/companies/otus/articles/1001970/",
+          "snippet": "Что такое RAG простыми словами? RAG (Retrieval-Augmented Generation) — это технология, которая позволяет ИИ отвечать на вопросы на основе ваших документов, а не только на основе своих обучающих данных."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "rag система новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Rag-системы 2026: Архитектура, Цены, Кейсы",
+          "url": "https://chimitdorzhi.tech/blog/rag-sistemy-dlya-biznesa-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "Google представила agentic RAG: новая архитектура поиска, которая ...",
+          "url": "https://www.ixbt.com/news/2026/06/08/google-agentic-rag.html",
+          "snippet": "RAG (Retrieval-Augmented Generation) — это связка «векторный поиск + LLM», которая позволяет AI отвечать строго по вашей базе знаний, а не выдумывать факты из общих знаний интернета."
+        },
+        {
+          "title": "Обзор Rag И Векторных Баз Данных 2026",
+          "url": "https://tehnofan.com/trendy-it/vektornye-bazy-dannykh-i-rag-obzor-2026-goda.html",
+          "snippet": "Классический RAG-подход работает в один шаг: система получает запрос, находит близкие документы и передаёт их языковой модели для генерации ответа. Это эффективный подход для простых запросов, но он ломается в задачах, где информация распределена по разным источникам и требует «цепочки поиска»."
+        },
+        {
+          "title": "Защита Данных В Rag-системах: Шифрование И Контроль Доступа В 2026",
+          "url": "https://promaren.ru/blog/2026/03/20/zashchita-dannyh-v-rag-sistemah-shifrovanie-i-kontrol-dostupa-2/",
+          "snippet": "Полный обзор RAG и векторных баз данных 2026: как технологии меняют поиск и ИИ. Анализ трендов, сравнение решений и прогнозы на будущее."
+        },
+        {
+          "title": "Возвращение RAG в 2026 году - Habr",
+          "url": "https://habr.com/en/companies/otus/articles/1001970/",
+          "snippet": "В 2026 защита данных в RAG-системах перестала быть \"про потом\": Приказ ФСТЭК №117, облака, векторные базы, Yandex Neuro в каждом втором пилоте. И как только появляется первый промпт \"дай мне все договоры с пометкой конфиденциально\", внезапно вспоминают про шифрование данных и контроль доступа."
+        },
+        {
+          "title": "RAG 2026: как работает Retrieval-Augmented Generation — от чанкинга до ...",
+          "url": "https://blog.annelo.ru/ml-research/rag-2026-retrieval-augmented-generation/",
+          "snippet": "В 2026 году RAG возвращается, потому что возвращаются реальные требования: актуальность знаний, права доступа, стоимость, задержки и возможность аудита. Современный RAG выглядит иначе."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "github_evidence",
+      "query": "site:github.com rag система 2026",
+      "purpose": "GitHub repos/issues/README для технических сигналов и реального опыта",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "4get2try/rag-coursework-2026 - GitHub",
+          "url": "https://github.com/4get2try/rag-coursework-2026",
+          "snippet": ""
+        },
+        {
+          "title": "GitHub - XMUDeepLIT/MemGraphRAG: [KDD 2026] MemGraphRAG: Memory-based ...",
+          "url": "https://github.com/XMUDeepLIT/MemGraphRAG",
+          "snippet": "Локальная RAG-система (Retrieval-Augmented Generation), реализованная в рамках курсовой работы 2026 года на тему «Реализация RAG-системы». Поддерживает поиск ответов на вопросы по корпусу учебных документов (PDF, DOCX, Markdown) с указанием источников."
+        },
+        {
+          "title": "Hybrid RAG System - Гибридная RAG Система - GitHub",
+          "url": "https://github.com/Rivega42/hybrid-rag-system",
+          "snippet": "【KDD 2026】MemGraphRAG: Memory-based Multi-Agent System for Graph Retrieval-Augmented Generation A three-layer memory structure for knowledge graph retrieval and generation, designed to organize extracted information into a hierarchical memory system with inter-layer connections."
+        },
+        {
+          "title": "GitHub - 3123412/RAGovay-sheyka: RAGовая шейка — интеллектуальная RAG ...",
+          "url": "https://github.com/3123412/RAGovay-sheyka",
+          "snippet": "Production-ready гибридная RAG система, объединяющая преимущества классического RAG (скорость, предсказуемость, низкая стоимость) и Agentic RAG (адаптивность, работа с неструктурированными данными ..."
+        },
+        {
+          "title": "GitHub - infiniflow/ragflow: RAGFlow is a leading open-source Retrieval ...",
+          "url": "https://github.com/infiniflow/ragflow",
+          "snippet": "RAGовая шейка — интеллектуальная RAG-система на базе GigaChat API для глубокого анализа текстовых массивов."
+        },
+        {
+          "title": "GitHub - my-name-is-my-name/rag_ap25_Apr26_ver2 · GitHub",
+          "url": "https://github.com/my-name-is-my-name/rag_ap25_Apr26_ver2",
+          "snippet": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs. It offers a streamlined RAG workflow adaptable to enterprises of any scale. Powered by a converged context engine and pre-built agent templates, RAGFlow enables developers to transform complex data into high-fidelity ..."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "official_docs",
+      "query": "rag система official docs documentation 2026",
+      "purpose": "официальная документация, changelog, developer docs",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "The Complete Guide to RAG: Naive, Advanced, and Graph RAG in One Document",
+          "url": "https://www.mrlatte.net/en/research/2026/04/27/rag-complete-guide/",
+          "snippet": ""
+        },
+        {
+          "title": "Retrieval-Augmented Generation (RAG) — RAG multi model documentation",
+          "url": "https://rag.readthedocs.io/",
+          "snippet": "From RAG basics to Graph RAG, Agentic RAG, and the LLM Wiki pattern — theory, runnable code, the latest trends, and a decision guide, all on a single page."
+        },
+        {
+          "title": "Build a Production-Ready RAG System Over Your Own Documents in 2026 - A ...",
+          "url": "https://dev.to/dharshan_a_23835c7dc05682/build-a-production-ready-rag-system-over-your-own-documents-in-2026-a-practical-tutorial-4hd0",
+          "snippet": "In this article, I will explain the concept of Retrieval-Augmented Generation (RAG), providing numerous examples and discussing the advantages of using RAG models."
+        },
+        {
+          "title": "Rag-системы Для Бизнеса: Умный Поиск По Документам Без Галлюцинаций",
+          "url": "https://flow-masters.ru/blog/rag-systems-business-guide/",
+          "snippet": "In 2026, if your RAG system hallucinates on important queries, returns irrelevant chunks, or costs a fortune to run, it won't survive production. This tutorial walks you through building a reliable, evaluable, and scalable RAG pipeline that you can actually put behind an API or in a product."
+        },
+        {
+          "title": "Rag-системы: Ai-база Знаний Для Бизнеса На 2 Млн Документов",
+          "url": "https://mediaten.ru/blog/rag-sistemy-dlya-biznesa",
+          "snippet": "RAG находит реальные документы и формирует ответ на их основе. В этой статье — всё, что нужно знать о RAG для бизнеса: от архитектуры до стоимости внедрения."
+        },
+        {
+          "title": "Rag Для Бизнеса: Как Автоматизировать Работу С Регламентами, Договорами ...",
+          "url": "https://prooftechit.com/blog/kak-avtomatizirovat-rabotu-s-reglamentami-dogovorami-i-bazoj-znanij-s-pomoshhyu-rag",
+          "snippet": "Рассказываем, как современные AI-технологии решают эту проблему, и делимся реальным опытом внедрения RAG-системы на 2+ миллиона записей. По данным McKinsey, сотрудники тратят до 20% рабочего времени на поиск информации внутри компании."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "community_experience",
+      "query": "rag система forum reddit discussion проблемы опыт 2026",
+      "purpose": "форумы, обсуждения, ошибки пользователей и живые сценарии",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "RAG-системы: что это такое, принципы ... - Habr",
+          "url": "https://habr.com/ru/articles/989000/",
+          "snippet": ""
+        },
+        {
+          "title": "Возвращение RAG в 2026 году / Хабр - Habr",
+          "url": "https://habr.com/ru/companies/otus/articles/1001970/",
+          "snippet": "Эта статья — первый шаг в серии материалов о технологии RAG. Здесь мы разберёмся, что это вообще такое, зачем она появилась и почему её так часто требуют в вакансиях."
+        },
+        {
+          "title": "[D] Real talk about RAG : r/MachineLearning - Reddit",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1cekoc7/d_real_talk_about_rag/",
+          "snippet": "В прошлом году я попытался «убить» RAG в продукте, который мне был важен. У нас был retrieval-пайплайн, который в целом работал, но раздражал. В нём случались всплески задержек, были пограничные..."
+        },
+        {
+          "title": "Что Такое Rag: Почему О Нём Говорят Все Ml-инженеры, С Чего Начать И ...",
+          "url": "https://tproger.ru/articles/chto-takoe-rag--pochemu-o-nyom-govoryat-vse-ml-inzhenery--s-chego-nachat-i-chto-prostoe-mozhno-sdelat",
+          "snippet": "As a leader in a company that made RAG its main business, I can tell you firsthand that building a real product around RAG is extremely difficult and frustrating. As pointed out in other comments, RAG is mainly about search. The hard part is surfacing the right content from some documents."
+        },
+        {
+          "title": "Проблемы Rag: Ограничения Моделей И Релевантность",
+          "url": "https://sdvg.vc/blog/problemy-rag-ogranicheniia-modelei-i-relevantnost/",
+          "snippet": "Рассказываем, что такое RAG и как он превращает LLM в умного помощника. Пошагово про пайплайн, поиск по документам, уменьшение ошибок модели и создание своей базы знаний."
+        },
+        {
+          "title": "Ограничения Rag-систем Для Llm: Проблемы, Вызовы И Способы Их ...",
+          "url": "https://external.software/archives/76726",
+          "snippet": "Однако внедрение RAG сталкивается с рядом серьезных проблем, связанных с релевантностью извлекаемой информации, ограничениями языковых моделей и сложностью поддержания актуальности данных."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "создание rag системы 2026",
+      "purpose": "вторичный запрос: создание rag системы",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Rag-системы Для Корпоративной Базы Знаний 2026: Гайд По Реализации",
+          "url": "https://ai.low-light.ru/blog/rag-sistemy-korporativnaya-baza-znaniy-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "Rag-система: Как Обучить Ии И Создать Цифрового Клона Эксперта",
+          "url": "https://rixai.tech/2026/03/17/rag-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%BA%D0%B0%D0%BA-%D0%BE%D0%B1%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%B8%D0%B8-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D1%86%D0%B8%D1%84%D1%80/",
+          "snippet": "RAG (Retrieval-Augmented Generation) — это архитектура, которая позволяет языковой модели отвечать на вопросы по корпоративным данным без передачи их в облако и без галлюцинаций. Ниже разбираем, как такую систему собрать в 2026 году с учётом российского контекста."
+        },
+        {
+          "title": "Разработка Ии В 2026 Году: Почему Инженерам Нужно Собирать Rag-системы ...",
+          "url": "https://dzen.ru/a/aik-5rqHXktc7RGU",
+          "snippet": "Создание RAG-системы (Retrieval-Augmented Generation) — это проектирование цифрового клона эксперта, который объединяет точный поиск по вашей личной базе знаний с генерацией ответов в вашем авторском стиле (Tone of Voice), что дает возможность масштабировать свою экспертизу без потери качества 24/7."
+        },
+        {
+          "title": "Как Создать Эффективную Rag-систему С Минимальным Кодом: Выбор Платформ ...",
+          "url": "https://external.software/archives/79293",
+          "snippet": "Проект детально покрывает аспекты создания отказоустойчивых поисковых конвейев (retrieval pipelines) и внедрения механизмов жесткого заземления ответов (response grounding) для верификации фактов."
+        },
+        {
+          "title": "Мультимодальный Rag-агент: Как Создать Систему Поиска К 2026 Году",
+          "url": "https://promaren.ru/blog/2026/04/10/multimodalnyy-rag-agent-kak-sozdat-sistemu-poiska-k-2026-godu/",
+          "snippet": "Теперь мы углубимся в саму суть RAG и рассмотрим, как подход с минимальным кодом (low-code) становится ключевым фактором, позволяющим демократизировать доступ к этой мощной технологии."
+        },
+        {
+          "title": "Создание современных систем генерации Retrieval-Augmented",
+          "url": "https://learn.microsoft.com/ru-ru/azure/developer/ai/advanced-retrieval-augmented-generation",
+          "snippet": "В этой статье я разберу, как выглядит честная архитектура к 2026 году, где место мультимодальности и почему без RAG любой \"умный\" поиск быстро превращается в лотерею."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "локальная rag система 2026",
+      "purpose": "вторичный запрос: локальная rag система",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Локальная система RAG с DeepSeek R1 и Ollama: полное руководство по ...",
+          "url": "https://external.software/archives/80821",
+          "snippet": ""
+        },
+        {
+          "title": "Локальные LLM и RAG для корпоративных данных - RB Tech",
+          "url": "https://robotbull.com/handbook/proektirovanie-i-otsenka/lokalnye-llm-i-rag",
+          "snippet": "В этом разделе мы рассмотрим, как эффективно построить такую систему, используя популярные RAG-фреймворки, а также уделим внимание вопросам оптимизации производительности и решению ..."
+        },
+        {
+          "title": "Создание локальной системы RAG на основе LlamaIndex и Ollama",
+          "url": "https://coursehunter.net/course/sozdanie-lokalnoy-sistemy-rag-na-osnove-llamaindex-i-ollama",
+          "snippet": "Локальная LLM и RAG-система помогают компании работать с внутренними документами без передачи данных наружу. Разбираем архитектуру, безопасность, этапы внедрения и ошибки."
+        },
+        {
+          "title": "GitHub - vavbeat/RAG-Local-DataGPT: Локальная RAG-система для инженеров ...",
+          "url": "https://github.com/vavbeat/RAG-Local-DataGPT",
+          "snippet": "Создайте локальную RAG‑систему на базе LlamaIndex и Ollama, чтобы автоматизировать поиск по PDF‑документам и строить обоснованные ответы с помощью локально развернутой модели Mistral."
+        },
+        {
+          "title": "Локальная Система Rag: Полное Руководство По Созданию И Настройке",
+          "url": "https://external.software/archives/71871",
+          "snippet": "Обзор для Инженеров Интеграторов RAG (Local DataGPT) - это локальная система Retrieval-Augmented Generation, специально адаптированная для интеграции в производственные процессы."
+        },
+        {
+          "title": "Rag-система: Как Обучить Ии И Создать Цифрового Клона Эксперта",
+          "url": "https://rixai.tech/2026/03/17/rag-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%BA%D0%B0%D0%BA-%D0%BE%D0%B1%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%B8%D0%B8-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D1%86%D0%B8%D1%84%D1%80/",
+          "snippet": "Для построения эффективной локальной RAG-системы необходимы тщательно подобранные компоненты, каждый из которых играет ключевую роль в процессе извлечения и генерации."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "архитектура rag системы 2026",
+      "purpose": "вторичный запрос: архитектура rag системы",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Rag-системы 2026: Архитектура, Цены, Кейсы",
+          "url": "https://chimitdorzhi.tech/blog/rag-sistemy-dlya-biznesa-2026/",
+          "snippet": ""
+        },
+        {
+          "title": "RAG 2026: как работает Retrieval-Augmented Generation — от чанкинга до ...",
+          "url": "https://blog.annelo.ru/ml-research/rag-2026-retrieval-augmented-generation/",
+          "snippet": "RAG (Retrieval-Augmented Generation) — это связка «векторный поиск + LLM», которая позволяет AI отвечать строго по вашей базе знаний, а не выдумывать факты из общих знаний интернета."
+        },
+        {
+          "title": "Rag-системы Для Корпоративной Базы Знаний 2026: Гайд По Реализации",
+          "url": "https://ai.low-light.ru/blog/rag-sistemy-korporativnaya-baza-znaniy-2026/",
+          "snippet": "Разбор архитектуры RAG-пайплайна: стратегии чанкинга, сравнение LangChain, LlamaIndex и Haystack, выбор векторной БД (Qdrant, Pinecone, FAISS) и типичные проблемы продакшена."
+        },
+        {
+          "title": "Как Устроена Архитектура Rag-систем: Подробный Гайд По Компонентам И ...",
+          "url": "https://external.software/archives/80649",
+          "snippet": "RAG (Retrieval-Augmented Generation) — это архитектура, которая позволяет языковой модели отвечать на вопросы по корпоративным данным без передачи их в облако и без галлюцинаций. Ниже разбираем, как такую систему собрать в 2026 году с учётом российского контекста."
+        },
+        {
+          "title": "Архитектура Rag Систем: Риски, Решения И Внедрение Llm Для Бизнеса",
+          "url": "https://webtechnus.com/ru/2026/02/02/arkhitektura-rag-sistem/",
+          "snippet": "Эта статья представляет собой подробный гайд по архитектуре RAG-систем. Мы рассмотрим фундаментальные компоненты, детальный процесс работы, продвинутые архитектурные решения, такие как гибридный поиск и реранкеры, а также интеграцию агентов и механизмов Function/Tool Calling."
+        },
+        {
+          "title": "Архитектура RAG-системы: retriever, reranker, citations, evals",
+          "url": "https://ai-rate.ru/research/arhitektura-rag-sistemy",
+          "snippet": "На заре своего появления системы Retrieval-Augmented Generation (RAG) представлялись как элегантное решение для приземления больших языковых моделей (LLM) на проприетарные данные. Первоначальные реализации RAG были разработаны для относительно узких и контролируемых сценариев."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_4",
+      "query": "как сделать rag систему 2026",
+      "purpose": "вторичный запрос: как сделать rag систему",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Мультимодальный Rag-агент: Как Создать Систему Поиска К 2026 Году",
+          "url": "https://promaren.ru/blog/2026/04/10/multimodalnyy-rag-agent-kak-sozdat-sistemu-poiska-k-2026-godu/",
+          "snippet": ""
+        },
+        {
+          "title": "Rag-системы 2026: Архитектура, Цены, Кейсы",
+          "url": "https://chimitdorzhi.tech/blog/rag-sistemy-dlya-biznesa-2026/",
+          "snippet": "В этой статье я разберу, как выглядит честная архитектура к 2026 году, где место мультимодальности и почему без RAG любой \"умный\" поиск быстро превращается в лотерею."
+        },
+        {
+          "title": "Как Сделать Rag Для Своей Компании / Хабр",
+          "url": "https://habr.com/ru/articles/905076/",
+          "snippet": "RAG (Retrieval-Augmented Generation) — это связка «векторный поиск + LLM», которая позволяет AI отвечать строго по вашей базе знаний, а не выдумывать факты из общих знаний интернета."
+        },
+        {
+          "title": "Простая Rag-система Своими Руками: Пошаговая Инструкция.",
+          "url": "https://dzen.ru/a/aIcYxlGfwReEZAEl",
+          "snippet": "В этой статье я постараюсь суммировать свой опыт, подвести итоги и предоставить верхнеуровневую картину решения. Для успешного создания RAG (Retrieval Augmented Generation) первым делом нужно определить примерный список вопросов, на которые система должна уметь отвечать."
+        },
+        {
+          "title": "Rag Проект: Подробный Туториал И Пошаговое Руководство По Созданию С ...",
+          "url": "https://external.software/archives/81267",
+          "snippet": "💡 Что вы получите: После прочтения вы сможете за 15 минут создать работающую систему вопросов-ответов для ваших документов (инструкций, договоров, базы знаний)."
+        },
+        {
+          "title": "Как создать RAG-систему с AI-агентом, n8n и Supabase: Пошаговое ...",
+          "url": "https://external.software/archives/43607",
+          "snippet": "В этом подробном туториале мы проведем вас через весь процесс создания RAG-системы с нуля. Вы узнаете об основных компонентах, стратегиях подготовки данных, выборе инструментов и пошаговой реализации на Python, включая интеграцию с локальными LLM. Приготовьтесь превратить теорию в практику и построить свою первую RAG-систему."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_5",
+      "query": "rag система python 2026",
+      "purpose": "вторичный запрос: rag система python",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "RAG 2026: как работает Retrieval-Augmented Generation — от чанкинга до ...",
+          "url": "https://blog.annelo.ru/ml-research/rag-2026-retrieval-augmented-generation/",
+          "snippet": ""
+        },
+        {
+          "title": "Building RAG Applications with Python: Complete 2026 Guide",
+          "url": "https://www.askpython.com/python/examples/building-rag-applications-with-python",
+          "snippet": "RAG добавляет этап поиска (retrieval) перед генерацией ответа — модель получает релевантные документы из внешнего источника и генерирует ответ на их основе."
+        },
+        {
+          "title": "Создаем простую систему RAG на Python / Хабр",
+          "url": "https://habr.com/ru/companies/otus/articles/979458/",
+          "snippet": "In this guide, you'll build a working RAG system in Python-from basic document search to production patterns with hybrid retrieval and re-ranking. The code uses LangChain and local embeddings, so you can test everything without paying for API keys."
+        },
+        {
+          "title": "Как реализовать простую RAG-систему на Python: пошаговый гайд?",
+          "url": "https://external.software/archives/81342",
+          "snippet": "Представьте, что вы предоставляете своему ИИ конкретные релевантные документы (или фрагменты), которые он может быстро просмотреть, чтобы найти необходимую информацию, прежде чем ответить на ваши..."
+        },
+        {
+          "title": "Как создать эффективную RAG систему на Python с нуля и какие ...",
+          "url": "https://external.software/archives/78938",
+          "snippet": "В этом пошаговом руководстве мы рассмотрим, как реализовать простую, но эффективную RAG-систему на Python, используя популярные open-source инструменты, такие как LangChain, ChromaDB и Ollama."
+        },
+        {
+          "title": "Возвращение RAG в 2026 году - Habr",
+          "url": "https://habr.com/en/companies/otus/articles/1001970/",
+          "snippet": "В этом подробном руководстве мы шаг за шагом рассмотрим процесс создания эффективной RAG-системы на Python с нуля."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как построить RAG-систему с векторной базой знаний: пошаговый workflow от документов до ответов 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как построить RAG-систему с ModelSwitch и векторной базой",
+          "url": "https://modelswitch.io/blog/rag-sistema-s-modelswitch",
+          "snippet": ""
+        },
+        {
+          "title": "Документный Хаос? Rag-система Придёт На Помощь / Хабр",
+          "url": "https://habr.com/ru/articles/955768/",
+          "snippet": "Пошаговое руководство по созданию RAG-системы: индексация документов, векторный поиск, генерация ответов с контекстом. Python, ChromaDB, ModelSwitch API."
+        },
+        {
+          "title": "Как Построить Rag-систему За Один День",
+          "url": "https://ai-uchi.ru/guides/kak-postroit-rag-sistemu-za-odin-den/",
+          "snippet": "Всем привет! В этой статье я хочу поделиться своим опытом создания приложения на базе Retrieval-Augmented Generation (RAG) системы, которая превращает кучу документов в удобную интерактивную базу знаний."
+        },
+        {
+          "title": "FAISS и RAG с Llama 2: как построить систему поиска по документам",
+          "url": "https://blogs.epsilonmetrics.ru/guide-building-rag-llama-2-faiss/",
+          "snippet": "Пошаговое руководство по созданию RAG-системы с нуля: от векторной базы до готового чат-бота на ваших документах за один рабочий день."
+        },
+        {
+          "title": "Как Построить RAG-Pipeline: Руководство по Генерации с Дополненным ...",
+          "url": "https://fastutil.app/ru/blog/rag-pipeline-guide",
+          "snippet": "В связке с Llama 2 FAISS позволяет построить RAG-систему, которая ищет релевантные документы за миллисекунды и генерирует точные ответы на основе корпоративных данных."
+        },
+        {
+          "title": "Как Внедрить Rag-систему В Компании: Пошаговое Руководство",
+          "url": "https://novacom.ru/blog/rag-system-implementation-guide",
+          "snippet": "Retrieval-Augmented Generation (RAG) — это техника, которая улучшает ответы больших языковых моделей (LLM), обосновывая их внешними знаниями."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://chimitdorzhi.tech/blog/rag-sistemy-dlya-biznesa-2026/",
+      "title": "Rag-системы 2026: Архитектура, Цены, Кейсы",
+      "from_query": "rag система 2026"
+    },
+    {
+      "url": "https://blog.annelo.ru/ml-research/rag-2026-retrieval-augmented-generation/",
+      "title": "RAG 2026: как работает Retrieval-Augmented Generation — от чанкинга до ...",
+      "from_query": "rag система 2026"
+    },
+    {
+      "url": "https://magmadev.ru/blog/vozvrashchenie-retrieval-augmented-generation-v-2026-godu-pochemu-i-kak-realizovyvat-aktualnye-i-proveryaemye-znaniya/",
+      "title": "Возвращение Rag В 2026: Актуальность И Реализация — Magma",
+      "from_query": "rag система 2026"
+    },
+    {
+      "url": "https://aiplatforms.ru/articles/rag-architecture-guide",
+      "title": "Rag Для Бизнеса: Зачем Он Нужен И Чем Отличается От Большого Контекста ...",
+      "from_query": "rag система 2026"
+    },
+    {
+      "url": "https://aironlab.ru/blog/rag-sistemy-dlya-biznesa-2026-integraciya-ii-s-vashimi-dannymi-i-roi-150",
+      "title": "Rag-системы Для Бизнеса 2026: Интеграция Ии С Вашими Данными И Roi +150%",
+      "from_query": "rag система 2026"
+    },
+    {
+      "url": "https://lushbinary.com/blog/rag-retrieval-augmented-generation-production-guide/",
+      "title": "RAG Production Guide 2026: Retrieval-Augmented Generation | Lushbinary",
+      "from_query": "rag система 2026"
+    },
+    {
+      "url": "https://whitetigersoft.ru/blog/ai-nejroseti/rag-retrieval-augmented-generation-chto-eto",
+      "title": "RAG-система: что это такое в программировании, как работает Retrieval ...",
+      "from_query": "rag система июнь 2026"
+    },
+    {
+      "url": "https://aibotmanager.ru/rag-retrieval-augmented-generation/",
+      "title": "Что такое RAG простыми словами 2026 - AiBotManager.ru",
+      "from_query": "rag система июнь 2026"
+    },
+    {
+      "url": "https://aibotmanager.ru/rag-chto-eto/",
+      "title": "Rag Что Это 2026: Гайд + Примеры Применения",
+      "from_query": "rag система июнь 2026"
+    },
+    {
+      "url": "https://habr.com/ru/companies/otus/articles/1001970/",
+      "title": "Возвращение RAG в 2026 году / Хабр - Habr",
+      "from_query": "rag система июнь 2026"
+    },
+    {
+      "url": "https://www.ixbt.com/news/2026/06/08/google-agentic-rag.html",
+      "title": "Google представила agentic RAG: новая архитектура поиска, которая ...",
+      "from_query": "rag система новости 2026"
+    },
+    {
+      "url": "https://tehnofan.com/trendy-it/vektornye-bazy-dannykh-i-rag-obzor-2026-goda.html",
+      "title": "Обзор Rag И Векторных Баз Данных 2026",
+      "from_query": "rag система новости 2026"
+    },
+    {
+      "url": "https://promaren.ru/blog/2026/03/20/zashchita-dannyh-v-rag-sistemah-shifrovanie-i-kontrol-dostupa-2/",
+      "title": "Защита Данных В Rag-системах: Шифрование И Контроль Доступа В 2026",
+      "from_query": "rag система новости 2026"
+    },
+    {
+      "url": "https://habr.com/en/companies/otus/articles/1001970/",
+      "title": "Возвращение RAG в 2026 году - Habr",
+      "from_query": "rag система новости 2026"
+    },
+    {
+      "url": "https://github.com/4get2try/rag-coursework-2026",
+      "title": "4get2try/rag-coursework-2026 - GitHub",
+      "from_query": "site:github.com rag система 2026"
+    },
+    {
+      "url": "https://github.com/XMUDeepLIT/MemGraphRAG",
+      "title": "GitHub - XMUDeepLIT/MemGraphRAG: [KDD 2026] MemGraphRAG: Memory-based ...",
+      "from_query": "site:github.com rag система 2026"
+    },
+    {
+      "url": "https://github.com/Rivega42/hybrid-rag-system",
+      "title": "Hybrid RAG System - Гибридная RAG Система - GitHub",
+      "from_query": "site:github.com rag система 2026"
+    },
+    {
+      "url": "https://github.com/3123412/RAGovay-sheyka",
+      "title": "GitHub - 3123412/RAGovay-sheyka: RAGовая шейка — интеллектуальная RAG ...",
+      "from_query": "site:github.com rag система 2026"
+    },
+    {
+      "url": "https://github.com/infiniflow/ragflow",
+      "title": "GitHub - infiniflow/ragflow: RAGFlow is a leading open-source Retrieval ...",
+      "from_query": "site:github.com rag система 2026"
+    },
+    {
+      "url": "https://github.com/my-name-is-my-name/rag_ap25_Apr26_ver2",
+      "title": "GitHub - my-name-is-my-name/rag_ap25_Apr26_ver2 · GitHub",
+      "from_query": "site:github.com rag система 2026"
+    },
+    {
+      "url": "https://www.mrlatte.net/en/research/2026/04/27/rag-complete-guide/",
+      "title": "The Complete Guide to RAG: Naive, Advanced, and Graph RAG in One Document",
+      "from_query": "rag система official docs documentation 2026"
+    },
+    {
+      "url": "https://rag.readthedocs.io/",
+      "title": "Retrieval-Augmented Generation (RAG) — RAG multi model documentation",
+      "from_query": "rag система official docs documentation 2026"
+    },
+    {
+      "url": "https://dev.to/dharshan_a_23835c7dc05682/build-a-production-ready-rag-system-over-your-own-documents-in-2026-a-practical-tutorial-4hd0",
+      "title": "Build a Production-Ready RAG System Over Your Own Documents in 2026 - A ...",
+      "from_query": "rag система official docs documentation 2026"
+    },
+    {
+      "url": "https://flow-masters.ru/blog/rag-systems-business-guide/",
+      "title": "Rag-системы Для Бизнеса: Умный Поиск По Документам Без Галлюцинаций",
+      "from_query": "rag система official docs documentation 2026"
+    },
+    {
+      "url": "https://mediaten.ru/blog/rag-sistemy-dlya-biznesa",
+      "title": "Rag-системы: Ai-база Знаний Для Бизнеса На 2 Млн Документов",
+      "from_query": "rag система official docs documentation 2026"
+    },
+    {
+      "url": "https://prooftechit.com/blog/kak-avtomatizirovat-rabotu-s-reglamentami-dogovorami-i-bazoj-znanij-s-pomoshhyu-rag",
+      "title": "Rag Для Бизнеса: Как Автоматизировать Работу С Регламентами, Договорами ...",
+      "from_query": "rag система official docs documentation 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/989000/",
+      "title": "RAG-системы: что это такое, принципы ... - Habr",
+      "from_query": "rag система forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1cekoc7/d_real_talk_about_rag/",
+      "title": "[D] Real talk about RAG : r/MachineLearning - Reddit",
+      "from_query": "rag система forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://tproger.ru/articles/chto-takoe-rag--pochemu-o-nyom-govoryat-vse-ml-inzhenery--s-chego-nachat-i-chto-prostoe-mozhno-sdelat",
+      "title": "Что Такое Rag: Почему О Нём Говорят Все Ml-инженеры, С Чего Начать И ...",
+      "from_query": "rag система forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://sdvg.vc/blog/problemy-rag-ogranicheniia-modelei-i-relevantnost/",
+      "title": "Проблемы Rag: Ограничения Моделей И Релевантность",
+      "from_query": "rag система forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://external.software/archives/76726",
+      "title": "Ограничения Rag-систем Для Llm: Проблемы, Вызовы И Способы Их ...",
+      "from_query": "rag система forum reddit discussion проблемы опыт 2026"
+    },
+    {
+      "url": "https://ai.low-light.ru/blog/rag-sistemy-korporativnaya-baza-znaniy-2026/",
+      "title": "Rag-системы Для Корпоративной Базы Знаний 2026: Гайд По Реализации",
+      "from_query": "создание rag системы 2026"
+    },
+    {
+      "url": "https://rixai.tech/2026/03/17/rag-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%BA%D0%B0%D0%BA-%D0%BE%D0%B1%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%B8%D0%B8-%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D1%86%D0%B8%D1%84%D1%80/",
+      "title": "Rag-система: Как Обучить Ии И Создать Цифрового Клона Эксперта",
+      "from_query": "создание rag системы 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/aik-5rqHXktc7RGU",
+      "title": "Разработка Ии В 2026 Году: Почему Инженерам Нужно Собирать Rag-системы ...",
+      "from_query": "создание rag системы 2026"
+    },
+    {
+      "url": "https://external.software/archives/79293",
+      "title": "Как Создать Эффективную Rag-систему С Минимальным Кодом: Выбор Платформ ...",
+      "from_query": "создание rag системы 2026"
+    },
+    {
+      "url": "https://promaren.ru/blog/2026/04/10/multimodalnyy-rag-agent-kak-sozdat-sistemu-poiska-k-2026-godu/",
+      "title": "Мультимодальный Rag-агент: Как Создать Систему Поиска К 2026 Году",
+      "from_query": "создание rag системы 2026"
+    },
+    {
+      "url": "https://learn.microsoft.com/ru-ru/azure/developer/ai/advanced-retrieval-augmented-generation",
+      "title": "Создание современных систем генерации Retrieval-Augmented",
+      "from_query": "создание rag системы 2026"
+    },
+    {
+      "url": "https://external.software/archives/80821",
+      "title": "Локальная система RAG с DeepSeek R1 и Ollama: полное руководство по ...",
+      "from_query": "локальная rag система 2026"
+    },
+    {
+      "url": "https://robotbull.com/handbook/proektirovanie-i-otsenka/lokalnye-llm-i-rag",
+      "title": "Локальные LLM и RAG для корпоративных данных - RB Tech",
+      "from_query": "локальная rag система 2026"
+    },
+    {
+      "url": "https://coursehunter.net/course/sozdanie-lokalnoy-sistemy-rag-na-osnove-llamaindex-i-ollama",
+      "title": "Создание локальной системы RAG на основе LlamaIndex и Ollama",
+      "from_query": "локальная rag система 2026"
+    },
+    {
+      "url": "https://github.com/vavbeat/RAG-Local-DataGPT",
+      "title": "GitHub - vavbeat/RAG-Local-DataGPT: Локальная RAG-система для инженеров ...",
+      "from_query": "локальная rag система 2026"
+    },
+    {
+      "url": "https://external.software/archives/71871",
+      "title": "Локальная Система Rag: Полное Руководство По Созданию И Настройке",
+      "from_query": "локальная rag система 2026"
+    },
+    {
+      "url": "https://external.software/archives/80649",
+      "title": "Как Устроена Архитектура Rag-систем: Подробный Гайд По Компонентам И ...",
+      "from_query": "архитектура rag системы 2026"
+    },
+    {
+      "url": "https://webtechnus.com/ru/2026/02/02/arkhitektura-rag-sistem/",
+      "title": "Архитектура Rag Систем: Риски, Решения И Внедрение Llm Для Бизнеса",
+      "from_query": "архитектура rag системы 2026"
+    },
+    {
+      "url": "https://ai-rate.ru/research/arhitektura-rag-sistemy",
+      "title": "Архитектура RAG-системы: retriever, reranker, citations, evals",
+      "from_query": "архитектура rag системы 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/905076/",
+      "title": "Как Сделать Rag Для Своей Компании / Хабр",
+      "from_query": "как сделать rag систему 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/aIcYxlGfwReEZAEl",
+      "title": "Простая Rag-система Своими Руками: Пошаговая Инструкция.",
+      "from_query": "как сделать rag систему 2026"
+    },
+    {
+      "url": "https://external.software/archives/81267",
+      "title": "Rag Проект: Подробный Туториал И Пошаговое Руководство По Созданию С ...",
+      "from_query": "как сделать rag систему 2026"
+    },
+    {
+      "url": "https://external.software/archives/43607",
+      "title": "Как создать RAG-систему с AI-агентом, n8n и Supabase: Пошаговое ...",
+      "from_query": "как сделать rag систему 2026"
+    },
+    {
+      "url": "https://www.askpython.com/python/examples/building-rag-applications-with-python",
+      "title": "Building RAG Applications with Python: Complete 2026 Guide",
+      "from_query": "rag система python 2026"
+    },
+    {
+      "url": "https://habr.com/ru/companies/otus/articles/979458/",
+      "title": "Создаем простую систему RAG на Python / Хабр",
+      "from_query": "rag система python 2026"
+    },
+    {
+      "url": "https://external.software/archives/81342",
+      "title": "Как реализовать простую RAG-систему на Python: пошаговый гайд?",
+      "from_query": "rag система python 2026"
+    },
+    {
+      "url": "https://external.software/archives/78938",
+      "title": "Как создать эффективную RAG систему на Python с нуля и какие ...",
+      "from_query": "rag система python 2026"
+    },
+    {
+      "url": "https://modelswitch.io/blog/rag-sistema-s-modelswitch",
+      "title": "Как построить RAG-систему с ModelSwitch и векторной базой",
+      "from_query": "Как построить RAG-систему с векторной базой знаний: пошаговый workflow от документов до ответов 2026"
+    },
+    {
+      "url": "https://habr.com/ru/articles/955768/",
+      "title": "Документный Хаос? Rag-система Придёт На Помощь / Хабр",
+      "from_query": "Как построить RAG-систему с векторной базой знаний: пошаговый workflow от документов до ответов 2026"
+    },
+    {
+      "url": "https://ai-uchi.ru/guides/kak-postroit-rag-sistemu-za-odin-den/",
+      "title": "Как Построить Rag-систему За Один День",
+      "from_query": "Как построить RAG-систему с векторной базой знаний: пошаговый workflow от документов до ответов 2026"
+    },
+    {
+      "url": "https://blogs.epsilonmetrics.ru/guide-building-rag-llama-2-faiss/",
+      "title": "FAISS и RAG с Llama 2: как построить систему поиска по документам",
+      "from_query": "Как построить RAG-систему с векторной базой знаний: пошаговый workflow от документов до ответов 2026"
+    },
+    {
+      "url": "https://fastutil.app/ru/blog/rag-pipeline-guide",
+      "title": "Как Построить RAG-Pipeline: Руководство по Генерации с Дополненным ...",
+      "from_query": "Как построить RAG-систему с векторной базой знаний: пошаговый workflow от документов до ответов 2026"
+    },
+    {
+      "url": "https://novacom.ru/blog/rag-system-implementation-guide",
+      "title": "Как Внедрить Rag-систему В Компании: Пошаговое Руководство",
+      "from_query": "Как построить RAG-систему с векторной базой знаний: пошаговый workflow от документов до ответов 2026"
+    }
+  ]
+}

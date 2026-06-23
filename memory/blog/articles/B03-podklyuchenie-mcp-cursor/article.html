@@ -1,0 +1,201 @@
+<p>Cursor пишет код и отвечает в чате, но без MCP (Model Context Protocol) агент не видит ваши сервисы: не откроет сайт, не подтянет документацию, не тронет CMS. Настройка cursor mcp занимает 15–30 минут. Ниже – подключение через Tools &amp; MCP или файл mcp.json. Вы увидите зелёный статус сервера, вызовете первый tool из Agent и соберёте минимальный стек под автоматизацию.</p>
+
+<blockquote><b>TL;DR / Быстрый инсайт:</b> MCP в Cursor – "розетки" для внешних инструментов (браузер, GitHub, CMS). Конфиг: ~/.cursor/mcp.json или .cursor/mcp.json в проекте. Подключение – кнопка "Add to Cursor" или JSON с command/args (stdio) / url (облако). После правки перезапустите Cursor. Agent по умолчанию спрашивает подтверждение перед вызовом tool.</blockquote>
+
+<p>MCP – открытый стандарт Anthropic (ноябрь 2024): способ дать нейросети доступ к данным вне чата. API (Application Programming Interface) – "розетка" между Cursor и сервисом: Agent вызывает tool, а не копирует пароли в prompt. MCP дополняет n8n и Make: в IDE готовите черновик, а <a href="/avtomatizaciya-n8n-ai-agents/">автоматизация n8n с ИИ-агентами</a> публикует и шлёт уведомления 24/7.</p>
+
+<h2 id="what-is-mcp">1. Разберите, зачем вам MCP в Cursor</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнение: Agent без MCP видит только файлы, с MCP — браузер, docs, CMS" loading="lazy">
+</figure>
+
+
+<p>Без MCP Agent видит только файлы проекта. С MCP – Browser (скриншот сайта), Context7 (свежая docs), Figma (макет). Skills – инструкции внутри редактора; MCP – внешние сервисы. <b>Делайте:</b> один сервер под задачу. <b>Не делайте:</b> ставить десятки серверов – лишние tools путают Agent даже в 2026.</p>
+
+<h2 id="config-location">2. Выберите, где хранить mcp.json</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Workflow: глобальный vs проектный mcp.json — куда класть конфиг MCP" loading="lazy">
+</figure>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Параметр</th>
+      <th>Глобальный конфиг</th>
+      <th>Проектный конфиг</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Путь (Windows)</b></td>
+      <td>C:\Users\&lt;user&gt;\.cursor\mcp.json</td>
+      <td>&lt;корень проекта&gt;\.cursor\mcp.json</td>
+    </tr>
+    <tr>
+      <td><b>Область</b></td>
+      <td>Все проекты на этом ПК</td>
+      <td>Только текущий репозиторий</td>
+    </tr>
+    <tr>
+      <td><b>Когда выбирать</b></td>
+      <td>Личные серверы (Figma, браузер)</td>
+      <td>Командный стек (GitHub, CMS проекта)</td>
+    </tr>
+    <tr>
+      <td><b>При конфликте имён</b></td>
+      <td colspan="2">Побеждает конфиг уровня проекта</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Оба файла <b>объединяются</b> при запуске Cursor. <b>Делайте:</b> секреты (токены GitHub) держите в env внутри mcp.json, не коммитьте их в Git. <b>Не делайте:</b> дублировать один и тот же сервер в global и project с разными ключами – легко запутаться, какой активен.</p>
+
+<h2 id="one-click">3. Подключите сервер через Tools &amp; MCP (способ A)</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Чеклист подключения MCP через Tools & MCP: Add to Cursor, перезапуск, зелёный статус" loading="lazy">
+</figure>
+
+
+<p>Самый быстрый вход – без редактирования JSON. Откройте Settings (<b>Ctrl+Shift+J</b> на Windows, <b>Cmd+Shift+J</b> на Mac) → раздел <b>Tools &amp; MCP</b>. В Marketplace или на cursor.directory нажмите "Add to Cursor" у нужного mcp сервера для cursor. Пройдите OAuth или подтвердите установку.</p>
+
+<ol>
+  <li><b>Шаг 1:</b> Обновите Cursor до актуальной версии и откройте Tools &amp; MCP.</li>
+  <li><b>Шаг 2:</b> Выберите сервер в каталоге (Browser, GitHub, Notion и др.).</li>
+  <li><b>Шаг 3:</b> Завершите авторизацию, если сервер просит OAuth или API key.</li>
+  <li><b>Шаг 4:</b> Перезапустите Cursor или выполните Command Palette → "Reload Window".</li>
+  <li><b>Шаг 5:</b> Убедитесь, что статус сервера активный (не красный) в списке Tools &amp; MCP.</li>
+</ol>
+
+<p><b>Делайте:</b> one-click для серверов с готовой кнопкой в каталоге Cursor. <b>Не делайте:</b> пропускать перезапуск после первой установки – без него список tools часто пустой.</p>
+
+<h2 id="manual-json">4. Настройте mcp.json вручную (способ B: stdio и url)</h2>
+
+<p>Ручной способ нужен, когда сервера нет в Marketplace или вы хотите точный контроль. <b>stdio</b> – локальная программа на вашем ПК (через npx запускается маленький сервер). <b>url</b> – удалённый MCP по HTTPS, иногда с Bearer-токеном в headers.</p>
+
+<blockquote>
+  <b>Workflow подключения:</b>
+  <br>
+  Выбор сервера → правка mcp.json → сохранение валидного JSON → перезапуск Cursor → проверка Tools &amp; MCP → тестовый prompt в Agent → настройка allowlist
+</blockquote>
+
+<p>Пример stdio-сервера для чтения файлов (официальный пакет из экосистемы MCP; путь замените на свою папку):</p>
+
+<blockquote>
+  <b>Пример mcp.json (stdio):</b><br>
+  { "mcpServers": { "filesystem": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-filesystem", "C:/Users/YourName/projects"] } } }
+</blockquote>
+
+<p>Для облачного сервера добавьте поля <b>url</b> и <b>headers</b> с Bearer-токеном. Секреты в <b>env</b> или ${env:VAR_NAME}. <b>Делайте:</b> проверяйте JSON валидатором. <b>Не делайте:</b> оставлять висячую запятую – Cursor молча не загрузит битый конфиг.</p>
+
+<h2 id="security">5. Проверьте статус и настройте безопасность</h2>
+
+<p>Откройте Agent, включите нужные MCP-tools и отправьте prompt с явным действием: "Прочитай README" или "Найди в docs React синтаксис useEffect". Cursor <b>запрашивает подтверждение</b> перед вызовом – нормально для старта. В 3.6+ настройте Auto-review и allowlist в permissions.json. <b>Делайте:</b> подтверждение на публикацию и удаление. <b>Не делайте:</b> auto-run для всех tools на продакшен-аккаунте.</p>
+
+<h2 id="automation-stack">6. Добавьте MCP под автоматизацию контента</h2>
+
+<p>Не обязательно писать свой сервер – возьмите готовые из каталога. Ориентир по задачам:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Сервер</th>
+      <th>Зачем автоматизатору</th>
+      <th>Спрос (Вордстат)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Browser / Playwright MCP</b></td>
+      <td>QA лендингов, скриншоты, проверка форм</td>
+      <td>playwright mcp cursor – 18</td>
+    </tr>
+    <tr>
+      <td><b>Context7 / docs MCP</b></td>
+      <td>Актуальная документация без "галлюцинаций"</td>
+      <td>context 7 mcp cursor – 9</td>
+    </tr>
+    <tr>
+      <td><b>Figma MCP</b></td>
+      <td>Макет → текст/структура для контента</td>
+      <td>figma cursor mcp – 48</td>
+    </tr>
+    <tr>
+      <td><b>GitHub MCP</b></td>
+      <td>Issues, PR, репозиторий контент-завода</td>
+      <td>cursor github mcp – 4</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Старт: Browser + Context7 + GitHub или WordPress MCP (команды из README на cursor.directory). Свой сервер с нуля – в <a href="https://mayai.ru/mcp-server-sozdat-gayd-cursor-claude/" target="_blank">гайде по созданию MCP</a>. Make закрывает цепочки "триггер → CRM → Telegram"; на <a href="https://kv-ai.ru/obuchenie-po-make" target="_blank">курсе по Make</a> (159+ уроков, 5 800 ₽/мес) разбираем связку MCP + публикация.</p>
+
+<h2 id="troubleshooting">7. Исправьте типичные ошибки (красный статус, ENOENT, JSON)</h2>
+
+<p>Красный индикатор у сервера – сигнал, что Cursor не смог запустить процесс или достучаться до url.</p>
+
+<ol>
+  <li><b>Шаг 1:</b> Откройте Output (<b>Ctrl+Shift+U</b>) → канал <b>MCP Logs</b>.</li>
+  <li><b>Шаг 2:</b> Проверьте синтаксис mcp.json – частая причина "тишины" без ошибок в UI.</li>
+  <li><b>Шаг 3:</b> Ошибка spawn ENOENT – нет node/npx в PATH; установите Node.js LTS и перезапустите терминал/Cursor.</li>
+  <li><b>Шаг 4:</b> Для stdio сверьте command и args с README сервера; для url – токен в headers или env.</li>
+  <li><b>Шаг 5:</b> После правки shell profile (.bashrc, PowerShell profile) – полный перезапуск Cursor, не только Reload Window.</li>
+</ol>
+
+<p><b>Делайте:</b> копируйте текст ошибки из MCP Logs в поиск или в чат поддержки. <b>Не делайте:</b> ставить с десяток серверов, пока первый не зелёный – так проще локализовать проблему.</p>
+
+<h2 id="checklist">8. Пройдите чеклист перед продакшеном</h2>
+
+<ul>
+  <li>Cursor обновлён, раздел Tools &amp; MCP доступен</li>
+  <li>Выбран global или project mcp.json осознанно</li>
+  <li>JSON проверен валидатором, без лишних запятых</li>
+  <li>После правки конфига – перезапуск или Reload Window</li>
+  <li>Статус сервера активный в Tools &amp; MCP</li>
+  <li>Тестовый prompt в Agent вызвал нужный tool</li>
+  <li>Подтверждение вызовов включено для опасных операций</li>
+  <li>Доверенные tools добавлены в allowlist только после тестов</li>
+  <li>Не больше 3–5 MCP-серверов одновременно</li>
+  <li>API-ключи в env, не в Git</li>
+  <li>Связка с n8n/Make для фоновых задач</li>
+</ul>
+
+<h2 id="next-steps">9. Что делать дальше</h2>
+
+<ol>
+  <li>Подключите первый сервер способом A или B и добейтесь зелёного статуса.</li>
+  <li>Добавьте Browser или Context7 под вашу ежедневную задачу.</li>
+  <li>Сверьте workflow с <a href="/avtomatizaciya-n8n-ai-agents/">гайдом по n8n-агентам</a> – где MCP в IDE, где фоновая автоматизация.</li>
+  <li>Зафиксируйте allowlist и правила подтверждения для команды.</li>
+  <li>Для масштабирования на Make – <a href="https://kv-ai.ru/obuchenie-po-make" target="_blank">обучение по Make.com</a> с разбором AI-сценариев.</li>
+</ol>
+
+<p>Вопросы по связке Cursor + автоматизация – в Telegram <a href="https://t.me/maya_pro" target="_blank">@maya_pro</a>.</p>
+
+<blockquote>
+  <b>Материал проверен:</b> эксперт <a href="https://kv-ai.ru/artur-horosheff" target="_blank">Артур Хорошев</a> (CEO Maya AI, практик Make.com, Cursor и MCP).<br>
+  <b>Достоверность данных:</b> пути конфигов, поведение Tools &amp; MCP и показатели Вордстат ("cursor mcp" – 630, "настройка mcp сервера" – 74) верифицированы по документации Cursor и Яндекс Вордстат на июнь 2026 года.
+</blockquote>
+
+<h2 id="faq">Частые вопросы</h2>
+
+<h3>Как подключить MCP к Cursor?</h3>
+<p>Откройте Settings (Ctrl+Shift+J) → Tools &amp; MCP → "Add to Cursor" у нужного сервера. Либо создайте ~/.cursor/mcp.json или .cursor/mcp.json, добавьте блок mcpServers, сохраните валидный JSON и перезапустите Cursor. Проверьте активный статус сервера и вызовите tool тестовым prompt в Agent.</p>
+
+<h3>Где файл mcp.json на Windows?</h3>
+<p>Глобально: C:\Users\&lt;ваш_логин&gt;\.cursor\mcp.json. Для одного проекта: папка .cursor в корне репозитория. При совпадении имён сервера приоритет у проектного файла.</p>
+
+<h3>Почему MCP сервер красный и не подключается?</h3>
+<p>Откройте Output → MCP Logs. Частые причины: битый JSON, нет Node/npx (ENOENT), неверный API key в env или headers. Исправьте конфиг, перезапустите Cursor и снова проверьте логи.</p>
+
+<h3>Нужно ли каждый раз подтверждать вызов tool?</h3>
+<p>По умолчанию да – это защита. После тестов добавьте доверенные tools в allowlist или permissions.json; в Cursor 3.6+ настройте Auto-review в Settings → Agents → Run Mode.</p>
+
+<h3>Сколько MCP-серверов можно включить?</h3>
+<p>Формально много; в 2026 dynamic context снижает нагрузку от большого числа tools. На практике держите 3–5 серверов под реальные задачи, а не весь каталог cursor.directory.</p>
+
+<h3>Чем MCP отличается от Skills в Cursor?</h3>
+<p>MCP подключает внешние программы и API (браузер, GitHub, CMS). Skills – готовые инструкции и сценарии внутри редактора. Используйте оба: Skills для стиля работы агента, MCP для доступа к сервисам.</p>
+
+<h3>MCP в Cursor или Make/n8n – что выбрать?</h3>
+<p>MCP усиливает Agent в IDE при разработке и контенте. Make и n8n запускают сценарии по расписанию и webhook без вашего участия. Связка: Cursor готовит → Make публикует; подробнее в статье про <a href="/avtomatizaciya-n8n-ai-agents/">n8n и ИИ-агентов</a>.</p>

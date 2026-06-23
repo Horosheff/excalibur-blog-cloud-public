@@ -1,0 +1,65 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-10",
+    "today_ru": "10.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "среда",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-12",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-10 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B01",
+    "priority": "P0",
+    "slug": "primer-seo-stati",
+    "h1": "Как писать SEO-статьи, которые читают люди",
+    "primary_query": "как писать seo статьи",
+    "secondary_queries": [
+      "seo текст для блога",
+      "geo оптимизация статьи"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "как писать seo статьи 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "как писать seo статьи июнь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "как писать seo статьи новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "seo текст для блога 2026",
+      "purpose": "вторичный запрос: seo текст для блога"
+    },
+    {
+      "id": "secondary_2",
+      "query": "geo оптимизация статьи 2026",
+      "purpose": "вторичный запрос: geo оптимизация статьи"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как писать SEO-статьи, которые читают люди 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B01-primer-seo-stati",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

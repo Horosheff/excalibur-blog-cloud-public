@@ -1,0 +1,16 @@
+{
+  "slug": "make-ai-agents-mcp-avtomatizaciya",
+  "topic_id": "B06",
+  "post_id": 13467,
+  "permalink": "https://mayai.ru/make-ai-agents-mcp-avtomatizaciya/",
+  "publish_method": "sftp-fallback",
+  "cover_evidence": {
+    "path": "memory/blog/articles/B06-make-ai-agents-mcp-avtomatizaciya/cover/cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 1534047,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=13467 slug=make-ai-agents-mcp-avtomatizaciya\nOK featured_image=13469\nOK schema_meta=1\nOK skip_theme_faq_meta=1\nOK inline_image_upload=13470 src=cover/inline-01.png url=https://mayai.ru/wp-content/uploads/2026/06/make-ai-agents-mcp-avtomatizaciya-inline-01.jpg\nOK inline_image_upload=13471 src=cover/inline-02.png url=https://mayai.ru/wp-content/uploads/2026/06/make-ai-agents-mcp-avtomatizaciya-inline-02.jpg\nOK inline_image_upload=13472 src=cover/inline-03.png url=https://mayai.ru/wp-content/uploads/2026/06/make-ai-agents-mcp-avtomatizaciya-inline-03.jpg\npermalink=https://mayai.ru/make-ai-agents-mcp-avtomatizaciya/\n",
+  "verdict": "pass"
+}

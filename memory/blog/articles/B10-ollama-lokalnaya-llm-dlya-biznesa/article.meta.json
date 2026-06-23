@@ -1,0 +1,42 @@
+{
+  "topic_id": "B10",
+  "slug": "ollama-lokalnaya-llm-dlya-biznesa",
+  "h1": "Как развернуть локальную LLM через Ollama для бизнеса: пошаговый workflow от установки до API",
+  "title": "Ollama для бизнеса: локальная LLM от установки до API и n8n",
+  "description": "Пошаговый workflow Ollama для бизнеса: выбор модели под VRAM, ollama pull, проверка GPU, OpenAI-совместимый API, n8n и безопасный контур без открытого порта 11434.",
+  "keywords": [
+    "ollama",
+    "ollama модели",
+    "ollama api",
+    "локальные нейросети",
+    "как установить ollama",
+    "ollama скачать",
+    "qwen ollama"
+  ],
+  "primary_query": "ollama",
+  "secondary_queries": [
+    "ollama модели",
+    "ollama скачать",
+    "ollama api",
+    "как установить ollama",
+    "локальные нейросети",
+    "как локально развернуть нейросеть"
+  ],
+  "char_count": 8855,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "anchor_variants": [
+    "как развернуть локальную llm через ollama для бизнеса",
+    "ollama api подключение к n8n и cursor",
+    "локальные нейросети ollama на офисном пк"
+  ],
+  "meta_ab": {
+    "title_seo": "Ollama для бизнеса: локальная LLM от установки до API",
+    "title_ctr": "Ollama на офисном ПК: почему 32B-модель и открытый порт 11434 ломают проект?",
+    "title_aeo": "Как развернуть локальную LLM через Ollama для бизнеса?",
+    "description_seo": "Пошаговый workflow Ollama: qwen3:8b под VRAM, ollama ps + nvidia-smi, API localhost:11434, n8n через host.docker.internal и закрытый контур без auth.",
+    "description_ctr": "Локальная нейросеть не бесплатна, если GPU молчит, а порт 11434 открыт в LAN. Гайд: сценарий, pull, API, n8n и чек-лист из 20 тест-кейсов.",
+    "description_aeo": "Ollama для бизнеса – установка, выбор модели под железо, OpenAI-совместимый API и подключение к n8n. Когда оставить облачный fallback для критичных ответов."
+  },
+  "cover_family": "brand_collage"
+}

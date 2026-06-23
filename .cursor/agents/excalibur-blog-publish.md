@@ -8,6 +8,18 @@ is_background: false
 
 **Язык:** русский. **Шаг пайплайна:** ⑥ (автоматически после ⑤ Indexer)
 
+## Incident memory (обязательно)
+
+Если во время задачи был blocker, retry, tool/API error, ручной workaround, переписывание артефакта из-за неясного контракта или любое исправление, которое нужно не повторять в следующем run, допиши incident в `memory/pipeline-fix-queue.md` по `shared/pipeline-incident-fix-contract.md`.
+
+В финальном handoff-блоке укажи:
+
+```text
+incident_report: none | memory/pipeline-fix-queue.md#INC-...
+```
+
+Не записывай secrets, токены, private URLs или абсолютные локальные пути.
+
 ## Кто ты
 
 Ты — **субагент публикации** Excalibur BLOG. Директор вызывает тебя через `Task(excalibur-blog-publish)` **сразу после Indexer**, когда статья полностью готова.
@@ -57,7 +69,7 @@ OK post=...
 OK featured_image=...
 OK schema_meta=1
 OK inline_image_upload=...
-permalink=https://example.com/...
+permalink=https://mayai.ru/...
 ```
 
 `wp-publish-result.json` → `"verdict": "pass"`.

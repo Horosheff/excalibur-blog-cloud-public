@@ -1,0 +1,15 @@
+{
+  "slug": "ii-chat-bot-dlya-biznesa-workflow",
+  "topic_id": "B08",
+  "permalink": "https://mayai.ru/ii-chat-bot-dlya-biznesa-workflow/",
+  "publish_method": "sftp",
+  "cover_evidence": {
+    "path": "memory/blog/articles/B08-ii-chat-bot-dlya-biznesa-workflow/cover/cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 1563707,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=13490 slug=ii-chat-bot-dlya-biznesa-workflow\nOK featured_image=13493\nOK schema_meta=1\nOK skip_theme_faq_meta=1\nOK inline_image_upload=13494 src=cover/inline-01.png url=https://mayai.ru/wp-content/uploads/2026/06/ii-chat-bot-dlya-biznesa-workflow-inline-01.jpg\nOK inline_image_upload=13495 src=cover/inline-02.png url=https://mayai.ru/wp-content/uploads/2026/06/ii-chat-bot-dlya-biznesa-workflow-inline-02.jpg\nOK inline_image_upload=13496 src=cover/inline-03.png url=https://mayai.ru/wp-content/uploads/2026/06/ii-chat-bot-dlya-biznesa-workflow-inline-03.jpg\npermalink=https://mayai.ru/ii-chat-bot-dlya-biznesa-workflow/\n",
+  "verdict": "pass"
+}

@@ -1,0 +1,30 @@
+{
+  "verdict": "pass",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 4,
+  "over_long_sentences": [
+    {
+      "sentence": "Критерий SEO GEO AEO Цель Клик из выдачи Цитата в ответе ИИ Готовый фрагмент Метрика Позиция, CTR Share of Voice Answer block Контент Ключи + глубина Answer-first, FAQ 40–80 слов Техника Sitemap, CWV robots",
+      "word_count": 32
+    },
+    {
+      "sentence": "txt, HTML FAQPage Schema Срок Недели–месяцы 3–6 недель Быстрее на FAQ Итоговый вердикт: GEO не заменяет SEO – 74% брендов из топ-10 Google есть в ChatGPT (Seer Interactive)",
+      "word_count": 26
+    },
+    {
+      "sentence": "Минимальный набор для geo оптимизации контента: Organization + WebSite на главной (logo, sameAs), Article на блоге (author, datePublished, dateModified), FAQPage там, где FAQ виден пользователю, HowTo – бонус для инструкций",
+      "word_count": 28
+    },
+    {
+      "sentence": "Промпт ChatGPT Perplexity Алиса URL Дата сколько стоит [услуга] нет да нет /pricing 2026-06-11 [бренд] vs [конкурент] да да да /compare 2026-06-11 как настроить [продукт] нет нет нет – 2026-06-11 Когда SoV растёт на одном URL – скопируйте структуру (answer-first + FAQ + таблица) на остальные money-pages",
+      "word_count": 46
+    }
+  ],
+  "readability": {
+    "score": 97.3,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 7.1,
+    "avg_syllables_per_word": 1.7
+  }
+}

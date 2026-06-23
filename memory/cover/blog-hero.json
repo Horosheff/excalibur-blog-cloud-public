@@ -1,24 +1,27 @@
 {
   "hero_id": "blog-host",
-  "name_ru": "Example Author",
+  "name_ru": "Артур Хорошев",
   "reference_image": "memory/cover/assets/blog-hero-reference.png",
-  "reference_notes": "Public template: provide your own private reference image or hosted URL through BLOG_HERO_REFERENCE_URL.",
+  "reference_notes": "Reference = только лицо (очки, quiff, борода). Мемный образ человека оставлять как в старом промпте; одежду агент меняет свободно под крючок и тему статьи — не копировать костюм с фото.",
   "visual_lock": {
-    "face": "replace with your brand character description",
-    "glasses": "",
-    "hair": "",
-    "beard": "",
-    "energy": "expert blog host"
+    "face": "овальное лицо, дружелюбная улыбка",
+    "glasses": "круглые чёрные очки",
+    "hair": "густая светло-русый/пепельный quiff, зачёс вверх и вправо",
+    "beard": "аккуратная короткая борода с сединой",
+    "energy": "харизматичный ведущий, ироничный, не клоун"
   },
-  "outfit_rule": "Agent may choose outfit, pose, and props according to cover_hook and scene_hint.",
-  "reference_outfit_hint": "Template placeholder.",
-  "prompt_fragment": "Blog host on COVER ONLY: preserve the provided reference face. Outfit, pose, and props are creative choices for the hook.",
+  "outfit_rule": "Основной outfit героя на обложке: белое плотное худи heavyweight fabric. Поза, жест, ракурс, выражение, реквизит и композиция должны заметно меняться от обложки к обложке, но одежда не должна превращаться в наушники/headset-образ. Reference photo outfit is NOT mandatory.",
+  "reference_outfit_hint": "На эталонном фото — красный пиджак и бабочка; это лишь один из вариантов, не lock.",
+  "prompt_fragment": "Blog host on COVER ONLY: preserve EXACT face likeness from reference — round black glasses, ash-blonde quiff, salt-and-pepper beard; keep the old meme-person vibe. Outfit lock: thick heavyweight white hoodie. Vary pose, gesture, angle, expression, props and composition for every cover. No headphones, no headset, no earbuds. Do NOT copy reference photo clothing unless scene_hint asks.",
   "cover_hook_rules": [
-    "Cover is a click hook: conflict, reader pain, and reason to open.",
-    "Use readable local-language caption on the cover.",
-    "Keep inline panels useful and in the same visual series."
+    "Обложка = крючок: провокация, узнаваемая боль SEOшника, желание кликнуть",
+    "Крупный русский meme-caption на обложке (2–6 слов), читаемый",
+    "Герой смотрит в камеру или жестом указывает на текст",
+    "Не спойлерить весь гайд — намекнуть на конфликт SEO vs GEO / «текст не читают»",
+    "Одежда героя — белое плотное худи из плотной ткани; поза, жест, ракурс, выражение и реквизит должны заметно отличаться от прошлых обложек. Наушники/headset/earbuds запрещены. Лицо с reference обязательно",
+    "Design code: fake скрины (Wordstat, отзывы, Telegram), рваная бумага, скотч, розовый маркер, разные мем-реакции — «сделал человек», 16:9"
   ],
-  "reference_url_hosted": "",
-  "reference_url_source": "public-template",
-  "reference_url_updated_at": ""
+  "reference_url_hosted": "https://mayai.ru/wp-content/uploads/2026/06/ava.jpg",
+  "reference_url_source": "wordpress-media",
+  "reference_url_updated_at": "2026-06-16T06:17:00+03:00"
 }

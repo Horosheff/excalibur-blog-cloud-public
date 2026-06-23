@@ -30,7 +30,13 @@ memory/blog/articles/<topic_id>-<slug>/
 - `shared/editorial-utility-only.md`
 - `shared/blog-cover-mcp-contract.md`
 - `shared/excalibur-wp-publish-contract.md`
+- `shared/pipeline-incident-fix-contract.md`
 - `shared/quality-blog.md`
+
+## Incident memory
+
+- Durable queue: `memory/pipeline-fix-queue.md`
+- Post-run fixer: `agents/excalibur-blog-fixer.md` + `skills/fixer-excalibur-blog/SKILL.md`
 
 ## References
 

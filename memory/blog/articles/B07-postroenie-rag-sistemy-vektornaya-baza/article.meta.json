@@ -1,0 +1,43 @@
+{
+  "topic_id": "B07",
+  "slug": "postroenie-rag-sistemy-vektornaya-baza",
+  "h1": "Как построить RAG-систему с векторной базой знаний: пошаговый workflow от документов до ответов",
+  "title": "RAG система: пошаговый workflow с векторной базой знаний",
+  "description": "Как построить RAG-систему: чанкинг 300-512 токенов, pgvector или Qdrant, hybrid поиск, rerank и eval на golden set. Python (LangChain) и n8n без галлюцинаций в проде.",
+  "keywords": [
+    "rag система",
+    "создание rag системы",
+    "локальная rag система",
+    "архитектура rag системы",
+    "как сделать rag систему",
+    "rag система python",
+    "векторная база знаний",
+    "pgvector",
+    "чанкинг rag"
+  ],
+  "primary_query": "rag система",
+  "secondary_queries": [
+    "создание rag системы",
+    "локальная rag система",
+    "архитектура rag системы",
+    "как сделать rag систему",
+    "rag система python"
+  ],
+  "char_count": 8568,
+  "article_mode": "B",
+  "author_id": "artur-horoshev",
+  "anchor_variants": [
+    "как построить rag систему с векторной базой знаний",
+    "пошаговый workflow rag от документов до ответов",
+    "локальная rag система на pgvector или qdrant"
+  ],
+  "meta_ab": {
+    "title_seo": "RAG система: пошаговый workflow с векторной базой знаний",
+    "title_ctr": "RAG система без галлюцинаций: от PDF до ответов с цитатами за один вечер?",
+    "title_aeo": "Как построить RAG-систему с векторной базой знаний в 2026?",
+    "description_seo": "Как построить RAG-систему: чанкинг 300-512 токенов, pgvector или Qdrant, hybrid поиск, rerank и eval на golden set. Python и n8n без уверенной ерунды в проде.",
+    "description_ctr": "Демо RAG отвечает уверенно и неверно? Пошаговый workflow: документы, векторная БД, rerank и golden set 8/10. Две дорожки - LangChain и n8n.",
+    "description_aeo": "RAG система - это поиск фрагментов документов в векторной базе и ответ LLM только по найденному контексту. Чанкинг 300-512 токенов, pgvector или Qdrant, eval на 10-15 вопросах."
+  },
+  "cover_family": "brand_collage"
+}

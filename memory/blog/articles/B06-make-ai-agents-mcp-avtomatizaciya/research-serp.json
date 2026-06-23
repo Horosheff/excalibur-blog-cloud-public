@@ -1,0 +1,634 @@
+{
+  "agent": "excalibur-blog",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-16",
+    "today_ru": "16.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "вторник",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-18",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-16 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B06",
+    "priority": "P0",
+    "slug": "make-ai-agents-mcp-avtomatizaciya",
+    "h1": "Как настроить автоматизацию Make с AI Agents и MCP: пошаговый workflow для бизнеса",
+    "primary_query": "автоматизация make",
+    "secondary_queries": [
+      "автоматизация make com",
+      "автоматизация процессов make",
+      "make ai agent",
+      "make ии агенты",
+      "make сценарии",
+      "make com как пользоваться"
+    ],
+    "search_intent": "workflow",
+    "article_mode": "B"
+  },
+  "searches": [
+    {
+      "query_id": "primary_fresh",
+      "query": "автоматизация make 2026",
+      "purpose": "актуальный SERP по главному запросу",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Обзор Make.com 2026: Платформа визуальной автоматизации с ИИ",
+          "url": "https://fb.ru/article/602483/2026-obzor-make-com-platforma-vizualnoy-avtomatizatsii-s-ii",
+          "snippet": ""
+        },
+        {
+          "title": "AI Workflow Automation Software & Tools | Make",
+          "url": "https://www.make.com/en",
+          "snippet": "Подробный разбор платформы Make.com в 2026 году: новые функции ИИ-агентов, тарифные планы, преимущества для бизнеса и скрытые риски масштабирования."
+        },
+        {
+          "title": "Make.com как пользоваться: автоматизация без кода 2026",
+          "url": "https://soloai.ru/vibe/make-automation-guide",
+          "snippet": "Build and manage automations and AI agents - visually, in code, or with a prompt. From a simple workflow, to managing AI automation systems across your entire business, make it happen with Make. Whatever you want to automate, Make gets you moving. Visually design solutions without code to save time."
+        },
+        {
+          "title": "Автоматизация на Make.com — Обучение по контент-заводам",
+          "url": "https://mayai.ru/avtomatizaciya-make-com/",
+          "snippet": "Вердикт Make — отличный старт для автоматизаций без кода. За 1000 ops/мес бесплатно можно собрать 2-3 полезных сценария. Для роста — тариф от $9/мес. Альтернатива: n8n — если готов к self-host или n8n Cloud."
+        },
+        {
+          "title": "Как AI автоматизирует бизнес через Make: полный разбор",
+          "url": "https://www.aidohodsnulla.ru/2026/05/ai-make.html",
+          "snippet": "В этой статье мы подробно разберем, как устроена автоматизация на make com, с чего начинается базовая настройка make, как работают сценарии make и чем платформа отличается от конкурентов."
+        },
+        {
+          "title": "Как использовать Make AI для автоматизации всего вашего бизнеса (2026)",
+          "url": "https://www.fahimai.com/ru/how-to-use-make-ai/",
+          "snippet": "Как AI автоматизирует задачи через Make: сценарии, модули, ошибки и реальные кейсы. Полное руководство для новичков и профи."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "primary_recent",
+      "query": "автоматизация make июнь 2026",
+      "purpose": "свежее за текущий месяц",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Автоматизация на Make.com — Обучение по контент-заводам",
+          "url": "https://mayai.ru/avtomatizaciya-make-com/",
+          "snippet": ""
+        },
+        {
+          "title": "Автоматизация через Make.com: универсальный инструмент для ...",
+          "url": "https://vc.ru/ai/1962053-avtomatizatsiya-biznes-protsessov-s-make-com",
+          "snippet": "В этой статье мы подробно разберем, как устроена автоматизация на make com, с чего начинается базовая настройка make, как работают сценарии make и чем платформа отличается от конкурентов."
+        },
+        {
+          "title": "Роботы в производстве: как автоматизация меняет бизнес - 9 июня 2026 ...",
+          "url": "https://www.fontanka.ru/2026/06/09/76468542/",
+          "snippet": "Сегодня поделюсь классным инструментом автоматизации — Make.com, который значительно облегчает работу продакт-менеджеров и не только. В этой статье — всё, что нужно знать: от базовых функций Make.com до примеров автоматизации реальных бизнес-процессов."
+        },
+        {
+          "title": "Как AI автоматизирует бизнес через Make: полный разбор",
+          "url": "https://www.aidohodsnulla.ru/2026/05/ai-make.html",
+          "snippet": "Роботы меняют производство и логистику. Узнайте как автоматизация влияет на бизнес и какие задачи уже выполняют роботы. - Технологии - 9 июня 2026 | ФОНТАНКА.ру"
+        },
+        {
+          "title": "AI Workflow Automation Software & Tools | Make",
+          "url": "https://www.make.com/en",
+          "snippet": "Как AI автоматизирует задачи через Make: сценарии, модули, ошибки и реальные кейсы. Полное руководство для новичков и профи."
+        },
+        {
+          "title": "Библиотека готовых автоматизаций на Make",
+          "url": "https://automatica.club/",
+          "snippet": "Build and manage automations and AI agents - visually, in code, or with a prompt. From a simple workflow, to managing AI automation systems across your entire business, make it happen with Make. Whatever you want to automate, Make gets you moving. Visually design solutions without code to save time."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "news_angle",
+      "query": "автоматизация make новости 2026",
+      "purpose": "новости и обновления",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "ПМЭФ-2026: что меняется в автоматизации бизнеса",
+          "url": "https://habr.com/ru/companies/infostart/news/1044922/",
+          "snippet": ""
+        },
+        {
+          "title": "Обзор Make.com 2026: Платформа визуальной автоматизации с ИИ",
+          "url": "https://fb.ru/article/602483/2026-obzor-make-com-platforma-vizualnoy-avtomatizatsii-s-ii",
+          "snippet": "ПМЭФ-2026 ещё раз показал, что автоматизация всё реже воспринимается как отдельная IT-задача. Она становится частью более широкой управленческой повестки: как компании работают с данными, как..."
+        },
+        {
+          "title": "Автоматизация контента: n8n, Make и Zapier для контент-заводов в 2026 ...",
+          "url": "https://mayai.ru/avtomatizacziya-kontenta-n8n-make-i-zapier-dlya-kontent-zavodov-v-2026-godu/",
+          "snippet": "Подробный разбор платформы Make.com в 2026 году: новые функции ИИ-агентов, тарифные планы, преимущества для бизнеса и скрытые риски масштабирования."
+        },
+        {
+          "title": "Автоматизация через Make.com: универсальный инструмент для ...",
+          "url": "https://vc.ru/ai/1962053-avtomatizatsiya-biznes-protsessov-s-make-com",
+          "snippet": "Разбираем, как работают современные контент-заводы в 2026 году на базе n8n, Make и Zapier: от локальных LLM и автогенерации видео с цифровыми аватарами до публикации готового материала во все ..."
+        },
+        {
+          "title": "Как AI автоматизирует бизнес через Make: полный разбор",
+          "url": "https://www.aidohodsnulla.ru/2026/05/ai-make.html",
+          "snippet": "Сегодня поделюсь классным инструментом автоматизации — Make.com, который значительно облегчает работу продакт-менеджеров и не только. В этой статье — всё, что нужно знать: от базовых функций Make.com до примеров автоматизации реальных бизнес-процессов."
+        },
+        {
+          "title": "Автоматизация процессов Make: триггеры, экшены и роутеры в SMM ...",
+          "url": "https://osoldatova.ru/2026/01/19/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2-make-%D1%82%D1%80%D0%B8%D0%B3%D0%B3%D0%B5%D1%80%D1%8B-%D1%8D/",
+          "snippet": "Как AI автоматизирует задачи через Make: сценарии, модули, ошибки и реальные кейсы. Полное руководство для новичков и профи."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_1",
+      "query": "автоматизация make com 2026",
+      "purpose": "вторичный запрос: автоматизация make com",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Обзор Make.com 2026: Платформа визуальной автоматизации с ИИ",
+          "url": "https://fb.ru/article/602483/2026-obzor-make-com-platforma-vizualnoy-avtomatizatsii-s-ii",
+          "snippet": ""
+        },
+        {
+          "title": "Автоматизация на Make.com — Обучение по контент-заводам",
+          "url": "https://mayai.ru/avtomatizaciya-make-com/",
+          "snippet": "Подробный разбор платформы Make.com в 2026 году: новые функции ИИ-агентов, тарифные планы, преимущества для бизнеса и скрытые риски масштабирования."
+        },
+        {
+          "title": "2026 - Help Center",
+          "url": "https://help.make.com/2026",
+          "snippet": "В этой статье мы подробно разберем, как устроена автоматизация на make com, с чего начинается базовая настройка make, как работают сценарии make и чем платформа отличается от конкурентов."
+        },
+        {
+          "title": "Make.com как пользоваться: автоматизация без кода 2026",
+          "url": "https://soloai.ru/vibe/make-automation-guide",
+          "snippet": "May 11, 2026 New Make Functions app In this release, Make Functions app turns IML functions into chainable modules for clear, searchable, step‑by‑step data transformations. May 11, 2026 Deprecated OpenAI audio preview models Learn which OpenAI audio preview models are no longer available and which replacement models to use."
+        },
+        {
+          "title": "Автоматизация через Make.com: универсальный инструмент для ...",
+          "url": "https://vc.ru/ai/1962053-avtomatizatsiya-biznes-protsessov-s-make-com",
+          "snippet": "Что такое Make.com Make (ранее Integromat) — облачный конструктор автоматизаций. Ты собираешь сценарии из блоков: триггер → действие → действие."
+        },
+        {
+          "title": "Автоматизация контента на Make.com: упростите создание качественного ...",
+          "url": "https://blog.nedigital.ru/2026/01/19/avtomatizacziya-kontenta-na-make-com-uprostite-sozdanie-kachestvennogo-kontenta-dlya-vashego-biznesa/",
+          "snippet": "В этой статье — всё, что нужно знать: от базовых функций Make.com до примеров автоматизации реальных бизнес-процессов."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_2",
+      "query": "автоматизация процессов make 2026",
+      "purpose": "вторичный запрос: автоматизация процессов make",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "ПМЭФ-2026: что меняется в автоматизации бизнеса",
+          "url": "https://habr.com/ru/companies/infostart/news/1044922/",
+          "snippet": ""
+        },
+        {
+          "title": "Автоматизация процессов: n8n или Make.com — что выбрать в 2026?",
+          "url": "https://mayai.ru/avtomatizacziya-proczessov-n8n-ili-make-com-chto-vybrat-v-2026/",
+          "snippet": "ПМЭФ-2026 ещё раз показал, что автоматизация всё реже воспринимается как отдельная IT-задача. Она становится частью более широкой управленческой повестки: как компании работают с данными, как..."
+        },
+        {
+          "title": "AI Workflow Automation Software & Tools | Make",
+          "url": "https://www.make.com/en",
+          "snippet": "Кастомный модуль Make.com для ваших сценариев автоматизации. В 2026 году выбор между n8n и Make.com — это стратегическое решение между скоростью сборки и масштабируемостью. Если вам нужно быстро связать SaaS-сервисы без глубоких технических знаний, выбирайте Make (оплата за операции)."
+        },
+        {
+          "title": "Автоматизация процессов: n8n, Zapier или Make — что выбрать в 2026?",
+          "url": "https://sukhov-digital.ru/2026/04/19/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2-n8n-zapier-%D0%B8%D0%BB%D0%B8-make-%D1%87%D1%82%D0%BE/",
+          "snippet": "Build and manage automations and AI agents - visually, in code, or with a prompt. From a simple workflow, to managing AI automation systems across your entire business, make it happen with Make. Whatever you want to automate, Make gets you moving. Visually design solutions without code to save time."
+        },
+        {
+          "title": "Обзор Make.com 2026: Платформа визуальной автоматизации с ИИ",
+          "url": "https://fb.ru/article/602483/2026-obzor-make-com-platforma-vizualnoy-avtomatizatsii-s-ii",
+          "snippet": "Автоматизация процессов — это настройка программных сценариев в платформах вроде n8n, Make или Zapier, которая избавляет команду от рутины и передает пересылку данных машинам."
+        },
+        {
+          "title": "Make.com и n8n: автоматизация без кода с AI в 2026",
+          "url": "https://ai-uchi.ru/tools/make-com-n8n-avtomatizatsiia-bez-koda-ai-2026/",
+          "snippet": "В 2026 году платформа визуальной автоматизации Make.com эволюционировала из простого коннектора приложений в экосистему для создания автономных ИИ-агентов. Платформа предлагает визуальный контроль над сложными рабочими процессами, сохраняя баланс между гибкостью и мощностью."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_3",
+      "query": "make ai agent 2026",
+      "purpose": "вторичный запрос: make ai agent",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "How to Build AI Agents in 2026: A Practical 8-Step Blueprint",
+          "url": "https://www.linkedin.com/pulse/how-build-ai-agents-2026-practical-8-step-blueprint-vinod-b-c-qojac",
+          "snippet": ""
+        },
+        {
+          "title": "How to Build AI Agents in 2026: The Complete Guide From Zero to Production",
+          "url": "https://aitoolbriefing.com/guides/how-to-build-ai-agents-complete-guide-2026/",
+          "snippet": "By end of 2026, Gartner predicts 40% of enterprise applications will embed AI agents — up from under 5% in 2025. Here's your no-fluff blueprint to build one that actually works in..."
+        },
+        {
+          "title": "caramaschiHG/awesome-ai-agents-2026 - GitHub",
+          "url": "https://github.com/caramaschiHG/awesome-ai-agents-2026",
+          "snippet": "From simple automations to autonomous agents: a practical guide to building AI systems that take action. No PhD required, just working examples and real code."
+        },
+        {
+          "title": "How to Build an AI Agent from Scratch [2026] (Step-by-Step)",
+          "url": "https://precisionaiacademy.com/blog/how-to-build-ai-agent-2026",
+          "snippet": "The most comprehensive list of AI agents, frameworks, and tools in 2026."
+        },
+        {
+          "title": "Make AI Agents | Build transparent AI agents across 3000+ apps",
+          "url": "https://www.make.com/en/ai-agents",
+          "snippet": "By the end, you will understand exactly what an AI agent is, how to architect one correctly, which framework fits your situation, and how to build a working agent from scratch with a step-by-step walkthrough you can follow immediately."
+        },
+        {
+          "title": "Build an AI Agent From Scratch in 2026 (Python Tutorial + Code)",
+          "url": "https://www.agilesoftlabs.com/blog/2026/03/how-to-build-ai-agent-from-scratch-2026",
+          "snippet": "Build and orchestrate AI agents with full visibility across 3,000+ apps. Automate complex workflows with transparency, control, and measurable business impact."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_4",
+      "query": "make ии агенты 2026",
+      "purpose": "вторичный запрос: make ии агенты",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Как создать ИИ агента: честное руководство без воды (2026)",
+          "url": "https://ascn.ai/ru/blog-no-code/how-to-create-ai-agents-no-code-guide-2026",
+          "snippet": ""
+        },
+        {
+          "title": "Лучшие Платформы Ai Агентов 2026 Года: Топ Ии Инструментов Для ...",
+          "url": "https://plaan.ai/luchshiye-platformy-ai-agentov/",
+          "snippet": "Узнайте, как создать ИИ агента в 2026 году: пошаговое руководство по no-code платформам, фреймворкам и технологиям. Примеры для бизнеса."
+        },
+        {
+          "title": "ИИ-агенты в 2026 году: Как бизнес будет использовать их по-другому",
+          "url": "https://www.unite.ai/ru/ai-agents-in-2026-how-businesses-will-use-them-differently/",
+          "snippet": "Мировой рынок агентного ИИ вырос до 4,35 млрд долларов в 2025 году и, по прогнозам, достигнет 47,8 млрд к 2030-му. Вопрос уже не в том, стоит ли внедрять AI агентов, а в том, какую платформу выбрать под конкретную задачу. Именно это мы и разберём в этой статье."
+        },
+        {
+          "title": "Эра ИИ-агентов 2026: 5 трансформаций бизнеса, к которым нужно ...",
+          "url": "https://vc.ru/ai/2773292-era-ii-agentov-2026-kak-biznesu-podgotovitsya-k-izmeneniyam",
+          "snippet": "В 2026 году ИИ-агенты будут не заменять сотрудников, а дополнять человеческих работников и перестраивать рабочие процессы команд."
+        },
+        {
+          "title": "Тренды ИИ 2026: Агентный ИИ, мультиагенты и Edge AI — roadmap внедрения",
+          "url": "https://imigo.ai/ru/media/ai-trends-2026",
+          "snippet": "В 2026 году ключевым навыком станет не умение делать задачу руками, а навык управления роем ИИ-агентов. Сотрудники сместятся на уровень выше: • Постановка глобальных целей. • Распределение задач между нейросетями. • Финальный контроль качества и стратегия."
+        },
+        {
+          "title": "ИИ Агенты 2026: полный гайд — создание в Cursor и заработок",
+          "url": "https://vibecoding.by/blog/ii-agenty-polnyj-gajd-2026",
+          "snippet": "Тренды искусственного интеллекта 2026 фокусируются на агентном подходе и инфраструктуре. AI trends 2026 выделяют MCP-протокол для интеграции. Главные тренды ИИ в 2026 — мультиагенты и edge AI."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_5",
+      "query": "make сценарии 2026",
+      "purpose": "вторичный запрос: make сценарии",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Make в 2026: visual automation platform с AI Agents, MCP Server, AI Web ...",
+          "url": "https://aisrc.ru/tools/make",
+          "snippet": ""
+        },
+        {
+          "title": "Как AI автоматизирует бизнес через Make: полный разбор",
+          "url": "https://www.aidohodsnulla.ru/2026/05/ai-make.html",
+          "snippet": "Современный Make - это уже не только \"если пришла форма, отправь письмо\". Теперь он умеет быть и обычным автоматизатором, и слоем для AI agents: агент может использовать ваши сценарии как инструменты, ходить в web search, работать с knowledge files и выполнять реальные действия в бизнес-системах."
+        },
+        {
+          "title": "Автоматизация Make: как тестировать сценарии без риска и спама",
+          "url": "https://osoldatova.ru/2026/01/30/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-make-%D0%BA%D0%B0%D0%BA-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%81%D1%86%D0%B5%D0%BD/",
+          "snippet": "Как AI автоматизирует задачи через Make: сценарии, модули, ошибки и реальные кейсы. Полное руководство для новичков и профи."
+        },
+        {
+          "title": "Автоматизация контента: n8n, Make и Zapier для контент-заводов в 2026 ...",
+          "url": "https://mayai.ru/avtomatizacziya-kontenta-n8n-make-i-zapier-dlya-kontent-zavodov-v-2026-godu/",
+          "snippet": "Сценарий Make уверен, что письмо отправлено, но оно физически не уходит адресату, а падает в безопасную «песочницу» сервиса. Это идеальное решение для отладки HTML-верстки рассылок."
+        },
+        {
+          "title": "Make.com: свой MCP для подключения AI-агентов к сценариям",
+          "url": "https://dzen.ru/a/aXwSdrQyR0fE4xXg",
+          "snippet": "Сценарии Make теперь по умолчанию включают сборку полноценного мультимедиа. Платформа интегрируется с API генерации видео уровня Sora-2, выдавая не просто картинки, а динамичный видеоряд."
+        },
+        {
+          "title": "Make.com: Полное пошаговое руководство для начинающих по автоматизации ...",
+          "url": "https://kv-ai.ru/tpost/8er76d81o1-makecom-polnoe-poshagovoe-rukovodstvo-dl",
+          "snippet": "Model Context Protocol (MCP) на Make.com — это стандарт интеграции 2026 года, работающий как «USB-C порт» между вашими сценариями автоматизации и AI-агентами (Claude, ChatGPT, Local Llama)."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "secondary_6",
+      "query": "make com как пользоваться 2026",
+      "purpose": "вторичный запрос: make com как пользоваться",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Учебное руководство по Make.com для начинающих 2026 (Полное руководство ...",
+          "url": "https://www.youtube.com/watch?v=Z9yqaT-pwg8",
+          "snippet": ""
+        },
+        {
+          "title": "make.com: что это такое и как использовать маркетологу в 2026 — Spilno ...",
+          "url": "https://spilnoagency.com.ua/ru/instructions-ru/make-com-avtomatizatsiya-dlya-marketologa",
+          "snippet": "Узнайте, как создавать мощные автоматизации с нуля, подключать приложения, создавать ИИ-агентов и собирать данные из веба."
+        },
+        {
+          "title": "Make.com: Учебное пособие для начинающих 2026 (Полное руководство)",
+          "url": "https://lilys.ai/ru/notes/solopreneur-automation-20260202/make-tutorial-beginners-guide",
+          "snippet": "make.com — сервис автоматизации маркетинга. Полный гайд 2026: что такое make.com, 5 интеграций для Google Ads, Meta Ads и TikTok Ads, тарифы, советы для маркетолога."
+        },
+        {
+          "title": "Make.com как пользоваться: автоматизация без кода 2026",
+          "url": "https://soloai.ru/vibe/make-automation-guide",
+          "snippet": "Этот полный учебник по Make.com для начинающих научит вас создавать мощные автоматизации с нуля, не требуя навыков кодирования. Вы построите реальный рабочий процесс, который автоматически обрабатывает заявки с контактных форм, выполняет веб-скрейпинг и использует AI-агентов для планирования встреч и отправки персонализированных электронных писем."
+        },
+        {
+          "title": "Make.com: настройка контент-завода с нуля за вечер — гайд 2026",
+          "url": "https://mayai.ru/make-com-nastrojka-kontent-zavoda-s-nulya-za-vecher-gajd-2026/",
+          "snippet": "Вердикт Make — отличный старт для автоматизаций без кода. За 1000 ops/мес бесплатно можно собрать 2-3 полезных сценария. Для роста — тариф от $9/мес. Альтернатива: n8n — если готов к self-host или n8n Cloud."
+        },
+        {
+          "title": "Make.com: Полное пошаговое руководство для начинающих по автоматизации ...",
+          "url": "https://kv-ai.ru/tpost/8er76d81o1-makecom-polnoe-poshagovoe-rukovodstvo-dl",
+          "snippet": "Ниже — подробная инструкция о том, как настроить систему, которая сама анализирует данные, пишет тексты, генерирует видео с аватарами и проходит цензуру без вашего постоянного участия."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    },
+    {
+      "query_id": "h1_fresh",
+      "query": "Как настроить автоматизацию Make с AI Agents и MCP: пошаговый workflow для бизнеса 2026",
+      "purpose": "SERP по H1",
+      "result_count": 6,
+      "results": [
+        {
+          "title": "Make.com: свой MCP для подключения AI-агентов к сценариям",
+          "url": "https://dzen.ru/a/aXwSdrQyR0fE4xXg",
+          "snippet": ""
+        },
+        {
+          "title": "Как использовать Make AI для автоматизации всего вашего бизнеса (2026)",
+          "url": "https://www.fahimai.com/ru/how-to-use-make-ai/",
+          "snippet": "Model Context Protocol (MCP) на Make.com — это стандарт интеграции 2026 года, работающий как «USB-C порт» между вашими сценариями автоматизации и AI-агентами (Claude, ChatGPT, Local Llama)."
+        },
+        {
+          "title": "Как создать AI Агента в Make.com: Полный гайд по обновлению",
+          "url": "https://rutube.ru/video/9bfde0d1e3a65d6fa04a467d9b4dca84/",
+          "snippet": "Освойте использование Make AI для создания автономных рабочих процессов и ИИ-агентов в 2026 году. Это пошаговое руководство сэкономит вам часы ручной работы. Нажмите, чтобы начать ..."
+        },
+        {
+          "title": "Раскройте суперсилы автоматизации: AI-агенты + Make.com с MCP",
+          "url": "https://www.aitoolgo.com/ru/learning/detail/connecting-ai-agents-to-make-com-with-mcp-mindpal-blog",
+          "snippet": "Вы узнаете, как создавать умных SEO-агентов с доступом к Яндекс.Вордстат, использовать логику субагентов для сложных задач и правильно структурировать данные на выходе."
+        },
+        {
+          "title": "Make com и MCP: как внедрить агентов для автоматизации контента",
+          "url": "https://mayai.ru/make-com-i-mcp-kak-vnedrit-agentov-dlya-avtomatizaczii-kontenta/",
+          "snippet": "Узнайте, как подключить AI-агентов к Make.com с помощью протокола контекста модели (MCP) для мощной автоматизации. Оптимизируйте рабочие процессы и повысьте эффективность."
+        },
+        {
+          "title": "Make AI Agents - Help Center",
+          "url": "https://help.make.com/make-ai-agents",
+          "snippet": "Make.com + MCP (Model Context Protocol) — это экосистема автоматизации 2026 года, где автономные AI-агенты подключаются к внешним инструментам (GitHub, Google Drive, CMS) через стандартизированный протокол без написания сложного кода API."
+        }
+      ],
+      "searched_at": "2026-06-16"
+    }
+  ],
+  "errors": [],
+  "unique_urls": [
+    {
+      "url": "https://fb.ru/article/602483/2026-obzor-make-com-platforma-vizualnoy-avtomatizatsii-s-ii",
+      "title": "Обзор Make.com 2026: Платформа визуальной автоматизации с ИИ",
+      "from_query": "автоматизация make 2026"
+    },
+    {
+      "url": "https://www.make.com/en",
+      "title": "AI Workflow Automation Software & Tools | Make",
+      "from_query": "автоматизация make 2026"
+    },
+    {
+      "url": "https://soloai.ru/vibe/make-automation-guide",
+      "title": "Make.com как пользоваться: автоматизация без кода 2026",
+      "from_query": "автоматизация make 2026"
+    },
+    {
+      "url": "https://mayai.ru/avtomatizaciya-make-com/",
+      "title": "Автоматизация на Make.com — Обучение по контент-заводам",
+      "from_query": "автоматизация make 2026"
+    },
+    {
+      "url": "https://www.aidohodsnulla.ru/2026/05/ai-make.html",
+      "title": "Как AI автоматизирует бизнес через Make: полный разбор",
+      "from_query": "автоматизация make 2026"
+    },
+    {
+      "url": "https://www.fahimai.com/ru/how-to-use-make-ai/",
+      "title": "Как использовать Make AI для автоматизации всего вашего бизнеса (2026)",
+      "from_query": "автоматизация make 2026"
+    },
+    {
+      "url": "https://vc.ru/ai/1962053-avtomatizatsiya-biznes-protsessov-s-make-com",
+      "title": "Автоматизация через Make.com: универсальный инструмент для ...",
+      "from_query": "автоматизация make июнь 2026"
+    },
+    {
+      "url": "https://www.fontanka.ru/2026/06/09/76468542/",
+      "title": "Роботы в производстве: как автоматизация меняет бизнес - 9 июня 2026 ...",
+      "from_query": "автоматизация make июнь 2026"
+    },
+    {
+      "url": "https://automatica.club/",
+      "title": "Библиотека готовых автоматизаций на Make",
+      "from_query": "автоматизация make июнь 2026"
+    },
+    {
+      "url": "https://habr.com/ru/companies/infostart/news/1044922/",
+      "title": "ПМЭФ-2026: что меняется в автоматизации бизнеса",
+      "from_query": "автоматизация make новости 2026"
+    },
+    {
+      "url": "https://mayai.ru/avtomatizacziya-kontenta-n8n-make-i-zapier-dlya-kontent-zavodov-v-2026-godu/",
+      "title": "Автоматизация контента: n8n, Make и Zapier для контент-заводов в 2026 ...",
+      "from_query": "автоматизация make новости 2026"
+    },
+    {
+      "url": "https://osoldatova.ru/2026/01/19/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2-make-%D1%82%D1%80%D0%B8%D0%B3%D0%B3%D0%B5%D1%80%D1%8B-%D1%8D/",
+      "title": "Автоматизация процессов Make: триггеры, экшены и роутеры в SMM ...",
+      "from_query": "автоматизация make новости 2026"
+    },
+    {
+      "url": "https://help.make.com/2026",
+      "title": "2026 - Help Center",
+      "from_query": "автоматизация make com 2026"
+    },
+    {
+      "url": "https://blog.nedigital.ru/2026/01/19/avtomatizacziya-kontenta-na-make-com-uprostite-sozdanie-kachestvennogo-kontenta-dlya-vashego-biznesa/",
+      "title": "Автоматизация контента на Make.com: упростите создание качественного ...",
+      "from_query": "автоматизация make com 2026"
+    },
+    {
+      "url": "https://mayai.ru/avtomatizacziya-proczessov-n8n-ili-make-com-chto-vybrat-v-2026/",
+      "title": "Автоматизация процессов: n8n или Make.com — что выбрать в 2026?",
+      "from_query": "автоматизация процессов make 2026"
+    },
+    {
+      "url": "https://sukhov-digital.ru/2026/04/19/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2-n8n-zapier-%D0%B8%D0%BB%D0%B8-make-%D1%87%D1%82%D0%BE/",
+      "title": "Автоматизация процессов: n8n, Zapier или Make — что выбрать в 2026?",
+      "from_query": "автоматизация процессов make 2026"
+    },
+    {
+      "url": "https://ai-uchi.ru/tools/make-com-n8n-avtomatizatsiia-bez-koda-ai-2026/",
+      "title": "Make.com и n8n: автоматизация без кода с AI в 2026",
+      "from_query": "автоматизация процессов make 2026"
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/how-build-ai-agents-2026-practical-8-step-blueprint-vinod-b-c-qojac",
+      "title": "How to Build AI Agents in 2026: A Practical 8-Step Blueprint",
+      "from_query": "make ai agent 2026"
+    },
+    {
+      "url": "https://aitoolbriefing.com/guides/how-to-build-ai-agents-complete-guide-2026/",
+      "title": "How to Build AI Agents in 2026: The Complete Guide From Zero to Production",
+      "from_query": "make ai agent 2026"
+    },
+    {
+      "url": "https://github.com/caramaschiHG/awesome-ai-agents-2026",
+      "title": "caramaschiHG/awesome-ai-agents-2026 - GitHub",
+      "from_query": "make ai agent 2026"
+    },
+    {
+      "url": "https://precisionaiacademy.com/blog/how-to-build-ai-agent-2026",
+      "title": "How to Build an AI Agent from Scratch [2026] (Step-by-Step)",
+      "from_query": "make ai agent 2026"
+    },
+    {
+      "url": "https://www.make.com/en/ai-agents",
+      "title": "Make AI Agents | Build transparent AI agents across 3000+ apps",
+      "from_query": "make ai agent 2026"
+    },
+    {
+      "url": "https://www.agilesoftlabs.com/blog/2026/03/how-to-build-ai-agent-from-scratch-2026",
+      "title": "Build an AI Agent From Scratch in 2026 (Python Tutorial + Code)",
+      "from_query": "make ai agent 2026"
+    },
+    {
+      "url": "https://ascn.ai/ru/blog-no-code/how-to-create-ai-agents-no-code-guide-2026",
+      "title": "Как создать ИИ агента: честное руководство без воды (2026)",
+      "from_query": "make ии агенты 2026"
+    },
+    {
+      "url": "https://plaan.ai/luchshiye-platformy-ai-agentov/",
+      "title": "Лучшие Платформы Ai Агентов 2026 Года: Топ Ии Инструментов Для ...",
+      "from_query": "make ии агенты 2026"
+    },
+    {
+      "url": "https://www.unite.ai/ru/ai-agents-in-2026-how-businesses-will-use-them-differently/",
+      "title": "ИИ-агенты в 2026 году: Как бизнес будет использовать их по-другому",
+      "from_query": "make ии агенты 2026"
+    },
+    {
+      "url": "https://vc.ru/ai/2773292-era-ii-agentov-2026-kak-biznesu-podgotovitsya-k-izmeneniyam",
+      "title": "Эра ИИ-агентов 2026: 5 трансформаций бизнеса, к которым нужно ...",
+      "from_query": "make ии агенты 2026"
+    },
+    {
+      "url": "https://imigo.ai/ru/media/ai-trends-2026",
+      "title": "Тренды ИИ 2026: Агентный ИИ, мультиагенты и Edge AI — roadmap внедрения",
+      "from_query": "make ии агенты 2026"
+    },
+    {
+      "url": "https://vibecoding.by/blog/ii-agenty-polnyj-gajd-2026",
+      "title": "ИИ Агенты 2026: полный гайд — создание в Cursor и заработок",
+      "from_query": "make ии агенты 2026"
+    },
+    {
+      "url": "https://aisrc.ru/tools/make",
+      "title": "Make в 2026: visual automation platform с AI Agents, MCP Server, AI Web ...",
+      "from_query": "make сценарии 2026"
+    },
+    {
+      "url": "https://osoldatova.ru/2026/01/30/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-make-%D0%BA%D0%B0%D0%BA-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%81%D1%86%D0%B5%D0%BD/",
+      "title": "Автоматизация Make: как тестировать сценарии без риска и спама",
+      "from_query": "make сценарии 2026"
+    },
+    {
+      "url": "https://dzen.ru/a/aXwSdrQyR0fE4xXg",
+      "title": "Make.com: свой MCP для подключения AI-агентов к сценариям",
+      "from_query": "make сценарии 2026"
+    },
+    {
+      "url": "https://kv-ai.ru/tpost/8er76d81o1-makecom-polnoe-poshagovoe-rukovodstvo-dl",
+      "title": "Make.com: Полное пошаговое руководство для начинающих по автоматизации ...",
+      "from_query": "make сценарии 2026"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Z9yqaT-pwg8",
+      "title": "Учебное руководство по Make.com для начинающих 2026 (Полное руководство ...",
+      "from_query": "make com как пользоваться 2026"
+    },
+    {
+      "url": "https://spilnoagency.com.ua/ru/instructions-ru/make-com-avtomatizatsiya-dlya-marketologa",
+      "title": "make.com: что это такое и как использовать маркетологу в 2026 — Spilno ...",
+      "from_query": "make com как пользоваться 2026"
+    },
+    {
+      "url": "https://lilys.ai/ru/notes/solopreneur-automation-20260202/make-tutorial-beginners-guide",
+      "title": "Make.com: Учебное пособие для начинающих 2026 (Полное руководство)",
+      "from_query": "make com как пользоваться 2026"
+    },
+    {
+      "url": "https://mayai.ru/make-com-nastrojka-kontent-zavoda-s-nulya-za-vecher-gajd-2026/",
+      "title": "Make.com: настройка контент-завода с нуля за вечер — гайд 2026",
+      "from_query": "make com как пользоваться 2026"
+    },
+    {
+      "url": "https://rutube.ru/video/9bfde0d1e3a65d6fa04a467d9b4dca84/",
+      "title": "Как создать AI Агента в Make.com: Полный гайд по обновлению",
+      "from_query": "Как настроить автоматизацию Make с AI Agents и MCP: пошаговый workflow для бизнеса 2026"
+    },
+    {
+      "url": "https://www.aitoolgo.com/ru/learning/detail/connecting-ai-agents-to-make-com-with-mcp-mindpal-blog",
+      "title": "Раскройте суперсилы автоматизации: AI-агенты + Make.com с MCP",
+      "from_query": "Как настроить автоматизацию Make с AI Agents и MCP: пошаговый workflow для бизнеса 2026"
+    },
+    {
+      "url": "https://mayai.ru/make-com-i-mcp-kak-vnedrit-agentov-dlya-avtomatizaczii-kontenta/",
+      "title": "Make com и MCP: как внедрить агентов для автоматизации контента",
+      "from_query": "Как настроить автоматизацию Make с AI Agents и MCP: пошаговый workflow для бизнеса 2026"
+    },
+    {
+      "url": "https://help.make.com/make-ai-agents",
+      "title": "Make AI Agents - Help Center",
+      "from_query": "Как настроить автоматизацию Make с AI Agents и MCP: пошаговый workflow для бизнеса 2026"
+    }
+  ]
+}

@@ -18,6 +18,29 @@ description: Директор Excalibur BLOG — оркестратор Task(sub
 - В начале прогона — **полная перезапись** (новая сессия)
 - Последовательные агенты дописывают блоки в handoff
 
+## Incident memory + fixer loop
+
+- **Durable memory:** `memory/pipeline-fix-queue.md`
+- **Contract:** `shared/pipeline-incident-fix-contract.md`
+- Каждый Task в своём handoff/fragment обязан указать `incident_report: none | memory/pipeline-fix-queue.md#INC-...`.
+- Если сам Директор делает shell workaround, retry, ручное восстановление или ловит blocker из-за stale contract/script/env — он дописывает incident в `memory/pipeline-fix-queue.md`.
+- После `PIPELINE DONE` или терминального blocker Директор читает очередь. Если есть `status: open` по текущему run — запускает fixer.
+- Fixer Task:
+
+```text
+Task(excalibur-blog-fixer)
+```
+
+Fallback, если typed Task недоступен:
+
+```text
+Task(generalPurpose):
+Прочитай .cursor/agents/excalibur-blog-fixer.md + .cursor/skills/fixer-excalibur-blog/SKILL.md + shared/pipeline-incident-fix-contract.md.
+Исправь open incidents из memory/pipeline-fix-queue.md durable repo changes, запусти проверки, обнови очередь.
+```
+
+Не начинать следующую тему, пока blocker-инциденты текущего run не `fixed` или `needs-human`.
+
 ## Fragments (cover || schema)
 
 Параллельные агенты пишут **только** во фрагменты:
@@ -113,7 +136,7 @@ Task(excalibur-blog-geo-qa)
 
 | Task | Задача |
 |------|--------|
-| `excalibur-blog-cover` | ONE MCP quad i2i + design code → cover + 3 inline (см. cover-excalibur-blog SKILL) |
+| `excalibur-blog-cover` | ONE Kie API quad i2i + design code → cover + 3 inline (см. cover-excalibur-blog SKILL) |
 | `excalibur-blog-schema` | schema.jsonld BlogPosting + FAQPage |
 
 Почему параллельно: разные выходные файлы; общий вход после QA PASS. Cover/schema → fragments `.cursor/excalibur-blog-fragments/`; директор переносит в handoff.
@@ -159,6 +182,17 @@ Preflight link-verify → dry-run → publish → ledger + handoff === EXCALIBUR
 Task(excalibur-blog-publish)
 ```
 
+### Шаг 7 — Fixer loop (post-run)
+
+После publish, skip publish или терминального blocker:
+
+1. Прочитай `memory/pipeline-fix-queue.md`.
+2. Если по текущему run есть `status: open`, запусти `Task(excalibur-blog-fixer)`.
+3. Fixer обязан сделать durable repo changes и обновить очередь до `fixed` или `needs-human`.
+4. В `PIPELINE DONE` укажи `incident_queue: clean | fixed | needs-human`.
+
+Если open-инцидентов нет — `incident_queue: clean`.
+
 ## Почему параллельно только cover || schema
 
 | Параллельно | Почему безопасно |
@@ -192,4 +226,5 @@ topic_id:
 article_dir:
 qa:
 publish:
+incident_queue:
 ```

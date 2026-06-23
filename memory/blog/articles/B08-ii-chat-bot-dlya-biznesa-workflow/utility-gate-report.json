@@ -1,0 +1,25 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory/blog/articles/B08-ii-chat-bot-dlya-biznesa-workflow",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 10,
+        "h2_sections": 6,
+        "faq_h3": 6,
+        "tables": 1,
+        "blockquotes": 3,
+        "ul_lists": 1,
+        "action_markers": 12,
+        "pain_markers": 5,
+        "outcome_markers": 7,
+        "water_hits": []
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

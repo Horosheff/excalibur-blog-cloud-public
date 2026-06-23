@@ -1,0 +1,50 @@
+{
+  "topic_id": "B04",
+  "slug": "geo-optimizaciya-sajta-2026",
+  "cover_family": "brand_collage",
+  "style_preset": "digital_meme_collage_ru",
+  "pipeline": "quad_canvas_1x_mcp",
+  "file": "cover/cover.png",
+  "alt": "Ведущий блога: DIY-коллаж GEO — нейросеть с лупой над сайтом, чек-лист стикеры GEO/AEO",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-06-11T20:23:37+03:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Ведущий блога: DIY-коллаж GEO — нейросеть с лупой над сайтом, чек-лист стикеры GEO/AEO",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Сравнительная таблица SEO vs GEO vs AEO: чем отличаются в 2026",
+      "h2_anchor": "1. Разберите, чем GEO отличается от SEO в 2026",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Чек-лист аудита: цитирует ли вас нейровыдача сегодня",
+      "h2_anchor": "2. Проверьте, цитирует ли вас нейровыдача сегодня",
+      "visual_type": "checklist_board",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Схема workflow: перестройка контента под извлечение ИИ",
+      "h2_anchor": "3. Перестройте контент под извлечение ИИ",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    }
+  ]
+}

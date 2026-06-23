@@ -1,0 +1,8 @@
+{
+  "task_id": "4ae8403b6ae77dfd1a8d62805d31098a",
+  "source": "kie-api",
+  "model": "gpt-image-2-image-to-image",
+  "state": "success",
+  "result_path": "memory/blog/articles/B09-sozdat-llms-txt-dlya-sajta/cover/quad-mcp-result.json",
+  "updated_at_epoch": 1781640984
+}

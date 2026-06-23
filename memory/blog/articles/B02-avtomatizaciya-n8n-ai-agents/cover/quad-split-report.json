@@ -1,0 +1,95 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory\\blog\\articles\\B02-avtomatizaciya-n8n-ai-agents\\cover\\canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1024,
+      576
+    ],
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1024,
+          "bottom": 576
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Артур Хорошев у конструктора n8n: робот собирает ИИ-агента из кубиков-интеграций, розовые стикеры LangChain и AI Agent",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1024,
+          "top": 0,
+          "right": 2048,
+          "bottom": 576
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Сравнение способов запуска n8n в 2026: Cloud, self-host, Docker",
+        "h2_anchor": "1. Выберите способ запуска n8n в 2026"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 576,
+          "right": 1024,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема пошагового создания ИИ-агента в n8n: Chat Trigger, AI Agent, Tools",
+        "h2_anchor": "2. Создайте первого ИИ-агента в n8n пошагово"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1024,
+          "top": 576,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Чеклист подключения RAG и памяти в n8n без кода",
+        "h2_anchor": "3. Подключите память и базу знаний (RAG) без кода"
+      }
+    }
+  },
+  "html_inject": [
+    "injected inline_1 after H2 — 1. Выберите способ запуска n8n в 2026",
+    "injected inline_2 after H2 — 2. Создайте первого ИИ-агента в n8n пошагово",
+    "injected inline_3 after H2 — 3. Подключите память и базу знаний (RAG) без кода"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "agent": "excalibur-blog-cover-quad-split",
+  "status": "PASS",
+  "manifest": "cover/quad-manifest.json",
+  "split": {
+    "source_canvas": "memory\\blog\\articles\\B01-primer-seo-stati\\cover\\canvas-quad.png",
+    "source_size_px": [
+      2048,
+      1152
+    ],
+    "panel_size_px": [
+      1024,
+      576
+    ],
+    "output_size_px": [
+      1200,
+      675
+    ],
+    "outputs": {
+      "cover": {
+        "file": "cover/cover.png",
+        "quadrant": "top_left",
+        "box_px": {
+          "left": 0,
+          "top": 0,
+          "right": 1024,
+          "bottom": 576
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Ведущий блога: мем-коллаж — SEO-текст, который люди дочитают",
+        "h2_anchor": null
+      },
+      "inline_1": {
+        "file": "cover/inline-01.png",
+        "quadrant": "top_right",
+        "box_px": {
+          "left": 1024,
+          "top": 0,
+          "right": 2048,
+          "bottom": 576
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Сравнительная таблица / UI-мокап: Зачем SEO и GEO в одной статье",
+        "h2_anchor": "Зачем SEO и GEO в одной статье"
+      },
+      "inline_2": {
+        "file": "cover/inline-02.png",
+        "quadrant": "bottom_left",
+        "box_px": {
+          "left": 0,
+          "top": 576,
+          "right": 1024,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "Схема workflow / шаги: Структура longread: от семантики до читабельности",
+        "h2_anchor": "Структура longread: от семантики до читабельности"
+      },
+      "inline_3": {
+        "file": "cover/inline-03.png",
+        "quadrant": "bottom_right",
+        "box_px": {
+          "left": 1024,
+          "top": 576,
+          "right": 2048,
+          "bottom": 1152
+        },
+        "size_px": [
+          1200,
+          675
+        ],
+        "aspect_ratio": "16:9",
+        "alt": "FAQ + schema / JSON-LD UI: FAQ и schema: зачем и как",
+        "h2_anchor": "FAQ и schema: зачем и как"
+      }
+    }
+  },
+  "html_inject": [
+    "skip inline_1: already injected",
+    "skip inline_2: already injected",
+    "skip inline_3: already injected"
+  ]
+}

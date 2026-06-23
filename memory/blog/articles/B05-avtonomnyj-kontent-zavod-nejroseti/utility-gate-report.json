@@ -1,0 +1,23 @@
+{
+  "policy_id": "utility_only_v1",
+  "overall": "PASS",
+  "reports": [
+    {
+      "gate": "article",
+      "article_dir": "memory\\blog\\articles\\B05-avtonomnyj-kontent-zavod-nejroseti",
+      "status": "PASS",
+      "metrics": {
+        "numbered_list_items": 6,
+        "h2_sections": 7,
+        "faq_h3": 5,
+        "tables": 1,
+        "blockquotes": 4,
+        "ul_lists": 1,
+        "action_markers": 8,
+        "water_hits": []
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

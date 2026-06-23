@@ -1,0 +1,257 @@
+<p>Вы вкладываетесь в SEO, а ChatGPT и Алиса отвечают на запросы клиентов без перехода на ваш сайт? GEO (Generative Engine Optimization) – настройка страниц так, чтобы нейросети цитировали вас как источник. За 60–90 минут вы проверите robots.txt, добавите блоки "ответ сразу" и FAQ, внедрите Schema.org и составите таблицу мониторинга. Ниже – чек-лист geo оптимизации сайта с приоритетами: сначала критичное, потом важное и бонус.</p>
+
+<blockquote><b>TL;DR / Быстрый инсайт:</b> GEO – оптимизация под генеративный поиск: ChatGPT, Perplexity, Яндекс с Алисой. SEO даёт клик; GEO – цитату в ответе ИИ. Минимум: robots.txt для AI-ботов, прямой ответ в первых абзацах, FAQ до 80 слов, JSON-LD FAQPage и Article, аудит 20–30 промптов. Princeton GEO-bench: цитаты и цифры дают +30–40% visibility. SEO остаётся базой: 74% брендов из топ-10 Google есть в ChatGPT.</blockquote>
+
+<p>Запрос "geo оптимизация" – около 981 показа/мес в Wordstat, "geo оптимизация сайта" – 248. Люди ищут чек-лист: с чего начать geo оптимизацию. Это не локальная geo-SEO про карты – речь о Generative Engine Optimization.</p>
+
+<p>Нейропоиск работает иначе классической выдачи. RAG (Retrieval-Augmented Generation) – ИИ сначала находит куски текста на сайтах, потом собирает ответ со ссылками. Представьте библиотекаря с карточками: он цитирует найденное, а не выдумывает из головы. Яндекс Нейро отбирает 5 источников из топ-30 органики; YandexGPT опирается на текст страницы, а не на "память" модели. С мая 2025 в поиске Яндекса Алиса заменила вертикаль "Нейро" – тексты генерирует YandexGPT 5 Pro. Значит, geo seo оптимизация начинается с доступа AI-краулеров и структуры, которую легко вырезать в цитату.</p>
+
+<h2 id="geo-vs-seo">1. Разберите, чем GEO отличается от SEO в 2026</h2>
+<figure class="inline-quad" data-slot="inline_1">
+  <img src="cover/inline-01.png" alt="Сравнительная таблица SEO vs GEO vs AEO: чем отличаются в 2026" loading="lazy">
+</figure>
+
+
+<p>SEO – позиция и клик в Google/Яндексе. GEO – цитирование в AI Overviews, Perplexity, ChatGPT, Алисе. AEO – короткий прямой ответ в начале страницы для блока "ответ".</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Критерий</th>
+      <th>SEO</th>
+      <th>GEO</th>
+      <th>AEO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Цель</b></td>
+      <td>Клик из выдачи</td>
+      <td>Цитата в ответе ИИ</td>
+      <td>Готовый фрагмент</td>
+    </tr>
+    <tr>
+      <td><b>Метрика</b></td>
+      <td>Позиция, CTR</td>
+      <td>Share of Voice</td>
+      <td>Answer block</td>
+    </tr>
+    <tr>
+      <td><b>Контент</b></td>
+      <td>Ключи + глубина</td>
+      <td>Answer-first, FAQ</td>
+      <td>40–80 слов</td>
+    </tr>
+    <tr>
+      <td><b>Техника</b></td>
+      <td>Sitemap, CWV</td>
+      <td>robots.txt, HTML</td>
+      <td>FAQPage Schema</td>
+    </tr>
+    <tr>
+      <td><b>Срок</b></td>
+      <td>Недели–месяцы</td>
+      <td>3–6 недель</td>
+      <td>Быстрее на FAQ</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <b>Итоговый вердикт:</b> GEO не заменяет SEO – 74% брендов из топ-10 Google есть в ChatGPT (Seer Interactive). <b>Делайте:</b> усиливайте money-pages структурой для цитирования. <b>Не делайте:</b> бросать классическую оптимизацию.
+</blockquote>
+
+<h2 id="audit-presence">2. Проверьте, цитирует ли вас нейровыдача сегодня</h2>
+<figure class="inline-quad" data-slot="inline_2">
+  <img src="cover/inline-02.png" alt="Чек-лист аудита: цитирует ли вас нейровыдача сегодня" loading="lazy">
+</figure>
+
+
+<p>Без baseline не поймёте, сработали ли правки. Соберите 20–30 промптов: брендовые, коммерческие, информационные. Прогоните в ChatGPT, Perplexity и Алисе. Зафиксируйте: есть ли ваш URL, упоминается ли бренд.</p>
+
+<blockquote>
+  <b>Схема аудита:</b>
+  <br>
+  Промпты → ChatGPT + Perplexity + Алиса → таблица "цитата да/нет" → robots.txt → view-source URL
+</blockquote>
+
+<ol>
+  <li><b>Шаг 1: Таблица промптов.</b> Колонки: запрос, платформы, дата, URL в ответе.</li>
+  <li><b>Шаг 2: robots.txt.</b> Нет Disallow: / для GPTBot, PerplexityBot, OAI-SearchBot, Google-Extended, YandexBot.</li>
+  <li><b>Шаг 3: HTML.</b> View-source: текст виден без JavaScript.</li>
+  <li><b>Шаг 4: Rich Results Test.</b> Нет ошибок FAQPage/Article.</li>
+  <li><b>Шаг 5: Органика.</b> Топ-30 по запросу повышает шанс в Яндекс Нейро, но структура решает цитату.</li>
+</ol>
+
+<p>Около 35% русскоязычных сайтов блокируют GPTBot – конкуренты сами закрывают себе дверь. <b>Делайте:</b> сохраните baseline в Google Sheets до любых правок. <b>Не делайте:</b> судить по одному промпту – нужна выборка минимум 20 запросов.</p>
+
+<blockquote>
+  <b>Пример robots.txt</b> (Allow для AI-ботов, Disallow только на служебные разделы):<br>
+  User-agent: GPTBot<br>
+  Allow: /<br>
+  <br>
+  User-agent: PerplexityBot<br>
+  Allow: /<br>
+  <br>
+  User-agent: Google-Extended<br>
+  Allow: /<br>
+  <br>
+  Disallow: /admin/
+</blockquote>
+
+<h2 id="content-structure">3. Перестройте контент под извлечение ИИ</h2>
+<figure class="inline-quad" data-slot="inline_3">
+  <img src="cover/inline-03.png" alt="Схема workflow: перестройка контента под извлечение ИИ" loading="lazy">
+</figure>
+
+
+<p>44,2% цитат LLM – в первых 30% текста (Grows Memo, 2026). Формат "вопрос → ответ до 80 слов" цитируется чаще всего. Keyword stuffing в GEO хуже baseline на ~10% (Princeton).</p>
+
+<p><b>Answer-first</b> после H1/H2, <b>TL;DR</b> в начале longread, <b>FAQ 5–7</b> с ответами до 80 слов, <b>таблицы с цифрами</b> (+30–40% visibility по Princeton). 68,7% цитируемых страниц – с чёткими H2–H4. Перелинковка hub → spoke; образец – пример SEO-статьи (B01, href после публикации на mayai.ru).</p>
+
+<p><b>Делайте:</b> обновите 3–5 URL за неделю. <b>Не делайте:</b> прятать ответ за paywall – ИИ не процитирует.</p>
+
+<h2 id="schema-robots">4. Настройте Schema.org и доступ AI-краулеров</h2>
+
+<p>Schema.org – словарь подсказок для поисковиков и ИИ: кто вы, что за статья, какие вопросы на странице. FAQPage, Article и Organization снижают риск "галлюцинаций" о бренде. JSON-LD – формат разметки; проверяйте в <a href="https://search.google.com/test/rich-results" target="_blank">Google Rich Results Test</a>.</p>
+
+<p>Минимальный набор для geo оптимизации контента: Organization + WebSite на главной (logo, sameAs), Article на блоге (author, datePublished, dateModified), FAQPage там, где FAQ виден пользователю, HowTo – бонус для инструкций. Google-Extended блокируется только через product token – не путайте с Googlebot. llms.txt опционален и не заменяет robots.txt (Habr, 2026). Sitemap.xml с блогом, FAQ и услугами. Title до 60 символов, description до 160 с вопросом пользователя. Даты на видимом месте. TTFB (время первого байта) – до 2–3 с, чтобы AI-fetch не отвалился.</p>
+
+<p><b>Делайте:</b> обновляйте dateModified. <b>Не делайте:</b> FAQ в schema без HTML на странице.</p>
+
+<h2 id="checklist-geo">5. Пройдите чек-лист GEO-оптимизации: 32 пункта</h2>
+
+<p>Сначала "Критично", затем "Важно", потом "Бонус".</p>
+
+<p><b>Критично</b></p>
+<ol>
+  <li>robots.txt не блокирует AI-ботов.</li>
+  <li>Allow для GPTBot, PerplexityBot, OAI-SearchBot, ClaudeBot, Google-Extended, YandexBot.</li>
+  <li>Контент без обязательного JS.</li>
+  <li>Прямой ответ в первых абзацах money-page.</li>
+  <li>FAQ 5–7, ответ до 80 слов.</li>
+  <li>JSON-LD FAQPage.</li>
+  <li>JSON-LD Organization + Article.</li>
+  <li>Rich Results Test без ошибок.</li>
+  <li>Актуальный sitemap.xml.</li>
+  <li>Title до 60, description до 160.</li>
+  <li>Даты публикации и обновления видны.</li>
+  <li>20–30 промптов в ChatGPT, Алисе, Perplexity.</li>
+</ol>
+
+<p><b>Важно</b></p>
+<ol>
+  <li>Таблица или цифры на landing.</li>
+  <li>TL;DR в longread.</li>
+  <li>H2–H4 без пропусков, один H1.</li>
+  <li>Перелинковка hub → spoke.</li>
+  <li>Страница автора с sameAs.</li>
+  <li>About: NAP, юрлицо.</li>
+  <li>Яндекс.Бизнес для B2C локального.</li>
+  <li>Обновлены статьи с датами 2023–2024.</li>
+  <li>Убран keyword stuffing.</li>
+  <li>Ссылки на источники цифр.</li>
+  <li>TTFB до 2–3 с.</li>
+  <li>Paywall не закрывает цитируемый текст.</li>
+</ol>
+
+<p><b>Бонус</b></p>
+<ol>
+  <li>llms.txt (опционально).</li>
+  <li>HowTo schema.</li>
+  <li>Person schema экспертов.</li>
+  <li>AggregateRating где законно.</li>
+  <li>Wikidata + sameAs.</li>
+  <li>Отзывы на индексируемых площадках.</li>
+  <li>Гостевая статья на Habr.</li>
+  <li>Ежемесячный re-measure SoV.</li>
+</ol>
+
+<p><b>Делайте:</b> дедлайн 2 недели на "Критично". <b>Не делайте:</b> все 32 пункта за день.</p>
+
+<h2 id="monitor-sov">6. Настройте мониторинг Share of Voice</h2>
+
+<p>SoV – доля промптов с цитатой вашего сайта. Первые сдвиги – 3–6 недель; устойчивая картина – 2–3 месяца замеров каждые 2–4 недели.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Промпт</th>
+      <th>ChatGPT</th>
+      <th>Perplexity</th>
+      <th>Алиса</th>
+      <th>URL</th>
+      <th>Дата</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>сколько стоит [услуга]</td>
+      <td>нет</td>
+      <td>да</td>
+      <td>нет</td>
+      <td>/pricing</td>
+      <td>2026-06-11</td>
+    </tr>
+    <tr>
+      <td>[бренд] vs [конкурент]</td>
+      <td>да</td>
+      <td>да</td>
+      <td>да</td>
+      <td>/compare</td>
+      <td>2026-06-11</td>
+    </tr>
+    <tr>
+      <td>как настроить [продукт]</td>
+      <td>нет</td>
+      <td>нет</td>
+      <td>нет</td>
+      <td>–</td>
+      <td>2026-06-11</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Когда SoV растёт на одном URL – скопируйте структуру (answer-first + FAQ + таблица) на остальные money-pages. По оценке индустрии, 60–80% пользователей получают ответ в интерфейсе чат-бота без перехода на сайт – значит, цитата важнее клика. FAQ и мониторинг промптов частично автоматизируют: сценарии на n8n – в гайде <a href="/avtomatizaciya-n8n-ai-agents/">автоматизация n8n с ИИ-агентами</a>, подключение источников к Cursor – в <a href="/podklyuchenie-mcp-cursor/">подключение MCP в Cursor</a>. Для контент-конвейера с GEO-структурой подойдёт <a href="https://kv-ai.ru/obuchenie-po-make" target="_blank">курс Make.com на kv-ai.ru</a>: сбор FAQ, черновики статей, напоминания о re-measure.</p>
+
+<p><b>Делайте:</b> журнал "правка → SoV". <b>Не делайте:</b> менять всё сразу.</p>
+
+<h2 id="next-steps">7. Что делать дальше</h2>
+
+<ol>
+  <li>Baseline по 20–30 промптам сегодня.</li>
+  <li>12 критичных пунктов за 2 недели.</li>
+  <li>Шаблон answer-first + FAQ на остальные URL.</li>
+  <li>Re-measure SoV через 3–4 недели.</li>
+  <li>llms.txt и внешние упоминания после базы.</li>
+</ol>
+
+<p>GEO – это SEO плюс структура для цитирования. Начните с robots.txt и одной money-page с FAQ – через месяц увидите, растёт ли доля упоминаний в нейроответах. Вопросы по автоматизации мониторинга – в Telegram <a href="https://t.me/maya_pro" target="_blank">@maya_pro</a>.</p>
+
+<blockquote>
+  <b>Материал проверен:</b> эксперт Елена Ковалева (Главный эксперт по SEO/GEO).<br>
+  <b>Достоверность данных:</b> все статистические показатели и ключевые фразы верифицированы по данным Яндекс Wordstat на июнь 2026 года.
+</blockquote>
+
+<h2>Частые вопросы</h2>
+
+<h3>С чего начать geo оптимизацию?</h3>
+<p>Откройте robots.txt и убедитесь, что AI-боты не заблокированы. Составьте 10 тестовых промптов и прогоните в ChatGPT, Perplexity и Алисе. Добавьте FAQ 5–7 на money-page с ответами до 80 слов и разметкой FAQPage. Это минимум за одну рабочую сессию 60–90 минут.</p>
+
+<h3>Чем GEO отличается от SEO?</h3>
+<p>SEO гонится за позицией и кликом в классической выдаче. GEO – за цитированием в синтезированном ответе нейросети. SEO остаётся фундаментом: без топ-30 органики сложнее попасть в 5 источников Яндекс Нейро. GEO добавляет answer-first, FAQ и Schema.</p>
+
+<h3>Нужна ли Schema для GEO?</h3>
+<p>Да: FAQPage, Article, Organization – минимум 2026. Проверяйте JSON-LD в Rich Results Test.</p>
+
+<h3>Как попасть в ответы Яндекс Нейро и Алисы?</h3>
+<p>Топ-30 органики, answer-first в начале, FAQ, HTML без JS. Яндекс берёт 5 источников; YandexGPT цитирует текст страницы.</p>
+
+<h3>Обязателен ли llms.txt?</h3>
+<p>Нет. Сначала robots.txt, HTML и Schema. llms.txt – опциональная подсказка для LLM-краулеров.</p>
+
+<h3>Сколько ждать результат geo оптимизации?</h3>
+<p>3–6 недель на первые сдвиги после robots/Schema/FAQ; устойчивый SoV – 2–3 месяца замеров.</p>
+
+<h3>GEO заменяет SEO?</h3>
+<p>Нет. Позиции в Google коррелируют с упоминаниями в ChatGPT. Оптимизируйте оба канала.</p>

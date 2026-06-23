@@ -1,0 +1,22 @@
+{
+  "gate": "research-notes",
+  "status": "PASS",
+  "article_dir": "memory/blog/articles/B08-ii-chat-bot-dlya-biznesa-workflow",
+  "notes": "memory/blog/articles/B08-ii-chat-bot-dlya-biznesa-workflow/research-notes.md",
+  "context": "memory/blog/articles/B08-ii-chat-bot-dlya-biznesa-workflow/research-context.json",
+  "errors": [],
+  "warnings": [],
+  "metrics": {
+    "today_iso": "2026-06-16",
+    "prefer_sources_after": "2026-03-18",
+    "source_urls": 33,
+    "source_domains": 15,
+    "source_table_rows": 32,
+    "accessed_at": 8,
+    "github_urls": 3,
+    "official_doc_urls": 5,
+    "action_outline_items": 7,
+    "pain_solution_rows": 4,
+    "technical_topic": true
+  }
+}

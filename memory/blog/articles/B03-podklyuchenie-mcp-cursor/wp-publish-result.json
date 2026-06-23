@@ -1,0 +1,14 @@
+{
+  "slug": "podklyuchenie-mcp-cursor",
+  "topic_id": "B03",
+  "permalink": "https://mayai.ru/podklyuchenie-mcp-cursor/",
+  "cover_evidence": {
+    "path": "memory\\blog\\articles\\B03-podklyuchenie-mcp-cursor\\cover\\cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 1492848,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=13335 slug=podklyuchenie-mcp-cursor\nOK featured_image=13336\nOK schema_meta=1\nOK inline_image_upload=13337 src=cover/inline-01.png url=https://mayai.ru/wp-content/uploads/2026/06/podklyuchenie-mcp-cursor-inline-01.jpg\nOK inline_image_upload=13338 src=cover/inline-02.png url=https://mayai.ru/wp-content/uploads/2026/06/podklyuchenie-mcp-cursor-inline-02.jpg\nOK inline_image_upload=13339 src=cover/inline-03.png url=https://mayai.ru/wp-content/uploads/2026/06/podklyuchenie-mcp-cursor-inline-03.jpg\npermalink=https://mayai.ru/podklyuchenie-mcp-cursor/\n",
+  "verdict": "pass"
+}

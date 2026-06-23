@@ -1,0 +1,42 @@
+{
+  "verdict": "warning",
+  "total_slop_hits": 0,
+  "slop_hits": [],
+  "total_over_long_sentences": 7,
+  "over_long_sentences": [
+    {
+      "sentence": "Cursor пишет код и отвечает в чате, но без MCP (Model Context Protocol) агент не видит ваши сервисы: не откроет сайт, не подтянет документацию, не тронет CMS",
+      "word_count": 27
+    },
+    {
+      "sentence": "json вручную (stdio и url) Проверьте статус и настройте безопасность Добавьте MCP под автоматизацию Исправьте ошибки подключения Пройдите чеклист перед продакшеном Что делать дальше Частые вопросы MCP – открытый стандарт Anthropic (ноябрь 2024): способ дать нейросети доступ к данным вне чата",
+      "word_count": 39
+    },
+    {
+      "sentence": "json Область Все проекты на этом ПК Только текущий репозиторий Когда выбирать Личные серверы (Figma, браузер) Командный стек (GitHub, CMS проекта) При конфликте имён Побеждает конфиг уровня проекта Оба файла объединяются при запуске Cursor",
+      "word_count": 34
+    },
+    {
+      "sentence": "json → сохранение валидного JSON → перезапуск Cursor → проверка Tools &amp; MCP → тестовый prompt в Agent → настройка allowlist Пример stdio-сервера для чтения файлов (официальный пакет из экосистемы MCP; путь замените на свою папку): { \"mcpServers\": { \"filesystem\": { \"command\": \"npx\", \"args\": [ \"-y\", \"@modelcontextprotocol/server-filesystem\", \"C:/Users/YourName/projects\" ] } } } Для облачного сервера добавьте поля url и headers с Bearer-токеном",
+      "word_count": 53
+    },
+    {
+      "sentence": "Ориентир по задачам: Сервер Зачем автоматизатору Спрос (Вордстат) Browser / Playwright MCP QA лендингов, скриншоты, проверка форм playwright mcp cursor – 18 Context7 / docs MCP Актуальная документация без \"галлюцинаций\" context 7 mcp cursor – 9 Figma MCP Макет → текст/структура для контента figma cursor mcp – 48 GitHub MCP Issues, PR, репозиторий контент-завода cursor github mcp – 4 Старт: Browser + Context7 + GitHub или WordPress MCP (команды из README на cursor",
+      "word_count": 58
+    },
+    {
+      "sentence": "json осознанно JSON проверен валидатором, без лишних запятых После правки конфига – перезапуск или Reload Window Статус сервера активный в Tools &amp; MCP Тестовый prompt в Agent вызвал нужный tool Подтверждение вызовов включено для опасных операций Доверенные tools добавлены в allowlist только после тестов Не больше 3–5 MCP-серверов одновременно API-ключи в env, не в Git Связка с n8n/Make для фоновых задач 9",
+      "word_count": 59
+    },
+    {
+      "sentence": "Достоверность данных: пути конфигов, поведение Tools &amp; MCP и показатели Вордстат (\"cursor mcp\" – 630, \"настройка mcp сервера\" – 74) верифицированы по документации Cursor и Яндекс Вордстат на июнь 2026 года",
+      "word_count": 26
+    }
+  ],
+  "readability": {
+    "score": 98.7,
+    "level": "Very Easy (Simple conversational / children's text)",
+    "avg_sentence_len": 9.5,
+    "avg_syllables_per_word": 1.6
+  }
+}

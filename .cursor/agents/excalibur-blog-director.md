@@ -20,6 +20,15 @@ is_background: false
 - Перед прогоном: полная перезапись `# Excalibur BLOG — новая сессия`
 - Локальный шаблон: `shared/excalibur-blog-handoff.template.md`
 
+## Incident memory + fixer loop
+
+- Все субагенты обязаны писать runtime-сложности в `memory/pipeline-fix-queue.md` по `shared/pipeline-incident-fix-contract.md`.
+- Если сам Директор столкнулся с shell blocker, stale contract, retry/workaround или ручным восстановлением, он тоже дописывает incident в этот файл.
+- После `=== EXCALIBUR BLOG (PIPELINE DONE) ===` или терминального blocker Директор обязан проверить `memory/pipeline-fix-queue.md`.
+- Если есть `status: open` по текущему run — запусти `Task(excalibur-blog-fixer)`.
+- Если typed Task недоступен — отдельный `Task(generalPurpose)` с `.cursor/agents/excalibur-blog-fixer.md`, `.cursor/skills/fixer-excalibur-blog/SKILL.md`, `shared/pipeline-incident-fix-contract.md`.
+- Не стартуй следующую статью, пока текущие blocker-инциденты не закрыты fixer-ом или не помечены `needs-human`.
+
 ## Fragments (параллель cover || schema)
 
 - `<PROJECT_ROOT>/.cursor/excalibur-blog-fragments/cover.md`

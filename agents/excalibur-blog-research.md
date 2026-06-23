@@ -8,6 +8,18 @@ is_background: false
 
 **Язык:** русский. **Шаг пайплайна:** ①
 
+## Incident memory (обязательно)
+
+Если во время задачи был blocker, retry, tool/API error, ручной workaround, переписывание артефакта из-за неясного контракта или любое исправление, которое нужно не повторять в следующем run, допиши incident в `memory/pipeline-fix-queue.md` по `shared/pipeline-incident-fix-contract.md`.
+
+В финальном handoff-блоке укажи:
+
+```text
+incident_report: none | memory/pipeline-fix-queue.md#INC-...
+```
+
+Не записывай secrets, токены, private URLs или абсолютные локальные пути.
+
 ## Gate 0 — utility-only тема
 
 ```bash
@@ -24,8 +36,8 @@ python scripts/excalibur_blog_utility_gate.py --topic-id {ID}
    - Если API вернул ошибку 401 (токен устарел) — зафиксировать предупреждение `⚠️ WORDSTAT AUTH WARNING` и ссылку на авторизацию (см. SKILL.md). Не выдумывать цифры спроса!
 3. Выполнить **глубокий поиск в реальном времени через WebSearch Курсора**: конкуренты, официальные docs/changelog, GitHub repos/issues/README, форумы/обсуждения, свежие статьи на дату `today_iso`.
 4. Дочитать SERP; сверить с `memory/brief/fact-bank.md`; каждая цифра или версия продукта должна иметь URL и `accessed_at`.
-5. **Угол только практический:** что сделает читатель после гайда (не новость, не «вообще про»).
-6. Заполнить `research-notes.md` как structured brief: `research_date`, `accessed_at`, `source_table`, `wordstat`, `github_evidence`, `reader_pain`, `reader_outcome`, `success_criteria`, `voice_angle`, `reader_story`, `surprising_fact`, `pain_solution_map`, `action_outline`, `utility_verdict: PASS`.
+5. **Угол только практический и beginner-first:** что сделает новичок после гайда (не новость, не «вообще про», не материал для профи). Ищи страхи старта: «не понимаю термин», «боюсь сломать таблицу/CRM», «не знаю, с чего начать», «кажется, что это только для программистов».
+6. Заполнить `research-notes.md` как structured brief: `research_date`, `accessed_at`, `source_table`, `wordstat`, `github_evidence`, `reader_pain`, `reader_outcome`, `success_criteria`, `voice_angle`, `reader_story`, `surprising_fact`, `pain_solution_map`, `action_outline`, `utility_verdict: PASS`. Все поля должны быть сформулированы для новичка/обычного человека, а не для архитектора или разработчика.
 7. Запустить `python scripts/excalibur_blog_research_notes_gate.py --article-dir <article_dir> -o research-notes-gate.json`. Если gate BLOCK — исправить `research-notes.md`, не передавать Writer.
 8. Handoff `=== EXCALIBUR BLOG RESEARCH ===`.
 
@@ -35,9 +47,9 @@ python scripts/excalibur_blog_utility_gate.py --topic-id {ID}
 research_date: YYYY-MM-DD
 accessed_at: YYYY-MM-DD
 utility_verdict: PASS
-reader_outcome: что читатель сможет сделать после статьи
-reader_pain: конкретная боль/страх/затык читателя, который статья решает
-success_criteria: как читатель поймёт, что проблема решена
+reader_outcome: какой первый понятный результат новичок сможет сделать после статьи
+reader_pain: конкретная боль/страх/затык новичка, который статья решает
+success_criteria: как новичок поймёт, что проблема решена
 voice_angle: человеческий угол, не SEO-формула
 reader_story: мини-сценарий/ошибка читателя, которую Writer обязан использовать
 surprising_fact: неожиданный факт или конфликт мнений из источников

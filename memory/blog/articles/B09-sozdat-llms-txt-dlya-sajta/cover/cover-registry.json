@@ -1,0 +1,50 @@
+{
+  "topic_id": "B09",
+  "slug": "sozdat-llms-txt-dlya-sajta",
+  "cover_family": "brand_collage",
+  "style_preset": "digital_meme_collage_ru",
+  "pipeline": "quad_canvas_1x_image_api",
+  "file": "cover/cover.png",
+  "alt": "Обложка о том, что llms.txt помогает выбрать важные страницы сайта, но не гарантирует AI-трафик",
+  "aspect_ratio": "16:9",
+  "canvas_source": "cover/canvas-quad.png",
+  "generated_at": "2026-06-16T20:23:38+00:00",
+  "assets": [
+    {
+      "role": "cover",
+      "slot": "cover",
+      "file": "cover/cover.png",
+      "alt": "Обложка о том, что llms.txt помогает выбрать важные страницы сайта, но не гарантирует AI-трафик",
+      "h2_anchor": null,
+      "visual_type": "cover_meme_hero",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_1",
+      "file": "cover/inline-01.png",
+      "alt": "Сравнение SEO-мифов и реальной задачи llms.txt как карты важных страниц",
+      "h2_anchor": "Разведите SEO-обещание и реальную задачу файла",
+      "visual_type": "comparison_table_ui",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_2",
+      "file": "cover/inline-02.png",
+      "alt": "Workflow отбора 10-30 важных URL для файла llms.txt вместо выгрузки всего сайта",
+      "h2_anchor": "Отберите 10-30 URL вместо выгрузки всего сайта",
+      "visual_type": "workflow_diagram",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "role": "inline",
+      "slot": "inline_3",
+      "file": "cover/inline-03.png",
+      "alt": "Чеклист Markdown-шаблона llms.txt с разделами, ссылками и проверкой публикации",
+      "h2_anchor": "Соберите llms.txt по Markdown-шаблону",
+      "visual_type": "checklist_board",
+      "aspect_ratio": "16:9"
+    }
+  ]
+}

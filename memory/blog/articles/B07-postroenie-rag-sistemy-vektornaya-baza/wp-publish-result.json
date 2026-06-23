@@ -1,0 +1,15 @@
+{
+  "slug": "postroenie-rag-sistemy-vektornaya-baza",
+  "topic_id": "B07",
+  "permalink": "[REDACTED]/postroenie-rag-sistemy-vektornaya-baza/",
+  "publish_method": "sftp",
+  "cover_evidence": {
+    "path": "memory/blog/articles/B07-postroenie-rag-sistemy-vektornaya-baza/cover/cover.png",
+    "source": "existing_file",
+    "decode_verified": true,
+    "bytes": 1243208,
+    "detected_format": "png"
+  },
+  "raw_output": "OK post=13484 slug=postroenie-rag-sistemy-vektornaya-baza\nOK featured_image=13485\nOK schema_meta=1\nOK skip_theme_faq_meta=1\nOK inline_image_upload=13486 src=cover/inline-01.png url=[REDACTED]/wp-content/uploads/2026/06/postroenie-rag-sistemy-vektornaya-baza-inline-01.jpg\nOK inline_image_upload=13487 src=cover/inline-02.png url=[REDACTED]/wp-content/uploads/2026/06/postroenie-rag-sistemy-vektornaya-baza-inline-02.jpg\nOK inline_image_upload=13488 src=cover/inline-03.png url=[REDACTED]/wp-content/uploads/2026/06/postroenie-rag-sistemy-vektornaya-baza-inline-03.jpg\npermalink=[REDACTED]/postroenie-rag-sistemy-vektornaya-baza/\n",
+  "verdict": "pass"
+}

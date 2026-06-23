@@ -27,8 +27,11 @@ alwaysApply: false
 4. **ПАРАЛЛЕЛЬНО** `excalibur-blog-cover` + `excalibur-blog-schema`
 5. `excalibur-blog-indexer`
 6. `excalibur-blog-publish` (auto; skip только при явном `publish: no`)
+7. `excalibur-blog-fixer` (post-run, только если `memory/pipeline-fix-queue.md` содержит `status: open`)
 
 Handoff runtime: `.cursor/excalibur-blog-handoff.md`
+
+Incident memory: `memory/pipeline-fix-queue.md` по контракту `shared/pipeline-incident-fix-contract.md`. Каждый Task указывает `incident_report: none | memory/pipeline-fix-queue.md#INC-...`; Директор после PIPELINE DONE/blocker запускает fixer для open incidents.
 
 Команда: `commands/excalibur-blog-run.md`
 

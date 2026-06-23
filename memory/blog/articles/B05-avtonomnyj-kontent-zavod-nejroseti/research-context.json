@@ -1,0 +1,86 @@
+{
+  "agent": "excalibur-blog",
+  "step": "research_start",
+  "date_context": {
+    "timezone": "Europe/Moscow",
+    "today_iso": "2026-06-11",
+    "today_ru": "11.06.2026",
+    "year": 2026,
+    "month": 6,
+    "month_name_ru": "июнь",
+    "weekday_ru": "четверг",
+    "freshness_window": {
+      "prefer_sources_after": "2026-03-13",
+      "note": "Предпочитай источники не старше ~90 дней; версии продуктов — актуальные на today_iso."
+    },
+    "research_disclaimer": "Все даты, версии и статистика в статье должны быть проверены на 2026-06-11 (2026 год)."
+  },
+  "topic": {
+    "topic_id": "B05",
+    "priority": "P0",
+    "slug": "avtonomnyj-kontent-zavod-nejroseti",
+    "h1": "Как создать автономный контент-завод на нейросетях: пошаговое руководство по автоматизации",
+    "primary_query": "контент завод",
+    "secondary_queries": [
+      "контент завод ии",
+      "автоматизация создания контента",
+      "как создать контент завод",
+      "контент завод для бизнеса"
+    ],
+    "search_intent": "how_to",
+    "article_mode": "B"
+  },
+  "utility_gate": {
+    "gate": "topic",
+    "topic_id": "B05",
+    "status": "PASS",
+    "search_intent": "how_to",
+    "article_mode": "B",
+    "errors": [],
+    "warnings": []
+  },
+  "search_queries": [
+    {
+      "id": "primary_fresh",
+      "query": "контент завод 2026",
+      "purpose": "актуальный SERP по главному запросу"
+    },
+    {
+      "id": "primary_recent",
+      "query": "контент завод июнь 2026",
+      "purpose": "свежее за текущий месяц"
+    },
+    {
+      "id": "news_angle",
+      "query": "контент завод новости 2026",
+      "purpose": "новости и обновления"
+    },
+    {
+      "id": "secondary_1",
+      "query": "контент завод ии 2026",
+      "purpose": "вторичный запрос: контент завод ии"
+    },
+    {
+      "id": "secondary_2",
+      "query": "автоматизация создания контента 2026",
+      "purpose": "вторичный запрос: автоматизация создания контента"
+    },
+    {
+      "id": "secondary_3",
+      "query": "как создать контент завод 2026",
+      "purpose": "вторичный запрос: как создать контент завод"
+    },
+    {
+      "id": "secondary_4",
+      "query": "контент завод для бизнеса 2026",
+      "purpose": "вторичный запрос: контент завод для бизнеса"
+    },
+    {
+      "id": "h1_fresh",
+      "query": "Как создать автономный контент-завод на нейросетях: пошаговое руководство по автоматизации 2026",
+      "purpose": "SERP по H1"
+    }
+  ],
+  "output_dir": "memory/blog/articles/B05-avtonomnyj-kontent-zavod-nejroseti",
+  "next_step": "Прочитай research-serp.json, дополни web research, напиши research-notes.md"
+}

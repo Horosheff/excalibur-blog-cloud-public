@@ -1,0 +1,42 @@
+{
+  "topic_id": "B09",
+  "canvas_file": "cover/canvas-quad.png",
+  "layout": "2x2",
+  "pipeline": "quad_canvas_1x_image_api",
+  "style_preset": "digital_meme_collage_ru",
+  "style_file": "memory/cover/quad-style-digital-meme-collage-ru.json",
+  "blog_hero": "memory/cover/blog-hero.json",
+  "inline_types_catalog": "memory/cover/inline-visual-types.json",
+  "cover_hook": "llms.txt не магия: ИИ не читает ваш мусор",
+  "mcp_note": "ONE gpt-image-2 call with input_urls=[reference_url_hosted], then split",
+  "slots": {
+    "cover": {
+      "quadrant": "top_left",
+      "role": "cover_meme_hero",
+      "alt": "Обложка о том, что llms.txt помогает выбрать важные страницы сайта, но не гарантирует AI-трафик",
+      "scene_hint": "COVER ONLY: сохранить reference face blog-host (round black glasses, ash-blonde quiff, short beard), толстое белое heavyweight hoodie, иронично указывает на крупный заголовок. Pure white #FFFFFF background. Huge bold condensed Cyrillic DESIGN.md-inspired typography, black ink + rotating hot accents: hot pink, hot purple, hot blue, hot orange; sticker labels, brush bubbles, handwritten notes, NO price badges. Collage layers: fake /llms.txt Markdown card, fake Google note «бонуса нет», Lighthouse Agentic Browsing N/A, Ahrefs sticker «97% без запросов», Telegram bubble «где цитаты?», Wordstat mini screenshot «llms txt». Torn paper, scotch tape, marker arrows, one visual meme reaction cutout, human-made zine feel, 16:9.",
+      "meme_caption_ru": "ИИ не читает мусор"
+    },
+    "inline_1": {
+      "quadrant": "top_right",
+      "h2_anchor": "Разведите SEO-обещание и реальную задачу файла",
+      "visual_type": "comparison_table_ui",
+      "scene_hint": "Pure white #FFFFFF background, NO host face. Pasted comparison table UI: left column «SEO-обещание» with crossed claims «рост AI-трафика», right column «реальная задача» with «карта важных страниц». Add torn paper title strip, scotch tape corners, hot pink + hot purple marker highlights, handwritten arrow «не ранжирует», small cat/facepalm visual meme cutout with rough white edge, useful readable Cyrillic UI, no price badges.",
+      "alt": "Сравнение SEO-мифов и реальной задачи llms.txt как карты важных страниц"
+    },
+    "inline_2": {
+      "quadrant": "bottom_left",
+      "h2_anchor": "Отберите 10-30 URL вместо выгрузки всего сайта",
+      "visual_type": "workflow_diagram",
+      "scene_hint": "Pure white #FFFFFF background, NO host face. Workflow diagram for selecting 10-30 URLs instead of sitemap dump: cards «главная», «продукт», «эксперт», «гайды», «FAQ», «контакты» flow into small /llms.txt file; separate crumpled pile «архивы/дубли/теги» crossed out. Torn paper strip, scotch tape, hot blue marker arrows, hot orange sticky note «зачем агенту читать?», tiny surprised meme reaction cutout, useful not minimal SaaS, no price badges.",
+      "alt": "Workflow отбора 10-30 важных URL для файла llms.txt вместо выгрузки всего сайта"
+    },
+    "inline_3": {
+      "quadrant": "bottom_right",
+      "h2_anchor": "Соберите llms.txt по Markdown-шаблону",
+      "visual_type": "checklist_board",
+      "scene_hint": "Pure white #FFFFFF background, NO host face. Printable checklist board plus pasted Markdown template for llms.txt: H1 site name, short quote, sections «Основное», «Гайды», «Optional», link rows with descriptions; checkboxes «корень сайта», «HTTP 200», «не HTML-404», «абсолютные URL». Add torn white paper, clear scotch tape, hot orange + hot pink highlighter, handwritten note «коротко, без рекламы», small meme reaction sticker, readable Cyrillic, no price badges.",
+      "alt": "Чеклист Markdown-шаблона llms.txt с разделами, ссылками и проверкой публикации"
+    }
+  }
+}

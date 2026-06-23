@@ -1,0 +1,22 @@
+{
+  "gate": "research-notes",
+  "status": "PASS",
+  "article_dir": "memory/blog/articles/B09-sozdat-llms-txt-dlya-sajta",
+  "notes": "memory/blog/articles/B09-sozdat-llms-txt-dlya-sajta/research-notes.md",
+  "context": "memory/blog/articles/B09-sozdat-llms-txt-dlya-sajta/research-context.json",
+  "errors": [],
+  "warnings": [],
+  "metrics": {
+    "today_iso": "2026-06-16",
+    "prefer_sources_after": "2026-03-18",
+    "source_urls": 42,
+    "source_domains": 10,
+    "source_table_rows": 37,
+    "accessed_at": 28,
+    "github_urls": 13,
+    "official_doc_urls": 9,
+    "action_outline_items": 10,
+    "pain_solution_rows": 7,
+    "technical_topic": true
+  }
+}
