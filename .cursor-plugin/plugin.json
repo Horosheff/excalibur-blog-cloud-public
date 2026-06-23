@@ -1,7 +1,7 @@
 {
   "name": "excalibur-blog",
-  "displayName": "Excalibur BLOG",
-  "description": "Плагин SEO/GEO статей: оркестратор + субагенты (research, writer, geo-qa, cover||schema, indexer, publish). Параллельные Task где безопасно.",
+  "displayName": "Excalibur Blog Cloud — Cursor Automation Plugin",
+  "description": "Плагин для Cursor-автоматизации блога: оркестратор + субагенты для SEO/GEO статей, визуалов, QA, indexer и WordPress publish.",
   "version": "0.2.1",
   "keywords": [
     "excalibur",
@@ -9,6 +9,7 @@
     "seo",
     "geo",
     "wordpress",
+    "cursor-automation",
     "orchestrator",
     "subagents"
   ],

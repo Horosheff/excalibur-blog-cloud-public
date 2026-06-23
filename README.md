@@ -1,4 +1,4 @@
-# Excalibur Blog Cloud
+# Excalibur Blog Cloud — Плагин для Cursor-автоматизации
 
 ![Excalibur Blog Cloud cover](assets/excalibur-blog-cover.png)
 
@@ -8,7 +8,7 @@
   </a>
 </p>
 
-**Excalibur Blog Cloud** — это автоматизация блога на субагентах Cursor: не "ещё один AI-текст", а полный SEO/GEO-пайплайн статьи от подбора темы до публикации в WordPress.
+**Excalibur Blog Cloud** — это плагин для Cursor-автоматизации блога на субагентах: не "ещё один AI-текст", а полный SEO/GEO-пайплайн статьи от подбора темы до публикации в WordPress.
 
 Плагин собирает статью как редакция: один агент отвечает за research, другой за текст, третий за QA, отдельные агенты делают визуал, schema, перелинковку и публикацию. На выходе получается не черновик, а готовый пакет: `article.html`, мета, FAQ/schema, обложка, inline-картинки, QA-отчёты, `llms.txt` и запись в ledger.
 
