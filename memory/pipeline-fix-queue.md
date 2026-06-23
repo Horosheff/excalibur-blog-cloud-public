@@ -198,7 +198,7 @@ checks_run:
 commit: pending-parent-commit
 
 
-## INC-20260616-2042-publish-sftp-root-dot
+## INC-20260616-2042-publish-ssh-root-dot
 status: fixed
 run_date: 2026-06-16
 role: excalibur-blog-publish
@@ -209,16 +209,16 @@ category: publish
 
 ### What went wrong
 - A safe env-preflight wrapper initially imported `excalibur_blog_wp_publish.py` without adding `scripts/` to `sys.path`, causing `ModuleNotFoundError: asset_download`; the check was re-run with the correct `sys.path`.
-- The first real publish attempt connected over SFTP but failed before upload with `FileNotFoundError/ENOENT` because the configured publish root path does not exist inside the SFTP account cwd.
+- The first real publish attempt connected over SSH but failed before upload with `FileNotFoundError/ENOENT` because the configured publish root path does not exist inside the SSH account cwd.
 - Commit was blocked by Cursor secret-scan because `PUBLIC_SITE_URL`/`WP_SITE_URL` are configured as secrets and appeared in staged publish artifacts; committed copies were redacted to `[REDACTED]` to match repository policy.
 
 ### How the agent recovered this run
-- Re-ran the env check with `scripts/` on `sys.path`; allow flag, public URL and SFTP settings were confirmed without printing secret values.
-- Retried publish with `SSH_ROOT=.` / `FTP_ROOT=.` / `FTP_PATH=.` so the bootstrap was written to the SFTP login cwd; WordPress post, featured image, 3 inline images and schema meta published successfully.
+- Re-ran the env check with `scripts/` on `sys.path`; allow flag, public URL and SSH settings were confirmed without printing secret values.
+- Retried publish with `SSH_ROOT=.` so the bootstrap was written to the SSH login cwd; WordPress post, featured image, 3 inline images and schema meta published successfully.
 - Replaced public site base in committed artifacts with `[REDACTED]`; live permalink remains available in local runtime handoff and WordPress result before redaction.
 
 ### Durable fix needed before next run
-- Update Cloud publish root secret to `.` (or remove invalid panel path) for this SFTP account, or make `excalibur_blog_wp_publish.py` auto-probe `.` when configured root returns ENOENT before bootstrap upload.
+- Update Cloud publish root secret to `.` (or remove invalid panel path) for this SSH account, or make `excalibur_blog_wp_publish.py` auto-probe `.` when configured root returns ENOENT before bootstrap upload.
 - Document that direct import of publish helpers in ad-hoc checks needs `scripts/` on `sys.path`, or expose a tiny env-check CLI in the script.
 - Decide whether `PUBLIC_SITE_URL` should remain a secret-scanned value; if yes, keep committed examples/results redacted by contract.
 
@@ -227,7 +227,7 @@ category: publish
 - `skills/publish-excalibur-blog/SKILL.md`
 - `.cursor/skills/publish-excalibur-blog/SKILL.md`
 - `CURSOR-CLOUD-RUNBOOK.md`
-- Cursor Dashboard Cloud Secrets (`FTP_ROOT`/`SSH_ROOT` only; no secret values recorded here)
+- Cursor Dashboard Cloud Secrets (`SSH_ROOT` only; no secret values recorded here)
 
 ### Secrets
 - none recorded
@@ -237,7 +237,7 @@ status: fixed
 fixed_at: 2026-06-16
 fix_summary:
 - `excalibur_blog_wp_publish.py` now has `--env-check` for safe publish env validation without ad-hoc imports or secret output.
-- SFTP bootstrap upload now retries once at `.` when a configured non-dot root returns ENOENT, and cleanup deletes the actual uploaded remote path.
+- SSH bootstrap upload now retries once at `.` when a configured non-dot root returns ENOENT, and cleanup deletes the actual uploaded remote path.
 - Publish skill/runbook document the env-check CLI, `scripts/` sys.path guidance for ad-hoc imports, and the optional Cloud Secret root update to `.` if fallback warning appears.
 files_changed:
 - `scripts/excalibur_blog_wp_publish.py`

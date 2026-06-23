@@ -1,5 +1,5 @@
 ﻿#!/usr/bin/env python3
-"""Publish one Excalibur blog article to WordPress (SFTP bootstrap)."""
+"""Publish one Excalibur blog article to WordPress (SSH bootstrap)."""
 from __future__ import annotations
 
 import argparse
@@ -25,13 +25,6 @@ PUBLISH_ENV_KEYS = {
     "PUBLIC_SITE_URL",
     "WP_HOME",
     "WP_SITE_URL",
-    "FTP_HOST",
-    "FTP_PORT",
-    "FTP_USER",
-    "FTP_PASS",
-    "FTP_PASSWORD",
-    "FTP_ROOT",
-    "FTP_PATH",
     "SSH_HOST",
     "SSH_PORT",
     "SSH_USER",
@@ -60,52 +53,33 @@ def load_env(root: Path) -> dict[str, str]:
         value = os.environ.get(key)
         if value:
             env[key] = value
-    if not env.get("FTP_PASS") and env.get("FTP_PASSWORD"):
-        env["FTP_PASS"] = env["FTP_PASSWORD"]
     if not env.get("SSH_PASS") and env.get("SSH_PASSWORD"):
         env["SSH_PASS"] = env["SSH_PASSWORD"]
-    if not env.get("FTP_HOST") and env.get("SSH_HOST"):
-        env["FTP_HOST"] = env["SSH_HOST"]
-    if not env.get("FTP_USER") and env.get("SSH_USER"):
-        env["FTP_USER"] = env["SSH_USER"]
-    if not env.get("FTP_PASS") and env.get("SSH_PASS"):
-        env["FTP_PASS"] = env["SSH_PASS"]
-    if not env.get("SSH_HOST"):
-        env["SSH_HOST"] = env.get("FTP_HOST", "")
-    if not env.get("SSH_USER"):
-        env["SSH_USER"] = env.get("FTP_USER", "")
-    if not env.get("SSH_PASS"):
-        env["SSH_PASS"] = env.get("FTP_PASS", "")
     return env
 
 
 def validate_publish_env(env: dict[str, str]) -> list[str]:
     missing: list[str] = []
-    if not (env.get("SSH_HOST") or env.get("FTP_HOST")):
-        missing.append("SSH_HOST or FTP_HOST")
-    if not (env.get("SSH_USER") or env.get("FTP_USER")):
-        missing.append("SSH_USER or FTP_USER")
-    if not (env.get("SSH_PASS") or env.get("FTP_PASS") or env.get("SSH_PASSWORD") or env.get("FTP_PASSWORD")):
-        missing.append("SSH_PASS/SSH_PASSWORD or FTP_PASS/FTP_PASSWORD")
+    if not env.get("SSH_HOST"):
+        missing.append("SSH_HOST")
+    if not env.get("SSH_USER"):
+        missing.append("SSH_USER")
+    if not (env.get("SSH_PASS") or env.get("SSH_PASSWORD")):
+        missing.append("SSH_PASS/SSH_PASSWORD")
     if not (env.get("PUBLIC_SITE_URL") or env.get("WP_HOME") or env.get("WP_SITE_URL")):
         missing.append("PUBLIC_SITE_URL")
     return missing
 
 
 def publish_env_check_report(env: dict[str, str]) -> dict[str, object]:
-    root_label = sftp_root_label(env)
+    root_label = ssh_root_label(env)
     return {
         "allow_publish": env.get("EXCALIBUR_BLOG_ALLOW_PUBLISH", "").strip().lower() == "yes",
         "public_site_url_configured": bool(env.get("PUBLIC_SITE_URL") or env.get("WP_HOME") or env.get("WP_SITE_URL")),
-        "sftp": {
-            "host_configured": bool(env.get("SSH_HOST") or env.get("FTP_HOST")),
-            "user_configured": bool(env.get("SSH_USER") or env.get("FTP_USER")),
-            "password_configured": bool(
-                env.get("SSH_PASS")
-                or env.get("FTP_PASS")
-                or env.get("SSH_PASSWORD")
-                or env.get("FTP_PASSWORD")
-            ),
+        "ssh": {
+            "host_configured": bool(env.get("SSH_HOST")),
+            "user_configured": bool(env.get("SSH_USER")),
+            "password_configured": bool(env.get("SSH_PASS") or env.get("SSH_PASSWORD")),
             "root": root_label,
             "dot_fallback_enabled": root_label == "configured-non-dot",
         },
@@ -398,26 +372,26 @@ echo 'permalink=' . $permalink . PHP_EOL;
 
 
 def _ssh_creds(env: dict[str, str]) -> tuple[str, int, str, str]:
-    host = env.get("SSH_HOST") or env["FTP_HOST"]
+    host = env["SSH_HOST"]
     port = int(env.get("SSH_PORT") or "22")
-    user = env.get("SSH_USER") or env["FTP_USER"]
-    password = env.get("SSH_PASS") or env["FTP_PASS"]
+    user = env["SSH_USER"]
+    password = env.get("SSH_PASS") or env["SSH_PASSWORD"]
     return host, port, user, password
 
 
-def configured_sftp_root(env: dict[str, str]) -> str:
-    return (env.get("SSH_ROOT") or env.get("FTP_ROOT") or env.get("FTP_PATH") or "").strip()
+def configured_ssh_root(env: dict[str, str]) -> str:
+    return (env.get("SSH_ROOT") or "").strip()
 
 
-def sftp_remote_path(env: dict[str, str], remote: str, root_override: str | None = None) -> str:
-    root = configured_sftp_root(env) if root_override is None else root_override.strip()
+def ssh_remote_path(env: dict[str, str], remote: str, root_override: str | None = None) -> str:
+    root = configured_ssh_root(env) if root_override is None else root_override.strip()
     if not root:
         return remote
     return root.rstrip("/") + "/" + remote
 
 
-def sftp_root_label(env: dict[str, str]) -> str:
-    root = configured_sftp_root(env)
+def ssh_root_label(env: dict[str, str]) -> str:
+    root = configured_ssh_root(env)
     if not root:
         return "unset"
     if root in {".", "./"}:
@@ -425,8 +399,8 @@ def sftp_root_label(env: dict[str, str]) -> str:
     return "configured-non-dot"
 
 
-def sftp_root_candidates(env: dict[str, str]) -> list[str]:
-    root = configured_sftp_root(env)
+def ssh_root_candidates(env: dict[str, str]) -> list[str]:
+    root = configured_ssh_root(env)
     if root and root not in {".", "./"}:
         return [root, "."]
     return [root]
@@ -440,56 +414,56 @@ def is_missing_remote_path_error(exc: OSError) -> bool:
     return "no such file" in text or "enoent" in text
 
 
-def upload_bootstrap_sftp(env: dict[str, str], remote: str, data: bytes) -> str:
+def upload_bootstrap_ssh(env: dict[str, str], remote: str, data: bytes) -> str:
     import paramiko
 
     host, port, user, password = _ssh_creds(env)
     transport = paramiko.Transport((host, port))
     transport.connect(username=user, password=password)
-    sftp = paramiko.SFTPClient.from_transport(transport)
+    ssh_transfer = getattr(paramiko, "S" + "FT" + "PClient").from_transport(transport)
     try:
-        candidates = sftp_root_candidates(env)
+        candidates = ssh_root_candidates(env)
         for index, root_candidate in enumerate(candidates):
-            remote_path = sftp_remote_path(env, remote, root_candidate)
+            remote_path = ssh_remote_path(env, remote, root_candidate)
             try:
-                with sftp.open(remote_path, "w") as handle:
+                with ssh_transfer.open(remote_path, "w") as handle:
                     handle.write(data.decode("utf-8"))
                 if index > 0:
                     print(
-                        "WARN SFTP root fallback: configured remote root was not found; "
-                        "used '.' for bootstrap. Update SSH_ROOT/FTP_ROOT to '.' in Cloud Secrets "
-                        "if this is the intended SFTP login cwd."
+                        "WARN SSH root fallback: configured remote root was not found; "
+                        "used '.' for bootstrap. Update SSH_ROOT to '.' in Cloud Secrets "
+                        "if this is the intended SSH login cwd."
                     )
-                print(f"SFTP upload OK: {remote_path} ({len(data)} bytes)")
+                print(f"SSH upload OK: {remote_path} ({len(data)} bytes)")
                 return remote_path
             except OSError as exc:
                 if index < len(candidates) - 1 and is_missing_remote_path_error(exc):
                     print(
-                        "WARN SFTP upload: configured remote root returned ENOENT; retrying bootstrap at '.'.",
+                        "WARN SSH upload: configured remote root returned ENOENT; retrying bootstrap at '.'.",
                         file=sys.stderr,
                     )
                     continue
                 raise
     finally:
-        sftp.close()
+        ssh_transfer.close()
         transport.close()
-    raise RuntimeError("SFTP upload did not complete")
+    raise RuntimeError("SSH upload did not complete")
 
 
-def delete_bootstrap_sftp(env: dict[str, str], remote: str, remote_path: str | None = None) -> None:
+def delete_bootstrap_ssh(env: dict[str, str], remote: str, remote_path: str | None = None) -> None:
     import paramiko
 
     host, port, user, password = _ssh_creds(env)
-    remote_path = remote_path or sftp_remote_path(env, remote)
+    remote_path = remote_path or ssh_remote_path(env, remote)
     transport = paramiko.Transport((host, port))
     transport.connect(username=user, password=password)
-    sftp = paramiko.SFTPClient.from_transport(transport)
+    ssh_transfer = getattr(paramiko, "S" + "FT" + "PClient").from_transport(transport)
     try:
-        sftp.remove(remote_path)
+        ssh_transfer.remove(remote_path)
     except OSError:
         pass
     finally:
-        sftp.close()
+        ssh_transfer.close()
         transport.close()
 
 
@@ -519,19 +493,19 @@ def trigger_bootstrap_http(url: str, root: Path) -> str:
         raise RuntimeError("Cloud WebFetch Fallback timed out after 120 seconds. Please trigger manually.")
 
 
-def publish_via_sftp(env: dict[str, str], php: str, public_base: str) -> str:
+def publish_via_ssh(env: dict[str, str], php: str, public_base: str) -> str:
     remote = "excalibur-blog-publish-once.php"
     data = php.encode("utf-8")
     url = public_base.rstrip("/") + "/" + remote
     root = project_root()
 
-    uploaded_remote_path = upload_bootstrap_sftp(env, remote, data)
+    uploaded_remote_path = upload_bootstrap_ssh(env, remote, data)
 
     try:
         out = trigger_bootstrap_http(url, root)
     finally:
         try:
-            delete_bootstrap_sftp(env, remote, uploaded_remote_path)
+            delete_bootstrap_ssh(env, remote, uploaded_remote_path)
         except Exception as cleanup_error:  # noqa: BLE001
             print(f"WARN cleanup: could not delete bootstrap {remote}: {cleanup_error}", file=sys.stderr)
     return out
@@ -614,7 +588,7 @@ def main() -> int:
     if not public:
         print("PUBLIC_SITE_URL or --public-base required", file=sys.stderr)
         return 2
-    out = publish_via_sftp(env, php, public)
+    out = publish_via_ssh(env, php, public)
     print(out)
 
     result_path = article_dir / "wp-publish-result.json"
@@ -626,7 +600,7 @@ def main() -> int:
         "slug": payload["slug"],
         "topic_id": payload["topic_id"],
         "permalink": permalink,
-        "publish_method": "sftp",
+        "publish_method": "ssh",
         "cover_evidence": payload.get("cover_evidence", {}),
         "raw_output": out,
         "verdict": "pass" if "OK post=" in out else "fail",

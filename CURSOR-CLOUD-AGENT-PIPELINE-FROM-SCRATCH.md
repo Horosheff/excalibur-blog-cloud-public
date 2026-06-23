@@ -204,7 +204,7 @@ memory/site.env.local
 Не коммитить:
 
 - API keys;
-- FTP/SSH passwords;
+- SSH passwords;
 - Cursor API keys;
 - MCP tokens;
 - raw private URLs, если они считаются secrets в вашем проекте;
@@ -893,7 +893,7 @@ Fix:
 
 - проверить env через safe `--env-check`;
 - не использовать локальные абсолютные пути;
-- для SFTP/SSH проверить root/cwd;
+- для SSH проверить root/cwd;
 - не печатать секреты.
 
 ### Ошибка: один и тот же workaround повторяется каждый run

@@ -27,17 +27,17 @@ python scripts/excalibur_blog_wp_publish.py --article-dir memory/blog/articles/B
 
 ### Blockers
 
-1. **Network:** HTTPS к `[REDACTED]:443` недоступен из локальной среды (WinError 10060). FTP (порт 21) работает, HTTP-триггер bootstrap — нет.
-2. **FTP path:** аккаунт `***_blog` видит только `/index.php` + `/cgi-bin/`, **без** `wp-load.php`. WordPress на `[REDACTED]/blog/` — другой document root.
-3. **Bootstrap 404:** загруженный `excalibur-blog-publish-once.php` (и тестовый `excalibur-test-once.php`) отдают HTTP 404 снаружи, хотя `index.php` в том же FTP root отдаётся на главной.
+1. **Network:** HTTPS к `[REDACTED]:443` недоступен из локальной среды (WinError 10060). Legacy upload path was available locally, HTTP bootstrap trigger was not.
+2. **SSH path:** аккаунт `***_blog` видит только `/index.php` + `/cgi-bin/`, **без** `wp-load.php`. WordPress на `[REDACTED]/blog/` — другой document root.
+3. **Bootstrap 404:** загруженный `excalibur-blog-publish-once.php` (и тестовый `excalibur-test-once.php`) отдают HTTP 404 снаружи, хотя `index.php` в том же SSH root отдаётся на главной.
 
 ### Cleanup
 
-Временные bootstrap-файлы удалены с FTP после диагностики.
+Временные bootstrap-файлы удалены после диагностики.
 
 ### Next steps (для оператора)
 
-1. Обновить `memory/site.env.local`: FTP_USER/FTP_PASS + `FTP_ROOT=/` (корень FTP после login, где `wp-load.php`). Путь панели хостинга: `FTP_PANEL_PATH=/your-account.beget.tech/public_html/`.
+1. Обновить `memory/site.env.local`: SSH_USER/SSH_PASS + `SSH_ROOT=/` (корень SSH после login, где `wp-load.php`). Путь панели хостинга: `SSH_PANEL_PATH=/your-account.beget.tech/public_html/`.
 2. Либо запустить publish с машины/сети, где `curl [REDACTED]` отвечает < 5 с.
 3. Альтернатива: WP Application Password + REST API / MCP WordPress blob publish.
 
@@ -53,13 +53,13 @@ python scripts/excalibur_blog_wp_publish.py --article-dir memory/blog/articles/B
 | post_id | 13324 |
 | featured_image_id | 13325 |
 | permalink | [REDACTED]/avtomatizaciya-n8n-ai-agents/ |
-| FTP_ROOT | `/` |
+| SSH_ROOT | `/` |
 
 ### Fix applied
 
-- Обновлены FTP credentials в `memory/site.env.local` (локально, не в git)
-- `FTP_ROOT=/` (wp-load.php в корне аккаунта после login)
-- `excalibur_blog_wp_publish.py` — поддержка `FTP_ROOT` из env
+- Обновлены SSH credentials в `memory/site.env.local` (локально, не в git)
+- `SSH_ROOT=/` (wp-load.php в корне аккаунта после login)
+- `excalibur_blog_wp_publish.py` — поддержка `SSH_ROOT` из env
 
 ### Result
 
@@ -198,7 +198,7 @@ permalink=[REDACTED]/avtonomnyj-kontent-zavod-nejroseti/
 `EXCALIBUR_BLOG_ALLOW_PUBLISH != yes` — Cursor Cloud Secrets / env vars не инжектированы в VM:
 
 - `memory/site.env.local` отсутствует
-- `python3 scripts/excalibur_blog_doctor.py --publish` → FAIL (PUBLIC_SITE_URL, FTP_*, ALLOW_PUBLISH)
+- `python3 scripts/excalibur_blog_doctor.py --publish` → FAIL (PUBLIC_SITE_URL, SSH_*, ALLOW_PUBLISH)
 
 ### Attempt
 
@@ -210,7 +210,7 @@ python3 scripts/excalibur_blog_wp_publish.py --article-dir ...                # 
 
 ### Next steps (оператор)
 
-1. Добавить в Cursor Dashboard → Cloud Agents → Secrets: `PUBLIC_SITE_URL`, `FTP_*`, `FTP_ROOT`, `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes`
+1. Добавить в Cursor Dashboard → Cloud Agents → Secrets: `PUBLIC_SITE_URL`, `SSH_*`, `SSH_ROOT`, `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes`
 2. Перезапустить `excalibur-blog-publish` для B06
 3. Либо создать `memory/site.env.local` локально и publish с машины оператора
 
@@ -233,7 +233,7 @@ python3 scripts/excalibur_blog_wp_publish.py --article-dir ...                # 
 
 ### Context
 
-- FTP blocked from Cloud VM: `425 Bad IP` (Beget)
+- legacy upload blocked from Cloud VM: `425 Bad IP` (Beget)
 - `memory/site.env.local` present locally with `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes`
 - Preflight link-verify: pass (3/3)
 
@@ -250,7 +250,7 @@ slug_custom=pending (MCP update_post_from_blob has no slug param)
 
 ### Follow-up (оператор)
 
-1. С машины с рабочим FTP: `python3 scripts/excalibur_blog_wp_publish.py --article-dir memory/blog/articles/B06-make-ai-agents-mcp-avtomatizaciya` — обновит post 13467 (slug, images, schema meta) или создаст дубль если slug не совпадёт — проверить вручную.
+1. С машины с рабочим SSH: `python3 scripts/excalibur_blog_wp_publish.py --article-dir memory/blog/articles/B06-make-ai-agents-mcp-avtomatizaciya` — обновит post 13467 (slug, images, schema meta) или создаст дубль если slug не совпадёт — проверить вручную.
 2. Либо в WP Admin: slug → `make-ai-agents-mcp-avtomatizaciya`, загрузить cover + inline, вставить schema meta.
 
 ---
@@ -265,7 +265,7 @@ slug_custom=pending (MCP update_post_from_blob has no slug param)
 | post_id | 13467 |
 | featured_image_id | 13469 |
 | permalink | [REDACTED]/make-ai-agents-mcp-avtomatizaciya/ |
-| transport | SFTP fallback (FTP STOR `425 Bad IP` → SSH upload OK) |
+| transport | SSH fallback (legacy upload `425 Bad IP` → SSH upload OK) |
 
 ### Result
 
@@ -278,11 +278,11 @@ OK inline_image_upload=13470..13472
 permalink=[REDACTED]/make-ai-agents-mcp-avtomatizaciya/
 ```
 
-Historical note: this run used SFTP fallback after FTP was blocked.
+Historical note: this run used SSH fallback after legacy upload was blocked.
 
-## 2026-06-16 (SFTP direct transport) — publish script update
+## 2026-06-16 (SSH direct transport) — publish script update
 
-`scripts/excalibur_blog_wp_publish.py` now uploads the bootstrap file directly through SFTP/SSH and deletes it through SFTP/SSH after the HTTP trigger. Agents must not attempt FTP upload from Cursor Cloud. `FTP_*` env names remain supported only as compatibility aliases for existing Cursor Secrets.
+`scripts/excalibur_blog_wp_publish.py` now uploads the bootstrap file directly through SSH and deletes it through SSH after the HTTP trigger. Agents must not attempt SSH upload from Cursor Cloud. `SSH_*` env names remain supported only as compatibility aliases for existing Cursor Secrets.
 
 ---
 
@@ -296,7 +296,7 @@ Historical note: this run used SFTP fallback after FTP was blocked.
 | post_id | 13484 |
 | featured_image_id | 13485 |
 | permalink | [REDACTED]/postroenie-rag-sistemy-vektornaya-baza/ |
-| transport | SFTP/SSH direct (`FTP_ROOT=` / `SSH_ROOT=` — panel path invalid on SFTP cwd) |
+| transport | SSH direct (`SSH_ROOT=` — panel path invalid on SSH cwd) |
 
 ### Preconditions
 
@@ -311,7 +311,7 @@ Historical note: this run used SFTP fallback after FTP was blocked.
 ```bash
 python3 scripts/excalibur_blog_link_verify.py ... --site-base [REDACTED]  # pass
 python3 scripts/excalibur_blog_wp_publish.py --article-dir ... --dry-run        # OK (PHP bytes: 7834916)
-FTP_ROOT= SSH_ROOT= python3 scripts/excalibur_blog_wp_publish.py --article-dir ...  # PASS
+SSH_ROOT= python3 scripts/excalibur_blog_wp_publish.py --article-dir ...  # PASS
 python3 scripts/excalibur_blog_interlinker.py --apply ...  # 0 opportunities
 ```
 
@@ -328,7 +328,7 @@ permalink=[REDACTED]/postroenie-rag-sistemy-vektornaya-baza/
 
 ### Note
 
-Configured `FTP_ROOT` (panel path) does not exist on SFTP; default cwd is already `public_html` with `wp-load.php`. Publish succeeded with empty `FTP_ROOT`/`SSH_ROOT`. Recommend updating Cursor Secret `FTP_ROOT` to empty or `.` for Cloud runs.
+Configured `SSH_ROOT` (panel path) does not exist on SSH; default cwd is already `public_html` with `wp-load.php`. Publish succeeded with empty `SSH_ROOT`. Recommend updating Cursor Secret `SSH_ROOT` to empty or `.` for Cloud runs.
 
 ---
 
@@ -343,7 +343,7 @@ Configured `FTP_ROOT` (panel path) does not exist on SFTP; default cwd is alread
 | featured_image_id | 13493 |
 | inline_images | 13494, 13495, 13496 |
 | permalink | [REDACTED]/ii-chat-bot-dlya-biznesa-workflow/ |
-| transport | SFTP/SSH direct (`FTP_ROOT=` / `SSH_ROOT=` empty) |
+| transport | SSH direct (`SSH_ROOT=` empty) |
 
 ### Preconditions
 
@@ -358,9 +358,9 @@ Configured `FTP_ROOT` (panel path) does not exist on SFTP; default cwd is alread
 ```bash
 python3 scripts/excalibur_blog_link_verify.py ... --site-base [REDACTED]  # pass
 python3 scripts/excalibur_blog_wp_publish.py --article-dir ... --dry-run        # OK (PHP bytes: 2821484)
-FTP_ROOT= SSH_ROOT= python3 scripts/excalibur_blog_wp_publish.py --article-dir ...  # PASS (post only, no inline in HTML)
+SSH_ROOT= python3 scripts/excalibur_blog_wp_publish.py --article-dir ...  # PASS (post only, no inline in HTML)
 # inject inline figures → re-publish
-FTP_ROOT= SSH_ROOT= python3 scripts/excalibur_blog_wp_publish.py --article-dir ...  # PASS (inline uploads)
+SSH_ROOT= python3 scripts/excalibur_blog_wp_publish.py --article-dir ...  # PASS (inline uploads)
 python3 scripts/excalibur_blog_interlinker.py --apply ...  # 0 opportunities
 ```
 
@@ -379,7 +379,7 @@ permalink=[REDACTED]/ii-chat-bot-dlya-biznesa-workflow/
 
 ### Note
 
-First publish attempt failed: `FTP_ROOT=/` → SFTP `FileNotFoundError` (panel path invalid). Retry with empty `FTP_ROOT` succeeded. Inline `<figure>` tags were missing from article.html at first publish; injected via `inject_figures` from quad-split-report, then re-published.
+First publish attempt failed: `SSH_ROOT=/` → SSH `FileNotFoundError` (panel path invalid). Retry with empty `SSH_ROOT` succeeded. Inline `<figure>` tags were missing from article.html at first publish; injected via `inject_figures` from quad-split-report, then re-published.
 
 ---
 
@@ -394,7 +394,7 @@ First publish attempt failed: `FTP_ROOT=/` → SFTP `FileNotFoundError` (panel p
 | featured_image_id | 13534 |
 | inline_images | 13535, 13536, 13537 |
 | permalink | [REDACTED]/sozdat-llms-txt-dlya-sajta/ |
-| transport | SFTP/SSH direct (`SSH_ROOT=.` / `FTP_ROOT=.` root override; no FTP upload) |
+| transport | SSH direct (`SSH_ROOT=.` root override; no SSH upload) |
 
 ### Preconditions
 
@@ -409,8 +409,8 @@ First publish attempt failed: `FTP_ROOT=/` → SFTP `FileNotFoundError` (panel p
 ```bash
 python3 scripts/excalibur_blog_link_verify.py ... --site-base [REDACTED]  # pass
 python3 scripts/excalibur_blog_wp_publish.py --article-dir ... --dry-run        # OK (PHP bytes: 6208344)
-python3 scripts/excalibur_blog_wp_publish.py --article-dir ...                 # failed before upload: SFTP remote root ENOENT
-SSH_ROOT=. FTP_ROOT=. FTP_PATH=. python3 scripts/excalibur_blog_wp_publish.py --article-dir ...  # PASS
+python3 scripts/excalibur_blog_wp_publish.py --article-dir ...                 # failed before upload: SSH remote root ENOENT
+SSH_ROOT=. python3 scripts/excalibur_blog_wp_publish.py --article-dir ...  # PASS
 python3 scripts/excalibur_blog_interlinker.py --apply ...  # 0 opportunities
 ```
 
@@ -427,7 +427,7 @@ permalink=[REDACTED]/sozdat-llms-txt-dlya-sajta/
 
 ### Note
 
-Configured publish root path is invalid inside the SFTP cwd for this Cloud run. Retrying with `SSH_ROOT=.` / `FTP_ROOT=.` used the SFTP login cwd as the WordPress root and succeeded. No FTP upload was attempted.
+Configured publish root path is invalid inside the SSH cwd for this Cloud run. Retrying with `SSH_ROOT=.` used the SSH login cwd as the WordPress root and succeeded. No SSH upload was attempted.
 
 ---
 
@@ -442,7 +442,7 @@ Configured publish root path is invalid inside the SFTP cwd for this Cloud run. 
 | featured_image_id | 13540 |
 | inline_images | 13541, 13542, 13543 |
 | permalink | [REDACTED]/ollama-lokalnaya-llm-dlya-biznesa/ |
-| transport | SFTP/SSH direct (auto root fallback to `.`; no FTP upload) |
+| transport | SSH direct (auto root fallback to `.`; no SSH upload) |
 
 ### Preconditions
 
@@ -458,7 +458,7 @@ Configured publish root path is invalid inside the SFTP cwd for this Cloud run. 
 python3 scripts/excalibur_blog_link_verify.py ... --site-base [REDACTED]  # pass
 python3 scripts/excalibur_blog_wp_publish.py --env-check                    # OK
 python3 scripts/excalibur_blog_wp_publish.py --article-dir ... --dry-run  # OK (PHP bytes: 6518484)
-python3 scripts/excalibur_blog_wp_publish.py --article-dir ...            # PASS (SFTP root ENOENT → fallback `.`)
+python3 scripts/excalibur_blog_wp_publish.py --article-dir ...            # PASS (SSH root ENOENT → fallback `.`)
 python3 scripts/excalibur_blog_interlinker.py --apply ...                   # 0 opportunities
 ```
 
@@ -475,4 +475,4 @@ permalink=[REDACTED]/ollama-lokalnaya-llm-dlya-biznesa/
 
 ### Note
 
-SFTP configured remote root returned ENOENT; script auto-fallback to `.` succeeded on first attempt. Recommend updating `SSH_ROOT`/`FTP_ROOT` to `.` in Cloud Secrets.
+SSH configured remote root returned ENOENT; script auto-fallback to `.` succeeded on first attempt. Recommend updating `SSH_ROOT` to `.` in Cloud Secrets.

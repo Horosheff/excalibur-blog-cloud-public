@@ -98,10 +98,10 @@ python3 scripts/excalibur_blog_research_start.py --topic-id B01
 
 ## Секреты
 
-Только Cloud Secrets / env vars. Не печатать FTP/API ключи в handoff, PR, ответах.
+Только Cloud Secrets / env vars. Не печатать SSH/API ключи в handoff, PR, ответах.
 
-- `FTP_*`/`SSH_*`, `PUBLIC_SITE_URL`, `EXCALIBUR_BLOG_ALLOW_PUBLISH`
-- Publish transport: сразу SFTP/SSH; FTP upload из Cloud не использовать.
+- `SSH_*`, `PUBLIC_SITE_URL`, `EXCALIBUR_BLOG_ALLOW_PUBLISH`
+- Publish transport: только SSH; legacy upload-алиасы не использовать.
 - MCP через `${env:...}` в mcp.json
 
 ## Git hygiene
@@ -143,4 +143,4 @@ python3 scripts/excalibur_blog_research_start.py --topic-id B01
 - краткая выжимка документации Cursor Cloud: `CURSOR-CLOUD-RUNBOOK.md`;
 - пример CI preflight: `shared/cloud-preflight-workflow.yml.example`.
 
-Cloud Agent должен брать секреты только из Cursor Dashboard Secrets / env vars. Если для publish нет `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes` или SFTP/public site переменных, publish-агент обязан вернуть явный blocker, а не пытаться угадать доступы.
+Cloud Agent должен брать секреты только из Cursor Dashboard Secrets / env vars. Если для publish нет `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes` или SSH/public site переменных, publish-агент обязан вернуть явный blocker, а не пытаться угадать доступы.

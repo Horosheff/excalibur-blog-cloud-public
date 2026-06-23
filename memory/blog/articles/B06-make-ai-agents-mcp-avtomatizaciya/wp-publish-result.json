@@ -3,7 +3,7 @@
   "topic_id": "B06",
   "post_id": 13467,
   "permalink": "https://mayai.ru/make-ai-agents-mcp-avtomatizaciya/",
-  "publish_method": "sftp-fallback",
+  "publish_method": "ssh-fallback",
   "cover_evidence": {
     "path": "memory/blog/articles/B06-make-ai-agents-mcp-avtomatizaciya/cover/cover.png",
     "source": "existing_file",

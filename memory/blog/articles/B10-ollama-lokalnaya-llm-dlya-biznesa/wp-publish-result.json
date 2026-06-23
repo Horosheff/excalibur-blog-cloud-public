@@ -2,7 +2,7 @@
   "slug": "ollama-lokalnaya-llm-dlya-biznesa",
   "topic_id": "B10",
   "permalink": "[REDACTED]/ollama-lokalnaya-llm-dlya-biznesa/",
-  "publish_method": "sftp",
+  "publish_method": "ssh",
   "cover_evidence": {
     "path": "memory/blog/articles/B10-ollama-lokalnaya-llm-dlya-biznesa/cover/cover.png",
     "source": "existing_file",

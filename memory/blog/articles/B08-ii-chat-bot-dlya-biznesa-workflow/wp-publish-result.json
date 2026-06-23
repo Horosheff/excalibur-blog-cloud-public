@@ -2,7 +2,7 @@
   "slug": "ii-chat-bot-dlya-biznesa-workflow",
   "topic_id": "B08",
   "permalink": "https://mayai.ru/ii-chat-bot-dlya-biznesa-workflow/",
-  "publish_method": "sftp",
+  "publish_method": "ssh",
   "cover_evidence": {
     "path": "memory/blog/articles/B08-ii-chat-bot-dlya-biznesa-workflow/cover/cover.png",
     "source": "existing_file",

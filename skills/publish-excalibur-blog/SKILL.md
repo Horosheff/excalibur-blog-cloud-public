@@ -20,7 +20,7 @@ description: Excalibur BLOG Publish — WP post, featured image, inline images, 
 | Links | `link-verify.json` → pass |
 | Cover | `cover/cover.png` + alt в `cover-registry.json` |
 | Schema | `schema.jsonld` |
-| Credentials | Cloud Secrets/env или `memory/site.env.local`: `FTP_*`/`SSH_*`, `FTP_ROOT`/`SSH_ROOT`, `PUBLIC_SITE_URL` |
+| Credentials | Cloud Secrets/env или `memory/site.env.local`: `SSH_*`, `SSH_ROOT`, `PUBLIC_SITE_URL` |
 | Allow flag | `EXCALIBUR_BLOG_ALLOW_PUBLISH=yes` |
 
 Если allow flag ≠ yes → **`❌ PUBLISH BLOCKER`** (не silent skip).
@@ -44,7 +44,7 @@ Gate: `link-verify.json` → pass. Иначе FIX (writer/QA) или BLOCKER.
 python3 scripts/excalibur_blog_wp_publish.py --env-check
 ```
 
-Проверяет allow flag, public URL и SFTP-переменные без вывода секретов. Для ad-hoc Python-проверок не импортируй `excalibur_blog_wp_publish.py` из корня без `scripts/` в `sys.path`; безопаснее использовать этот CLI.
+Проверяет allow flag, public URL и SSH-переменные без вывода секретов. Для ad-hoc Python-проверок не импортируй `excalibur_blog_wp_publish.py` из корня без `scripts/` в `sys.path`; безопаснее использовать этот CLI.
 
 ### 3. Dry-run
 
@@ -64,8 +64,8 @@ python3 scripts/excalibur_blog_wp_publish.py \
 ```
 
 Скрипт:
-- грузит bootstrap сразу через **SFTP/SSH** (порт 22 по умолчанию), без FTP-попытки;
-- если настроенный `SSH_ROOT`/`FTP_ROOT` возвращает SFTP ENOENT до upload, один раз пробует `.` и пишет warning без раскрытия секретов; после такого warning лучше обновить Cloud Secret root на `.`;
+- грузит bootstrap сразу через **SSH** (порт 22 по умолчанию), без дополнительных upload-попыток;
+- если настроенный `SSH_ROOT` возвращает SSH ENOENT до upload, один раз пробует `.` и пишет warning без раскрытия секретов; после такого warning лучше обновить Cloud Secret root на `.`;
 - создаёт/обновляет WP post;
 - загружает featured image + alt;
 - загружает **все локальные inline `<img>`** и подменяет `src` на WP media URL;

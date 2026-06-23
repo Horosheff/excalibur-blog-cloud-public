@@ -61,7 +61,7 @@ Cursor Cloud должен использовать `.cursor/environment.json`:
 Нужен, если в облаке Cursor нет:
 
 - MCP KV (`gpt-image-2` для обложек);
-- SFTP/SSH к WordPress;
+- SSH к WordPress;
 - стабильного web search для research.
 
 ```powershell
@@ -78,7 +78,7 @@ agent worker start --pool --pool-name excalibur-blog --idle-release-timeout 600
 | Variable | Зачем |
 |----------|-------|
 | `PUBLIC_SITE_URL` | link verify, recent WP posts |
-| `FTP_*` / `SSH_*` | `excalibur_blog_wp_publish.py`; transport сразу SFTP/SSH, `FTP_*` имена оставлены для совместимости |
+| `SSH_*` | `excalibur_blog_wp_publish.py`; transport сразу SSH, только `SSH_*` secrets |
 | `EXCALIBUR_BLOG_ALLOW_PUBLISH` | `yes` только когда готовы публиковать |
 | `EXCALIBUR_TOPIC_ID` | опционально фиксировать тему (иначе today.py предложит P0) |
 | `EXCALIBUR_PROJECT_ROOT` | корень репо на worker |

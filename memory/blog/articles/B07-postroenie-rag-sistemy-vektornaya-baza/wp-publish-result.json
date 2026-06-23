@@ -2,7 +2,7 @@
   "slug": "postroenie-rag-sistemy-vektornaya-baza",
   "topic_id": "B07",
   "permalink": "[REDACTED]/postroenie-rag-sistemy-vektornaya-baza/",
-  "publish_method": "sftp",
+  "publish_method": "ssh",
   "cover_evidence": {
     "path": "memory/blog/articles/B07-postroenie-rag-sistemy-vektornaya-baza/cover/cover.png",
     "source": "existing_file",

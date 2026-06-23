@@ -39,13 +39,13 @@ incident_report: none | memory/pipeline-fix-queue.md#INC-...
 - `article.html`, `article.meta.json`, `article-qa.md` (PASS)
 - `schema.jsonld`, `cover/cover.png`, `cover-registry.json`
 - Cloud Secrets / env vars или `memory/site.env.local`
-- Upload transport: **SFTP/SSH сразу**, без FTP-попытки. `FTP_*` имена секретов поддерживаются только для совместимости.
+- Upload transport: **SSH сразу**, без дополнительных upload-попыток. используются только `SSH_*` secrets.
 
 ## Твои задачи (строго по порядку)
 
 1. **Preflight:** link-verify с `--site-base` из `PUBLIC_SITE_URL`.
 2. **Dry-run:** `excalibur_blog_wp_publish.py --dry-run`.
-3. **Publish:** `excalibur_blog_wp_publish.py` без dry-run — bootstrap грузится сразу через SFTP/SSH.
+3. **Publish:** `excalibur_blog_wp_publish.py` без dry-run — bootstrap грузится сразу через SSH.
 4. **Fallback:** при timeout HTTP-триггера — WebFetch URL из `FALLBACK_TRIGGER_URL` → `memory/webfetch-response.txt`.
 5. **Ledger:** обновить `shared/published-articles.md`: если topic_id уже есть со status=`in_progress`, заменить строку на `published`; не добавлять дубль.
 6. **Logs:** дописать `memory/blog/wp-publish-log.md`.

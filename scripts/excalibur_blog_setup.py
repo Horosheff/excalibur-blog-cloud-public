@@ -62,16 +62,16 @@ def main() -> int:
     )
     
     # -------------------------------------------------------------------------
-    # ШАГ 2: Доступы к серверу и WordPress (SFTP/SSH)
+    # ШАГ 2: Доступы к серверу и WordPress (SSH)
     # -------------------------------------------------------------------------
-    print("\n--- ШАГ 2: НАСТРОЙКА ИНТЕГРАЦИИ И ИМПОРТА В WORDPRESS (SFTP/SSH) ---")
-    print("Для публикации статей напрямую в вашу WP-тему, укажите данные SFTP/SSH-сервера.")
-    ftp_host = get_input("SFTP Хост (например: example.com)", "example.com")
-    ssh_port = get_input("SFTP/SSH Порт", "22")
-    ftp_user = get_input("SFTP Пользователь", "")
-    ftp_pass = get_input("SFTP Пароль", "")
-    ftp_root = get_input(
-        "SFTP путь к корню WordPress (где wp-load.php)",
+    print("\n--- ШАГ 2: НАСТРОЙКА ИНТЕГРАЦИИ И ИМПОРТА В WORDPRESS (SSH) ---")
+    print("Для публикации статей напрямую в вашу WP-тему, укажите данные SSH-сервера.")
+    ssh_host = get_input("SSH хост (например: example.com)", "example.com")
+    ssh_port = get_input("SSH порт", "22")
+    ssh_user = get_input("SSH пользователь", "")
+    ssh_pass = get_input("SSH пароль", "")
+    ssh_root = get_input(
+        "SSH путь к корню WordPress (где wp-load.php)",
         "/public_html/",
     )
     
@@ -104,11 +104,11 @@ def main() -> int:
     env_content = f"""# Excalibur BLOG — credentials (автоматически сгенерировано setup.py)
 
 PUBLIC_SITE_URL={site_url}
-FTP_HOST={ftp_host}
-FTP_USER={ftp_user}
-FTP_PASS={ftp_pass}
-FTP_ROOT={ftp_root}
+SSH_HOST={ssh_host}
 SSH_PORT={ssh_port}
+SSH_USER={ssh_user}
+SSH_PASS={ssh_pass}
+SSH_ROOT={ssh_root}
 EXCALIBUR_BLOG_ALLOW_PUBLISH={allow_publish}
 """
     env_path.write_text(env_content, encoding="utf-8")
@@ -119,11 +119,11 @@ EXCALIBUR_BLOG_ALLOW_PUBLISH={allow_publish}
         example_content = """# Excalibur BLOG — credentials (copy to site.env.local)
 
 PUBLIC_SITE_URL=https://example.com
-FTP_HOST=example.com
-FTP_USER=
-FTP_PASS=
-FTP_ROOT=/public_html/
+SSH_HOST=example.com
 SSH_PORT=22
+SSH_USER=
+SSH_PASS=
+SSH_ROOT=/public_html/
 EXCALIBUR_BLOG_ALLOW_PUBLISH=no
 """
         env_example_path.write_text(example_content, encoding="utf-8")

@@ -39,10 +39,10 @@ EXCALIBUR_BLOG_ALLOW_PUBLISH=no
 ```text
 PUBLIC_SITE_URL=https://mayai.ru
 WP_SITE_URL=https://mayai.ru
-FTP_HOST=<host>
-FTP_USER=<user>
-FTP_PASS=<password>
-FTP_ROOT=.
+SSH_HOST=<host>
+SSH_USER=<user>
+SSH_PASS=<password>
+SSH_ROOT=.
 SSH_PORT=22
 EXCALIBUR_BLOG_ALLOW_PUBLISH=yes
 ```
@@ -53,7 +53,7 @@ EXCALIBUR_BLOG_ALLOW_PUBLISH=yes
 EXCALIBUR_TOPIC_ID=<optional fixed topic id>
 ```
 
-Запрещено добавлять в repo реальные `.env`, `memory/site.env.local`, MCP tokens, FTP credentials, Cursor API keys.
+Запрещено добавлять в repo реальные `.env`, `memory/site.env.local`, MCP tokens, SSH credentials, Cursor API keys.
 
 ## GitHub setup
 
@@ -95,7 +95,7 @@ python3 scripts/excalibur_blog_wp_publish.py --env-check
 ```
 
 Если `--publish` падает из-за секретов, это нормально для dry-run окружения и блокер для боевой публикации.
-Если SFTP upload пишет warning про fallback на `.`, обновите Cursor Secret `SSH_ROOT`/`FTP_ROOT` на `.` или уберите несуществующий panel/root path. Секретные значения не записывать в repo.
+Если SSH upload пишет warning про fallback на `.`, обновите Cursor Secret `SSH_ROOT` на `.` или уберите несуществующий panel/root path. Секретные значения не записывать в repo.
 
 ## Optional GitHub Actions preflight
 

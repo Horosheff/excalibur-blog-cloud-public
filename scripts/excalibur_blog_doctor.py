@@ -51,13 +51,6 @@ def merged_publish_env(root: Path) -> dict[str, str]:
         "PUBLIC_SITE_URL",
         "WP_HOME",
         "WP_SITE_URL",
-        "FTP_HOST",
-        "FTP_PORT",
-        "FTP_USER",
-        "FTP_PASS",
-        "FTP_PASSWORD",
-        "FTP_ROOT",
-        "FTP_PATH",
         "SSH_HOST",
         "SSH_PORT",
         "SSH_USER",
@@ -71,8 +64,6 @@ def merged_publish_env(root: Path) -> dict[str, str]:
         value = os.environ.get(key)
         if value:
             env[key] = value
-    if not env.get("FTP_PASS") and env.get("FTP_PASSWORD"):
-        env["FTP_PASS"] = env["FTP_PASSWORD"]
     if not env.get("SSH_PASS") and env.get("SSH_PASSWORD"):
         env["SSH_PASS"] = env["SSH_PASSWORD"]
     return env
@@ -146,11 +137,11 @@ def main() -> int:
     env = merged_publish_env(root)
     has_public = bool(env.get("PUBLIC_SITE_URL") or env.get("WP_HOME") or env.get("WP_SITE_URL"))
     check(has_public, "PUBLIC_SITE_URL/WP_SITE_URL configured", errors, warnings, warn=not args.publish)
-    check(bool(env.get("SSH_HOST") or env.get("FTP_HOST")), "SFTP host configured", errors, warnings, warn=not args.publish)
-    check(bool(env.get("SSH_USER") or env.get("FTP_USER")), "SFTP user configured", errors, warnings, warn=not args.publish)
+    check(bool(env.get("SSH_HOST")), "SSH host configured", errors, warnings, warn=not args.publish)
+    check(bool(env.get("SSH_USER")), "SSH user configured", errors, warnings, warn=not args.publish)
     check(
-        bool(env.get("SSH_PASS") or env.get("FTP_PASS") or env.get("SSH_PASSWORD") or env.get("FTP_PASSWORD")),
-        "SFTP password configured",
+        bool(env.get("SSH_PASS") or env.get("SSH_PASSWORD")),
+        "SSH password configured",
         errors,
         warnings,
         warn=not args.publish,
