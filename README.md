@@ -2,6 +2,12 @@
 
 ![Excalibur Blog Cloud cover](assets/excalibur-blog-cover.png)
 
+<p align="center">
+  <a href="https://t.me/maya_pro">
+    <img src="https://img.shields.io/badge/Telegram-Maya%20Pro-229ED9?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Maya Pro">
+  </a>
+</p>
+
 **Excalibur Blog Cloud** — это автоматизация блога на субагентах Cursor: не "ещё один AI-текст", а полный SEO/GEO-пайплайн статьи от подбора темы до публикации в WordPress.
 
 Плагин собирает статью как редакция: один агент отвечает за research, другой за текст, третий за QA, отдельные агенты делают визуал, schema, перелинковку и публикацию. На выходе получается не черновик, а готовый пакет: `article.html`, мета, FAQ/schema, обложка, inline-картинки, QA-отчёты, `llms.txt` и запись в ledger.
